@@ -88,3 +88,27 @@ These records remain relevant background and evidence lineage. Their findings an
 | [Migration 001 Database Acceptance Checklist](https://app.notion.com/p/ca96808bcd9e8261b00b817073f6c9f9) | Candidate migration acceptance criteria | Not evidence of execution or acceptance |
 | [Migration 001 Candidate SQL](https://app.notion.com/p/f046808bcd9e83a2936881b0bc26fa90) | Candidate database migration source | Do not activate or place in executable migration path while HOLD |
 | [Migration 001 Smoke & Constraint Tests](https://app.notion.com/p/cc46808bcd9e83fbb7d98164d18f2911) | Candidate smoke/constraint test suite | Test artefact; execution evidence must be separately recorded |
+
+
+## Additional source records confirmed during the 19 November Notion scan
+
+| Record | Role | Current treatment |
+|---|---|---|
+| [003 — Commercial & Operational Assumption Validation](https://app.notion.com/p/5846808bcd9e820a9b760191453e2542) | Revenue hypotheses, payer/value, operating costs, unit economics and unresolved commercial assumptions | Desk-based validation only; dedicated repository home: `docs/commerce/`, `docs/operations/`, `docs/measurement/` |
+| [014 — Technical Test Harness & End-to-End Simulation Specification](https://app.notion.com/p/4136808bcd9e81e0bb13f2ea26004dd1) | Test layers, synthetic scenario, execution procedure, reporting and evidence | Test specification only; execution remains separate |
+| [018 — Migration 001 Schema Inventory, ERD & Design Conformance Review](https://app.notion.com/p/4136808bcd9e816b8cfaf33b338d5118) | Source schema/ERD and design conformance review | Static source review; Migration 001 remains HOLD |
+| [018-B — Migration 001 Column-Level Data Dictionary & Source Inventory](https://app.notion.com/p/4136808bcd9e81c0bb95d27a8a034bd3) | 22-table / 230-column source inventory | Descriptive of Migration 001, not an approved target schema |
+| [Database Acceptance Checklist — Migration 001](https://app.notion.com/p/ca96808bcd9e8261b00b817073f6c9f9) | Candidate schema, integrity and release checks | Test plan only; execution in disposable PostgreSQL required before acceptance |
+| [PostgreSQL Migration 001 — Smoke & Constraint Tests](https://app.notion.com/p/cc46808bcd9e83fbb7d98164d18f2911) | Candidate SQL smoke/constraint tests | Not confirmed executed; retain as historical candidate test artefact |
+| [024-G — Test Strategy, Quality Engineering & Acceptance Evidence](https://app.notion.com/p/41d6808bcd9e81c78dfdfa7919489c30) | Product-wide test governance and acceptance catalogue | Draft for review; test strategy does not prove test execution |
+
+## Planned references requiring confirmation
+
+- **024-H:** architecture, deployment and operational-readiness companion is a logical next specification, not a completed source located in this scan.
+- **025:** 024-R records a reference to a commercial service catalogue/fee and billing specification, but a dedicated page was not located. Confirm whether it is planned, stored elsewhere or should receive another identifier. Its repository design home is `docs/commerce/`.
+- **026:** 024-E refers to future screen/wireframe work. No completed dedicated 026 source was confirmed in this scan; approved design artefacts should map to `web/design/` without duplicating 024-E.
+- **024-I:** 024-R explicitly says a new 024-I is not justified at this point.
+
+## Duplicate and historical source cautions
+
+The current Project Home identifies the 44c6808b… page as the active home and says the earlier 4136808b… home is superseded. Search also surfaced duplicate-title 011 operating-model pages and duplicate Migration 001 checklist/test pages. Use the canonical page linked from the current Project Home and preserve other copies as historical until the project owner formally resolves them. Archived manuals and concept drafts are not implementation authority.
