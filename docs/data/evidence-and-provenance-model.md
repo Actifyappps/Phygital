@@ -16,3 +16,19 @@ Preserve original artefact and metadata subject to lawful retention; derived evi
 
 ## Required tests
 Cross-axis independence; missing provenance; unauthorised issuer; expired evidence; altered file; duplicate evidence; stale measurement; contradictory evidence; reviewer conflict; access leakage; correction without history loss; evidence deletion/retention control.
+
+
+## Canonical E1–E4 evidence classes (Framework 008 §4.1)
+
+Use these exact meanings for every material claim:
+
+- **E1 — Independently verified:** confirmed by a competent authority, accredited body, authenticated system record, site inspection or independently corroborated evidence appropriate to the claim.
+- **E2 — Documentary evidence:** supported by a current document from the relevant party, but not independently authenticated or validated.
+- **E3 — Declared:** stated by a producer, buyer, intermediary or project participant without sufficient supporting evidence.
+- **E4 — Assumption / unknown:** inferred, proposed or not yet investigated.
+
+Record source, date, owner, validity/expiry date where applicable and limitations. An expired certificate is not current evidence. A buyer's historic purchase record does not prove a current purchase commitment.
+
+**Separate axis:** acquisition/provenance type describes how the evidence was obtained (e.g. declared, hub-recorded, device-measured, independently verified, documentary/official, technical test result). It is not the E1–E4 class. Store/report both. Never map “device-measured” automatically to E1.
+
+**Scoring caution from Framework 008:** E3/E4 claims should normally score no higher than 2/5 unless the assessment lead records a reason. Weighted scores never override a failed or unresolved hard-stop gate.

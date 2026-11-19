@@ -43,6 +43,12 @@
 | 024-E Screen, Navigation & Interaction v0.1 | https://app.notion.com/p/41d6808bcd9e816d8acdce8763dedf25 | Screen requirements |
 | 024-F Security, Privacy, Threat & Abuse v0.1 | https://app.notion.com/p/41d6808bcd9e817d8d16d37bc31c063e | Draft security requirements |
 | 024-G Test Strategy & Acceptance Evidence v0.1 | https://app.notion.com/p/41d6808bcd9e81c78dfdfa7919489c30 | Draft; acceptance catalogue |
+| Archive — Superseded Phygital Working Versions | https://app.notion.com/p/5d66808bcd9e82cc8ac38123258c0bcc | Archive index; historical versions must not override current baseline |
+| ARCHIVE — Earlier Concept Paper Draft | https://app.notion.com/p/7186808bcd9e8349bc5e8111e07ba1a6 | Historical only; Concept Paper v1.1 governs |
+| ARCHIVE — Development Manual v2 | https://app.notion.com/p/5316808bcd9e8319949301af85712150 | Historical only; v3.0 is current supporting manual |
+| ARCHIVE — Earlier Development Manual | https://app.notion.com/p/0586808bcd9e83eaaadb01254f1a3fde | Historical only |
+| ARCHIVE — Phygital B2B Export Hub Implementation Manual v1 | https://app.notion.com/p/7776808bcd9e8389bbfd0156b1f62312 | Historical only |
+| Phygital Phase 0 Evidence Register database | https://app.notion.com/p/c5656dea87234b5484d7f582fb11404c | Live evidence register; Notion remains master; repository is not its replacement |
 | 024-R Independent Product Completeness Audit | https://app.notion.com/p/41d6808bcd9e8185bbaacd12d1d15eee | Audit completed; corrective actions proposed, not sponsor approval |
 
 

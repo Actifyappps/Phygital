@@ -142,3 +142,9 @@ The repository uses bounded contexts rather than a one-folder-per-document schem
 ### Current specification authority and status
 
 024 v0.1d and 024-A v0.1b through 024-G v0.1 are draft specifications for sponsor, technical, operational and specialist review. 024-R's 12 findings are mapped but not closed by repository documentation. 024-H is not confirmed as completed; 024-I is not justified by 024-R; 025 was referenced but not located; 026 wireframes remain conditional. No code folder, package or crosswalk changes these statuses.
+
+
+### Archive and live evidence register disposition
+- Current archive index: `5d66808b…`. Earlier Concept Paper, Manual v2, earlier Development Manual and B2B Export Hub Manual v1 are historical sources only. They must not silently override Concept Paper v1.1 and Development Manual v3.0.
+- The live Phase 0 Evidence Register database remains in Notion. GitHub contains evidence schemas, test artifacts and sanitized records only; it does not replace the live register or close evidence items.
+- The 48 page links in the current Project Home were enumerated. This register maps the current 001–024-G programme sequence, supporting records, archive pages and technical artifacts; the separate 024-R audit and current 024 specifications are cross-referenced. The register should be re-run when the Project Home document register changes.

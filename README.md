@@ -73,3 +73,8 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [024-D API contract map](docs/api/024d-contract-domain-map.md) — all 11 contract groups and 12 open decisions.
 - [024-F security control/test crosswalk](docs/security/024f-control-and-test-crosswalk.md) — SEC-001–020 and ST-01–24.
 - [024-G acceptance catalogue](docs/quality/024g-test-catalogue-crosswalk.md) — QAT-001–036.
+
+- [Migration 002 conditional design boundary](docs/data/migration-002-design-boundary.md) — R-01–R-12 and M2-01–M2-24; no migration authorised.
+- [024-D candidate domain event catalogue](docs/api/024d-domain-event-catalogue.md)
+- [024-E journey crosswalk](docs/product/024e-journey-crosswalk.md)
+- [Counterparty validation checklist](docs/operations/checklists/counterparty-validation.md)
