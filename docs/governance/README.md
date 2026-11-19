@@ -1,3 +1,3 @@
 # Governance workspace
 
-Contains project status, source-of-truth hierarchy, repository map, requirement traceability and change control. This repository implements authorised decisions; it does not create business/legal authority.
+Authority, source registers, requirements traceability, change control, project status and Notion-to-repository disposition. Repository implementation cannot create business or legal authority.

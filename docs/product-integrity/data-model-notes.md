@@ -1,0 +1,3 @@
+# Product integrity data-model notes
+
+Logical entities to assess against 024-C/018-C: integrity case, hold instruction, affected-record relation, trace query/run, notification/acknowledgement, corrective action, disposition, release decision and audit event. Preserve batch split/merge lineage and links to listing, allocation, order item and shipment line. Do not draft executable SQL until architecture and migration gates are approved.

@@ -1,3 +1,3 @@
 # Architecture diagrams
 
-Store source-controlled Mermaid or other approved text diagrams with version and source references. Diagrams must distinguish current facts, proposed design and future phase-gated capabilities. A diagram is not approval.
+Store versioned source diagrams with source references and status labels. Show current, proposed and phase-gated capabilities distinctly. Diagrams do not constitute approval.

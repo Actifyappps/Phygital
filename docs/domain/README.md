@@ -1,3 +1,3 @@
 # Domain model workspace
 
-This folder holds the technology-neutral domain glossary, bounded-context map, business vocabulary and ownership rules. The 024-B and 024-C specifications remain canonical until reviewed and superseded. Do not place framework models, ORM entities or provider-specific types here.
+Technology-neutral domain glossary, bounded contexts and ownership rules. Canonical sources: 024-B/024-C and 018-A. Do not place framework/ORM models here. Domain packages should represent business capabilities, not mirror Notion deliverable numbers.

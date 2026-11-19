@@ -1,3 +1,3 @@
 # Test case library
 
-Store versioned executable or human-executable test cases with stable IDs and requirement links. Do not duplicate the canonical 024-G catalogue; maintain implementation-level cases and map them back to it.
+Implementation-level cases with stable IDs mapped to 014, 021–023, 024-G and 024-R. Do not duplicate canonical test specifications; record precise steps, fixtures and execution evidence.

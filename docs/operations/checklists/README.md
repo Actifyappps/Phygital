@@ -1,3 +1,3 @@
 # Operational checklists
 
-Use checklists for repeatable controlled activities. Every checklist must identify owner role, reviewer role, version, preconditions, stop conditions and evidence retained.
+Repeatable activities with owner/reviewer roles, preconditions, stop conditions, authority, evidence and version. No checklist authorises live operation by itself.
