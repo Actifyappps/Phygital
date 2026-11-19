@@ -1,2 +1,3 @@
-# Operational playbooks
-Align procedures with approved pilot operating model and legal/commercial role map. Platform is coordinator, not assumed seller, exporter, custodian, payment intermediary or carrier.
+# Operations workspace
+
+This area defines the future operating controls for field/hub service, exceptions, reconciliation, support and pilot readiness. Real facilities, role-holders, custody, live transactions and shipment remain unapproved unless separately evidenced and authorised.

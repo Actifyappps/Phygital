@@ -1,2 +1,3 @@
-# Infrastructure placeholder
-No cloud/hosting provider selected. IaC requires approved architecture, least privilege, secret management, cost controls and AADDG evidence.
+# Infrastructure workspace
+
+Reserved for reviewed infrastructure and environment configuration. No cloud provider, production topology, network policy or deployment is selected by this directory. Secrets must never be committed.

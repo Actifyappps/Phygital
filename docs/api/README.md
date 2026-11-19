@@ -1,2 +1,3 @@
-# API and integration contracts
-024-D is authoritative. No endpoint, payload, authentication scheme or provider is approved by a placeholder. Record versioning, idempotency, errors, rate limits, security, audit and compatibility.
+# API workspace
+
+024-D is the logical API and integration contract catalogue. Do not assume a protocol, framework, deployed endpoint or provider from these placeholders. Add generated OpenAPI/AsyncAPI artefacts only after contract format and architecture are approved.

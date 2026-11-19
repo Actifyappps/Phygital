@@ -1,2 +1,3 @@
-# Data model and migrations
-024-C is authoritative, reconciled with 018-C and sponsor decisions. Migration 001 HOLD; Migration 002 not authorised. Do not place draft SQL in executable migration paths or deploy schema changes without release authority.
+# Data workspace
+
+Canonical logical model: 024-C. Canonical workflow invariants: 024-B. This workspace records implementation-facing integrity, provenance, classification and migration-readiness controls. It does not authorise Migration 001 or Migration 002.

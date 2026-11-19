@@ -1,2 +1,3 @@
-# Integrations
-Provider adapters are optional and evidence-gated. No provider selected. Each requires approved contract, legal/operational owner, security assessment, credential scope, sandbox tests, idempotency/replay, reconciliation and failure procedures.
+# Integration workspace
+
+Provider-neutral contracts only. No provider or endpoint is presumed selected, contracted or available. 024-D is the logical contract authority. Every adapter requires legal/operational authority, security review, contract tests, idempotency, failure handling and reconciliation before activation.

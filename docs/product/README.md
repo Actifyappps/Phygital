@@ -1,2 +1,3 @@
-# Product specifications
-Authoritative requirements remain in approved Saintsway Equity Notion specifications, including 024 series and operating documents. Repository notes must be versioned and must not silently fork canonical specifications.
+# Product workspace
+
+024 v0.1d and 024-A through 024-G are the detailed product requirements baseline. Keep product behaviour, legal/operational authority and implementation choice separate. Record requirement IDs and acceptance traceability for all changes.
