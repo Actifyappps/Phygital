@@ -1,36 +1,38 @@
-# Repository and application architecture — candidate baseline
+# Repository architecture and ownership
 
-## Current decision
-The repository is organised to support a modular application, but the runtime architecture is **not selected**. The Technical Development Manual v3.0 recommends a modular-monolith-first approach. The Developer Guide candidate and manual contain technology/topology differences that must be resolved through TSBBF and an approved ADR before implementation.
+**Status:** technology-neutral repository architecture. No framework, hosting provider, ORM, database, cloud, microservice topology or deployment target is selected by this document.
 
-## Architectural principles
-- Modular monolith before distributed services unless measured requirements justify separation.
-- Relational integrity for transactional records and explicit audit history.
-- Domain rules independent of UI, database vendor and external providers.
-- Explicit organisation/tenant scoping and default-deny authorisation.
-- Commands for state-changing actions; queries for read models; events for durable facts.
-- Provider adapters behind stable contracts.
-- Offline capture as a controlled local queue with explicit sync/reconciliation, not a second source of truth.
-- No trust in client-side checks for permissions, stock, pricing or workflow transitions.
-- Design for observability, backup, restore, portability and controlled operational ownership.
+## Layers
+- `docs/`: authoritative engineering interpretation, architecture, decisions, product and operational controls.
+- `packages/domain/`: framework-neutral domain concepts, invariants, policies and pure application logic, grouped by bounded context.
+- `packages/contracts/`: versioned commands, events, API schemas and shared interface contracts; no business state ownership.
+- `web/`: user-facing web application and surface-specific features; UI is a projection of authorised domain state.
+- `workers/`: asynchronous jobs, scheduled tasks and reconciliation processes; each must be idempotent, observable and bounded.
+- `integrations/`: provider adapters and anti-corruption layers; provider-specific semantics stay out of domain core.
+- `supabase/`: reserved for a future approved Supabase implementation only; its presence does not select Supabase.
+- `infra/`: reproducible environment, monitoring and deployment definitions after platform decision.
+- `tests/`: unit, contract, integration, end-to-end, security, accessibility, offline and resilience tests.
+- `fixtures/`: synthetic, versioned and privacy-safe test records.
+- `evidence/`: minimised, sanitised test outputs, review records and release evidence.
+- `scripts/`: repeatable validation, migration inspection, quality and maintenance automation.
 
-## Logical layers
-1. Experience: buyer, supplier/producer, hub service, seller/exporter, operations and oversight surfaces.
-2. Application: use cases, command/query orchestration and transaction boundaries.
-3. Domain: identity/authority, organisations, evidence, catalogue, supply, inventory, enquiry, quotation, order, documents, fulfilment, payment-status and audit.
-4. Infrastructure: database, file/object storage, messaging, identity provider, telemetry and deployment.
-5. Integration adapters: external identity, inspection/lab, logistics, payment, customs/document and notification providers.
+## Dependency direction
+UI → application/contract boundary → domain policy. Infrastructure and provider adapters implement ports defined inward. Domain packages must not import UI, database clients, provider SDKs or framework runtime. Cross-domain interaction uses explicit application services and versioned contracts.
 
-These are logical boundaries, not a mandate to create microservices or packages for every noun.
+## Repository is not a deployment topology
+Do not create a service, queue, database, cloud resource or external integration merely because a directory exists. Start as a modular monolith unless evidence and an approved architecture decision justify distribution. Keep deployment decisions reversible while the stack remains open.
 
-## Architecture decisions still open
-- Frontend framework and rendering model.
-- Backend framework/API style and process topology.
-- Database/identity/storage provider.
-- Hosting, CI/CD and environment topology.
-- Offline storage/sync implementation.
-- Queue/event delivery and scheduler.
-- Document storage, malware scanning and retention.
-- Observability and backup providers.
+## Source and authority
+Concept Paper v1.1 governs strategy. 018-A constrains roles, custody, funds and order/inventory relationships. 024/024-A–G define product requirements. AADDG governs engineering lifecycle; TSBBF governs build-vs-buy/technology selection. This repository cannot amend any higher authority.
 
-Record selections in ADRs only after TSBBF evidence and relevant AADDG controls are satisfied.
+## Required architecture decisions before implementation
+- Hosting/runtime and frontend framework.
+- Database, schema ownership, migration and transaction strategy.
+- Identity provider, session and organisation membership model.
+- Object storage, evidence integrity, access and retention.
+- Offline-first scope, local persistence, sync conflict resolution and device trust.
+- API/event transport and versioning.
+- Background jobs, scheduler and observability.
+- Integration provider selection, secrets and webhook verification.
+- CI/CD, environment isolation, backup/restore and recovery objectives.
+- Data residency, privacy, records retention and incident response.

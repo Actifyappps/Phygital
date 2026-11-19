@@ -1,21 +1,18 @@
-# Evidence strength, provenance and claim model
+# Evidence class, provenance and lineage model
 
-## Critical distinction
-Evidence strength and evidence acquisition/provenance are separate dimensions. Do not reuse the Evidence Register's acquisition-method field as the E1–E4 strength class.
+**Audit link:** 024-R F-01. This file records the required distinction; it does not amend 024-C or authorise a production data schema.
 
-## Evidence strength (Framework 008)
-- **E1 — Independently verified:** confirmed by a competent authority, accredited body, authenticated system record, site inspection or independently corroborated evidence appropriate to the claim.
-- **E2 — Documentary evidence:** supported by a current document from the relevant party, but not independently authenticated or validated.
-- **E3 — Declared:** stated by a producer, buyer, intermediary or project participant without sufficient supporting evidence.
-- **E4 — Assumption / unknown:** inferred, proposed or not yet investigated.
+## Two independent axes
+- **Evidence class / strength:** E1–E4, according to the programme's controlled evidence semantics.
+- **Acquisition/provenance type:** producer declaration, operator observation, device measurement, third-party document, competent independent verification, provider event, system-generated record, or other explicitly defined source.
 
-## Provenance/acquisition type
-Examples include declared, hub-recorded, device-measured, independently verified, documentary/official and technical test result. This describes how the evidence was obtained, not its strength.
+Never encode both axes in one enum. A high-quality source can still be a declaration; a device reading is not automatically independent verification. An E-class must not be inferred solely from acquisition method.
 
-## Every evidence record
-Must identify the claim, subject/scope, source/issuer, competence for the claim, capture/issue date, validity/expiry, version, method, E1–E4 class, provenance type, limitations, reviewer, decision, related organisation/batch/order and supersession/revocation links.
+## Minimum lineage metadata
+Evidence ID; subject/entity and version; evidence class; provenance type; issuer/observer; organisation and capacity; method; event/observation time; recorded time; source reference; original/derived indicator; file/media hash where applicable; instrument/device/calibration reference where relevant; verification status and reviewer; limitations; access classification; retention rule; supersession/withdrawal links.
 
-## Claim-specific verification
-A source may be competent for one claim and not another. A calibrated scale may support a measured weight within its calibration scope; it does not establish product grade, origin, legal eligibility or buyer acceptance. A QR code resolves to a record; it is not proof of the underlying claim.
+## Integrity and lifecycle
+Preserve original artefact and metadata subject to lawful retention; derived evidence links to source evidence and transformation version. Record corrections as new versions with reason and actor. Revocation, expiry, dispute, withdrawal and supersession remain visible. Public projections expose only explicitly approved summaries.
 
-Never upgrade evidence automatically because a document was uploaded, a staff member reviewed a screen, or a device produced a reading.
+## Required tests
+Cross-axis independence; missing provenance; unauthorised issuer; expired evidence; altered file; duplicate evidence; stale measurement; contradictory evidence; reviewer conflict; access leakage; correction without history loss; evidence deletion/retention control.
