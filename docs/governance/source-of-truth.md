@@ -36,3 +36,5 @@
 7. Preserve superseded decisions and evidence; never silently rewrite history.
 
 A code comment, schema, UI label, README or ADR cannot overrule a governing product or sponsor decision.
+
+- Sponsor decisions D-01–D-07 detail: [approved-with-conditions decision record](sponsor-decisions-D01-D07.md).

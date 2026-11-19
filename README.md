@@ -78,3 +78,5 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [024-D candidate domain event catalogue](docs/api/024d-domain-event-catalogue.md)
 - [024-E journey crosswalk](docs/product/024e-journey-crosswalk.md)
 - [Counterparty validation checklist](docs/operations/checklists/counterparty-validation.md)
+
+- [Sponsor decisions D-01–D-07](docs/governance/sponsor-decisions-D01-D07.md) — approved with conditions; constraints, not live authorization.
