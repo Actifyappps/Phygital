@@ -80,3 +80,5 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [Counterparty validation checklist](docs/operations/checklists/counterparty-validation.md)
 
 - [Sponsor decisions D-01–D-07](docs/governance/sponsor-decisions-D01-D07.md) — approved with conditions; constraints, not live authorization.
+
+- [Documentation index](docs/README.md)

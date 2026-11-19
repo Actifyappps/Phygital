@@ -5,7 +5,8 @@
 | Source | Canonical location | Status / repository use |
 |---|---|---|
 | Concept Paper v1.1 — Governing Strategic Baseline | https://app.notion.com/p/afe6808bcd9e837c8636810cb305d97f | Strategic authority; staged phygital model; partner discussion draft |
-| Project Home (current) | https://app.notion.com/p/44c6808bcd9e825a9a640180d9c740c0 | Current programme index |
+| Project Home (current) | https://app.notion.com/p/44c6808bcd9e825a9a640180d9c740c0 | Master programme index; its current register links the 48 active/supporting/archive pages enumerated in this scan |
+| Project Home (superseded copy, 17 Nov 2026) | https://app.notion.com/p/4136808bcd9e81ee85fae12598711c67 | Superseded; current master is the 44c6808b… page |
 | Technical Development Manual v3.0 | https://app.notion.com/p/7ba6808bcd9e82be811781eca90484ce | Supporting plan; subordinate to Concept Paper; stack not selected |
 | 001 Strategic Baseline Audit | https://app.notion.com/p/20c6808bcd9e8342b1bd01f27b4820b7 | Validation and assumptions |
 | 002 Database & Inventory-Integrity Validation | https://app.notion.com/p/3ac6808bcd9e83b3a2b18175e9bb095b | Integrity and data findings |
@@ -43,7 +44,8 @@
 | 024-E Screen, Navigation & Interaction v0.1 | https://app.notion.com/p/41d6808bcd9e816d8acdce8763dedf25 | Screen requirements |
 | 024-F Security, Privacy, Threat & Abuse v0.1 | https://app.notion.com/p/41d6808bcd9e817d8d16d37bc31c063e | Draft security requirements |
 | 024-G Test Strategy & Acceptance Evidence v0.1 | https://app.notion.com/p/41d6808bcd9e81c78dfdfa7919489c30 | Draft; acceptance catalogue |
-| Archive — Superseded Phygital Working Versions | https://app.notion.com/p/5d66808bcd9e82cc8ac38123258c0bcc | Archive index; historical versions must not override current baseline |
+| Archive — Superseded Phygital Working Versions (current master index) | https://app.notion.com/p/5d66808bcd9e82cc8ac38123258c0bcc | Current archive index; historical versions must not override current baseline |
+| Archive — Superseded Phygital Working Versions (older index) | https://app.notion.com/p/4136808bcd9e81dea3e6ee7065c6994d | Historical archive index nested under superseded Project Home |
 | ARCHIVE — Earlier Concept Paper Draft | https://app.notion.com/p/7186808bcd9e8349bc5e8111e07ba1a6 | Historical only; Concept Paper v1.1 governs |
 | ARCHIVE — Development Manual v2 | https://app.notion.com/p/5316808bcd9e8319949301af85712150 | Historical only; v3.0 is current supporting manual |
 | ARCHIVE — Earlier Development Manual | https://app.notion.com/p/0586808bcd9e83eaaadb01254f1a3fde | Historical only |
