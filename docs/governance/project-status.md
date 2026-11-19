@@ -1,8 +1,10 @@
 # Project status and engineering holds
 
 **As of:** 19 November 2026  
-**Repository head at foundation baseline:** `15636b564671e74b77f506d3aee06a68f8d97057`  
-**Status:** governed repository foundation; no application implementation claimed.
+**Initial foundation commit:** `15636b564671e74b77f506d3aee06a68f8d97057`  
+**Latest verified `main` before this status update:** `2eb08edafb410b2c0fcbda015692f3788f6fa8d7`  
+**Repository verification:** 465 tree entries; 327 files; 138 directories; recursive tree complete; all root README links resolve; all substantive directories have README guidance.  
+**Status:** comprehensive, source-mapped repository architecture and engineering foundation; no production application implementation claimed.
 
 ## Current project state
 | Item | Status | Meaning |
