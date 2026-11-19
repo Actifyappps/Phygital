@@ -51,3 +51,14 @@ The platform is a multi-organisation B2B trade coordination and evidence system 
 See `docs/governance/repository-map.md` for the complete directory purpose, ownership boundaries, and what is intentionally dormant.
 
 **A folder, placeholder, specification, candidate script or unexecuted test is not implementation evidence.** Follow: Diagnose → isolate → change → test → regression-check → verify source → deploy only when authorised → verify runtime.
+
+
+## Repository navigation
+- [Notion-to-repository disposition map](docs/governance/notion-to-repository-map.md) — which programme documents deserve repository homes and where they belong.
+- [Complete source-document register](docs/governance/source-document-register.md) — canonical source links, status and hierarchy.
+- [024-R audit coverage matrix](docs/quality/024r-audit-coverage-matrix.md) — all 12 independent audit findings mapped to repository homes.
+- [Commerce and fee model](docs/commerce/service-catalogue-and-fee-model.md)
+- [Commodity/destination rule governance](docs/compliance/commodity-destination-rule-governance.md)
+- [Product withdrawal, recall and traceability](docs/product-integrity/withdrawal-recall-and-traceability.md)
+- [Marketplace trust and appeals](docs/marketplace-trust/trust-safety-and-appeals.md)
+- [Product outcomes and metrics](docs/measurement/product-outcomes-and-metrics.md)
