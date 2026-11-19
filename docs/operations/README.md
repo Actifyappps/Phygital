@@ -1,0 +1,2 @@
+# Operational playbooks
+Align procedures with approved pilot operating model and legal/commercial role map. Platform is coordinator, not assumed seller, exporter, custodian, payment intermediary or carrier.

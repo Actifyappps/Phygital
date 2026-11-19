@@ -1,0 +1,2 @@
+# Observability plan
+Specify structured logs, metrics, traces, alerts, audit, retention and access after architecture selection. Do not log secrets, personal data or full commercial documents. Distinguish platform state from provider assertions.

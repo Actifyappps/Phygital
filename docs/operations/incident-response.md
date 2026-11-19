@@ -1,0 +1,2 @@
+# Incident response template
+Record detection, reporter, environment/build, severity, affected data/workflows, containment, evidence preservation, communications authority, recovery, root cause, corrective actions and closure reviewer. Never expose credentials or personal data.

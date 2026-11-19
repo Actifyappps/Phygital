@@ -1,0 +1,2 @@
+# Provider contract template
+Provider/legal entity; service/scope; platform role/non-role; data exchanged/classification; auth/credential owner; versioned schemas; webhook signature/replay/idempotency; retries/timeouts; reconciliation/evidence; support; commercial/legal terms; sandbox; security/privacy review; approvals.

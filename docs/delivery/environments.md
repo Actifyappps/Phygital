@@ -1,0 +1,2 @@
+# Environments — pending approval
+Define local/test/staging/production under AADDG. Separate credentials, data and provider accounts. Use synthetic fixtures outside approved protected operations. Document promotion, rollback, drift and access ownership. No environment is declared provisioned here.

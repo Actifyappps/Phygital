@@ -1,0 +1,2 @@
+# Data boundaries
+Synthetic data only in source, tests, fixtures and screenshots. Classify public product data separately from private commercial, identity and financial evidence. Apply least privilege, purpose limitation, minimisation, retention, audit and secure deletion. Real operational data requires separately approved protected environments and controls.

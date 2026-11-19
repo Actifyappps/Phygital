@@ -1,0 +1,2 @@
+# Backup and restore
+No backup capability is claimed. Before production specify scope, frequency, encryption, access, retention, recovery objectives, restore procedure, integrity checks and independently evidenced restore rehearsals.

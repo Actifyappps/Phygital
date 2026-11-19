@@ -1,0 +1,2 @@
+# Data model and migrations
+024-C is authoritative, reconciled with 018-C and sponsor decisions. Migration 001 HOLD; Migration 002 not authorised. Do not place draft SQL in executable migration paths or deploy schema changes without release authority.

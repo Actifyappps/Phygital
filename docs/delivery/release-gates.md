@@ -1,0 +1,2 @@
+# Release gates
+Evidence must include build identity, requirement coverage, tests, security review, defects, migration/data status, rollback, operational readiness and approvals. EVI-21 and Level 1 defects remain open; Migration 001 remains HOLD; do not silently clear project holds.

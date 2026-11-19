@@ -1,0 +1,2 @@
+# Product specifications
+Authoritative requirements remain in approved Saintsway Equity Notion specifications, including 024 series and operating documents. Repository notes must be versioned and must not silently fork canonical specifications.

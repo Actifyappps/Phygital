@@ -1,0 +1,2 @@
+# Workflow state index
+024-B is authoritative for exact states, transitions, guards, actors and evidence. Do not invent states. Preserve one accepted quotation per order and quote-line linkage/commercial snapshot on order items.

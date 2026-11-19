@@ -1,0 +1,2 @@
+# Development workflow
+Trace requirement/decision; confirm authority, data classification and acceptance; inspect holds; make smallest coherent change; add tests/docs; execute checks with evidence; regression/security-negative test; review diff and source; obtain independent acceptance; deploy only to authorised environment; verify exact runtime build.

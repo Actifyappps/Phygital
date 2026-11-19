@@ -1,0 +1,2 @@
+# Pilot readiness
+Requires validated commodity/destination, buyer and producer evidence, independently authorised seller/exporter, approved hub scope, legal/regulatory route, provider agreements, commercial terms, documents and 024-G acceptance. One-batch baseline. No live operation until explicit gates pass.

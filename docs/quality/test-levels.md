@@ -1,0 +1,2 @@
+# Test levels
+Static analysis; unit/domain; database constraints/transactions; API/contracts; integration; authorisation/tenant security; end-to-end browser; accessibility/responsive; performance/resilience; backup/restore; independent acceptance. Record actual execution only.

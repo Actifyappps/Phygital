@@ -1,0 +1,2 @@
+# Status vocabulary
+Proposed ≠ Specified ≠ Implemented ≠ Executed ≠ Passed ≠ Reviewed ≠ Accepted ≠ Deployed ≠ Verified in production. Each status needs its own evidence. A placeholder is not implementation; a successful build is not acceptance.

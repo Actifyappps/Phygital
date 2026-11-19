@@ -1,0 +1,2 @@
+# Code of Conduct
+Contributors must act respectfully and professionally. Harassment, discrimination, intimidation, retaliation and abusive conduct are unacceptable. Raise concerns privately with maintainers.

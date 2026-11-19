@@ -1,0 +1,2 @@
+# Evidence and acceptance
+Trace evidence to requirement and test case. Record environment, commit/build identity, synthetic data, procedure, expected/actual result, artefact, defects, reviewer and authority. Planned/scripted/executed/passed/reviewed/accepted are distinct. Logic harness is not browser test; browser test is not independent review; build success is not acceptance.

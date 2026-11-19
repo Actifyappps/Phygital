@@ -1,0 +1,2 @@
+# Source-of-truth hierarchy
+Approved sponsor decisions and operating specifications govern business authority. 024 series governs digital requirements and acceptance. AADDG governs engineering lifecycle. TSBBF governs technology selection. ADRs record engineering decisions within those boundaries. Code implements decisions; it cannot silently amend them. Stop and escalate conflicts.

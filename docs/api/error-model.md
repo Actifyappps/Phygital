@@ -1,0 +1,2 @@
+# Error model — proposal
+Define after 024-D reconciliation. Distinguish validation, unauthenticated, forbidden, not found, conflict/state transition, rate limit, dependency unavailable and unexpected failure. Never leak secrets or sensitive records.

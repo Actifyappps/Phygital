@@ -1,0 +1,2 @@
+# Security policy
+Use synthetic data only. Never commit credentials, tokens, private keys, production exports or personal/commercial data. Enforce authorisation server-side and at the database boundary where supported. Treat uploads, webhooks, integrations and user identifiers as untrusted. Report vulnerabilities privately to maintainers. This scaffold is not a completed threat assessment or production security approval.

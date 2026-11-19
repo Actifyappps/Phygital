@@ -1,0 +1,2 @@
+# Integrations
+Provider adapters are optional and evidence-gated. No provider selected. Each requires approved contract, legal/operational owner, security assessment, credential scope, sandbox tests, idempotency/replay, reconciliation and failure procedures.

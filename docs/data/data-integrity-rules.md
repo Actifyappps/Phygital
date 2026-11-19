@@ -1,0 +1,2 @@
+# Data integrity obligations
+Preserve batch provenance; prevent duplicate/excess allocation under concurrency; allocation is reservation only; each order links one accepted quote and accepted lines; preserve commercial snapshot; validate authorised state changes; make external events idempotent; reconcile units, grades, quantities, currencies and timestamps.

@@ -1,0 +1,2 @@
+# Acceptance catalogue index
+Maintain requirement-linked cases aligned with 024-G. Each case specifies actor/authority, preconditions, synthetic fixtures, action, expected state, denied paths, evidence and result. Not a replacement for canonical 024-G catalogue.

@@ -1,0 +1,2 @@
+# ADR-0004 Data and file storage
+**Status: OPEN.** Database/object storage unselected. Must support traceability, access control, auditability, integrity, backup/restore and private-by-default documents.

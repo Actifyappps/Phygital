@@ -1,0 +1,2 @@
+# API and integration contracts
+024-D is authoritative. No endpoint, payload, authentication scheme or provider is approved by a placeholder. Record versioning, idempotency, errors, rate limits, security, audit and compatibility.

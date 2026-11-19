@@ -1,0 +1,2 @@
+# ADR-0001 Technology baseline
+**Status: OPEN.** No stack selected. Required TSBBF evidence: functional/non-functional fit; security/privacy; TCO; support/reliability; maintainability/team skills; portability; integration fit; pilot speed; AADDG deployment evidence. Do not hard-code an unapproved baseline.

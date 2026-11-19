@@ -1,0 +1,2 @@
+# User journeys index
+Candidate journeys: platform operator; producer/cooperative; independently authorised seller; independently authorised exporter; service hub; buyer; reviewer/verifier; provider. Map to 024-A/B/E. These are not confirmation that all roles or journeys are approved for pilot.

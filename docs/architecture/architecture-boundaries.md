@@ -1,0 +1,2 @@
+# Architecture boundaries
+Platform coordinates verified supply, enquiry, quotation, order, documents and status evidence. It does not assume seller/exporter/custodian/payee/carrier authority. Producer/cooperative seller and exporter are distinct capacities. Hub is service-only unless a separately approved model says otherwise. Allocation is reservation, not movement. Recorded payment status is not platform receipt of funds. Fail closed when authority/evidence is absent. Prefer smallest reliable architecture justified by pilot evidence.

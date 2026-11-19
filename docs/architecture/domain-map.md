@@ -1,0 +1,2 @@
+# Provisional domain map
+Identity/organisations; roles/authority; producer profiles; products/specifications; supply lots/batches; hub services; verification; buyers/enquiries; quotations; orders/order items; reservations; documents; shipment milestones; payment instructions/status; communications; audit/reporting; provider adapters. This is a planning map, not an approved schema or MVP commitment.

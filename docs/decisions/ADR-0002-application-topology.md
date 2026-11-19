@@ -1,0 +1,2 @@
+# ADR-0002 Application topology
+**Status: OPEN.** No monolith/modular monolith/service topology selected. Decide after domain boundaries, operating load, reliability and TSBBF evidence. Avoid premature microservices.

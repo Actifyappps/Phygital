@@ -1,0 +1,2 @@
+# Security engineering
+Implement and test 024-F: authentication, authorisation, tenant isolation, private documents, audit, webhook verification, rate limits, abuse controls and incident response. No real data or secrets in Git.

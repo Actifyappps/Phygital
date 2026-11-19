@@ -1,0 +1,2 @@
+# Access-control tests
+Derive from 024-A/F. Test unauthenticated access, wrong-tenant reads/writes, role escalation, revoked membership, unpublished records, private documents, reviewer authority limits and provider scopes. Retain redacted request/response evidence.

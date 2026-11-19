@@ -1,0 +1,2 @@
+# ADR-0003 Identity and authorisation
+**Status: OPEN.** Identity provider unselected. Must implement 024-A/024-F, tenant isolation, least privilege and distinct platform, producer, seller, exporter, hub, buyer, reviewer and provider authority. UI visibility is not authorisation.

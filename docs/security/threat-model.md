@@ -1,0 +1,2 @@
+# Initial threat register
+Threat surfaces: account takeover; role escalation/cross-tenant access; forged/reused supply evidence; batch over-allocation; quote/order tampering; document disclosure/malware; webhook spoof/replay; false payment status; credential leakage; backup loss. Expand into assets, trust boundaries, actors, likelihood/impact, mitigations, residual risks and owners before release.

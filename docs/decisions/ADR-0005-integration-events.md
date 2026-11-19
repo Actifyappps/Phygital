@@ -1,0 +1,2 @@
+# ADR-0005 Integration and events
+**Status: OPEN.** No provider selected. Contracts must define legal owner, scope, authentication, idempotency, retries, timeouts, webhook verification, reconciliation, observability and failure handling.

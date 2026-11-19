@@ -1,0 +1,2 @@
+# Product scope
+Core loop: verified supply → buyer enquiry → quotation → order → documents → shipment/payment tracking. Validate commodity, route, buyers, producer groups, seller/exporter authority, hub service scope, providers, regulation and commercial model before operational commitments. Advanced measurement, blockchain, escrow and AI features are phase-gated.

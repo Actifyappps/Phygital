@@ -1,0 +1,2 @@
+# Contributing
+Trace every change to a governing requirement, decision and acceptance criterion. Do not resolve open architecture decisions implicitly. Use synthetic data. Add/update tests and evidence. Submit focused changes. No live trade, payment, custody, dispatch or shipment capability may be activated without explicit release gates. A passing build is not acceptance.

@@ -1,0 +1,2 @@
+# Technology decision status
+OPEN. Candidate proposals differ; TSBBF assessment must compare functional fit, security, lifecycle cost, reliability, maintainability, team capability, portability and pilot suitability. Do not infer a stack from web/, packages/, supabase/ or workers/. ADR-0001 records the decision when approved.
