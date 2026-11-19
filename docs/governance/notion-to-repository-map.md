@@ -114,3 +114,31 @@ When a Notion source changes:
 4. Update domain, data, API, UI, security, tests, runbooks and ADRs only where impacted.
 5. Preserve prior decisions, test evidence and commit history.
 6. Never close a Notion evidence item or programme gate solely because a repository file was added.
+
+
+
+## 8. Additional source-level reconciliation (19 November 2026)
+
+| Source / record | Repository disposition | Exact home / treatment |
+|---|---|---|
+| 018 parent — Migration 001 Schema Inventory, ERD & Design Conformance Review | Migration provenance and governance index | `docs/data/`, `evidence/`; retain its relationship to 018-A/B/C and do not treat source schema as approved target schema. |
+| Notion Migration 001 Candidate Schema page | Preserve source under explicit HOLD | `supabase/candidates/migration-001-hold/migration_001_candidate.sql`; not in active migrations. |
+| Notion Migration 001 Smoke & Constraint Tests page | Preserve source under explicit HOLD | `supabase/candidates/migration-001-hold/migration_001_tests_candidate.sql`; inspected, not executed. |
+| Database Acceptance Checklist — Migration 001 | Preserve as test plan | `supabase/candidates/migration-001-hold/database_acceptance_checklist.md`; not a test result. |
+| Migration 001 source-provenance record | Hash/lineage index | `docs/data/migration-001-source-provenance.md`; original checksums and HOLD status. |
+| 024-C — ten information domains and 65 logical entities | Dedicated full entity-to-context crosswalk | `docs/domain/024c-entity-to-context-crosswalk.md`; each ENT-001–ENT-065 has one primary repository owner. |
+| 024-B — WF-01–WF-18 and BR-001–BR-034 | Workflow and business-rule crosswalk | `docs/product/workflow-to-context-crosswalk.md`; links rules to bounded contexts. |
+| 024-D — API contract groups and API-OD-01–12 | API contract map | `docs/api/024d-contract-domain-map.md`; logical contracts only, unresolved decisions remain open. |
+| 024-E — six product surfaces and six journeys | Surface/navigation requirements | `docs/product/surface-and-navigation-map.md`; seller/exporter capacity is not an extra implicit role portal. |
+| 024-F — SEC-001–020 and ST-01–24 | Security control/test crosswalk | `docs/security/024f-control-and-test-crosswalk.md`; requirements only, not security acceptance. |
+| 024-G — QAT-001–QAT-036 | Product acceptance crosswalk | `docs/quality/024g-test-catalogue-crosswalk.md`; cases not executed by being documented. |
+| AADDG v1.0 and TSBBF v1.0 | Engineering operating and technology decision standards | `docs/delivery/actify-engineering-operating-standards.md`; company standards applied as project controls without implying selected hosting/backend. |
+| Deliverable 023 / Level 1 prototype v0.4 | Preserve controlled synthetic prototype | `tests/prototypes/level1/`; checksum recorded; browser rehearsal and independent acceptance remain open. |
+
+### Repository treatment of 024-C's ten information domains
+
+The repository uses bounded contexts rather than a one-folder-per-document scheme. The ten logical IA domains are preserved and mapped in the crosswalk; the 65 entities are assigned a primary owner. New package boundaries (marketplace, quotations-orders, cases, offline-sync and privacy) are refinements of 024-C logical ownership, not additional product scope or microservices.
+
+### Current specification authority and status
+
+024 v0.1d and 024-A v0.1b through 024-G v0.1 are draft specifications for sponsor, technical, operational and specialist review. 024-R's 12 findings are mapped but not closed by repository documentation. 024-H is not confirmed as completed; 024-I is not justified by 024-R; 025 was referenced but not located; 026 wireframes remain conditional. No code folder, package or crosswalk changes these statuses.

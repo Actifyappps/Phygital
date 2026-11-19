@@ -44,8 +44,19 @@
 | 024-G Test Strategy & Acceptance Evidence v0.1 | https://app.notion.com/p/41d6808bcd9e81c78dfdfa7919489c30 | Draft; acceptance catalogue |
 | 024-R Independent Product Completeness Audit | https://app.notion.com/p/41d6808bcd9e8185bbaacd12d1d15eee | Audit completed; corrective actions proposed, not sponsor approval |
 
+
+| 018 Migration 001 Schema Inventory, ERD & Design Conformance Review | https://app.notion.com/p/4136808bcd9e816b8cfaf33b338d5118 | Parent migration schema review; source description only |
+| Migration 001 Candidate Schema (Notion page) | https://app.notion.com/p/f046808bcd9e83a2936881b0bc26fa90 | Candidate SQL source; HOLD; preserved under `supabase/candidates/migration-001-hold/` |
+| Migration 001 Smoke & Constraint Tests (Notion page) | https://app.notion.com/p/cc46808bcd9e83fbb7d98164d18f2911 | Test script inspected, not executed; preserved under HOLD candidate directory |
+| Database Acceptance Checklist — Migration 001 | https://app.notion.com/p/ca96808bcd9e8261b00b817073f6c9f9 | Test plan only; not evidence of PostgreSQL execution |
+| AADDG v1.0 — GitHub → Supabase → Vercel Operating Standard, including Level 1 extensions | Actify Inc. internal Library source; application note: `docs/delivery/actify-engineering-operating-standards.md` | Company engineering lifecycle standard; selected backend/deployment may differ after TSBBF and approved ADR |
+| TSBBF v1.0 — Technology Selection & Build-vs-Buy Framework (ratified 31 October 2026) | Actify Inc. internal Library source; application note: `docs/delivery/actify-engineering-operating-standards.md` | Company technology decision standard; evidence-based and risk-gated |
+| Level 1 local prototype v0.4 | Library source file `Phygital_Level1_Local_Prototype_v0_4.html`; committed at `tests/prototypes/level1/Phygital_Level1_Local_Prototype_v0_4.html` | Synthetic-only local rehearsal utility; not a browser pass or production application |
+| EVI-21 v0.4 source review and browser launch attempt | https://app.notion.com/p/41c6808bcd9e81428cf5d6fa2b94f2e9 | Candidate v0.4 reviewed; browser rehearsal not completed; EVI-21 remains OPEN |
+
 ## Source conflicts and open items
-- 024-R is an assistant-authored cross-document audit, not independent external assurance.
+- 024-R is an assistant-authored cross-document adversarial review, not independent external assurance.
+- Developer Guide v0.1 (17 November 2026) is referenced in project work but was not located as a canonical Notion page or Library file in this pass; its exact source location/version must be reconciled before treating it as an independently verified source. The current repo reflects only the documented constraints already carried forward in the working programme record.
 - 024-A–G are draft review specifications; none is production authorisation.
 - 024-R identifies 12 findings F-01–F-12. Repository mapping does not close them.
 - 024-R references a 025 commercial deliverable that was not located in the workspace search. The commercial repository home is a proposed holding area, not confirmation that 025 exists or is approved.
