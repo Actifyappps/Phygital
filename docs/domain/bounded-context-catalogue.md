@@ -52,3 +52,21 @@
 
 ## Initial pilot profile
 The pilot is constrained to the approved evidence path and one-batch starting assumption. Keep service-only hub, separate seller/exporter capacities, reservation-not-movement, single accepted quote per order, direct buyer-to-seller payment, and no platform-held funds as hard invariants. Every extension requires a documented gate and evidence.
+
+
+## Mapping to 024-C's ten information domains
+
+The 024-C specification groups its 65 logical entities into ten information domains (IA-01–IA-10). The repository deliberately refines those ten broad domains into implementation ownership contexts without changing the logical authority. See [the complete 65-entity crosswalk](024c-entity-to-context-crosswalk.md).
+
+| 024-C domain | Repository contexts |
+|---|---|
+| IA-01 Identity, organisations and authority | identity, organisations, authority, privacy, hub-services |
+| IA-02 Product, commodity and rules | catalogue, compliance-rules |
+| IA-03 Supply, batch and physical service evidence | supply, hub-services, measurement, inventory |
+| IA-04 Evidence and documents | evidence, documents |
+| IA-05 Marketplace discovery and demand | marketplace, buyer-requirements |
+| IA-06 Commercial offer and order | quotations-orders, commercial |
+| IA-07 Reservation, movement and fulfilment | inventory, fulfilment |
+| IA-08 External payment and reconciliation | payment-status |
+| IA-09 Trust, exceptions and operations | marketplace-trust, cases, product-integrity, offline-sync |
+| IA-10 Audit, reporting and governance | audit, measurement; programme gates in `docs/governance/` |

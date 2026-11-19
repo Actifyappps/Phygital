@@ -62,3 +62,9 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [Product withdrawal, recall and traceability](docs/product-integrity/withdrawal-recall-and-traceability.md)
 - [Marketplace trust and appeals](docs/marketplace-trust/trust-safety-and-appeals.md)
 - [Product outcomes and metrics](docs/measurement/product-outcomes-and-metrics.md)
+
+- [024-C 65-entity crosswalk](docs/domain/024c-entity-to-context-crosswalk.md) — maps every logical entity to a repository owner.
+- [Bounded-context catalogue](docs/domain/bounded-context-catalogue.md) — reconciles the ten 024-C information domains to engineering contexts.
+- [Inventory integrity remediation matrix](docs/data/inventory-integrity-control-matrix.md)
+- [Migration 001 candidate (HOLD)](supabase/candidates/migration-001-hold/README.md)
+- [Level 1 v0.4 prototype](tests/prototypes/level1/README.md)

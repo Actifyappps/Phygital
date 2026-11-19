@@ -1,0 +1,3 @@
+# Cases and operational support domain
+
+Owns case intake, triage, severity, accountable owner, evidence, containment, actions, escalation, communication, review and closure. Includes operational exceptions, support tickets, incidents and investigations. Product recalls remain owned by product-integrity; marketplace reports and appeals remain owned by marketplace-trust. Case records coordinate without rewriting source facts.

@@ -1,0 +1,3 @@
+# Quotations and orders domain
+
+Owns buyer/seller enquiry-to-quote conversion where appropriate, quote versions, quote lines, acceptance, order and order-item lineage, amendments and cancellations. Pilot constraint: one accepted quotation per order; every order item links to an accepted quote line and a commercial snapshot. Seller and exporter capacities remain separate; this context does not own payment custody.

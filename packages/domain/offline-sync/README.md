@@ -1,0 +1,3 @@
+# Offline device and synchronisation domain
+
+Owns managed device identity/lifecycle references, local action queues, sync receipts, idempotency, replay, conflict and revocation records. This is a high-risk capability; no offline write path is approved. Require device/user binding, secure local storage, clock-drift handling, queue expiry, duplicate protection and independent reconciliation before implementation.
