@@ -1,3 +1,3 @@
 # Infrastructure workspace
 
-Reserved for reviewed infrastructure and environment configuration. No cloud provider, production topology, network policy or deployment is selected by this directory. Secrets must never be committed.
+Reserved for reproducible environment and deployment definitions after TSBBF and ADR decisions. No hosting provider, database, cloud account, production environment or deployment is selected by directory presence.

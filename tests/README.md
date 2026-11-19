@@ -1,3 +1,3 @@
-# Test workspace
+# Test strategy and suite index
 
-Tests must map to 024-G and stable requirement IDs. Keep synthetic fixtures, unit, integration, contract, E2E, security, accessibility, offline/resilience, migration and recovery tests distinguishable. A test is PASS only when executed and evidenced in the identified environment.
+Test design follows 024-G and 024-F; 014 defines technical harness requirements; 021–023 govern the Level 1 rehearsal. Separate unit, contract, integration, end-to-end, security, accessibility, offline, performance, recovery and resilience evidence. No test is considered passed until executed against an identified build/environment and reviewed.

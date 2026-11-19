@@ -1,3 +1,3 @@
-# Synthetic fixtures
+# Test fixtures
 
-Synthetic data only by default. Fixtures must be clearly marked synthetic, reproducible, versioned and linked to the scenarios they support. Never copy real buyer, producer, identity, financial or shipment records into the repository without explicit authorisation and controls.
+Only synthetic, versioned, clearly labelled records belong here. Fixtures must never resemble or be represented as real producer supply, buyer demand, partner agreements, stock, payment, certification or shipment evidence.

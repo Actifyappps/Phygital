@@ -1,3 +1,3 @@
-# Scripts workspace
+# Automation scripts
 
-Scripts must be deterministic, documented, safe by default and reviewed. State prerequisites, target environment, side effects, dry-run mode, failure behaviour and output evidence. Never include secret values or destructive production defaults.
+Scripts must be reproducible, reviewable, safe by default and documented with exact inputs/outputs. No destructive production operation, secret exposure or unapproved migration execution.

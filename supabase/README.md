@@ -1,3 +1,3 @@
-# Conditional database-platform workspace
+# Supabase workspace — not selected
 
-This directory is reserved for a possible database-platform implementation under the engineering standard. Its presence does not select or activate Supabase. Migration 001 remains HOLD; Migration 002 is not authorised. Do not place candidate SQL in executable migration paths or run against a persistent project without explicit approval.
+This folder is a reserved implementation location under AADDG. Supabase is a candidate/default in the company operating standard, but the Phygital stack remains OPEN pending TSBBF and ADR approval. Do not provision or apply migrations based on this directory.

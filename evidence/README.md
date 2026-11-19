@@ -1,3 +1,3 @@
-# Evidence repository
+# Evidence workspace
 
-Store only authorised, minimised, appropriately classified and redacted evidence. Every item needs a stable ID, source, date, scope, environment/build, checksum where applicable, owner role, reviewer, limitations and retention rule. Raw evidence is immutable; corrections create a linked superseding item. Do not store secrets or unnecessary real personal/commercial data.
+GitHub stores only sanitised, synthetic or otherwise explicitly approved technical evidence. The live Phase 0 Evidence Register remains in Notion. A test artifact is not a closed programme evidence item until the authorised reviewer accepts it.

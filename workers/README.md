@@ -1,3 +1,3 @@
-# Background processing workspace
+# Background workers
 
-Reserved for approved asynchronous jobs and scheduled tasks. Define ownership, idempotency, retry/backoff, dead-letter handling, observability, data scope and replay safety before implementing a worker. Do not use workers to bypass workflow approvals or external authority checks.
+Reserved for approved asynchronous tasks, provider callbacks, notifications, reconciliation and scheduled processing. Every worker needs least-privilege identity, idempotency, retries, dead-letter handling, observability and an accountable owner.
