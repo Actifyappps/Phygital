@@ -69,3 +69,22 @@ When a canonical source changes:
 4. Update traceability, ADRs, domain/data/API/UI/security/test/operations artefacts as applicable.
 5. Preserve previous implementation and evidence history; rerun affected tests.
 6. Do not mark a programme gate closed based solely on repository changes.
+
+
+## Earlier validation and database-design records
+
+These records remain relevant background and evidence lineage. Their findings and status must be reconciled against the later 018-A decisions, 024 series and current project status before implementation.
+
+| Record | Purpose | Current treatment |
+|---|---|---|
+| [001 — Strategic Baseline Audit](https://app.notion.com/p/20c6808bcd9e8342b1bd01f27b4820b7) | Early strategic baseline challenge | Historical audit; later governing baseline is Concept Paper v1.1 |
+| [002 — Database & Inventory-Integrity Validation](https://app.notion.com/p/3ac6808bcd9e83b3a2b18175e9bb095b) | Early data/inventory integrity validation | Retain findings; reconcile to 018-A and 024-C |
+| [003 — Commercial & Operational Assumption Validation](https://app.notion.com/p/5846808bcd9e820a9b760191453e2542) | Commercial and operating assumptions | Evidence source; assumptions are not confirmations |
+| [004 — Pilot Feasibility & Kenya-Specific Compliance Validation](https://app.notion.com/p/0a66808bcd9e8360842b81448e1ab292) | Kenya-specific pilot/compliance investigation | Evidence source; not a legal clearance |
+| [005 — Consolidated Baseline Validation & Phase 0 Go/No-Go](https://app.notion.com/p/d626808bcd9e82bc9d71815cf76cd0f8) | Consolidated baseline and Phase 0 gate assessment | Retain current status and reconcile later decisions |
+| [006 — Phase 0 Evidence Register & Workstream Assignment](https://app.notion.com/p/e956808bcd9e83ae9d770107388bed06) | Evidence workstream and ownership planning | Roles remain roles until appointments are confirmed |
+| [007 — Buyer & Producer Validation Instruments](https://app.notion.com/p/3bd6808bcd9e831a864f81f81cdd3893) | Buyer/producer discovery instruments | Use to acquire evidence; responses do not automatically establish commitment |
+| [018 — Migration 001 Schema Inventory, ERD & Design Conformance Review](https://app.notion.com/p/4136808bcd9e816b8cfaf33b338d5118) | Review of candidate Migration 001 schema | Migration 001 remains HOLD |
+| [Migration 001 Database Acceptance Checklist](https://app.notion.com/p/ca96808bcd9e8261b00b817073f6c9f9) | Candidate migration acceptance criteria | Not evidence of execution or acceptance |
+| [Migration 001 Candidate SQL](https://app.notion.com/p/f046808bcd9e83a2936881b0bc26fa90) | Candidate database migration source | Do not activate or place in executable migration path while HOLD |
+| [Migration 001 Smoke & Constraint Tests](https://app.notion.com/p/cc46808bcd9e83fbb7d98164d18f2911) | Candidate smoke/constraint test suite | Test artefact; execution evidence must be separately recorded |
