@@ -3,7 +3,7 @@
 **Disposition:** PRESERVED FOR REVIEW ONLY. NOT AN ACTIVE MIGRATION. DO NOT EXECUTE AGAINST ANY SHARED, STAGING OR PRODUCTION DATABASE.  
 **Governing review:** Deliverables 002, 014, 015, 016, 017, 018-B and 018-C.  
 **Source migration SHA-256:** `24d8f3458106e8a005cd05a7ecf9f057b4aee955b325358392b501de54c74ccd`.  
-**Source test SHA-256:** `4b4c7c6b4c2be00ec5151f9466bb0365c39d8e9a53d91c009ed` (verify against the source record before any later reuse).
+**Source test SHA-256:** `4b4c7c6b4c2be00ec5151f9466bb0365c39d8e9a53d91c009edab10bc432dad6` (verify against the source record before any later reuse).
 
 ## Why this is outside the active migrations directory
 Migration 001 is a reviewed candidate, not an accepted technical baseline. Static reviews identified critical cross-record integrity gaps, incomplete authorisation and audit protections, unproven concurrency behaviour, incomplete event provenance/idempotency, and operational/migration controls requiring remediation. PostgreSQL execution was not performed in the cited reviews.
