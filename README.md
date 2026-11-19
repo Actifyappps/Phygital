@@ -40,11 +40,12 @@ The platform is a multi-organisation B2B trade coordination and evidence system 
 ## Start here
 1. `docs/governance/project-status.md`
 2. `docs/governance/source-of-truth.md`
-3. `docs/governance/requirements-traceability.md`
-4. `docs/architecture/repository-architecture.md`
-5. `docs/decisions/README.md`
-6. `docs/delivery/development-workflow.md`
-7. `docs/quality/evidence-and-acceptance.md`
+3. `docs/governance/source-document-register.md`
+4. `docs/governance/requirements-traceability.md`
+5. `docs/architecture/repository-architecture.md`
+6. `docs/decisions/README.md`
+7. `docs/delivery/development-workflow.md`
+8. `docs/quality/evidence-and-acceptance.md`
 
 ## Repository map
 See `docs/governance/repository-map.md` for the complete directory purpose, ownership boundaries, and what is intentionally dormant.
