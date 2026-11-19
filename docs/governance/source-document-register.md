@@ -17,7 +17,8 @@
 | 008 Commodity & Destination Screening Framework | https://app.notion.com/p/3a96808bcd9e8266884b813a7606f012 | Rule and route screening |
 | 009 Legal & Commercial Role Map and Funds-Flow | https://app.notion.com/p/b246808bcd9e82608c2481bd7d9e1849 | Working role/funds-flow map; reconcile to 018-A |
 | 010 Hub & Facility Readiness Assessment | https://app.notion.com/p/88c6808bcd9e82f7a96401215970f467 | Candidate facility capability; no appointment |
-| 011 Pilot Operating Model & End-to-End Service Blueprint | https://app.notion.com/p/4136808bcd9e8129ba16efca2640ef2b | Working operating model; not approved SOP |
+| 011 Pilot Operating Model & End-to-End Service Blueprint | https://app.notion.com/p/dfe6808bcd9e82ebb7a201abdbb64836 | Current Project Home-linked record; proposed operating design, not approved SOP |
+| 011 reconstructed duplicate | https://app.notion.com/p/4136808bcd9e8129ba16efca2640ef2b | Earlier reconstructed copy; preserve as history, do not treat as parallel operating authority |
 | 012 Phase 0 Execution & Evidence Acquisition Plan | https://app.notion.com/p/4136808bcd9e81e8ae9cee40b3df1d96 | Discovery and evidence acquisition |
 | 013 Buyer, Producer, Hub & Provider Validation Pack | https://app.notion.com/p/4136808bcd9e81f092c7d480961f3fa4 | Proposed discovery instruments |
 | 014 Technical Test Harness & End-to-End Simulation | https://app.notion.com/p/4136808bcd9e81e0bb13f2ea26004dd1 | Test specification; not execution proof |

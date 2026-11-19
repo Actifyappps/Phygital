@@ -39,7 +39,7 @@ A Notion document number is not automatically a repository folder, package, serv
 | 008 Commodity & Destination Screening Framework | Dedicated rule-governance section | `docs/compliance/commodity-destination-rule-governance.md`; rule lifecycle, source authority, versioning and hard-stop handling. |
 | 009 Legal & Commercial Role Map and Funds-Flow | Integrate into authority and commerce | `docs/domain/`, `docs/commerce/`, `docs/data/`; reconcile older role proposals to 018-A D-01–D-07. |
 | 010 Hub & Facility Readiness Assessment | Dedicated operations/facility capability | `docs/operations/`; hub capability, permission, safety, service boundary, staffing and cost; no assumed appointment or custody. |
-| 011 Pilot Operating Model & End-to-End Service Blueprint | Dedicated operating model + workflow mapping | `docs/operations/`, `docs/product/`, `docs/domain/`; digital workflows remain subordinate to the physical operating model and authority. |
+| 011 Pilot Operating Model & End-to-End Service Blueprint (current Project Home link: dfe6808b…) | Dedicated operating model + workflow mapping | `docs/operations/`, `docs/product/`, `docs/domain/`; digital workflows remain subordinate to the physical operating model and authority. The reconstructed 4136808b… copy is retained as history, not a parallel authority. |
 | 012 Phase 0 Execution & Evidence Acquisition Plan | Governance/evidence index and workstream planning | `docs/governance/`, `evidence/`; do not convert indicative days into delivery commitments. |
 | 013 Buyer, Producer, Hub & Provider Validation Pack | Discovery/qualification templates | `docs/operations/checklists/`, `fixtures/`, `evidence/`; no real participant data in public repo. |
 | 014 Technical Test Harness & End-to-End Simulation | Dedicated executable test/evidence framework | `tests/`, `fixtures/`, `scripts/quality/`, `evidence/`; specification is not proof of execution. |
@@ -102,7 +102,7 @@ A Notion document number is not automatically a repository folder, package, serv
 - Use the current Project Home under the Saintsway Equity workspace as the current programme index.
 - Where two Notion pages share a title/number, use the page linked from the current Project Home/document register; preserve the other as history until the project owner formally retires it.
 - Archived Concept Paper and Development Manual versions are historical evidence only. Do not import their former microservices, Tailwind, blockchain, escrow or provider assumptions as current decisions.
-- The two 011 records and duplicated migration acceptance/test records require canonical-page confirmation before any future Notion update. Their content is not a reason to create duplicate repository modules.
+- The current Project Home links to 011 page `dfe6808b…`; the reconstructed `4136808b…` copy is retained as history. The current Project Home also links to the canonical Migration 001 candidate schema, smoke-test and acceptance-checklist pages; their content is preserved under the explicit repository HOLD directory, not as active migrations.
 - Do not copy whole Notion pages into GitHub by default. Implement the durable requirements in the correct source-controlled artefact and retain a source/version link and traceability ID.
 
 ## 7. Maintenance procedure
