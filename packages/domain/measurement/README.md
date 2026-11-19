@@ -1,3 +1,3 @@
-# Measurement and outcomes domain
+# Measurement domain
 
-Owns metric definitions, calculation provenance, baselines, aggregation and outcome reporting. Keep activity metrics distinct from buyer/producer outcomes and protect sensitive commercial/personal data.
+Owns measurement observations, instrument/device metadata, calibration references, units, method, operator and provenance. A device reading is not automatically independent verification, grading, certification or legal clearance. Keep evidence class separate from acquisition provenance.

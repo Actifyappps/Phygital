@@ -1,0 +1,3 @@
+# Authority and mandates domain
+
+Owns role assignments, legal/operational capacities, mandates, delegation, validity, revocation and authorisation decisions. Permission must be evaluated as an explicit tuple (actor, organisation, capacity, action, resource, scope, time, status, conditions). Seller and exporter capacities are independent; no automatic fallback. Authentication and membership are necessary but not sufficient.

@@ -1,3 +1,3 @@
 # Marketplace trust domain
 
-Owns reports, abuse cases, listing integrity signals, temporary restrictions, human review, appeals and reinstatement. Keep security enforcement primitives in the security/application layer and preserve fair-process controls.
+Owns listing integrity signals, user reports, impersonation/fraud concerns, moderation cases, restrictions, reasons, appeals and outcomes. Does not rewrite source batch, evidence or compliance facts. Moderation decisions require scoped authority, reason and audit.

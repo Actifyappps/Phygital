@@ -1,3 +1,3 @@
 # Product integrity domain
 
-Owns batch-linked holds, quarantine, withdrawal, recall cases, trace-forward/trace-back, corrective action and authorised release. It coordinates with batch lineage, listing, order, allocation and shipment contexts. No legal recall authority is implied.
+Owns holds, withdrawal, recall, trace-forward/back, affected batch/order/customer relationships, actions, notifications and closure evidence. Preserve history; never silently delete or rewrite a listing or batch to hide an incident.

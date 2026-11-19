@@ -1,3 +1,3 @@
 # Commercial services domain
 
-Owns service catalogue, fee quotes/calculations, billing references, refunds/adjustments, revenue shares and producer-proceeds presentation only after the commercial model is approved. It must not become a platform wallet or funds-custody module under current D-07.
+Owns service catalogue, fee schedule, payer/payee roles, billing records, adjustments, credits and producer net-proceeds calculation snapshots. Separate platform service fees from the underlying sale price and sale proceeds. No funds custody is implied. Historical orders retain accepted terms and fee versions.
