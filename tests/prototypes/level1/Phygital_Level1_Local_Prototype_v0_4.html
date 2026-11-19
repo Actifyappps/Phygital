@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phygital Level 1 Readiness Rehearsal — Local Prototype v0.4</title>
+<style>
+:root{--ink:#18232d;--muted:#61717e;--line:#dce4e9;--paper:#f5f8fa;--white:#fff;--cyan:#00a6b2;--gold:#d5a52b;--red:#b42318;--green:#18794e;--blue:#245b86}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{background:#102a36;color:#fff;padding:22px max(18px,calc((100vw - 1200px)/2))}
+header h1{font-size:1.4rem;margin:0 0 5px}header p{margin:0;color:#d7e5ea}
+main{max-width:1200px;margin:20px auto;padding:0 16px 48px}
+.warning{border:2px solid var(--gold);background:#fff8e5;padding:13px 15px;border-radius:10px;margin-bottom:16px;font-weight:700}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.pill{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:99px;padding:4px 10px;font-size:.82rem;color:var(--muted)}
+nav{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0}.tab{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:8px;cursor:pointer;font-weight:650;color:var(--ink)}.tab.active{background:#dff5f6;border-color:var(--cyan)}
+.panel{display:none}.panel.active{display:block}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;grid-column:span 12;min-width:0}.half{grid-column:span 6}.third{grid-column:span 4}
+h2{font-size:1.15rem;margin:0 0 12px}h3{font-size:1rem;margin:0 0 8px}p{margin:7px 0}small,.muted{color:var(--muted)}
+.metric{font-size:1.7rem;font-weight:750}.metric-label{font-size:.83rem;color:var(--muted)}
+button{border:0;border-radius:8px;background:#0e6672;color:white;padding:9px 13px;font-weight:650;cursor:pointer;margin:4px 5px 4px 0}button.secondary{background:#e8eef1;color:#20323d;border:1px solid var(--line)}button.danger{background:#a62b24}button:disabled{opacity:.45;cursor:not-allowed}
+table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{text-align:left;padding:9px 7px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:650}
+label{display:block;font-size:.86rem;font-weight:650;margin:9px 0 4px}input,select,textarea{width:100%;border:1px solid #cbd6dd;border-radius:7px;padding:9px;font:inherit;background:#fff;color:var(--ink)}input[type=checkbox]{width:auto;margin-right:7px}textarea{min-height:75px;resize:vertical}
+.status{font-weight:700}.ok{color:var(--green)}.fail{color:var(--red)}.pending{color:#956500}
+.log{max-height:330px;overflow:auto;background:#f8fafb;border:1px solid var(--line);border-radius:8px;padding:10px;font:.82rem/1.5 ui-monospace,monospace;white-space:pre-wrap}
+.step,.test{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line)}.step input{width:auto;margin-top:5px}.step-main,.test-main{flex:1;min-width:0}
+.notice{padding:10px;border-radius:8px;background:#eef6fa;margin:8px 0}.notice.warn{background:#fff8e5}.notice.bad{background:#fff0ef}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.footer{margin-top:22px;color:var(--muted);font-size:.82rem}
+@media(max-width:720px){.half,.third{grid-column:span 12}.row{grid-template-columns:1fr}header{padding:18px}.metric{font-size:1.4rem}table{font-size:.82rem}}
+</style>
+</head>
+<body>
+<header>
+<h1>The Phygital Export Marketplace</h1>
+<p>Level 1 Digital Readiness Rehearsal · Local prototype v0.4</p>
+</header>
+<main>
+<div class="warning" id="syntheticBanner" role="alert">SYNTHETIC TEST ENVIRONMENT ONLY — No real producers, buyers, stock, money, certificates, orders, shipment or export activity. Do not enter personal or commercial data. This file works locally and makes no network calls.</div>
+<div class="meta"><span class="pill">Version 0.4</span><span class="pill">Offline / single-file</span><span class="pill">Status: NOT A PRODUCTION SYSTEM</span><span class="pill" id="runStatus">Run: NOT STARTED</span><span class="pill">16 workflow steps · 12 negative tests</span></div>
+<nav>
+<button class="tab active" data-tab="overview">Overview</button><button class="tab" data-tab="records">Test records</button><button class="tab" data-tab="workflow">16-step workflow</button><button class="tab" data-tab="controls">12 negative tests</button><button class="tab" data-tab="exceptions">Exceptions</button><button class="tab" data-tab="report">Evidence & report</button>
+</nav>
+
+<section id="overview" class="panel active">
+<div class="grid">
+<div class="card third"><div class="metric" id="metricSteps">0 / 16</div><div class="metric-label">Workflow steps reviewed</div></div>
+<div class="card third"><div class="metric" id="metricControls">0 / 12</div><div class="metric-label">Negative tests attempted</div></div>
+<div class="card third"><div class="metric" id="metricExceptions">0</div><div class="metric-label">Open exceptions</div></div>
+<div class="card half"><h2>Purpose and boundary</h2>
+<p>This local rehearsal checks whether synthetic participant, authority, batch, evidence, enquiry, quotation, order, allocation, exception and mock-dossier records can be linked and reconciled.</p>
+<p><b>In scope:</b> test-only records, batch arithmetic, evidence labels, private QR-style summary, draft quotation, simulated seller review, simulated order/allocation, mock shipment dossier, exception handling and audit events.</p>
+<p><b>Out of scope:</b> live onboarding, physical stock, public QR pages, real listings, contracts, payments, escrow, FX, customs, shipment, production deployment, authentication, database persistence and external integrations.</p></div>
+<div class="card half"><h2>Fixed synthetic fixture</h2><table>
+<tr><th>Record</th><td>BATCH-T-001</td></tr><tr><th>Product</th><td>PROD-T-001 / TEST-COMMODITY-01 / TEST-FORM-A</td></tr><tr><th>Declared quantity</th><td>100.000 kg</td></tr><tr><th>Held quantity</th><td>5.000 kg</td></tr><tr><th>Eligible simulated quantity</th><td>95.000 kg</td></tr><tr><th>Buyer request</th><td>80.000 kg</td></tr><tr><th>Expected remainder</th><td>15.000 kg</td></tr><tr><th>Quality</th><td><span class="pending">PENDING_TEST_EVIDENCE</span></td></tr></table></div>
+<div class="card"><h2>Run controls</h2><p>Start a fresh run, review all 16 steps, execute all 12 negative tests, record exceptions and export the observed run report. A test result is generated only by an attempted action and an assertion against the resulting state.</p>
+<button onclick="startRun()">Start / restart rehearsal</button><button class="secondary" onclick="go('workflow')">Go to workflow</button><button class="secondary" onclick="go('controls')">Go to negative tests</button><button class="secondary" onclick="go('report')">View report</button>
+<div class="notice warn">A successful local walkthrough is not external validation, legal approval, database acceptance, security certification or permission to trade. All checkboxes are operator attestations.</div></div>
+</div>
+</section>
+
+<section id="records" class="panel">
+<div class="grid">
+<div class="card half"><h2>Synthetic participants and authority</h2><table>
+<tr><th>Role</th><th>Test identity</th></tr><tr><td>Producer group</td><td>ORG-T-PROD-001 · TEST Producer Group Alpha</td></tr><tr><td>Service point</td><td>ORG-T-HUB-001 · TEST Service Point Alpha</td></tr><tr><td>Buyer</td><td>ORG-T-BUY-001 · TEST Wholesale Buyer Beta</td></tr><tr><td>Seller partner</td><td>ORG-T-SELL-001 · TEST Seller Partner Gamma</td></tr><tr><td>Operator</td><td>ORG-T-OP-001 · TEST Marketplace Operator</td></tr><tr><td>Provider</td><td>ORG-T-PROV-001 · TEST Inspection Provider Delta</td></tr><tr><td>Authority</td><td>AUTH-T-001 / AUTH-T-002 · NO REAL MANDATE</td></tr></table></div>
+<div class="card half"><h2>Batch quantity reconciliation</h2><table>
+<tr><th>Measure</th><th>Quantity</th></tr><tr><td>Declared intake</td><td>100.000 kg</td></tr><tr><td>Held / rejected</td><td>5.000 kg</td></tr><tr><td>Eligible simulated quantity</td><td id="eligibleQty">95.000 kg</td></tr><tr><td>Simulated allocation</td><td id="allocatedQty">0.000 kg</td></tr><tr><td>Remaining</td><td id="remainingQty">95.000 kg</td></tr></table><p class="muted">No physical inventory exists. Quantities are fixed synthetic test values.</p></div>
+<div class="card"><h2>Evidence classification</h2><table>
+<tr><th>Evidence ID</th><th>Class</th><th>Meaning</th></tr><tr><td>EVD-T-001 / 002</td><td>DECLARED</td><td>Synthetic participant / authority records; no real mandate.</td></tr><tr><td>EVD-T-003 / 004</td><td>HUB-RECORDED</td><td>Simulated intake and hold entries.</td></tr><tr><td>EVD-T-005</td><td>PENDING</td><td>Quality evidence not verified.</td></tr><tr><td>EVD-T-006</td><td>TEST ONLY</td><td>Buyer specification fixture; incomplete by default.</td></tr><tr><td>EVD-T-007</td><td>SIMULATED</td><td>Seller review approval for simulation only.</td></tr><tr><td>EVD-T-008</td><td>MOCK</td><td>Fictional inspection record; never an official certificate.</td></tr></table>
+<div class="notice">The positive path allows the operator to mark a synthetic specification fixture complete for testing. It remains a fictional test record, not a buyer instruction or commercial specification.</div>
+</div>
+<div class="card"><h2>Controlled test fixture settings</h2>
+<div class="row"><div><label><input type="checkbox" id="specComplete" onchange="setSpec(this.checked)"> Synthetic buyer specification marked complete for positive-path testing</label><small>Default is incomplete. Do not treat this as a real buyer specification.</small></div><div><label><input type="checkbox" id="qualityFixture" onchange="setQualityFixture(this.checked)"> Synthetic evidence record entered (still NOT VERIFIED)</label><small>This changes the fixture to SIMULATED_EVIDENCE_RECORDED_NOT_VERIFIED solely to exercise the conditional transaction path; it is not independent evidence.</small></div><div><label>Current test role</label><select id="currentRole" onchange="setRole(this.value)"><option value="operator">Marketplace operator</option><option value="seller">Synthetic seller partner</option><option value="buyer">Synthetic buyer</option><option value="provider">Synthetic provider</option></select><small>Role switch is a local simulation only, not authentication or access control.</small></div></div>
+</div>
+</div>
+</section>
+
+<section id="workflow" class="panel">
+<div class="grid"><div class="card">
+<h2>Positive execution sheet — 16 workflow steps</h2>
+<p class="muted">Review the corresponding records and action results, then attest each step. Actual result and evidence reference are captured per step. The checkbox is not proof by itself.</p>
+<div id="steps"></div>
+<div class="actions"><button onclick="markAllSteps()">Mark all reviewed (operator attestation)</button><button class="secondary" onclick="go('controls')">Continue to negative tests</button></div>
+</div>
+<div class="card"><h2>Simulated transaction actions</h2>
+<table><tr><th>Quotation</th><td>QUOTE-T-001 · DRAFT</td></tr><tr><th>Buyer / seller</th><td>ORG-T-BUY-001 / ORG-T-SELL-001</td></tr><tr><th>Product / batch</th><td>PROD-T-001 / BATCH-T-001</td></tr><tr><th>Quantity</th><td>80.000 kg</td></tr><tr><th>Price</th><td>10.00 TEST-CURRENCY/kg</td></tr><tr><th>Order</th><td>ORDER-T-001 · SIMULATED</td></tr><tr><th>Allocation</th><td>ALLOC-T-001 · RESERVED IN SIMULATION</td></tr><tr><th>Dossier</th><td>SHIP-T-001 · MOCK ONLY</td></tr></table>
+<div class="actions"><button onclick="generatePrivateQr()">Generate private QR-style summary</button><button onclick="reviewEligibility()">Review offer eligibility</button><button onclick="createDraftQuote()">Create draft quotation</button><button onclick="approveQuote()">Seller-review quotation</button><button onclick="createOrder()">Create simulated order</button><button onclick="allocate80()">Allocate 80 kg</button><button onclick="makeDossier()">Generate mock shipment dossier</button></div>
+<p id="workflowMsg" class="muted" aria-live="polite"></p>
+<div class="notice warn">The initial buyer specification is incomplete and quality status remains PENDING_TEST_EVIDENCE. Complete only the synthetic specification toggle above if you need to exercise the positive transaction path. No real offer, contract, inventory movement or shipment is created.</div>
+</div>
+</div>
+</section>
+
+<section id="controls" class="panel">
+<div class="grid"><div class="card"><h2>Negative test sheet — 12 tests</h2>
+<p>Each test performs an invalid operation against a cloned test state, evaluates the actual result, checks whether protected state remained unchanged, and records the observation. N-01 additionally attempts a hide against the actual banner DOM element supplied by the UI runner. Re-running a test replaces its prior result. Tests do not mutate the live positive-path fixture.</p>
+<div id="controlList"></div>
+<div class="actions"><button onclick="runAllControls()">Run all 12 negative tests</button><button class="secondary" onclick="go('report')">Review test report</button></div>
+</div></div>
+</section>
+
+<section id="exceptions" class="panel">
+<div class="grid"><div class="card">
+<h2>Exception register</h2><p>Record a controlled exception with affected record and timestamp. Resolution requires an evidence reference and reviewer role; no silent overwrite is permitted.</p>
+<div class="row"><div><label for="exTitle">Exception title</label><input id="exTitle" placeholder="e.g. Simulated quantity mismatch"></div><div><label for="exRecord">Affected record ID</label><input id="exRecord" placeholder="e.g. BATCH-T-001"></div></div>
+<label for="exDetail">Description / reason</label><textarea id="exDetail" placeholder="Describe the observed issue."></textarea>
+<button onclick="addException()">Record exception</button><div id="exceptionList"></div>
+</div></div>
+</section>
+
+<section id="report" class="panel">
+<div class="grid">
+<div class="card"><h2>Execution summary</h2><p id="reportSummary">No run started.</p><div id="acceptance"></div>
+<div class="actions"><button onclick="downloadReport()">Download JSON evidence report</button><button class="secondary" onclick="downloadCSV()">Download CSV execution sheets</button><button class="secondary" onclick="copySummary()">Copy summary</button></div>
+</div>
+<div class="card"><h2>Quantity and lineage reconciliation</h2><div id="reconciliation"></div></div>
+<div class="card"><h2>Audit event log</h2><div id="reportLog" class="log">No events yet.</div></div>
+<div class="card"><h2>Evidence / limitations</h2><ul>
+<li>Run data exists in this browser tab only and is lost when the tab is closed or refreshed.</li><li>Downloaded JSON/CSV is the operator's local evidence artifact; store it in the approved controlled project location.</li><li>No database, authentication, authorization, protected audit service, external event provider, payment service or shipment integration is present.</li><li>Manual workflow checkboxes are self-attestation and require independent review.</li><li>Any actual browser/OS manipulation beyond the tested UI boundary is outside the scope of this local prototype.</li></ul></div>
+</div>
+</section>
+<div class="footer">Phygital Export Marketplace · Prototype v0.4 · Synthetic-only · Not for production, commercial reliance, customs, carriage or export.</div>
+</main>
+
+<script>
+"use strict";
+const workflowSteps=[
+"Create synthetic participant, buyer, seller, operator and provider records",
+"Create role relationships and authority records",
+"Enter buyer enquiry and placeholder specification",
+"Create product and batch",
+"Record simulated intake and hold",
+"Add quality/evidence records",
+"Generate private QR-linked batch summary",
+"Review listing / offer eligibility",
+"Generate draft quotation",
+"Simulate seller review and approval",
+"Create simulated order",
+"Allocate simulated quantity",
+"Generate mock shipment dossier",
+"Inject a controlled exception",
+"Resolve exception with evidence and reviewer",
+"Close rehearsal and reconcile records"
+];
+const testDefinitions=[
+{id:"N-01",name:"Remove or hide synthetic/test banner",detail:"Attempt to hide the actual rendered banner element; the guard must restore it and the test must verify rendered visibility.",attempt:(s,el)=>{if(!el)return {blocked:false,reason:"FAIL: rendered synthetic banner element was not found.",safe:false};const before=el.hidden===false&&getComputedStyle(el).display!=="none"&&getComputedStyle(el).visibility!=="hidden";el.hidden=true;el.style.display="none";const attempted=el.hidden===true&&getComputedStyle(el).display==="none";const restored=protectSyntheticBanner(el);const visible=!el.hidden&&getComputedStyle(el).display!=="none"&&getComputedStyle(el).visibility!=="hidden"&&el.getClientRects().length>0;s.bannerVisible=visible;return {blocked:before&&attempted&&restored,reason:visible?"Actual DOM hide attempt was made; banner guard restored rendered visibility.":"FAIL: banner was not restored as a rendered visible element.",safe:before&&visible}}},
+{id:"N-02",name:"Create an offer without buyer specification",detail:"Attempt draft quotation creation while the specification is incomplete.",attempt:s=>{const before=s.quote;const result=createQuoteOn(s);return {blocked:!result.ok,reason:result.reason,safe:s.quote===before}}},
+{id:"N-03",name:"Offer / approve while quality is pending",detail:"Attempt to approve an offer with PENDING_TEST_EVIDENCE quality status.",attempt:s=>{s.specComplete=true;s.quote={id:"QUOTE-T-001",buyer:"ORG-T-BUY-001",seller:"ORG-T-SELL-001",product:"PROD-T-001",batch:"BATCH-T-001",qty:80,status:"DRAFT"};const before=s.quoteApproved;const result=approveQuoteOn(s,"seller");return {blocked:!result.ok,reason:result.reason,safe:s.quoteApproved===before}}},
+{id:"N-04",name:"Allocate 96 kg against 95 kg eligible",detail:"Attempt an allocation exceeding eligible quantity; allocation and remainder must not change.",attempt:s=>{const before=JSON.stringify([s.allocated,s.remaining]);const result=allocateOn(s,96);return {blocked:!result.ok,reason:result.reason,safe:before===JSON.stringify([s.allocated,s.remaining])}}},
+{id:"N-05",name:"Create order without accepted simulated quotation",detail:"Attempt order creation before seller review/approval.",attempt:s=>{const before=s.orderCreated;const result=createOrderOn(s);return {blocked:!result.ok,reason:result.reason,safe:s.orderCreated===before}}},
+{id:"N-06",name:"Mismatch quotation / order lineage",detail:"Attempt buyer, seller, product, batch, unit, price, currency and quantity mismatches independently; every attempt must be rejected without creating an order.",attempt:s=>{const base={id:"QUOTE-T-001",buyer:"ORG-T-BUY-001",seller:"ORG-T-SELL-001",product:"PROD-T-001",batch:"BATCH-T-001",qty:80,unit:"kg",price:10,currency:"TEST-CURRENCY",approved:true};const cases=[ ["buyer", "ORG-T-BUY-999"],["seller","ORG-T-SELL-999"],["product","PROD-T-999"],["batch","BATCH-T-999"],["unit","lb"],["price",11],["currency","OTHER-CURRENCY"],["qty",81] ];const observations=cases.map(([field,value])=>{const trial=clone(s);trial.quote={...base,[field]:value};trial.quoteApproved=true;const result=createOrderOn(trial);return {field,blocked:!result.ok,unchanged:trial.order===null&&!trial.orderCreated,reason:result.reason}});const safe=observations.every(x=>x.blocked&&x.unchanged);return {blocked:safe,reason:observations.map(x=>x.field+": "+(x.blocked?"rejected":"NOT REJECTED")).join("; "),safe}}},
+{id:"N-07",name:"Submit duplicate provider/event identifier",detail:"Submit the same provider event ID twice; the duplicate must be idempotently ignored.",attempt:s=>{const first=addProviderEvent(s,"EVT-T-DUP-001");const count=s.providerEvents.length;const second=addProviderEvent(s,"EVT-T-DUP-001");return {blocked:second.duplicate,reason:second.reason,safe:first.ok&&s.providerEvents.length===count}}},
+{id:"N-08",name:"Approve quotation using a non-seller role",detail:"Attempt approval of an existing valid synthetic draft while acting as marketplace operator.",attempt:s=>{s.specComplete=true;s.quote={id:"QUOTE-T-001",buyer:"ORG-T-BUY-001",seller:"ORG-T-SELL-001",product:"PROD-T-001",batch:"BATCH-T-001",qty:80,unit:"kg",price:10,currency:"TEST-CURRENCY",status:"DRAFT"};const before=s.quoteApproved;const result=approveQuoteOn(s,"operator");return {blocked:!result.ok,reason:result.reason,safe:s.quoteApproved===before&&s.quote.status==="DRAFT"}}},
+{id:"N-09",name:"Expose private QR summary outside test boundary",detail:"Attempt to publish/transmit the private batch summary; public exposure must be denied.",attempt:s=>{const before=s.qrPublic;const result=publishQrOn(s);return {blocked:!result.ok,reason:result.reason,safe:s.qrPublic===before&&s.qrPublic===false}}},
+{id:"N-10",name:"Present mock inspection as official evidence",detail:"Attempt to mark fictional inspection evidence as independently verified / official.",attempt:s=>{const before=s.quality;const result=claimOfficialEvidenceOn(s);return {blocked:!result.ok,reason:result.reason,safe:s.quality===before&&s.quality==="PENDING_TEST_EVIDENCE"}}},
+{id:"N-11",name:"Record dispatch before valid simulated order lineage",detail:"Attempt a dispatch event before a valid order and mock dossier exist.",attempt:s=>{const before=s.dispatchStatus;const result=dispatchOn(s);return {blocked:!result.ok,reason:result.reason,safe:s.dispatchStatus===before&&s.dispatchStatus==="NOT_DISPATCHED"}}},
+{id:"N-12",name:"Close exception without evidence / reviewer",detail:"Attempt exception closure without an evidence reference and reviewer role.",attempt:s=>{s.exceptions=[{id:"EX-T-001",status:"OPEN",resolution:"",evidenceRef:"",reviewer:""}];const result=closeExceptionOn(s,0,"","");return {blocked:!result.ok,reason:result.reason,safe:s.exceptions[0].status==="OPEN"}}}
+];
+let state;
+function fresh(){return {started:false,steps:workflowSteps.map(()=>({reviewed:false,actual:"",evidenceRef:""})),controls:{},events:[],exceptions:[],bannerVisible:true,specComplete:false,currentRole:"operator",quote:null,quoteApproved:false,order:null,orderCreated:false,allocated:0,remaining:95,quality:"PENDING_TEST_EVIDENCE",qrPublic:false,dossier:false,qrGenerated:false,dispatchStatus:"NOT_DISPATCHED",providerEvents:[],listingStatus:"DRAFT",rehearsalClosed:false}}
+function clone(x){return JSON.parse(JSON.stringify(x))}
+function log(msg){state.events.push({time:new Date().toISOString(),event:msg});render()}
+function startRun(){state=fresh();state.started=true;log("Rehearsal started. Synthetic fixtures loaded; no external activity.");go("overview")}
+function ensure(){if(!state.started)startRun()}
+function go(id){document.querySelectorAll(".panel").forEach(x=>x.classList.toggle("active",x.id===id));document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x.dataset.tab===id))}
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>go(b.dataset.tab)));
+function setSpec(v){ensure();state.specComplete=!!v;log("Synthetic buyer specification fixture marked "+(v?"COMPLETE FOR TESTING":"INCOMPLETE")+".")}
+function setRole(v){ensure();state.currentRole=v;log("Local test role changed to "+v+". This is not authentication.")}
+function setQualityFixture(v){ensure();state.quality=v?"SIMULATED_EVIDENCE_RECORDED_NOT_VERIFIED":"PENDING_TEST_EVIDENCE";log("Quality fixture set to "+state.quality+"; no independent verification is claimed.");render()}
+function createQuoteOn(s){if(!s.specComplete)return {ok:false,reason:"BLOCKED: buyer specification is incomplete; no quotation draft created."};s.quote={id:"QUOTE-T-001",buyer:"ORG-T-BUY-001",seller:"ORG-T-SELL-001",product:"PROD-T-001",batch:"BATCH-T-001",qty:80,unit:"kg",price:10,currency:"TEST-CURRENCY",status:"DRAFT"};return {ok:true,reason:"Draft quotation created and linked to synthetic enquiry, parties, product and batch."}}
+function approveQuoteOn(s,role){if(role!=="seller")return {ok:false,reason:"DENIED: only the synthetic seller role may approve this quotation."};if(!s.quote)return {ok:false,reason:"BLOCKED: no draft quotation exists."};if(!s.specComplete)return {ok:false,reason:"BLOCKED: buyer specification is incomplete."};if(s.quality==="PENDING_TEST_EVIDENCE")return {ok:false,reason:"BLOCKED: pending quality evidence cannot be represented as verified or approved."};s.quoteApproved=true;s.quote.status="APPROVED_FOR_SIMULATION_ONLY";return {ok:true,reason:"Quotation approved for simulation only."}}
+function createOrderOn(s){if(!s.quote||!s.quoteApproved)return {ok:false,reason:"BLOCKED: accepted simulated quotation is required."};if(s.quote.buyer!=="ORG-T-BUY-001"||s.quote.seller!=="ORG-T-SELL-001"||s.quote.product!=="PROD-T-001"||s.quote.batch!=="BATCH-T-001"||s.quote.qty!==80||s.quote.unit!=="kg"||s.quote.price!==10||s.quote.currency!=="TEST-CURRENCY")return {ok:false,reason:"BLOCKED: quotation buyer/seller/product/batch/unit/price/currency/quantity lineage mismatch."};s.order={id:"ORDER-T-001",quoteId:s.quote.id,buyer:s.quote.buyer,seller:s.quote.seller,product:s.quote.product,batch:s.quote.batch,qty:s.quote.qty,status:"SIMULATED_ONLY"};s.orderCreated=true;return {ok:true,reason:"Simulated order created; no contract or external order placed."}}
+function allocateOn(s,qty){if(!Number.isFinite(qty)||qty<=0)return {ok:false,reason:"BLOCKED: allocation quantity must be a positive number."};if(s.allocated+qty>95)return {ok:false,reason:"BLOCKED: allocation exceeds 95.000 kg eligible simulated quantity."};s.allocated+=qty;s.remaining=95-s.allocated;return {ok:true,reason:"Simulated reservation recorded; no physical stock movement."}}
+function addProviderEvent(s,id){if(s.providerEvents.includes(id))return {ok:false,duplicate:true,reason:"DUPLICATE IGNORED: provider event ID already recorded; no second effect."};s.providerEvents.push(id);return {ok:true,duplicate:false,reason:"Provider event ID accepted once."}}
+function publishQrOn(s){if(!s.qrPublic){return {ok:false,reason:"DENIED: QR summary is private to the local test boundary; public publication/transmission is disabled."}}return {ok:true,reason:"Unexpected public exposure state."}}
+function claimOfficialEvidenceOn(s){return {ok:false,reason:"BLOCKED: EVD-T-008 is mock evidence; quality remains PENDING_TEST_EVIDENCE and cannot be promoted to official/independent verification."}}
+function dispatchOn(s){if(!s.orderCreated||!s.dossier||!s.order||s.order.status!=="SIMULATED_ONLY")return {ok:false,reason:"BLOCKED: dispatch requires valid simulated order and dossier lineage; actual dispatch is outside scope."};return {ok:false,reason:"BLOCKED: all dispatch actions are disabled in Level 1, including simulated dispatch state advancement."}}
+function closeExceptionOn(s,index,resolution,evidenceRef,reviewer){const e=s.exceptions[index];if(!e)return {ok:false,reason:"BLOCKED: exception not found."};if(!resolution||!evidenceRef||!reviewer)return {ok:false,reason:"BLOCKED: resolution, evidence reference and reviewer role are mandatory."};e.status="RESOLVED_PENDING_REVIEW";e.resolution=resolution;e.evidenceRef=evidenceRef;e.reviewer=reviewer;return {ok:true,reason:"Resolution submitted for review; not silently closed."}}
+function generatePrivateQr(){ensure();state.qrGenerated=true;log("Private QR-style batch summary generated for local test display only; no public URL or external transmission.");render()}
+function reviewEligibility(){ensure();state.listingStatus="ELIGIBILITY_REVIEWED_WITH_LIMITATIONS";log("Offer eligibility reviewed: maximum 95.000 kg synthetic quantity; quality status "+state.quality+"; test-only limits retained.");render()}
+function createDraftQuote(){ensure();const r=createQuoteOn(state);document.getElementById("workflowMsg").textContent=r.reason;log(r.reason);render()}
+function approveQuote(){ensure();const r=approveQuoteOn(state,state.currentRole);document.getElementById("workflowMsg").textContent=r.reason;log(r.reason);render()}
+function createOrder(){ensure();const r=createOrderOn(state);document.getElementById("workflowMsg").textContent=r.reason;log(r.reason);render()}
+function allocate80(){ensure();const r=allocateOn(state,80);document.getElementById("workflowMsg").textContent=r.reason;log(r.reason);render()}
+function makeDossier(){ensure();if(!state.orderCreated||state.allocated!==80){const m="BLOCKED: a valid simulated order and 80.000 kg reservation are required.";document.getElementById("workflowMsg").textContent=m;log(m);return}state.dossier=true;log("SHIP-T-001 mock dossier generated; NOT FOR CUSTOMS OR CARRIAGE; no dispatch occurred.");render()}
+
+function protectSyntheticBanner(el){if(!el)return false;el.hidden=false;el.style.display="";el.style.visibility="";el.setAttribute("aria-hidden","false");const cs=getComputedStyle(el);return !el.hidden&&cs.display!=="none"&&cs.visibility!=="hidden"&&el.getClientRects().length>0}
+function runControl(id){ensure();const def=testDefinitions.find(x=>x.id===id);const sandbox=clone(state);let result;try{result=def.attempt(sandbox,document.getElementById("syntheticBanner"))}catch(e){result={blocked:false,reason:"TEST HARNESS ERROR: "+e.message,safe:false}}const passed=!!result.blocked&&!!result.safe;state.controls[id]={name:def.name,attempted:true,passed,reason:result.reason,safe:!!result.safe,time:new Date().toISOString()};log(`${id} ${passed?"PASS":"FAIL"} — ${def.name}. ${result.reason}`);render()}
+function runAllControls(){ensure();testDefinitions.forEach(t=>runControl(t.id));go("controls")}
+function markStep(i,checked){ensure();state.steps[i].reviewed=checked;state.steps[i].actual=checked?"Operator attested reviewed; observed result must be documented below.":"";log(`Workflow step ${String(i+1).padStart(2,"0")} ${checked?"marked reviewed by operator":"reopened"}.`)}
+function saveStep(i){ensure();const actual=document.getElementById("actual"+i).value.trim(),ref=document.getElementById("ref"+i).value.trim();state.steps[i].actual=actual;state.steps[i].evidenceRef=ref;log(`Workflow step ${String(i+1).padStart(2,"0")} observation/evidence reference updated.`);render()}
+function markAllSteps(){ensure();state.steps.forEach(x=>{x.reviewed=true;if(!x.actual)x.actual="Operator attested reviewed; individual observed result still requires entry.";});log("Operator marked all 16 workflow steps reviewed. This is self-attestation, not test evidence.");}
+function renderSteps(){document.getElementById("steps").innerHTML=workflowSteps.map((s,i)=>`<div class="step"><div class="step-main"><label><input type="checkbox" ${state.steps[i].reviewed?"checked":""} onchange="markStep(${i},this.checked)">Step ${String(i+1).padStart(2,"0")} — ${s}</label><div class="row"><div><label for="actual${i}">Actual result / observation</label><input id="actual${i}" value="${escapeAttr(state.steps[i].actual)}" placeholder="Record what was observed"></div><div><label for="ref${i}">Evidence reference</label><input id="ref${i}" value="${escapeAttr(state.steps[i].evidenceRef)}" placeholder="e.g. screenshot filename / record ID"></div></div><button class="secondary" onclick="saveStep(${i})">Save observation</button></div></div>`).join("")}
+function renderControls(){document.getElementById("controlList").innerHTML=testDefinitions.map(t=>{const r=state.controls[t.id];return `<div class="test"><div class="test-main"><b>${t.id} · ${t.name}</b><br><small>${t.detail}</small><br><span class="${r?(r.passed?"ok":"fail"):"pending"}">${r?(r.passed?"PASS — action attempted and state assertion passed":"FAIL — control did not demonstrate expected block"):"NOT RUN"}</span>${r?`<p class="muted">${escapeHtml(r.reason)}<br>State unchanged/safe assertion: ${r.safe?"PASS":"FAIL"} · ${new Date(r.time).toLocaleString()}</p>`:""}</div><button class="secondary" onclick="runControl('${t.id}')">Run / re-run test</button></div>`}).join("")}
+function addException(){ensure();const title=document.getElementById("exTitle").value.trim(),record=document.getElementById("exRecord").value.trim(),detail=document.getElementById("exDetail").value.trim();if(!title||!record||!detail){alert("Enter title, affected record ID and description.");return}const e={id:"EX-T-"+String(state.exceptions.length+1).padStart(3,"0"),title,record,detail,status:"OPEN",resolution:"",evidenceRef:"",reviewer:"",time:new Date().toISOString()};state.exceptions.push(e);document.getElementById("exTitle").value="";document.getElementById("exRecord").value="";document.getElementById("exDetail").value="";log(`${e.id} recorded for ${record}: ${title}`);render()}
+function resolveException(i){ensure();const resolution=document.getElementById("res"+i).value.trim(),ref=document.getElementById("eref"+i).value.trim(),reviewer=document.getElementById("rev"+i).value.trim();const r=closeExceptionOn(state,i,resolution,ref,reviewer);log(`${state.exceptions[i].id}: ${r.reason}`);render()}
+function renderExceptions(){const el=document.getElementById("exceptionList");if(!state.exceptions.length){el.textContent="No exceptions recorded.";return}el.innerHTML=state.exceptions.map((e,i)=>`<div class="notice"><b>${escapeHtml(e.id)} · ${escapeHtml(e.title)}</b><br><small>Record: ${escapeHtml(e.record)} · ${escapeHtml(e.time)}</small><p>${escapeHtml(e.detail)}</p><span class="${e.status==="OPEN"?"fail":"pending"}">${e.status}</span>${e.status==="OPEN"?`<label>Resolution note</label><textarea id="res${i}" placeholder="What was done?"></textarea><label>Evidence reference</label><input id="eref${i}" placeholder="Evidence file / record reference"><label>Reviewer role</label><input id="rev${i}" placeholder="Independent reviewer role"><button onclick="resolveException(${i})">Submit resolution for review</button>`:`<p><b>Resolution:</b> ${escapeHtml(e.resolution)}<br><b>Evidence:</b> ${escapeHtml(e.evidenceRef)}<br><b>Reviewer:</b> ${escapeHtml(e.reviewer)}</p>`}</div>`).join("")}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function escapeAttr(s){return escapeHtml(s).replace(/`/g,"&#96;")}
+function renderReconciliation(){const checks=[
+["Declared less held","100.000 − 5.000 = 95.000 kg",95===100-5],
+["Eligible less allocation","95.000 − "+state.allocated.toFixed(3)+" = "+state.remaining.toFixed(3)+" kg",Math.abs(95-state.allocated-state.remaining)<0.000001],
+["Batch identity","BATCH-T-001 remains consistent",true],
+["Supplier / site / product","ORG-T-PROD-001 / ORG-T-HUB-001 / PROD-T-001",true],
+["Buyer / seller lineage","ORG-T-BUY-001 / ORG-T-SELL-001",!state.order||state.order.buyer==="ORG-T-BUY-001"&&state.order.seller==="ORG-T-SELL-001"],
+["Quotation / order lineage","ORDER-T-001 refers to QUOTE-T-001",!state.order||state.order.quoteId==="QUOTE-T-001"],
+["Order / allocation / dossier","Same simulated order and batch",!state.dossier||!!state.order&&state.order.batch==="BATCH-T-001"],
+["Private QR summary","Generated locally; not public",!state.qrPublic],
+["Evidence status","Pending or simulated-recorded-but-not-verified; never independently verified",["PENDING_TEST_EVIDENCE","SIMULATED_EVIDENCE_RECORDED_NOT_VERIFIED"].includes(state.quality)]
+];document.getElementById("reconciliation").innerHTML="<table><tr><th>Check</th><th>Expected relationship</th><th>Observed</th></tr>"+checks.map(c=>`<tr><td>${c[0]}</td><td>${c[1]}</td><td class="${c[2]?"ok":"fail"}">${c[2]?"PASS":"FAIL"}</td></tr>`).join("")+"</table>"}
+function reportData(){return {programme:"The Phygital Export Marketplace",prototype:"Level 1 Local Prototype",version:"0.4",classification:"SYNTHETIC TEST ONLY",generated_at:new Date().toISOString(),run_started:state.started,overall_status:"NOT AN INDEPENDENTLY REVIEWED TEST RESULT",positive_workflow:workflowSteps.map((name,i)=>({step:i+1,name,operator_reviewed:state.steps[i].reviewed,actual_result:state.steps[i].actual,evidence_reference:state.steps[i].evidenceRef,evidence_complete:state.steps[i].reviewed&&state.steps[i].actual.trim().length>0&&state.steps[i].evidenceRef.trim().length>0})),negative_tests:testDefinitions.map(t=>({id:t.id,name:t.name,...(state.controls[t.id]||{attempted:false,passed:null,reason:"Not run"})})),fixture:{batch:"BATCH-T-001",declared_kg:100,held_kg:5,eligible_kg:95,allocated_kg:state.allocated,remaining_kg:state.remaining,quality:state.quality,specification_complete_for_synthetic_test:state.specComplete},transaction:{quotation:state.quote,quotation_approved_for_simulation:state.quoteApproved,order:state.order,order_created:state.orderCreated,allocation_kg:state.allocated,mock_dossier_created:state.dossier,private_qr_summary_generated:state.qrGenerated,dispatch_status:state.dispatchStatus},provider_event_ids:state.providerEvents,exceptions:state.exceptions,events:state.events,limitations:["No real data, identity, authority, physical stock or external counterparties","No network calls or external services","No real payment, contract, shipment, customs filing or export","No database persistence, authentication, authorization or production security controls","Local role selector is not authentication","Workflow checkboxes are operator self-attestation","Negative tests exercise local application functions, not production controls or browser/OS tampering"]}}
+function render(){if(!state)return;document.getElementById("runStatus").textContent="Run: "+(state.started?"IN PROGRESS":"NOT STARTED");document.getElementById("metricSteps").textContent=state.steps.filter(x=>x.reviewed).length+" / 16";document.getElementById("metricControls").textContent=Object.keys(state.controls).length+" / 12";document.getElementById("metricExceptions").textContent=state.exceptions.filter(e=>e.status==="OPEN").length;document.getElementById("allocatedQty").textContent=state.allocated.toFixed(3)+" kg";document.getElementById("remainingQty").textContent=state.remaining.toFixed(3)+" kg";document.getElementById("specComplete").checked=state.specComplete;document.getElementById("qualityFixture").checked=state.quality==="SIMULATED_EVIDENCE_RECORDED_NOT_VERIFIED";document.getElementById("currentRole").value=state.currentRole;renderSteps();renderControls();renderExceptions();renderReconciliation();document.getElementById("reportLog").textContent=state.events.map(e=>`[${e.time}] ${e.event}`).join("\n")||"No events yet.";const done=state.steps.filter(x=>x.reviewed).length,attempted=Object.keys(state.controls).length,passed=Object.values(state.controls).filter(x=>x.passed).length,open=state.exceptions.filter(e=>e.status==="OPEN").length;document.getElementById("reportSummary").textContent=`Run ${state.started?"started":"not started"} · Workflow reviewed ${done}/16 · Negative tests attempted ${attempted}/12 (${passed} pass) · Order ${state.orderCreated?"simulated":"not created"} · Allocation ${state.allocated.toFixed(3)} kg · Mock dossier ${state.dossier?"created":"not created"} · Open exceptions ${open}.`;document.getElementById("acceptance").innerHTML=[["All 16 workflow steps reviewed",done===16],["All 16 steps have actual result and evidence reference",state.steps.every(x=>x.reviewed&&x.actual.trim().length>0&&x.evidenceRef.trim().length>0)],["All 12 negative tests attempted",attempted===12],["All attempted negative tests pass",attempted===12&&passed===12],["Simulated order created with valid lineage",state.orderCreated&&!!state.order],["80 kg allocation leaves 15 kg",state.allocated===80&&state.remaining===15],["Mock shipment dossier generated",state.dossier],["No open exceptions",open===0],["No dispatch or external action",state.dispatchStatus==="NOT_DISPATCHED"]].map(([n,v])=>`<p><span class="${v?"ok":"pending"}">${v?"✓":"○"}</span> ${n}</p>`).join("")}
+function downloadReport(){ensure();const blob=new Blob([JSON.stringify(reportData(),null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="phygital-level1-v04-run-report.json";a.click();URL.revokeObjectURL(url);log("v0.4 JSON run report downloaded.")}
+function downloadCSV(){ensure();const rows=[["Record Type","ID","Description","Reviewed / Attempted","Result","Evidence / Reason"]];workflowSteps.forEach((n,i)=>rows.push(["WORKFLOW",String(i+1).padStart(2,"0"),n,state.steps[i].reviewed?"YES":"NO",state.steps[i].actual,state.steps[i].evidenceRef]));testDefinitions.forEach(t=>{const r=state.controls[t.id];rows.push(["NEGATIVE TEST",t.id,t.name,r?"YES":"NO",r?(r.passed?"PASS":"FAIL"):"NOT RUN",r?r.reason:""]) });const csv=rows.map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(",")).join("\r\n"),blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="phygital-level1-v04-execution-sheets.csv";a.click();URL.revokeObjectURL(url);log("v0.4 CSV execution sheets downloaded.")}
+function copySummary(){ensure();const s=document.getElementById("reportSummary").textContent;if(navigator.clipboard?.writeText)navigator.clipboard.writeText(s).then(()=>alert("Summary copied.")).catch(()=>alert(s));else alert(s)}
+state=fresh();render();
+</script>
+</body>
+</html>
