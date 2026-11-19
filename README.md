@@ -68,3 +68,8 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [Inventory integrity remediation matrix](docs/data/inventory-integrity-control-matrix.md)
 - [Migration 001 candidate (HOLD)](supabase/candidates/migration-001-hold/README.md)
 - [Level 1 v0.4 prototype](tests/prototypes/level1/README.md)
+
+- [024-B workflow and business-rule crosswalk](docs/product/workflow-to-context-crosswalk.md) — 18 workflows and 34 cross-cutting rules.
+- [024-D API contract map](docs/api/024d-contract-domain-map.md) — all 11 contract groups and 12 open decisions.
+- [024-F security control/test crosswalk](docs/security/024f-control-and-test-crosswalk.md) — SEC-001–020 and ST-01–24.
+- [024-G acceptance catalogue](docs/quality/024g-test-catalogue-crosswalk.md) — QAT-001–036.

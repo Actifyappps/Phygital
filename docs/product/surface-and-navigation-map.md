@@ -4,14 +4,16 @@ This map translates 024-E into a coherent surface model. It is a requirement ind
 
 | Surface | Intended users | Principal capabilities | Access boundary |
 |---|---|---|---|
-| Public discovery | Anonymous visitors, prospective buyers | Public product/listing projections, organisation-facing information, contact/enquiry entry | Only explicitly public, reviewed fields; no private evidence or personal data |
-| Buyer workspace | Buyer staff and authorised buyer representatives | Buyer profile, requirements, enquiries, quote comparison, accepted quote/order visibility, documents and status | Organisation membership + scoped buyer capacity |
-| Producer/supplier workspace | Producer, cooperative and authorised agents | Supply declaration, source/batch evidence submission, availability, listing request, order progress | Producer authority; declared supply is not verified inventory |
-| Hub service workspace | Approved hub operators and assigned staff | Service appointment, intake capture, weighing/photo/document capture, exception reporting | Site-specific permission and service scope; no assumed custody |
-| Seller/exporter workspace | Separately authorised seller and exporter representatives | Quote preparation, order acceptance, commercial documents, export dossier and shipment coordination | Separate seller and exporter mandates; no fallback |
-| Operations workspace | Programme operations and support roles | Queue, exception triage, partner readiness, service reconciliation, issue/case routing | Least privilege; no blanket ability to alter domain facts |
-| Assurance/oversight workspace | Reviewers and authorised oversight | Evidence review, audit trail, gate status, compliance-source review and metric lineage | Read-only by default; explicit review actions |
-| Provider integration console | Restricted technical/operations roles | Connection health, webhook events, reconciliation and provider references | No secret display; no fund custody or legal authority inferred |
+| Public marketplace | Anonymous visitors, prospective buyers | Public-safe listing discovery, product and organisation projections, enquiry entry | Explicit allow-list only; no private evidence, personal data or confidential buyer requirements |
+| Buyer portal | Buyer staff and authorised buyer representatives | Buyer profile, requirements, enquiries, compatibility results, quote review/acceptance, order and document/status visibility | Verified organisation membership and scoped buyer capacity |
+| Producer / supplier portal | Producers, cooperatives and authorised agents | Assisted onboarding, supply declarations, source/batch evidence submission, availability, listing requests and order progress | Producer/source authority; declared supply is not verified inventory |
+| Hub operations portal | Approved hub operators and assigned staff | Service appointments, intake capture, weighing/photo/document capture, service evidence and exception reporting | Facility-specific mandate and exact service scope; no assumed custody |
+| Platform administration and operations | Platform operations, support and authorised commercial/partner roles | Partner/facility readiness, queue and exception triage, approved listing/role workflows, service and case coordination | Least privilege; no blanket ability to alter domain facts; no party authority inherited from support role |
+| Reviewer and assurance workspace | Independent reviewers, assurance roles and authorised oversight | Evidence/authority review, audit trail, compliance-source review, gate status, appeals and metric lineage | Read-only by default; independent review and explicit review permissions |
+
+**Capacity rule:** Seller and exporter actions are separately authorised capacities, not a seventh implicit portal or a single combined role. Their permitted actions appear only in an appropriate authorised surface and are checked server-side.
+
+**Provider integration operations:** Provider callbacks, reconciliation and integration health are system/operations capabilities behind restricted controls, not a presumed public-facing portal.
 
 ## Interaction requirements
 - Progressive disclosure and minimum-documentation assisted journeys without weakening mandatory evidence.
