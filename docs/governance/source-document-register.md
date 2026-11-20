@@ -240,3 +240,8 @@ Notion 024-C v0.1 §5–§12 has been reconciled beyond the earlier entity-name 
 ## 018-C — Migration 001 Source-to-Target Mapping & Conditional Target ERD
 
 Source: https://app.notion.com/p/4136808bcd9e819c8506ecdcd9880d1d. Candidate design for review; not approved for implementation. Full 22-table disposition, candidate target entities, conditional logical relationships, D-01–D-07 branches, ten backfill safeguards, classification rules, G1–G8 gates and acceptance criteria are represented in `docs/data/018c-source-to-target-conditional-erd.md`. Read with 018-B (source columns), 017 (detailed design), 018-A (conditional sponsor direction) and 024-C (logical model). Migration 001 HOLD; Migration 002 NOT AUTHORISED.
+
+
+## 018-C source completeness verification — 20 November 2026
+
+A second source check counted the complete Notion sections and verified their preservation: 22 source-table disposition rows; 11 candidate target entities/explicit relations; D-01–D-07; ten backfill safeguards; four backfill classifications; G1–G8; and nine acceptance criteria. The verification record is `docs/quality/018c-source-completeness-verification.md`. This is source-content completeness, not design acceptance or migration authorization.

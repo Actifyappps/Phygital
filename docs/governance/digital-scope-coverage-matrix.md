@@ -338,10 +338,25 @@ Do not treat distributed repository notes as a completed/approved 024-H. Program
 | Source content | Coverage | Repository home | Disposition |
 |---|---|---|---|
 | Existing Migration 001 table dispositions | 22 tables | `docs/data/018c-source-to-target-conditional-erd.md` | Full source mapping represented |
-| Candidate target entities/relations | 12 logical additions/explicit relations | Same | Candidate names; physical schema choices remain open |
+| Candidate target entities/relations | 11 logical additions/explicit relations | Same | Candidate names; physical schema choices remain open |
 | Conditional relationship model | Five domains: identity/authority; product/batch/listing; enquiry/quote/order/allocation; inventory/custody/fulfilment; payment/events/documents/disputes | Same | Logical relationships represented; not physical ERD acceptance |
 | Sponsor decision consequences | D-01–D-07 | Same | Conditional branches represented; conditions remain open |
 | Migration/backfill | 10 rules + four classifications | Same | No unsupported inference; no migration run |
 | Design gates | G1–G8 | Same | G6 SQL, G7 validation and G8 acceptance remain blocked |
 
 018-C is a candidate design for review, not an implementation authorization. Migration 001 remains HOLD; Migration 002 remains NOT AUTHORISED.
+
+
+## 018-C source completeness verification — 20 November 2026
+
+| Source element | Notion count | Repository verification |
+|---|---:|---|
+| Migration 001 source-table dispositions | 22 | All source rows preserved |
+| Candidate target entities/explicit relations | 11 | All source rows preserved |
+| Sponsor decision branches | 7 | D-01–D-07 preserved |
+| Migration/backfill safeguards | 10 | All numbered rules preserved |
+| Backfill classifications | 4 | All classifications preserved |
+| Design gates | 8 | G1–G8 preserved |
+| Acceptance criteria | 9 | All criteria preserved |
+
+See `docs/quality/018c-source-completeness-verification.md`. Counts indicate source representation only, not physical schema approval or migration acceptance.
