@@ -114,3 +114,14 @@ Material digital/operational gaps identified in that reconciliation include:
 - Formal dependency baseline, stop-loss decision and Phase 0 GO/HOLD/NO-GO checkpoint (EVI-18, EVI-23, EVI-24).
 
 A repository home, design document, test specification, prototype or logic harness is not closure evidence by itself. Preserve the distinctions between planned, prepared, executed, passed, reviewed, accepted and authorised.
+
+
+## 5. Operational readiness, Phase 0 execution and technical harness traceability
+
+| Source | Capability / control | Repository home | Current disposition |
+|---|---|---|---|
+| 010 | Facility model ladder, scorecard, 12 hard gates, site evidence, HUB-01–HUB-10 | `docs/operations/facility-capability-register.md`; `docs/operations/010-hub-facility-readiness-crosswalk.md` | Framework represented; no site selected or approved; HOLD |
+| 012 | WP-0–WP-9, indicative 20-day sequence, evidence acquisition, Phase 0 checkpoint | `docs/operations/phase-0-work-map-and-dependencies.md`; `docs/operations/012-phase-0-execution-crosswalk.md` | Planning sequence represented; kickoff/appointments/external evidence not inferred |
+| 014 | T0–T8 technical harness, synthetic fixture, data integrity, tenant isolation, audit/events, workflow and recovery | `docs/quality/014-technical-test-harness-crosswalk.md`; `tests/`; `evidence/test-runs/` | Specification represented; execution and independent acceptance not claimed |
+
+These source additions do not change the live Evidence Register. Facility readiness, Phase 0 completion and technical acceptance remain distinct evidence/decision gates.

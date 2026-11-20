@@ -249,3 +249,12 @@ These records are proposed working designs/instruments, not legal clearance, app
 ### 018-A / 018-C source-status conflict
 
 018-A section 6A records D-01–D-07 approved with conditions on 17 November 2026. 018-C still contains a stale blanket sentence saying no sponsor decision is assumed approved. The repository follows the explicit 018-A approval record while preserving all outstanding conditions; 018-C remains a conditional logical target ERD only. See `docs/data/migration-002-design-boundary.md` for the reconciliation. Neither source authorises Migration 001 execution or Migration 002 implementation.
+
+
+## 11. Deliverables 010, 012 and 014 — focused operational/technical integration
+
+- **010 Hub & Facility Readiness:** the existing facility capability register remains the canonical domain home. The new `docs/operations/010-hub-facility-readiness-crosswalk.md` captures the 12 hard gates, HUB-01–HUB-10 action register, scorecard interpretation, evidence provenance and current HOLD/no-site-selected disposition. Digital-only coordination remains the baseline; no hub/TTI is appointed or approved.
+- **012 Phase 0 Execution:** `docs/operations/phase-0-work-map-and-dependencies.md` remains the high-level workstream map. `docs/operations/012-phase-0-execution-crosswalk.md` adds WP-0–WP-9 and the indicative 20-working-day sequence, evidence acquisition rules and the distinction between Phase 0 conclusion and separate live-pilot authority. The Evidence Register remains the sole operational status master.
+- **014 Technical Test Harness:** `docs/quality/014-technical-test-harness-crosswalk.md` maps T0–T8, the synthetic inventory fixture, integrity/security/event/workflow tests, run report and CV-06–CV-12/E-021 closure conditions. It is distinct from 024-G's product-wide QA and 021–023's Level 1 operator rehearsal. Migration 001 remains HOLD; Migration 002 remains unauthorised; no PostgreSQL execution is claimed.
+
+These are source-to-repository integrations, not evidence of facility readiness, Phase 0 completion, test execution or independent acceptance.

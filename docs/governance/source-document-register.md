@@ -96,3 +96,14 @@
 ## Focused operational source review — 20 November 2026
 
 The current Project Home-linked versions of 008, 009, 011 and the working records 013, 019 and 020 were fetched and reconciled against the existing repository homes. Detailed digital/operating dispositions are in `docs/governance/notion-to-repository-map.md`; the 009 legal-role and funds-flow boundary has a dedicated crosswalk at `docs/commerce/role-and-funds-flow-boundaries.md`. These source documents remain working frameworks/instruments, not legal advice, approval, appointment, approved SOP or route selection.
+
+
+## Focused source integration — Deliverables 010, 012 and 014 (20 November 2026)
+
+| Source | Canonical Notion page | Repository disposition |
+|---|---|---|
+| 010 — Hub & Facility Readiness Assessment v1.0 | https://app.notion.com/p/88c6808bcd9e82f7a96401215970f467 | Integrated into `docs/operations/facility-capability-register.md`; hard gates, HUB-01–HUB-10 and source-status crosswalk in `docs/operations/010-hub-facility-readiness-crosswalk.md`. Assessment framework only; no site appointed or approved. |
+| 012 — Phase 0 Execution and Evidence Acquisition Plan v1.0 | https://app.notion.com/p/4136808bcd9e81e8ae9cee40b3df1d96 | High-level workstreams remain in `docs/operations/phase-0-work-map-and-dependencies.md`; detailed WP-0–WP-9 sequence, 20-day planning frame and evidence rules in `docs/operations/012-phase-0-execution-crosswalk.md`. Working plan, not kickoff authority. |
+| 014 — Technical Test Harness & End-to-End Simulation Specification | https://app.notion.com/p/4136808bcd9e81e0bb13f2ea26004dd1 | Test layers, synthetic fixture, execution protocol and CV-06–CV-12/E-021 links in `docs/quality/014-technical-test-harness-crosswalk.md`; implementation homes remain under `tests/` and `evidence/test-runs/`. Specification is not execution evidence. |
+
+The three crosswalks add traceability; they do not close evidence items, appoint facilities/roles, authorise migration execution or approve a live pilot.
