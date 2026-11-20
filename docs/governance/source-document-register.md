@@ -245,3 +245,8 @@ Source: https://app.notion.com/p/4136808bcd9e819c8506ecdcd9880d1d. Candidate des
 ## 018-C source completeness verification — 20 November 2026
 
 A second source check counted the complete Notion sections and verified their preservation: 22 source-table disposition rows; 11 candidate target entities/explicit relations; D-01–D-07; ten backfill safeguards; four backfill classifications; G1–G8; and nine acceptance criteria. The verification record is `docs/quality/018c-source-completeness-verification.md`. This is source-content completeness, not design acceptance or migration authorization.
+
+
+## Actify engineering standards verification — 20 November 2026
+
+TSBBF v1.0 and AADDG v1.0 (including Level 1 extensions) are preserved in the Actify Library and applied through `docs/delivery/actify-engineering-operating-standards.md` and `docs/delivery/engineering-governance-and-build-standard-crosswalk.md`. Clause-level conformance and actual repository-state checks are recorded in `docs/quality/aaddg-tsbbf-source-verification.md`; the five operational identity answers are in `docs/delivery/application-operational-identity-register.md`. TSBBF scorecards remain blank; no candidate is selected. The standalone Developer Guide v0.1 canonical artifact remains unrecovered in targeted Notion/Library search and its candidate stack description remains provisional.

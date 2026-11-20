@@ -126,3 +126,8 @@ Decision sequence:
 ## 9. Non-claims
 
 This document does not select Next.js, NestJS, Express, Supabase, Vercel, an ORM, queue, object store or hosting provider. It does not establish a production backend, deployment, worker, identity service, database or provider account. It does not close EVI-21, execute migrations, approve live trade or convert candidate architecture into an implementation mandate.
+
+
+## 10. Source conformance verification
+
+The source-level check of TSBBF v1.0 and AADDG v1.0, including Level 1 extensions, is recorded in `../quality/aaddg-tsbbf-source-verification.md`. The five AADDG operational identity questions are maintained in `application-operational-identity-register.md`. This adds verification detail without changing the source standards or selecting a technology stack.

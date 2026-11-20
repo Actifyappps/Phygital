@@ -360,3 +360,15 @@ Do not treat distributed repository notes as a completed/approved 024-H. Program
 | Acceptance criteria | 9 | All criteria preserved |
 
 See `docs/quality/018c-source-completeness-verification.md`. Counts indicate source representation only, not physical schema approval or migration acceptance.
+
+
+## Actify TSBBF/AADDG source conformance — 20 November 2026
+
+| Source standard | Required controls | Repository evidence | Current state |
+|---|---|---|---|
+| TSBBF v1.0 | Reuse/pilot/pay/build preference; eight weighted criteria; TCO; critical-risk veto; decision record | `docs/decisions/TSBBF-component-assessment-workbook.md`; ADR-0001; `docs/quality/aaddg-tsbbf-source-verification.md` | Framework represented; no candidate scored or approved |
+| AADDG v1.0 core | GitHub source of truth; backend/deployment separation; reproducible lifecycle; secrets; migrations; environment promotion | `docs/delivery/`; `supabase/`; `.env.example` | Requirements represented; no application runtime or CI/deployment |
+| AADDG Level 1 | Workers/edge; physical-digital integrity; offline/idempotent sync; private files; append-only financial/provider events; observability/recovery; release gates | `workers/`; `docs/data/`; `docs/security/`; `docs/integrations/`; `docs/delivery/` | Design requirements and placeholders; no running services |
+| Five operational identity questions | Repository/backend/deployment/production URL/worker-edge | `docs/delivery/application-operational-identity-register.md` | Repository identified; other service identities explicitly unprovisioned |
+
+The standalone Developer Guide v0.1 source remains unrecovered; its candidate architecture is provisional. ADR-0001/0002 remain OPEN.
