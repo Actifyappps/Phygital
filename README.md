@@ -92,3 +92,7 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [Accessibility, localization and low-bandwidth requirements](docs/product/accessibility-localisation-and-low-bandwidth.md).
 - [Partner and provider readiness](docs/operations/partner-and-provider-readiness.md).
 - [Unresolved source deliverables](docs/governance/unresolved-source-deliverables.md) — missing 024-H/025 references and required confirmation.
+
+- [Four technology pillars and phase gates](docs/architecture/phase-gated-capabilities.md).
+- [Demand mapping and market intelligence](docs/measurement/demand-mapping-and-market-intelligence.md).
+- [024-E screen inventory](docs/product/024e-screen-inventory.md) and [024-A authorisation tuple model](docs/security/024a-authorisation-tuple-model.md).
