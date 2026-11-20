@@ -1,4 +1,3 @@
-
 # ADR-0001 — Technology baseline
 
 **Status: OPEN — no technology stack selected.**  
@@ -11,6 +10,8 @@
 The Technical Development Manual v3.0 and Developer Guide v0.1 describe different candidate architecture paths. Manual v3.0 proposes a modular-monolith-first design with an API/application layer (NestJS/Express candidates), managed PostgreSQL, private file storage, workers and replaceable provider adapters. Developer Guide v0.1 is referenced as a Next.js/Vercel + Supabase/PostgreSQL/Auth/RLS/private-storage candidate, but its canonical source artifact was not recovered in the current targeted Notion/Library search. Its exact version/content must be revalidated before formal scoring.
 
 AADDG v1.0 is the engineering operating standard, not a requirement to use Supabase or Vercel. TSBBF v1.0 requires component-level, evidence-based selection and a documented exit route. The current repository folder structure is technology-neutral.
+
+The source-linked comparison baseline is maintained in ../architecture/technology-decision-requirements-baseline.md. It consolidates 024-A–G, sponsor decisions and engineering standards without promoting draft requirements to approval.
 
 ## Decision
 
@@ -48,7 +49,7 @@ Evaluate frontend, application/API framework, database, identity, object storage
 
 - Reconcile the exact Developer Guide v0.1 source before scoring it against Manual v3.0.
 - Confirm whether the logical modular monolith is the preferred product shape; avoid premature microservices.
-- Resolve `web/` versus `src/` source layout without allowing folder names to determine framework choice.
+- Resolve web/ versus src/ source layout without allowing folder names to determine framework choice.
 - Decide whether managed Supabase/PostgreSQL or another managed PostgreSQL service best satisfies the data, RLS, backup, portability and operating requirements.
 - Evaluate Vercel and alternatives for frontend hosting; separately assess workers/queues and file delivery.
 - Confirm team skills, maintainers, budget, expected load, media/bandwidth and provider constraints.

@@ -1,4 +1,3 @@
-
 # ADR-0002 — Application topology
 
 **Status: OPEN — logical topology not selected for implementation.**  
@@ -8,6 +7,8 @@
 ## Candidate logical shape
 
 The Technical Development Manual v3.0 proposes a modular-monolith-first product shape: participant web surfaces, API/application service, cohesive domain modules, relational transaction store, private evidence/document storage, background workers and replaceable provider adapters. This is a candidate logical design, not an approved deployment topology.
+
+The source-linked requirements for topology and component comparison are consolidated in ../architecture/technology-decision-requirements-baseline.md. In particular, candidates must satisfy TDR-06 (contracts/integrations), TDR-09–TDR-13 (files, offline, workers, operations and recovery), TDR-16–TDR-18 (operability, portability and proportional runtime count).
 
 ## AADDG operating constraints
 
