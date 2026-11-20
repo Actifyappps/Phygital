@@ -126,3 +126,14 @@ A repository home, design document, test specification, prototype or logic harne
 
 These source additions do not change the live Evidence Register. Facility readiness, Phase 0 completion and technical acceptance remain distinct evidence/decision gates.
 undefined
+
+## 6. Migration source and conditional technical-design coverage
+
+| Source | Repository home | What is represented | What is not claimed |
+|---|---|---|---|
+| 015 static technical readiness review | `docs/data/015-018b-technical-design-reconciliation.md`; `docs/data/migration-001-source-provenance.md` | Source hashes, R-01–R-12, static inspection limits and CV-06–CV-12 dispositions | PostgreSQL execution, security certification or technical acceptance |
+| 016 Migration 002 design record | `docs/data/migration-002-design-boundary.md`; `docs/data/015-018b-technical-design-reconciliation.md` | Proposed technical D-01–D-12, M2-01–M2-24, ledger, state, units, authority, tenant and event controls | Approval to write/deploy Migration 002 SQL |
+| 017 detailed technical design | `docs/data/015-018b-technical-design-reconciliation.md`; `docs/api/`; `docs/security/`; `docs/quality/`; `tests/` | Logical components, relationships, transaction/lock controls, access matrix, service contracts, audit/outbox and TD-01–TD-10 | Selected technology stack, implemented services or completed work packages |
+| 018-B source data dictionary | `docs/data/migration-001-source-provenance.md`; `docs/data/015-018b-technical-design-reconciliation.md` | 22 source tables, 230 declared columns and static source metrics | Runtime catalogue export, approved target schema or executed migration |
+
+Migration 001 remains HOLD; CV-12 remains UNVERIFIED; Migration 002 remains NOT AUTHORISED. The source dictionary and target design remain separate artefacts.

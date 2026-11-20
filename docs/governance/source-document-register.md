@@ -120,3 +120,15 @@ The 015–018-B source set is reconciled in `docs/data/015-018b-technical-design
 The 015 report's 20-table count is superseded by 016's explicit correction to 22 and independently supported by 018-B. Preserve the original Migration 001 candidate unchanged. Any future successor must be forward-only, versioned, reviewed and separately authorised.
 
 Do not confuse the 016 technical design D-01–D-12 with 018-A sponsor D-01–D-07. The latter were approved with conditions; that does not approve the technical design or close its conditions. Migration 001 HOLD, CV-12 UNVERIFIED and Migration 002 NOT AUTHORISED remain controlling.
+
+
+## Focused source register entries — 015–018-B (20 November 2026)
+
+| Source | Canonical location | Status / repository use |
+|---|---|---|
+| 015 — Technical Readiness Review & Migration 001 Remediation Package | https://app.notion.com/p/4136808bcd9e81cd98aae29ae9fc79b1 | Static review only; R-01–R-12 and CV-06–CV-12 findings mapped in `docs/data/015-018b-technical-design-reconciliation.md`; no PostgreSQL execution. |
+| 016 — Migration 002 Design Decision Record & Remediation Specification | https://app.notion.com/p/4136808bcd9e814eb2b5ecaf5fb76a5f | Proposed technical design D-01–D-12 and M2-01–M2-24; not approved for implementation. See `docs/data/migration-002-design-boundary.md`. |
+| 017 — Migration 002 Detailed Technical Design | https://app.notion.com/p/4136808bcd9e81daa630ee2ab4937df6 | Conditional logical design and TD-01–TD-10 work packages; not production SQL, selected stack or implementation approval. See `docs/data/015-018b-technical-design-reconciliation.md`. |
+| 018-B — Migration 001 Column-Level Data Dictionary & Source Inventory | https://app.notion.com/p/4136808bcd9e81c0bb95d27a8a034bd3 | Source-derived 22-table / 230-column inventory; not a live PostgreSQL catalogue or target schema. See `docs/data/migration-001-source-provenance.md`. |
+
+Do not confuse 016 technical D-01–D-12 with 018-A sponsor D-01–D-07. Sponsor D-01–D-07 are approved with conditions; that does not approve Migration 002 or close its technical/evidence gates.
