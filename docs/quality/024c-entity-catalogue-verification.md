@@ -65,3 +65,19 @@ Those matters remain review items under 024-C sections 12–14 and the governing
 024-C identifies 024-D (API/integration contracts), 024-E (screens/navigation), 024-F (security/privacy), 024-G (test strategy/acceptance) and 024-H (delivery/operations/observability) as downstream specifications. The 024-C source describes these as a recommended sequence after logical-design review; existing draft documents do not thereby become approved or complete.
 
 024-C is not a physical schema, one-entity-one-table prescription or migration authorization. Migration 001 remains **HOLD**; Migration 002 remains **NOT AUTHORISED**; EVI-21 remains **OPEN**.
+
+
+## 6. Expanded relationship and integrity verification — 20 November 2026
+
+The initial comparison verified entity IDs/names only. A subsequent section-by-section source reconciliation identified that the repository did not yet preserve the 024-C relationship catalogue and full invariant set. The following complete source sections are now represented:
+
+| Source section | Source count | Repository home | Result |
+|---|---:|---|---|
+| §5 relationship/cardinality catalogue | 34 (REL-001–REL-034) | `docs/domain/024c-relationship-integrity-catalogue.md` | All source rows preserved |
+| §7 logical integrity invariants | 36 | Same relationship/integrity catalogue | All numbered invariants preserved |
+| §8 derived values and authoritative sources | 9 | `docs/domain/024c-derived-values-and-open-decisions.md` | All source rows preserved |
+| §10 Migration 001 / 018-C logical reconciliation | 22 source tables | Same derived-values/migration document | All source rows preserved |
+| §11 migration/backfill safeguards | 12 | Same derived-values/migration document | All safeguards preserved |
+| §12 unresolved logical/physical decisions | 14 (DC-01–DC-14) | Same derived-values/migration document | All decisions and interim controls preserved |
+
+This is source-content representation verification, not independent logical-model acceptance. It does not prove physical constraints, indexes, row-level security, SQL, migrations, application enforcement, test execution, sponsor/legal/data-protection review or sign-off. The original 65 entity ID/name comparison remains valid but must not be read as full 024-C acceptance.

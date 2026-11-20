@@ -10,7 +10,7 @@ The current 024 source set contains the following traceability units, each repre
 
 | Source artefact | Count / range | Repository control |
 |---|---:|---|
-| 024-C logical information model | 10 IA domains; 65 entities (ENT-001–ENT-065) | `docs/domain/024c-entity-to-context-crosswalk.md` |
+| 024-C logical information model | 10 IA domains; 65 entities (ENT-001–ENT-065); 34 relationships (REL-001–REL-034); 36 invariants; 9 derived values; 22 source-table mappings; 12 migration safeguards; 14 open decisions (DC-01–DC-14) | `docs/domain/024c-entity-to-context-crosswalk.md`; `docs/domain/024c-relationship-integrity-catalogue.md`; `docs/domain/024c-derived-values-and-open-decisions.md` |
 | 024-B workflows | 18 workflows (WF-01–WF-18) | `docs/product/workflow-to-context-crosswalk.md` |
 | 024-B business rules | BR-001–BR-034 | `docs/product/workflow-to-context-crosswalk.md` |
 | 024-D API open decisions | 12 (API-OD-01–12) | `docs/api/024d-contract-domain-map.md` |
