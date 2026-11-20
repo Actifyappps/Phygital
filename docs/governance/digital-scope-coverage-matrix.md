@@ -24,6 +24,17 @@ The current 024 source set contains the following traceability units, each repre
 
 Counts reflect the fetched specification content and repository crosswalks; they do not mean the tests have been executed or accepted.
 
+## 0A. Concept Paper v1.1 technology-pillar coverage
+
+| Pillar | Initial digital home | Deferred digital home / gate |
+|---|---|---|
+| Decentralized quality assurance and aggregation | `hub-services/`, `measurement/`, `evidence/`, `inventory/`, laboratory/provider integration catalogue | Connected scales/meters only after calibration, accuracy, operator and workflow validation |
+| Digital Product Passport | `packages/domain/public-projections/`, `web/features/product-passport/`, `docs/product/digital-product-passport-and-public-projections.md` | Blockchain anchoring only after justified buyer/partner benefit and separate legal/security/TSBBF decision |
+| Payment and escrow rails | `payment-status/`, direct buyer-to-seller references, manual/provider-verified reconciliation | Provider-led escrow, FX and payouts deferred; no platform-held funds or wallet under D-07 |
+| Demand mapping and market intelligence | `measurement/`, `docs/measurement/demand-mapping-and-market-intelligence.md` | AI forecasting and SMS advisories only after sufficient lawful data, validation and separate approval |
+
+See `docs/architecture/phase-gated-capabilities.md` for the governing staged capability boundary.
+
 ## 1. Product and experience
 
 | Capability | Governing source | Repository home | Surface / verification |
