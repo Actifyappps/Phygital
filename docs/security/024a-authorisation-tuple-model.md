@@ -66,6 +66,9 @@ These IDs are repository-local test identifiers, not source IDs from Notion.
 | AUTH-TEST-013 | County/institutional viewer requests unapproved personal/member data | Deny |
 | AUTH-TEST-014 | Payment integration attempts to initiate or hold platform funds | Deny |
 | AUTH-TEST-015 | Break-glass grant has no expiry/reason/reviewer | Deny |
+| AUTH-TEST-016 | Hub A user attempts to read or change Hub B assigned records | Deny; no cross-facility disclosure |
+| AUTH-TEST-017 | Service identity attempts human authentication or action outside configured scope | Deny; service identity remains narrowly scoped |
+| AUTH-TEST-018 | Expired/revoked authority is used through an existing session/token | Deny at backend/database boundary; invalidate applicable access and record event |
 
 ## Implementation constraints
 - Evaluate authorization on the trusted service layer and database boundary.
@@ -97,3 +100,8 @@ The following repository-local IDs preserve the ten additional synthetic test re
 | CAP-TEST-008 | Seller/exporter representative attempts self-approval | Deny; independent reviewer required |
 | CAP-TEST-009 | Seller/exporter capacity attempts to create hub custody, release or dispatch authority | Deny |
 | CAP-TEST-010 | Platform operator attempts to substitute itself as seller/exporter | Deny under D-01/D-02 |
+
+
+## 024-A source test reconciliation — 20 November 2026
+
+The current Notion 024-A v0.1b source defines 18 base synthetic permission tests in §14 and ten seller/exporter supplement tests in F4. The repository now maps the 18 base scenarios to AUTH-TEST-001–018 and the ten capacity scenarios to CAP-TEST-001–010. Source-to-local mapping: `docs/security/024a-source-test-verification.md`. These remain test requirements; none is claimed executed or accepted.

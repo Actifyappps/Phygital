@@ -225,3 +225,8 @@ The current Notion 024-G v0.1 source contains **36** product acceptance cases, Q
 ## 024-H delivery/operations specification status — 20 November 2026
 
 024-C v0.1 and 024-G v0.1 both identify a downstream 024-H companion for delivery, deployment, environments, configuration, operations, support, observability, recovery and readiness. Targeted Notion search did not locate a completed 024-H page. Repository disposition: `docs/architecture/024h-architecture-operations-gap.md` plus existing delivery/operations standards and runbook homes. This is a recorded source gap, not evidence that no draft exists elsewhere. Confirm programme status before commissioning or replacing 024-H. No topology, vendor, SLA, RTO/RPO or production environment is approved by the gap record.
+
+
+## 024-A permission-test reconciliation — 20 November 2026
+
+Notion 024-A v0.1b §14 defines 18 base synthetic permission tests and Supplement F4 defines ten seller/exporter capacity tests. The repository's earlier local AUTH-TEST catalogue had only 15 base entries and omitted hub-to-hub isolation, service-identity non-human/scope controls and session/token invalidation after authority expiry/revocation. AUTH-TEST-016–018 have now been added. The source-to-local mapping is `docs/security/024a-source-test-verification.md`; CAP-TEST-001–010 cover the ten supplement scenarios. All remain test requirements, not execution evidence.

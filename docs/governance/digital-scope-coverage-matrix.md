@@ -20,7 +20,7 @@ The current 024 source set contains the following traceability units, each repre
 | 024-F security controls | 20 (SEC-001–SEC-020) | `docs/security/024f-control-and-test-crosswalk.md` |
 | 024-F security tests | 24 (ST-01–ST-24) | `docs/security/024f-control-and-test-crosswalk.md` |
 | 024-G product acceptance | 36 (QAT-001–QAT-036) | `docs/quality/024g-test-catalogue-crosswalk.md` |
-| 024-A permission tests | 15 base tests plus 10 seller/exporter supplement tests | `docs/security/024a-authorisation-tuple-model.md` |
+| 024-A permission tests | 18 base tests plus 10 seller/exporter supplement tests | `docs/security/024a-authorisation-tuple-model.md` |
 
 Counts reflect the fetched specification content and repository crosswalks; they do not mean the tests have been executed or accepted.
 
