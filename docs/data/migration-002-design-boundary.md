@@ -127,3 +127,8 @@ The source sequence is recorded as follows:
 | 018-B — Migration 001 Column-Level Data Dictionary & Source Inventory | https://app.notion.com/p/4136808bcd9e81c0bb95d27a8a034bd3 | Source-derived 22-table / 230-column inventory and key structural metrics mapped in `docs/data/migration-001-source-provenance.md` and the new reconciliation crosswalk. Not a runtime catalogue or approved target schema. |
 
 **Control:** Migration 001 remains HOLD; CV-12 remains UNVERIFIED; Migration 002 remains NOT AUTHORISED. No SQL execution, technical acceptance or live-pilot authority is inferred.
+
+
+## 018-C conditional target-model boundary
+
+The 018-C source-to-target mapping and conditional ERD are preserved in `018c-source-to-target-conditional-erd.md`. Treat the 22-table disposition and candidate entities/relationships as design inputs only. Do not convert them directly into Migration 002 SQL: reconcile against 018-B exact source columns, 017 detailed design, 024-C logical entities/invariants, 018-A D-01–D-07 conditions, and the G4–G8 gates. Preserve unresolved lineage as exceptions; do not infer authority, batch backing, shipment fulfilment, physical movement or provider verification.

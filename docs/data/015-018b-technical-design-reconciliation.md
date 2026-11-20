@@ -172,3 +172,8 @@ The approved-with-conditions sponsor decisions are not a blanket approval of the
 - Live trade, custody, platform-held funds/escrow, payment activation and shipment remain outside this technical design authority.
 
 Next technical work is controlled design refinement against the exact source schema, independent review of relationships/security/concurrency/privacy/operations, and only then a separately authorised implementation and test plan. The repository must continue to distinguish proposed, reviewed, implemented, executed, passed, independently accepted and authorised.
+
+
+## 10. 018-C source-to-target conditional ERD representation
+
+The complete 018-C source mapping, candidate target entities, conditional relationship model, D-01–D-07 schema branches, migration/backfill safeguards, G1–G8 gates and acceptance criteria are preserved in `docs/data/018c-source-to-target-conditional-erd.md`. This complements rather than replaces 018-B's source-column inventory and 017's detailed technical design. The model remains conditional; Migration 001 HOLD and Migration 002 NOT AUTHORISED.

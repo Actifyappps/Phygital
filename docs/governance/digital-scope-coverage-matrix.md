@@ -331,3 +331,17 @@ The previous QAT-001–QAT-028 reference was stale and is corrected. EVI-21 rema
 | 024-G v0.1 | Release/deployment, environment/configuration, operational readiness, subordinate to AADDG/TSBBF | 024-H gap record; release gates; environment/promotion model; observability | Source page not located in targeted search |
 
 Do not treat distributed repository notes as a completed/approved 024-H. Programme owner confirmation is required. No vendor, topology, SLA, RTO/RPO, environment or production-readiness decision is inferred.
+
+
+## 018-C source-to-target conditional ERD coverage — 20 November 2026
+
+| Source content | Coverage | Repository home | Disposition |
+|---|---|---|---|
+| Existing Migration 001 table dispositions | 22 tables | `docs/data/018c-source-to-target-conditional-erd.md` | Full source mapping represented |
+| Candidate target entities/relations | 12 logical additions/explicit relations | Same | Candidate names; physical schema choices remain open |
+| Conditional relationship model | Five domains: identity/authority; product/batch/listing; enquiry/quote/order/allocation; inventory/custody/fulfilment; payment/events/documents/disputes | Same | Logical relationships represented; not physical ERD acceptance |
+| Sponsor decision consequences | D-01–D-07 | Same | Conditional branches represented; conditions remain open |
+| Migration/backfill | 10 rules + four classifications | Same | No unsupported inference; no migration run |
+| Design gates | G1–G8 | Same | G6 SQL, G7 validation and G8 acceptance remain blocked |
+
+018-C is a candidate design for review, not an implementation authorization. Migration 001 remains HOLD; Migration 002 remains NOT AUTHORISED.

@@ -235,3 +235,8 @@ Notion 024-A v0.1b §14 defines 18 base synthetic permission tests and Supplemen
 ## 024-C logical relationship and integrity reconciliation — 20 November 2026
 
 Notion 024-C v0.1 §5–§12 has been reconciled beyond the earlier entity-name check. Repository homes now preserve all 34 relationship/cardinality rows REL-001–REL-034 and 36 logical invariants in `docs/domain/024c-relationship-integrity-catalogue.md`; and all nine derived-value definitions, 22 Migration 001/018-C logical source-table mappings, 12 migration/backfill safeguards and 14 unresolved decisions DC-01–DC-14 in `docs/domain/024c-derived-values-and-open-decisions.md`. The verification report is `docs/quality/024c-entity-catalogue-verification.md`. These are source representation records, not physical schema approval or migration execution.
+
+
+## 018-C — Migration 001 Source-to-Target Mapping & Conditional Target ERD
+
+Source: https://app.notion.com/p/4136808bcd9e819c8506ecdcd9880d1d. Candidate design for review; not approved for implementation. Full 22-table disposition, candidate target entities, conditional logical relationships, D-01–D-07 branches, ten backfill safeguards, classification rules, G1–G8 gates and acceptance criteria are represented in `docs/data/018c-source-to-target-conditional-erd.md`. Read with 018-B (source columns), 017 (detailed design), 018-A (conditional sponsor direction) and 024-C (logical model). Migration 001 HOLD; Migration 002 NOT AUTHORISED.
