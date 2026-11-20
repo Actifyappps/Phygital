@@ -18,3 +18,16 @@ Passing a software gate does not advance physical pilot maturity. Completing a p
 
 ## Current position
 EVI-21 remains OPEN / Closure Accepted NO. Migration 001 remains HOLD; Migration 002 is not authorised. This file does not alter those statuses.
+
+
+## Exact Level 1–3 boundary from Deliverables 019–021
+
+- **Level 1 — Digital readiness rehearsal:** synthetic or properly authorised sample data only. Tests usability, workflow, data capture and document reuse. It does not prove real supply, buyer willingness, physical quality or export readiness.
+- **Level 2 — Controlled physical batch demonstration:** one real batch at an existing site, with producer authority and written site permission, service-only site scope unless separately authorised, relevant competent checks and buyer feedback. No platform custody, live sale, payment or export dispatch.
+- **Level 3 — Partner-led micro-export:** a qualified seller/exporter and providers execute a specific real transaction under confirmed legal, regulatory, commercial and sponsor gates. Platform remains coordinator and does not hold funds.
+
+The phrase in Deliverable 019 referring to a small real batch belongs to Level 2; it does not alter the synthetic-only Level 1 plan in 020–023.
+
+## Current Level 1 evidence status
+
+v0.4 syntax and mocked-DOM logic harness checks passed (12/12 negative assertions; positive simulated quantity path). Browser rendering and browser-run negative tests remain NOT VERIFIED / NOT RUN; the 16-step operator rehearsal and independent review remain outstanding. EVI-21 is OPEN / Closure Accepted NO. See `tests/prototypes/level1/README.md`.
