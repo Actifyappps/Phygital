@@ -151,7 +151,7 @@ AADDG establishes source-of-truth and lifecycle controls; TSBBF governs selectio
 | Source | Canonical Notion page | Repository disposition |
 |---|---|---|
 | 024-F — Security, Privacy, Threat & Abuse-Control Specification v0.1 | https://app.notion.com/p/41d6808bcd9e817d8d16d37bc31c063e | `docs/security/024f-control-and-test-crosswalk.md`; existing security/privacy/access-control/threat-model homes; SEC-001–020 and ST-01–24 retained as source identifiers. Draft requirements only; no control implementation, PIA or penetration test claimed. |
-| 024-G — Test Strategy, Quality Engineering & Acceptance Evidence Specification v0.1 | https://app.notion.com/p/41d6808bcd9e81c78dfdfa7919489c30 | `docs/quality/024g-test-catalogue-crosswalk.md`; existing quality/test/evidence homes; L0–L8, QAT-001–028 and G0–G4 mapped. Draft strategy only; no test execution or acceptance claimed. |
+| 024-G — Test Strategy, Quality Engineering & Acceptance Evidence Specification v0.1 | https://app.notion.com/p/41d6808bcd9e81c78dfdfa7919489c30 | `docs/quality/024g-test-catalogue-crosswalk.md`; existing quality/test/evidence homes; L0–L8, QAT-001–036 and G0–G4 mapped. Draft strategy only; no test execution or acceptance claimed. |
 
 024-G coordinates but does not replace 014, 021–023 or EVI-21. All existing migration and live-operation holds remain.
 
