@@ -7,6 +7,7 @@ Start with:
 - [Project status and holds](governance/project-status.md)
 - [Notion-to-repository disposition map](governance/notion-to-repository-map.md)
 - [Source-document register](governance/source-document-register.md)
+- [End-to-end digital product realization map](product/end-to-end-product-realization-map.md)
 - [Bounded-context catalogue](domain/bounded-context-catalogue.md)
 - [Repository architecture](architecture/repository-architecture.md)
 

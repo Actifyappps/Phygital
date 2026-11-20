@@ -291,3 +291,8 @@ The Developer Guide v0.1 source remains unresolved; do not treat its candidate s
 - `docs/delivery/technology-spike-and-acceptance-plan.md` — synthetic-only spike design and 18 acceptance tests.
 
 These are planning artefacts, not technology selection or implementation approval. No component has been scored or shortlisted. Recover canonical Developer Guide v0.1 before formal candidate scoring. ADR-0001/0002 and ADR-0003–0008 remain OPEN; migration and live-operation holds remain unchanged.
+
+
+## End-to-end digital product realization — 20 November 2026
+
+The current 024 product specification series is represented as one connected product rather than separate document-numbered subsystems. The consolidated implementation/traceability view is docs/product/end-to-end-product-realization-map.md. It connects 024 v0.1d and 024-A–G to the six product surfaces, lifecycle stages, ten information domains, bounded-context ownership, command/authority/data/event/UI/test/evidence chain and pilot-first engineering increments. Detailed source-specific maps remain authoritative for their own requirement IDs. This is a navigation and realization crosswalk only; it does not implement features, approve architecture, close 024-R findings or authorize live operations.

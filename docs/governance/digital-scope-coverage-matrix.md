@@ -220,3 +220,16 @@ Repository folders remain technology-neutral. `web/` versus `src/` is unresolved
 | Technology decision | ADR-0001/0002 and ADR-0003–0008 | Decision dependencies linked | All OPEN; no stack/topology selected |
 
 No candidate is shortlisted or selected. Migration 001 HOLD; Migration 002 NOT AUTHORISED; EVI-21 OPEN. Spike plan authorises no production provisioning, real data, live integration or live trade.
+
+
+## Product realization integration — 20 November 2026
+
+| Coverage layer | Repository home | Status |
+|---|---|---|
+| Integrated product lifecycle across 024 / 024-A–G | docs/product/end-to-end-product-realization-map.md | Consolidated traceability map; source requirements remain drafts |
+| Six product surfaces and user tasks | docs/product/024e-screen-inventory.md; docs/product/end-to-end-product-realization-map.md | Represented; no production UI implied |
+| Authority → preconditions → command → state → data/provenance → event → UI → test → evidence chain | docs/product/end-to-end-product-realization-map.md; detailed 024-A–G crosswalks | Represented as engineering rule; implementation/evidence outstanding |
+| Lifecycle-to-domain ownership | docs/product/end-to-end-product-realization-map.md; docs/domain/bounded-context-catalogue.md | Logical ownership mapped; no microservice or schema decision implied |
+| Pilot-first engineering increments P0–P5 | docs/product/end-to-end-product-realization-map.md | Proposed sequencing; separate pilot maturity and authorization gates remain in force |
+
+The consolidated map is not a substitute for detailed source crosswalks, test catalogues, sponsor decisions or the evidence register. It does not change Migration 001 HOLD, Migration 002 NOT AUTHORISED, or EVI-21 OPEN.
