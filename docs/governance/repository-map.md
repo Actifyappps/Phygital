@@ -27,3 +27,12 @@
 | `scripts/` | Reproducible validation and maintenance | No production execution implied |
 
 A directory or placeholder reserves a governed home only. It does not authorize code, data migration, deployment, external integration or live operations.
+
+| `docs/governance/digital-scope-coverage-matrix.md` | Full digital capability/source-to-repository coverage | Mapping only; not implementation |
+| `docs/product/` expanded maps | Functional capability, screens/states, design system, notifications, accessibility/localization, product passport | Product requirements and design controls |
+| `web/surfaces/` | Six distinct user-facing navigation/authorization surfaces | One product experience; not six deployments |
+| `web/design-system/` | Reusable UI tokens, patterns and components | Framework-neutral; no authority encoded in components |
+| `packages/domain/notifications/` | Notification templates, preferences, delivery and retries | Does not own business events or legal acceptance |
+| `packages/domain/public-projections/` | Revocable public/QR and buyer-safe read projections | Read-only; source facts stay in owning domains |
+| `packages/domain/partner-readiness/` | Facility/provider capability assessments and scope lifecycle | Does not appoint, procure or contract |
+| `tests/` capability suites | Domain, surface, accessibility, localization, notifications, public projection and partner-readiness tests | Requirements/placeholders; execution evidence recorded separately |

@@ -70,3 +70,11 @@ The 024-C specification groups its 65 logical entities into ten information doma
 | IA-08 External payment and reconciliation | payment-status |
 | IA-09 Trust, exceptions and operations | marketplace-trust, cases, product-integrity, offline-sync |
 | IA-10 Audit, reporting and governance | audit, measurement; programme gates in `docs/governance/` |
+
+## Explicit package homes for cross-cutting contexts
+
+- `packages/domain/notifications/` — templates, recipient preferences, delivery attempts and delivery evidence; never business-state authority.
+- `packages/domain/public-projections/` — public/QR and buyer-safe read models assembled from domain-owned facts; never a second source of truth.
+- `packages/domain/partner-readiness/` — scoped facility/provider capability and readiness assessments; never appointment, procurement or regulatory authority.
+- Measurement/reporting remains a single context; dashboards and exports are projections, not a separate mutable reporting domain.
+- Support/case management remains in `packages/domain/cases/`; operational support does not grant transaction authority.
