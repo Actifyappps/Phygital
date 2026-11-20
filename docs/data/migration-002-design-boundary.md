@@ -113,3 +113,17 @@ The later 018 source-based static review reports 22 tables, 52 inline foreign-ke
 A wording conflict exists between the two source records. 018-A section 6A explicitly records sponsor selections D-01–D-07 as **APPROVED WITH CONDITIONS on 17 November 2026**, while 018-C section 1 contains the older blanket sentence “No sponsor decision is assumed approved.” Interpret that sentence in 018-C as stale boilerplate, not as a reversal of the later/explicit 018-A approval record.
 
 This reconciliation does not convert the conditions into closed evidence. The seven decisions remain approved with conditions; their required legal, commercial, partner, facility, privacy and technical evidence remains open. 018-C itself remains a conditional logical target design, not an approved physical schema, SQL script or migration authority. Migration 001 remains HOLD; Migration 002 remains NOT AUTHORISED.
+
+
+## 015–018-B technical review and design lineage — 20 November 2026
+
+The source sequence is recorded as follows:
+
+| Source | Canonical Notion page | Repository disposition |
+|---|---|---|
+| 015 — Technical Readiness Review & Migration 001 Remediation Package | https://app.notion.com/p/4136808bcd9e81cd98aae29ae9fc79b1 | Static review, R-01–R-12 and CV-06–CV-12 dispositions in `docs/data/015-018b-technical-design-reconciliation.md`; source SQL/tests/checklist retained under `supabase/candidates/migration-001-hold/`. |
+| 016 — Migration 002 Design Decision Record & Remediation Specification | https://app.notion.com/p/4136808bcd9e814eb2b5ecaf5fb76a5f | Proposed technical D-01–D-12, batch/allocation policy, ledger, unit, mandate, tenant, audit/event and M2-01–M2-24 design mapped in `docs/data/migration-002-design-boundary.md` and the new reconciliation crosswalk. Not implementation approval. |
+| 017 — Migration 002 Detailed Technical Design | https://app.notion.com/p/4136808bcd9e81daa630ee2ab4937df6 | Candidate logical components, table/relationship constraints, transactions, RLS/access matrix, API/service contracts, audit/outbox, security and TD-01–TD-10 work packages mapped in `docs/data/015-018b-technical-design-reconciliation.md`. Not production SQL or selected stack. |
+| 018-B — Migration 001 Column-Level Data Dictionary & Source Inventory | https://app.notion.com/p/4136808bcd9e81c0bb95d27a8a034bd3 | Source-derived 22-table / 230-column inventory and key structural metrics mapped in `docs/data/migration-001-source-provenance.md` and the new reconciliation crosswalk. Not a runtime catalogue or approved target schema. |
+
+**Control:** Migration 001 remains HOLD; CV-12 remains UNVERIFIED; Migration 002 remains NOT AUTHORISED. No SQL execution, technical acceptance or live-pilot authority is inferred.

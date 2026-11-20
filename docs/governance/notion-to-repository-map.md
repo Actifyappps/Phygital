@@ -258,3 +258,10 @@ These records are proposed working designs/instruments, not legal clearance, app
 - **014 Technical Test Harness:** `docs/quality/014-technical-test-harness-crosswalk.md` maps T0–T8, the synthetic inventory fixture, integrity/security/event/workflow tests, run report and CV-06–CV-12/E-021 closure conditions. It is distinct from 024-G's product-wide QA and 021–023's Level 1 operator rehearsal. Migration 001 remains HOLD; Migration 002 remains unauthorised; no PostgreSQL execution is claimed.
 
 These are source-to-repository integrations, not evidence of facility readiness, Phase 0 completion, test execution or independent acceptance.
+
+
+## 5A. Migration 001 static review and conditional target design
+
+The technical sequence 015–018-B is mapped in `docs/data/015-018b-technical-design-reconciliation.md`. Use `docs/data/migration-001-source-provenance.md` for immutable source hashes and the corrected 22-table/230-column source inventory; use `docs/data/migration-002-design-boundary.md` for R-01–R-12, M2-01–M2-24 and the conditional design boundaries.
+
+The design remains unapproved for implementation. Candidate additions (units/conversions, hub mandates, ledger/reconciliation, allocation lineage, immutable commercial snapshots, provider-event idempotency, RLS/audit protections) must be justified against exact source schema and chosen service architecture. Application authorisation, provider signature verification, legal authority, operational procedures and external evidence cannot be delegated to SQL alone.

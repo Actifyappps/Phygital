@@ -107,3 +107,16 @@ The current Project Home-linked versions of 008, 009, 011 and the working record
 | 014 — Technical Test Harness & End-to-End Simulation Specification | https://app.notion.com/p/4136808bcd9e81e0bb13f2ea26004dd1 | Test layers, synthetic fixture, execution protocol and CV-06–CV-12/E-021 links in `docs/quality/014-technical-test-harness-crosswalk.md`; implementation homes remain under `tests/` and `evidence/test-runs/`. Specification is not execution evidence. |
 
 The three crosswalks add traceability; they do not close evidence items, appoint facilities/roles, authorise migration execution or approve a live pilot.
+
+
+## 5A. Migration 001 static review and Migration 002 design lineage (015–018-B)
+
+The 015–018-B source set is reconciled in `docs/data/015-018b-technical-design-reconciliation.md`:
+- 015 statically inspected the candidate Migration 001 SQL, companion smoke/constraint tests and acceptance checklist. It identified R-01–R-12; it did not execute PostgreSQL.
+- 016 translates R-01–R-12 into proposed technical design questions D-01–D-12 and M2-01–M2-24 acceptance tests. These local technical IDs are not sponsor decision IDs.
+- 017 expands the conditional design into logical components, relationship rules, candidate schema changes, transaction/lock ordering, tenant access/RLS, service contracts, audit/event/outbox, privacy/document controls and TD-01–TD-10 work packages.
+- 018-B inventories the source migration's 22 tables and 230 declared columns. It is descriptive of the source SQL, not a live PostgreSQL catalogue or target schema.
+
+The 015 report's 20-table count is superseded by 016's explicit correction to 22 and independently supported by 018-B. Preserve the original Migration 001 candidate unchanged. Any future successor must be forward-only, versioned, reviewed and separately authorised.
+
+Do not confuse the 016 technical design D-01–D-12 with 018-A sponsor D-01–D-07. The latter were approved with conditions; that does not approve the technical design or close its conditions. Migration 001 HOLD, CV-12 UNVERIFIED and Migration 002 NOT AUTHORISED remain controlling.

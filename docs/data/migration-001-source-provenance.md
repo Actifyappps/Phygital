@@ -16,3 +16,8 @@ The migration review records that static inspection was completed but live Postg
 ## Table-count reconciliation
 
 Deliverable 015's static review text reports 20 tables. Deliverable 016 corrects that count to **22 CREATE TABLE definitions**, and Deliverable 018-B provides a source-derived column inventory of all 22 tables and 230 declared columns. The reconciled source count for repository planning is 22. This correction does not imply PostgreSQL execution or runtime catalogue verification; Migration 001 remains HOLD.
+
+
+## 015–018-B source inventory and technical-design crosswalk
+
+The 015–018-B review set is represented in `docs/data/015-018b-technical-design-reconciliation.md`. It distinguishes static inspection, source-derived inventory, conditional logical design, technical recommendations, implementation authority and execution evidence. The table-count correction is reconciled to 22 source tables and 230 declared columns; this is not a PostgreSQL runtime catalogue result.
