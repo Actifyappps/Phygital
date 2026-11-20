@@ -1,0 +1,193 @@
+{
+  "fixture_id": "PHYGITAL-L1-SYNTHETIC-022",
+  "source": "Notion Deliverable 022 — Level 1 Test Data Pack & Execution Workbook",
+  "status": "SYNTHETIC_ONLY_NOT_REAL",
+  "physical_batch_exists": false,
+  "external_transmission_prohibited": true,
+  "organisations": [
+    {
+      "id": "ORG-T-PROD-001",
+      "name": "TEST Producer Group Alpha",
+      "role": "hypothetical supply group",
+      "authority_status": "NO_REAL_AUTHORITY"
+    },
+    {
+      "id": "ORG-T-OP-001",
+      "name": "TEST Marketplace Operator",
+      "role": "coordination layer",
+      "authority_status": "NO_APPOINTMENT"
+    },
+    {
+      "id": "ORG-T-HUB-001",
+      "name": "TEST Service Point Alpha",
+      "role": "intake recording only",
+      "authority_status": "NO_SITE_OR_CUSTODY_AUTHORITY"
+    },
+    {
+      "id": "ORG-T-BUY-001",
+      "name": "TEST Wholesale Buyer Beta",
+      "role": "hypothetical buyer",
+      "authority_status": "NO_REAL_BUYER_INTENT"
+    },
+    {
+      "id": "ORG-T-SELL-001",
+      "name": "TEST Seller Partner Gamma",
+      "role": "hypothetical seller/exporter",
+      "authority_status": "NO_SELLER_OR_EXPORTER_AUTHORITY"
+    },
+    {
+      "id": "ORG-T-PROV-001",
+      "name": "TEST Inspection Provider Delta",
+      "role": "hypothetical inspection provider",
+      "authority_status": "NO_ACCREDITATION_OR_INSPECTION"
+    }
+  ],
+  "users": [
+    {
+      "id": "USR-T-PROD-001",
+      "name": "TEST Producer Contact 01",
+      "authority_status": "NO_REAL_IDENTITY"
+    }
+  ],
+  "authority_records": [
+    {
+      "id": "AUTH-T-001",
+      "organisation_id": "ORG-T-PROD-001",
+      "role": "declares hypothetical supply",
+      "status": "SIMULATED",
+      "limitation": "not proof of real producer mandate"
+    },
+    {
+      "id": "AUTH-T-002",
+      "organisation_id": "ORG-T-HUB-001",
+      "role": "records hypothetical intake",
+      "status": "SIMULATED",
+      "limitation": "no physical custody or site permission"
+    },
+    {
+      "id": "AUTH-T-003",
+      "organisation_id": "ORG-T-SELL-001",
+      "role": "reviews draft quotation",
+      "status": "SIMULATED",
+      "limitation": "no authority to sell/export real goods"
+    },
+    {
+      "id": "AUTH-T-004",
+      "organisation_id": "ORG-T-OP-001",
+      "role": "coordinates workflow",
+      "status": "SIMULATED",
+      "limitation": "not seller, exporter, custodian or payment institution"
+    },
+    {
+      "id": "AUTH-T-005",
+      "organisation_id": "ORG-T-PROV-001",
+      "role": "supplies mock inspection outcome",
+      "status": "SIMULATED",
+      "limitation": "not an actual inspection or accredited result"
+    }
+  ],
+  "product": {
+    "id": "PROD-T-001",
+    "name": "TEST-COMMODITY-01",
+    "form": "TEST-FORM-A",
+    "origin": "TEST-ORIGIN-01"
+  },
+  "batch": {
+    "id": "BATCH-T-001",
+    "product_id": "PROD-T-001",
+    "supplier_id": "ORG-T-PROD-001",
+    "recording_site_id": "ORG-T-HUB-001",
+    "intake_date": "2026-11-09",
+    "declared_quantity": 100,
+    "held_quantity": 5,
+    "eligible_simulated_offer_quantity": 95,
+    "buyer_requested_quantity": 80,
+    "simulated_allocation": 80,
+    "simulated_unallocated_remainder": 15,
+    "unit": "kg",
+    "quality_state": "PENDING_TEST_EVIDENCE",
+    "physical_existence": "NONE"
+  },
+  "buyer_enquiry": {
+    "id": "ENQ-T-001",
+    "buyer_id": "ORG-T-BUY-001",
+    "product_id": "PROD-T-001",
+    "quantity": 80,
+    "unit": "kg",
+    "destination": "TEST-DESTINATION-01",
+    "packaging": "TEST-PACK-01",
+    "quality_attributes": "PLACEHOLDER_NO_ACTUAL_SPECIFICATION",
+    "delivery_term": "TEST-TERM-ONLY",
+    "payment_term": "TEST-TERM-ONLY",
+    "status": "INCOMPLETE_BY_DESIGN"
+  },
+  "quotation": {
+    "id": "QUOTE-T-001",
+    "buyer_id": "ORG-T-BUY-001",
+    "seller_id": "ORG-T-SELL-001",
+    "product_id": "PROD-T-001",
+    "batch_id": "BATCH-T-001",
+    "quantity": 80,
+    "unit": "kg",
+    "unit_price": 10,
+    "currency": "TEST-CURRENCY",
+    "total": 800,
+    "state": "DRAFT_TO_APPROVED_FOR_SIMULATION_ONLY",
+    "contract_status": "NONE",
+    "external_transmission": "PROHIBITED"
+  },
+  "evidence": [
+    {
+      "id": "EVD-T-001",
+      "record": "ORG-T-PROD-001",
+      "type": "participant declaration",
+      "label": "SYNTHETIC"
+    },
+    {
+      "id": "EVD-T-002",
+      "record": "AUTH-T-001",
+      "type": "authority record",
+      "label": "NO REAL MANDATE"
+    },
+    {
+      "id": "EVD-T-003",
+      "record": "BATCH-T-001",
+      "type": "intake record",
+      "label": "SIMULATED INTAKE"
+    },
+    {
+      "id": "EVD-T-004",
+      "record": "BATCH-T-001",
+      "type": "hold record",
+      "label": "SIMULATED"
+    },
+    {
+      "id": "EVD-T-005",
+      "record": "BATCH-T-001",
+      "type": "quality record",
+      "label": "NOT VERIFIED"
+    },
+    {
+      "id": "EVD-T-006",
+      "record": "ENQ-T-001",
+      "type": "buyer specification",
+      "label": "TEST ONLY"
+    },
+    {
+      "id": "EVD-T-007",
+      "record": "QUOTE-T-001",
+      "type": "seller review",
+      "label": "NOT A REAL OFFER"
+    },
+    {
+      "id": "EVD-T-008",
+      "record": "BATCH-T-001",
+      "type": "mock inspection",
+      "label": "NOT AN INSPECTION"
+    }
+  ],
+  "arithmetic_checks": {
+    "declared_less_held_kg": 95,
+    "eligible_less_allocation_kg": 15
+  }
+}
