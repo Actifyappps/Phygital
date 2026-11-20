@@ -260,3 +260,8 @@ A fresh fetch of the current Project Home found 48 linked document pages plus th
 ## 024-B / 024-C cross-specification integrity review — 20 November 2026
 
 Notion 024-B v0.1 and 024-C v0.1 were reconciled as a connected workflow-to-logical-model chain. The review links WF-01–WF-18 to the 65 conceptual entities and 34 relationships, groups the 36 integrity invariants by workflow, and records the 024-H, 025, Developer Guide and DC-01–DC-14 dependencies. See `docs/quality/024b-024c-cross-spec-integrity-review.md`. This is source-to-repository design reconciliation only; it is not logical-model approval, physical schema approval, implementation, test execution or migration authorization.
+
+
+## 024-D API and integration contract source verification — 20 November 2026
+
+Notion 024-D v0.1 was compared with the repository logical operation and event catalogues. The 65 operation names across IA-01–IA-09 and IA-10 match by section; the offline constraints are separately represented. All 77 candidate event names match with no missing or extra names. The eight integration families, 17 contract-test families and API-OD-01–12 are represented. See `docs/quality/024d-source-contract-completeness-verification.md`. This confirms source-content representation only; no endpoint protocol, schema, provider, architecture or implementation is approved.

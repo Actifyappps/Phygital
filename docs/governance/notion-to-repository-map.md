@@ -306,3 +306,8 @@ The current Project Home's 48 linked document pages and Evidence Register databa
 ## 024-B / 024-C workflow-to-logical-model reconciliation — 20 November 2026
 
 The connected workflow/data review is recorded in `docs/quality/024b-024c-cross-spec-integrity-review.md`. It connects all 18 024-B workflows and 34 business rules to 024-C's 65 logical entities, 34 relationships and 36 integrity invariants, then records the required test evidence and unresolved decisions. Existing source-specific catalogues remain authoritative for exact states, cardinalities, invariants and entity definitions. No physical schema, implementation, migration or acceptance is implied.
+
+
+## 024-D contract and event source verification — 20 November 2026
+
+The detailed 024-D logical operation inventory is preserved in `docs/api/024d-logical-operation-catalogue.md`; the candidate event vocabulary is in `docs/api/024d-domain-event-catalogue.md`. Source verification confirms 65/65 operation names and 77/77 event names, with 12 open API decisions and no provider selection. See `docs/quality/024d-source-contract-completeness-verification.md`. These are logical contracts only; endpoint schemas, transport, provider adapters and execution remain gated.

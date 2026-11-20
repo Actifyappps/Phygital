@@ -401,3 +401,18 @@ See `docs/quality/notion-home-to-repository-register-check.md`. This does not cl
 | Open decisions | DC-01–DC-14 (14) | Same document; cross-spec review | Remain open pending stated evidence/authority |
 
 See `docs/quality/024b-024c-cross-spec-integrity-review.md`. This reconciliation does not authorize physical schema implementation, Migration 001/002, production provisioning or live operations.
+
+
+## 024-D logical API and integration source verification — 20 November 2026
+
+| Coverage element | Notion 024-D source | Repository verification |
+|---|---:|---|
+| Logical API groups | 11 | All represented |
+| Logical operations | 65 | 65/65 names match by domain section |
+| Offline contract | Constrained command allow-list, no unrestricted operation table | Requirements represented; high-risk actions denied offline by default |
+| Candidate events | 77 | 77/77 names match; no missing/extra names |
+| Integration families | 8 | All represented; no provider presumed |
+| Contract test families | 17 | All represented in source strategy/crosswalk |
+| Open API decisions | 12 | API-OD-01–12 remain open |
+
+See `docs/quality/024d-source-contract-completeness-verification.md`. This verifies source representation, not executable API contracts, deployed event transport, provider integration, test execution or production authorization.
