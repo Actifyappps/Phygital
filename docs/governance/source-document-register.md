@@ -170,3 +170,14 @@ Migration 001 remains HOLD; CV-12 UNVERIFIED; Migration 002 NOT AUTHORISED.
 ## Engineering governance reconciliation — 20 November 2026
 
 The Actify-to-Phygital application is consolidated in `docs/delivery/engineering-governance-and-build-standard-crosswalk.md`. TSBBF v1.0 remains the component-level technology/build-vs-buy framework; AADDG v1.0 remains the engineering lifecycle and Level 1 operating standard. Their Actify Library source identifiers are recorded above. The Developer Guide v0.1 (17 November 2026) canonical artifact remains unrecovered in targeted Notion/Library search; its Next.js/Vercel + Supabase candidate description is provisional pending source verification. ADR-0001 and ADR-0002 remain OPEN. No technology selection, environment provisioning, migration execution or production authorisation is implied.
+
+
+## Technology decision preparation — component register and assessment tools (20 November 2026)
+
+| Repository artefact | Purpose / disposition |
+|---|---|
+| `docs/architecture/technology-component-register.md` | 24 technology-neutral component decisions, logical seams, candidate classes, evidence risks and phase priorities. No vendor selected. |
+| `docs/decisions/TSBBF-component-assessment-workbook.md` | Blank TSBBF v1.0 assessment template, scoring rules, evidence checklist, 12/24/36-month TCO model and decision handoff. No candidate scored or shortlisted. |
+| `docs/delivery/technology-spike-and-acceptance-plan.md` | Synthetic-data-only spike protocol with 18 acceptance tests. Prepared plan only; not executed or authorised. |
+
+These artefacts do not close ADR-0001/0002 or dependent ADRs. Developer Guide v0.1 canonical source remains unrecovered; no production provisioning, migration, live integration or live trade is authorised.

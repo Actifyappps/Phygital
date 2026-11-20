@@ -208,3 +208,15 @@ The source-to-repository reconciliation is `docs/data/015-018b-technical-design-
 | ADR-0001 / ADR-0002 | `docs/decisions/ADR-0001-technology-baseline.md`; `docs/decisions/ADR-0002-application-topology.md` | Decision questions, constraints and closure evidence represented | Both OPEN; no stack or topology selected |
 
 Repository folders remain technology-neutral. `web/` versus `src/` is unresolved. No framework/provider selection, production environment, migration execution or deployment is claimed. Migration 001 remains HOLD; Migration 002 NOT AUTHORISED; EVI-21 remains OPEN.
+
+
+## Technology decision preparation coverage — 20 November 2026
+
+| Work product | Repository home | Coverage status | Remaining gate |
+|---|---|---|---|
+| Component inventory | `docs/architecture/technology-component-register.md` | 24 component decisions mapped to requirements, seams, candidate classes, risks and priorities | Confirm against recovered Developer Guide/current 024; gather workload/partner evidence |
+| TSBBF assessment | `docs/decisions/TSBBF-component-assessment-workbook.md` | Blank weighted scorecard, evidence checklist, TCO model and ADR handoff | No candidate scored; complete with evidence and authorised reviewers |
+| Technical spike | `docs/delivery/technology-spike-and-acceptance-plan.md` | Synthetic vertical slice and 18 acceptance conditions defined | Not authorised or executed; needs owner, environment and independent reviewer |
+| Technology decision | ADR-0001/0002 and ADR-0003–0008 | Decision dependencies linked | All OPEN; no stack/topology selected |
+
+No candidate is shortlisted or selected. Migration 001 HOLD; Migration 002 NOT AUTHORISED; EVI-21 OPEN. Spike plan authorises no production provisioning, real data, live integration or live trade.

@@ -282,3 +282,12 @@ The detailed source entries for 015, 016, 017 and 018-B are in `docs/governance/
 `docs/delivery/engineering-governance-and-build-standard-crosswalk.md` consolidates TSBBF v1.0 and AADDG v1.0 against Concept Paper v1.1, Technical Development Manual v3.0, the referenced Developer Guide v0.1 and open ADRs. Existing detailed standards remain in `docs/delivery/actify-engineering-operating-standards.md`; technology decisions remain in `docs/architecture/technology-decision-status.md`, ADR-0001 and ADR-0002. The crosswalk records authority hierarchy, candidate architecture conflicts, component scoring, AADDG Level 1 obligations, sponsor boundaries and required evidence. It does not create a new architecture or technology selection.
 
 The Developer Guide v0.1 source remains unresolved; do not treat its candidate stack description as canonical until the exact artifact is recovered. Keep `web/` versus `src/` open. No framework-specific implementation, production provisioning, migration or deployment is authorised by this integration.
+
+
+## Technology decision preparation — 20 November 2026
+
+- `docs/architecture/technology-component-register.md` — 24 technology-neutral component decisions and evidence/priority map.
+- `docs/decisions/TSBBF-component-assessment-workbook.md` — blank TSBBF v1.0 scorecard and evidence/TCO template.
+- `docs/delivery/technology-spike-and-acceptance-plan.md` — synthetic-only spike design and 18 acceptance tests.
+
+These are planning artefacts, not technology selection or implementation approval. No component has been scored or shortlisted. Recover canonical Developer Guide v0.1 before formal candidate scoring. ADR-0001/0002 and ADR-0003–0008 remain OPEN; migration and live-operation holds remain unchanged.

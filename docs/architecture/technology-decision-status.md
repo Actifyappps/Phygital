@@ -44,3 +44,8 @@ Assess components separately: frontend/runtime, API/application framework, datab
 ADR-0001 remains OPEN until alternatives are evidenced and scored, candidate architecture conflicts are resolved, security/privacy and operational risks reviewed, a reversible pilot path defined and an authorised owner records the selection. ADR-0002–0005 remain dependent on the relevant component/topology choices.
 
 No vendor account, deployment project, backend, production environment, database migration or live integration is declared provisioned by this document.
+
+
+## Component inventory and TSBBF assessment preparation — 20 November 2026
+
+The technology-neutral component inventory is `docs/architecture/technology-component-register.md`; the blank evidence-led assessment workbook is `docs/decisions/TSBBF-component-assessment-workbook.md`; and the synthetic-data spike plan is `docs/delivery/technology-spike-and-acceptance-plan.md`. These prepare evidence for ADR-0001/0002 and dependent ADRs. No candidate has been scored or selected. Developer Guide v0.1 canonical source remains unrecovered; candidate comparisons remain provisional until recovered. Spikes require separate approval and synthetic-only data.
