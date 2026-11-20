@@ -233,3 +233,14 @@ No candidate is shortlisted or selected. Migration 001 HOLD; Migration 002 NOT A
 | Pilot-first engineering increments P0–P5 | docs/product/end-to-end-product-realization-map.md | Proposed sequencing; separate pilot maturity and authorization gates remain in force |
 
 The consolidated map is not a substitute for detailed source crosswalks, test catalogues, sponsor decisions or the evidence register. It does not change Migration 001 HOLD, Migration 002 NOT AUTHORISED, or EVI-21 OPEN.
+
+
+## 024-R source-correction reconciliation — 20 November 2026
+
+| Finding | Latest Notion source position | Repository disposition | Remaining gate |
+|---|---|---|---|
+| F-01 Evidence class/provenance | Corrected in 024 v0.1d against Framework 008 §4.1; acquisition-method/type kept distinct | `docs/data/evidence-and-provenance-model.md`; `docs/quality/024r-correction-implementation-record.md` | Propagate and verify through 024-B–G; no implementation or test closure claimed |
+| F-02 Seller/exporter | Separate capacity controls added in 024-A v0.1b, including ten synthetic tests | Authority domain, security/test homes and correction record | Sponsor/legal review; machine-testable tuples and downstream propagation remain open |
+| F-03–F-12 | Allocated by 024-R across 024-B–H | Existing product, commerce, trust, compliance, offline, data, operations and measurement homes | Detailed source specification, verification and approval remain open |
+
+The source correction record does not approve the 024 specifications for production. Deliverable 025 remains not located in the targeted workspace search and requires programme-owner confirmation. EVI-21 remains OPEN; Migration 001 HOLD; Migration 002 NOT AUTHORISED.

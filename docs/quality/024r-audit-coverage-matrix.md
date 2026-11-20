@@ -19,4 +19,4 @@
 | F-12 Producer/buyer outcome metrics | `docs/measurement/` | Dedicated measurement home added |
 
 ## Audit corrections versus programme closure
-The repository now provides explicit homes for all 12 findings. This does **not** mean the underlying Notion specifications have been amended, the findings have been accepted by the audit owner, or any feature has been implemented. Update 024-B through 024-G through their controlled review process. Preserve EVI-21 and migration holds.
+The repository provides explicit homes for all 12 findings. Notion's 19 November 2026 correction record subsequently confirms that 024 v0.1d corrected F-01 at specification level and 024-A v0.1b added separate seller/exporter capacity controls for F-02. These are source-specification corrections, not sponsor/legal approval, implementation, executed tests or audit closure. F-03–F-12 remain allocated to downstream 024-B–H design and verification. See `docs/quality/024r-correction-implementation-record.md` for the source-backed disposition. Preserve EVI-21 and migration holds.

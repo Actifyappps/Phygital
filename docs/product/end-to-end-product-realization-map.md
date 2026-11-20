@@ -126,7 +126,7 @@ Detailed acceptance remains governed by 024-G and security testing by 024-F. Thi
 - Technology stack and component choices remain OPEN under TSBBF; ADR-0001/0002 and dependent ADRs remain OPEN.
 - Developer Guide v0.1 canonical artifact remains unrecovered; its reported Next.js/Vercel/Supabase candidate is not verified source and must not be scored until recovered.
 - AADDG repository convention question (web/ versus src/) remains unresolved.
-- 024-A–G remain draft review specifications; 024-R corrective actions require disposition and relevant source-spec updates.
+- 024 v0.1d and 024-A v0.1b contain the two P0 source-specification corrections recorded by 024-R on 19 November; both remain drafts for sponsor/specialist review. F-03–F-12 are allocated to 024-B–H, with detailed design and verification open. See `docs/quality/024r-correction-implementation-record.md`.
 - Migration 001 remains **HOLD**; Migration 002 is **NOT AUTHORISED**.
 - EVI-21 remains **OPEN**, Closure Accepted = **NO**; DEF-L1-001 and DEF-L1-002 remain OPEN.
 - No live trade, custody, platform-held funds, escrow, live payment integration, dispatch or shipment is authorized.

@@ -181,3 +181,10 @@ The Actify-to-Phygital application is consolidated in `docs/delivery/engineering
 | `docs/delivery/technology-spike-and-acceptance-plan.md` | Synthetic-data-only spike protocol with 18 acceptance tests. Prepared plan only; not executed or authorised. |
 
 These artefacts do not close ADR-0001/0002 or dependent ADRs. Developer Guide v0.1 canonical source remains unrecovered; no production provisioning, migration, live integration or live trade is authorised.
+
+
+## 024-R correction implementation record — 20 November 2026
+
+The 19 November correction record appended to 024-R confirms that 024 v0.1d corrected E1–E4 evidence-class definitions against Framework 008 §4.1 and separated evidence class from acquisition-method/type classification; it also allocated additional audit requirements across 024-A–H. 024-A v0.1b added separate seller/exporter capacity controls, separate authority-record requirements and ten synthetic permission tests. Project Home was updated to reflect those corrections and the next controlled design step. Sponsor/legal review, machine-testable permission tuples, Deliverable 025 status, 024-B onward, evidence closure, implementation and test execution remain outstanding.
+
+Repository disposition: `docs/quality/024r-correction-implementation-record.md`. These are source-specification corrections, not implementation, test results, acceptance or production authorization. 024-R's next controlled step is preparation of 024-B as a specification, not technical implementation or migration execution.
