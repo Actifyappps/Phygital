@@ -38,3 +38,8 @@ Authentication is not authorization. Derive/validate organisation scope server-s
 
 ## Integration families
 Identity; email/SMS; private file storage; measurement devices; payment provider/bank; logistics/carrier; regulatory/standards/laboratory; FX/rates; analytics/reporting. No provider or agency integration is presumed available, contracted or approved. Each adapter needs an owner, contract, authentication, secrets, failure/retry, reconciliation, observability and exit plan.
+
+
+## Logical operation detail
+
+The 65 source operations in 024-D v0.1 are preserved with their command/query type, principal/authority and preconditions in docs/api/024d-logical-operation-catalogue.md. The existing domain map remains the concise bounded-context and open-decision crosswalk; the new catalogue preserves the detailed logical operation inventory without choosing an endpoint protocol.

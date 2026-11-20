@@ -200,3 +200,8 @@ Notion 024-B v0.1 (dated 19 November 2026) contains 18 workflows (WF-01–WF-18)
 ## 024-C entity catalogue source verification — 20 November 2026
 
 Notion 024-C v0.1 (19 November 2026) was compared with `docs/domain/024c-entity-to-context-crosswalk.md`: all 65 identifiers ENT-001–ENT-065 and all 65 logical entity names matched exactly; no missing or extra IDs; ten information domains IA-01–IA-10 represented. Verification record: `docs/quality/024c-entity-catalogue-verification.md`. This does not verify every attribute/cardinality, 018-C mapping, physical schema, SQL, RLS or migration and is not sponsor/legal approval or acceptance.
+
+
+## 024-D logical API operation inventory — 20 November 2026
+
+Notion 024-D v0.1 (19 November 2026) contains 65 logical operations across IA-01–IA-10, offline capture contract requirements, 12 open decisions (API-OD-01–API-OD-12), event envelope/delivery rules and a contract acceptance checklist. Repository disposition: docs/api/024d-logical-operation-catalogue.md, docs/api/024d-contract-domain-map.md and docs/api/024d-domain-event-catalogue.md. The source event catalogue contains 77 candidate event names; all 77 match the repository candidate event catalogue exactly. Draft contracts only; no deployed APIs, selected protocol, provider or live integration is claimed.

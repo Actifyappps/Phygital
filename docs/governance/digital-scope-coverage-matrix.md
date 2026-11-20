@@ -270,3 +270,17 @@ The 024-B source remains a draft. Its next specified companion is 024-C, not an 
 | Physical schema/migration | Not authorized by 024-C | `docs/data/`; held migration area | Migration 001 HOLD; Migration 002 NOT AUTHORISED |
 
 The source remains draft conceptual/logical design. No physical database, SQL execution or acceptance is implied.
+
+
+## 024-D logical API source verification — 20 November 2026
+
+| Source element | Notion source position | Repository home | Coverage result |
+|---|---|---|---|
+| 65 logical API operations | 024-D §5.1–5.11 | docs/api/024d-logical-operation-catalogue.md | 65 operations preserved with type, principal/authority and preconditions |
+| 11 logical groupings | IA-01–IA-10 plus offline capture | docs/api/024d-logical-operation-catalogue.md; contract domain map | Represented |
+| 77 candidate domain events | 024-D §6.2 | docs/api/024d-domain-event-catalogue.md | Exact 77/77 event-name match |
+| 12 open API decisions | API-OD-01–API-OD-12 | docs/api/024d-contract-domain-map.md; logical operation catalogue | All mapped; remain OPEN |
+| Offline command/security requirements | 024-D §5.10, §7–9 | Logical operation catalogue; offline architecture; security/tests | Represented as design constraints; no offline write capability approved |
+| Contract acceptance checklist | 024-D §12 | API, security, quality and evidence homes | Design requirements; test execution/approval outstanding |
+
+024-D remains a draft logical contract specification. It does not select REST/GraphQL/RPC, framework, event transport, provider or deployment; no API implementation or live integration is implied.
