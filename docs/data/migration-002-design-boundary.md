@@ -106,3 +106,10 @@ The later 018 source-based static review reports 22 tables, 52 inline foreign-ke
 ## 018 parent schema-review metrics
 
 The later 018 source-based static review reports 22 tables, 52 inline foreign-key references, 43 CHECK expressions, 4 table-level UNIQUE constraints, 18 explicit indexes and 3 trigger functions with 3 triggers. These are source-file inventory counts, not PostgreSQL runtime catalogue results. The 22-table / 230-column inventory is the reconciled source description. No SQL execution, concurrency test, API test or security test is claimed.
+
+
+## 018-A / 018-C source-status reconciliation — 20 November 2026
+
+A wording conflict exists between the two source records. 018-A section 6A explicitly records sponsor selections D-01–D-07 as **APPROVED WITH CONDITIONS on 17 November 2026**, while 018-C section 1 contains the older blanket sentence “No sponsor decision is assumed approved.” Interpret that sentence in 018-C as stale boilerplate, not as a reversal of the later/explicit 018-A approval record.
+
+This reconciliation does not convert the conditions into closed evidence. The seven decisions remain approved with conditions; their required legal, commercial, partner, facility, privacy and technical evidence remains open. 018-C itself remains a conditional logical target design, not an approved physical schema, SQL script or migration authority. Migration 001 remains HOLD; Migration 002 remains NOT AUTHORISED.

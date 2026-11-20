@@ -244,3 +244,8 @@ A focused source fetch confirmed that the following requirements already have re
 - **020 Route Selection:** complete route, not isolated commodity or site; Route A/Route B/Level 1-only outcome; missing evidence is HOLD/not assessable; progression Level 1 → 2 → 3 → same route-selection crosswalk.
 
 These records are proposed working designs/instruments, not legal clearance, appointments, approved SOPs, route selection or live-pilot authority. The 008 candidate list (tea, honey, avocado) remains a shortlist for investigation only; no product/destination route is selected.
+
+
+### 018-A / 018-C source-status conflict
+
+018-A section 6A records D-01–D-07 approved with conditions on 17 November 2026. 018-C still contains a stale blanket sentence saying no sponsor decision is assumed approved. The repository follows the explicit 018-A approval record while preserving all outstanding conditions; 018-C remains a conditional logical target ERD only. See `docs/data/migration-002-design-boundary.md` for the reconciliation. Neither source authorises Migration 001 execution or Migration 002 implementation.
