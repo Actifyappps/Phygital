@@ -95,6 +95,8 @@ Retain the TSBBF v1.0 weights: functional fit 20%; portability/exit 15%; securit
 
 P1 components (queues/events, observability, notifications, payment-status adapters, inspection/lab evidence, malware inspection and analytics) must be assessed before complete pilot architecture approval. P2/deferred capabilities remain phase-gated.
 
+**WP-03 progress — first component pack completed (20 November 2026):** [WP-03 component evidence pack 01 — data, identity, authorisation and private files](../architecture/wp03-component-evidence-pack-01-data-identity-authorisation-storage.md) defines source-derived requirements, candidate classes, evidence questions and minimum synthetic acceptance tests for TC-03–TC-06. This is an assessment specification only: all four components remain INCOMPLETE — NOT SCORABLE; no provider has been evaluated or selected. Remaining P0 components are scheduled in subsequent packs.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:
