@@ -301,3 +301,8 @@ The current 024 product specification series is represented as one connected pro
 ## Current Project Home completeness verification
 
 The current Project Home's 48 linked document pages and Evidence Register database are all represented in the source register. The repository disposition map records the current document families and findings. The verification and explicit source gaps are recorded in `docs/quality/notion-home-to-repository-register-check.md`. This is a linked-home reconciliation, not an exhaustive crawl of every workspace page, attachment or discussion.
+
+
+## 024-B / 024-C workflow-to-logical-model reconciliation — 20 November 2026
+
+The connected workflow/data review is recorded in `docs/quality/024b-024c-cross-spec-integrity-review.md`. It connects all 18 024-B workflows and 34 business rules to 024-C's 65 logical entities, 34 relationships and 36 integrity invariants, then records the required test evidence and unresolved decisions. Existing source-specific catalogues remain authoritative for exact states, cardinalities, invariants and entity definitions. No physical schema, implementation, migration or acceptance is implied.

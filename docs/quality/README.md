@@ -10,3 +10,5 @@ Canonical test and acceptance authority: 024-G, supplemented by 014 and the Leve
 - aaddg-tsbbf-source-verification.md — source-conformance check for Actify TSBBF v1.0 and AADDG v1.0, including actual repository-state limitations.
 - notion-home-to-repository-register-check.md — current Project Home linked-page/database completeness check against the source register and repository disposition map.
 - 024r-finding-to-requirement-repository-test-reconciliation.md — F-01–F-12 traceability from audit finding to controlling requirement, design home, verification evidence and open gate.
+
+- 024b-024c-cross-spec-integrity-review.md — cross-specification reconciliation of WF-01–WF-18 against ENT-001–ENT-065, REL-001–REL-034, all 36 integrity invariants and open design decisions; no implementation or acceptance claim.

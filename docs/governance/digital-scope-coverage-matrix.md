@@ -385,3 +385,19 @@ The standalone Developer Guide v0.1 source remains unrecovered; its candidate ar
 | Known canonical-source gaps | Developer Guide v0.1, full 024-H page, Deliverable 025 dedicated page; each is recorded as not located, not assumed nonexistent |
 
 See `docs/quality/notion-home-to-repository-register-check.md`. This does not claim a complete scan of all Notion workspace pages or attachments.
+
+
+## 024-B / 024-C workflow and logical-model integrity — 20 November 2026
+
+| Coverage element | Source scope | Repository representation | Status |
+|---|---|---|---|
+| Workflows | WF-01–WF-18 (18) | `docs/product/workflow-to-context-crosswalk.md` and cross-spec review | All IDs mapped to repository domain owners and logical entities |
+| Business rules | BR-001–BR-034 (34) | Workflow crosswalk | All rule IDs represented; enforcement not implemented |
+| Logical entities | ENT-001–ENT-065 (65) | `docs/domain/024c-entity-to-context-crosswalk.md` | 65/65 IDs and names matched |
+| Relationships | REL-001–REL-034 (34) | `docs/domain/024c-relationship-integrity-catalogue.md` | All source rows represented |
+| Integrity invariants | 36 | Same relationship/integrity catalogue | All source invariants represented; physical enforcement unproven |
+| Derived values | 9 | `docs/domain/024c-derived-values-and-open-decisions.md` | Source rows represented; calculations not implemented |
+| Migration mapping and safeguards | 22 source tables; 12 safeguards | Same document and 018-C conditional ERD | Logical only; Migration 001 HOLD |
+| Open decisions | DC-01–DC-14 (14) | Same document; cross-spec review | Remain open pending stated evidence/authority |
+
+See `docs/quality/024b-024c-cross-spec-integrity-review.md`. This reconciliation does not authorize physical schema implementation, Migration 001/002, production provisioning or live operations.

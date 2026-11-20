@@ -255,3 +255,8 @@ TSBBF v1.0 and AADDG v1.0 (including Level 1 extensions) are preserved in the Ac
 ## Current Project Home link completeness check — 20 November 2026
 
 A fresh fetch of the current Project Home found 48 linked document pages plus the Evidence Register database (excluding the Project Home itself). All linked page/database IDs are present in this source register. Nine additional superseded/archive/history references are retained in the register but are not current Project Home links. See `docs/quality/notion-home-to-repository-register-check.md` for counts, repository disposition coverage, known source gaps and scope limits.
+
+
+## 024-B / 024-C cross-specification integrity review — 20 November 2026
+
+Notion 024-B v0.1 and 024-C v0.1 were reconciled as a connected workflow-to-logical-model chain. The review links WF-01–WF-18 to the 65 conceptual entities and 34 relationships, groups the 36 integrity invariants by workflow, and records the 024-H, 025, Developer Guide and DC-01–DC-14 dependencies. See `docs/quality/024b-024c-cross-spec-integrity-review.md`. This is source-to-repository design reconciliation only; it is not logical-model approval, physical schema approval, implementation, test execution or migration authorization.
