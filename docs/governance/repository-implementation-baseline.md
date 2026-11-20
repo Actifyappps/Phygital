@@ -37,8 +37,7 @@ The counts are a snapshot of the Git tree at the stated commit, not a claim abou
 | SQL (.sql) | 2 | Migration 001 candidate and candidate tests; both HOLD and not evidence of execution |
 | Environment template (.example) | 1 | Placeholder configuration only; no real credentials |
 | Git ignore (.gitignore) | 1 | Repository hygiene |
-| Other root/operating docs | 5 | README, contributing, code of conduct, security policy and related repository guidance |
-| **Total** | **399** | Static tracked-file count |
+| **Total** | **399** | Static tracked-file count; Markdown category includes the root README and other Markdown guidance |
 
 ## 3. What exists today
 
