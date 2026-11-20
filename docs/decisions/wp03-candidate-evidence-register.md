@@ -86,7 +86,11 @@ These apply across multiple components and prevent honest weighted scoring:
 8. **Synthetic spike:** no candidate spike is authorised or executed. The 18-test plan remains a prepared plan only.
 9. **Independent review:** no candidate score or technology recommendation has received the required independent review/decision-owner approval.
 
-## 4. Decision-readiness rule
+## 4. Evidence closure request register
+
+The [WP-03 evidence closure request register](../delivery/wp03-evidence-closure-request-register.md) lists 14 evidence requests, expected artefacts, accountable role types, decision dependencies and current status. It distinguishes tasks that can be completed by research from those requiring Phase 0/site/partner/legal validation.
+
+## 5. Decision-readiness rule
 
 A candidate may move from EVIDENCE STARTED to **READY FOR SCORING** only when:
 - source requirements and versions are reconciled;

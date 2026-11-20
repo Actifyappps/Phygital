@@ -121,6 +121,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **P1 business-capability evidence progress (20 November 2026):** [P1 business-capability evidence pack — QR, notifications, payment status, laboratory evidence and analytics](../architecture/wp03-p1-business-capability-evidence-pack-01.md) records source constraints and initial public evidence for TC-14, TC-15, TC-16, TC-18 and TC-20. It preserves the 018-A no-platform-funds boundary, CBK's 10 August 2026 PSP directory as a discovery source only, KENAS ISO/IEC 17025 scope verification, SMS delivery-status distinctions and tenant-safe descriptive analytics. All remain unscored; no live partner or provider is selected.
 
+**WP-03 closure dependencies:** [WP-03 evidence closure request register](wp03-evidence-closure-request-register.md) translates cross-cutting blockers into 14 evidence requests with accountable role types, required artefacts, decision dependencies and current status. Several requests require Phase 0/site/partner/legal input and cannot be resolved by public-source research. WP-03 is NOT CLOSED; no candidate is READY FOR SCORING.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:
