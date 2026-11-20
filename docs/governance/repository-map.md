@@ -36,3 +36,8 @@ A directory or placeholder reserves a governed home only. It does not authorize 
 | `packages/domain/public-projections/` | Revocable public/QR and buyer-safe read projections | Read-only; source facts stay in owning domains |
 | `packages/domain/partner-readiness/` | Facility/provider capability assessments and scope lifecycle | Does not appoint, procure or contract |
 | `tests/` capability suites | Domain, surface, accessibility, localization, notifications, public projection and partner-readiness tests | Requirements/placeholders; execution evidence recorded separately |
+
+
+## Implementation baseline and maturity
+
+The current tracked-tree snapshot and the distinction between documentation, reserved directories, prototype/test artifacts and executable application code are recorded in [repository-implementation-baseline.md](repository-implementation-baseline.md). Update that audit from the actual branch tree after material implementation changes. Do not count .gitkeep files, README placeholders, held SQL or the local HTML rehearsal candidate as production functionality.

@@ -100,3 +100,8 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [Phase 0 evidence-to-deliverable reconciliation](docs/governance/evidence-to-deliverable-reconciliation.md) — 24 evidence items, existing coverage, genuine design gaps and proof still required; snapshot, not status authority.
 - [Phase 0 work-package crosswalk](docs/governance/phase0-work-package-crosswalk.md) — WP-0–WP-9 mapped to repository homes.
 - [011 service-blueprint crosswalk](docs/operations/011-service-blueprint-crosswalk.md) — 12 operating stages mapped to digital domains, controls and gates.
+
+
+## Implementation status (20 November 2026)
+
+The repository is currently a governed product/engineering foundation, not an executable marketplace application. The static tree inventory, including tracked-file counts and the next implementation gates, is recorded in [Repository implementation baseline audit](docs/governance/repository-implementation-baseline.md). Do not mistake documentation, placeholders, the Level 1 HTML prototype or held SQL candidates for production application code or executed acceptance evidence.
