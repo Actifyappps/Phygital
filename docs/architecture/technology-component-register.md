@@ -95,6 +95,10 @@ Blockchain, connected devices, escrow, FX, payment initiation/payout, customs au
 
 - [Database candidate evidence snapshot — 20 November 2026](../decisions/database-candidate-evidence-snapshot-2026-11-20.md): public-source evidence for Supabase, Neon and Render Postgres; all candidates remain unscored and unshortlisted.
 
+## Consolidated candidate evidence register
+
+- [WP-03 candidate evidence register](../decisions/wp03-candidate-evidence-register.md): consolidated candidate inventory, evidence states, blockers and score-readiness gates. No candidate is shortlisted or selected.
+
 ## WP-03 evidence-pack traceability
 
 These source-derived packs define evidence requirements only; they do not record provider assessments, scores, tests or selections.

@@ -35,6 +35,10 @@
 
 A high score is not approval. The authorised decision owner approves the ADR after evidence review.
 
+## WP-03 candidate evidence register
+
+The consolidated [WP-03 candidate evidence register](wp03-candidate-evidence-register.md) lists the current component/candidate set, linked public-source snapshots, evidence state and outstanding blockers. It is an index only; it does not create scores or shortlist status. Candidate cover sheets and scorecards below remain blank until each candidate is READY FOR SCORING.
+
 ## Candidate cover sheet (complete one per component/candidate)
 
 | Field | Entry |

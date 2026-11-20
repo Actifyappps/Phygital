@@ -10,6 +10,7 @@
 - ADR-0008 Physical-digital event integrity — OPEN.
 
 Supporting records:
+- WP-03 candidate evidence register: consolidated component candidates, evidence states and blockers; no candidate scored or shortlisted.
 - TC-12/TC-13/TC-24 recovery, offline and portability evidence snapshot (20 November 2026); no recovery or offline pattern selected.
 - TC-09/TC-10 hosting, deployment and CI candidate evidence snapshot (20 November 2026); no candidates scored or shortlisted.
 - TC-01/TC-02/TC-07 frontend, runtime and worker candidate evidence snapshot (20 November 2026); no candidates scored or shortlisted.
