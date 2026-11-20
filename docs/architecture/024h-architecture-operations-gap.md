@@ -22,3 +22,17 @@
 7. Link architecture choices to the six surfaces, domain boundaries, APIs, data protection and acceptance tests.
 
 No stack, hosting provider, production topology or service-level target is selected by this gap record.
+
+
+## 024-H source re-check and AADDG/TSBBF integration — 20 November 2026
+
+A further targeted search of the current Phygital Project Home and connected Notion workspace did not locate a completed 024-H page. 024-R's intended scope remains architecture, deployment and operations. This gap record is not a substitute 024-H specification.
+
+The Actify governing standards have now been read and applied:
+- AADDG v1.0, including Level 1 extensions, is represented in `docs/delivery/actify-engineering-operating-standards.md`. Its repository/backend/deployment separation, single authoritative repository default, worker/physical bridge controls, reproducible migrations, secrets, private files, webhook/ledger integrity, observability, backup/restore and release gates are mapped.
+- TSBBF v1.0 is represented in the same operating note and ADR-0001. Its component-level scorecard, TCO, data portability, licensing, free-tier limits, maintenance, security/privacy and exit requirements are preserved.
+- ADR-0001 (technology baseline) and ADR-0002 (application topology) remain OPEN. The source-retrieval gap for Developer Guide v0.1 prevents a complete source-to-source architecture comparison until that exact document is recovered.
+
+The following 024-H decisions remain open: selected stack and providers; topology and runtime count; hosting commercial/bandwidth economics; environment and secrets model; worker/queue ownership; support/incident ownership; backup/restore objectives; operational service levels; supplier exit/continuity. Do not invent SLA/RTO/RPO targets or select vendors without workload and cost evidence.
+
+No completed 024-H page, approved stack, production deployment, service-level target or operational readiness acceptance is claimed.

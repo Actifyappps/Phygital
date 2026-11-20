@@ -151,3 +151,33 @@ The supporting operational controls have now been expanded in:
 - `docs/delivery/release-gates.md` — release decision record and current project holds.
 
 024-F and 024-G remain draft specifications. These repository expansions are requirements and operating templates, not implemented controls, completed DPIA, penetration test, security certification, test execution, release acceptance or production authorization.
+
+
+## 8. Second-pass source-to-repository reconciliation — 20 November 2026
+
+### Integrated in this pass
+
+| Source group | Repository additions/updates | Disposition |
+|---|---|---|
+| 010 Hub & Facility Readiness | `docs/operations/010-hub-facility-readiness-crosswalk.md`; facility capability register; source register and map | Assessment framework and HUB-01–HUB-10 traceable; no site appointed/approved |
+| 012 Phase 0 Execution | `docs/operations/012-phase-0-execution-crosswalk.md`; Phase 0 work map | WP-0–WP-9 and indicative 20-day plan mapped; not a kickoff commitment or completion record |
+| 014 Technical Test Harness | `docs/quality/014-technical-test-harness-crosswalk.md` | T0–T8, synthetic fixture, test protocol and evidence links mapped; not executed |
+| 015–018-B migration review/design | `docs/data/015-018b-technical-design-reconciliation.md`; migration provenance and boundary docs | R-01–R-12, technical D-01–D-12, M2-01–M2-24, TD-01–TD-10 and 22-table/230-column source inventory reconciled; migrations remain gated |
+| 024-F security/privacy | Existing `docs/security/024f-control-and-test-crosswalk.md`; expanded privacy, threat and incident docs | 20 SEC controls, 24 ST tests and TH-01–TH-20 mapped; no security implementation/certification claimed |
+| 024-G quality/acceptance | Existing `docs/quality/024g-test-catalogue-crosswalk.md`; expanded test/evidence model and release gates | 36 QAT cases, L0–L8 verification levels and G0–G4 acceptance gates mapped; no test execution/acceptance claimed |
+| AADDG v1.0 / TSBBF v1.0 | `docs/delivery/actify-engineering-operating-standards.md`; ADR-0001/0002; technology status | Engineering lifecycle and selection framework applied; stack/topology deliberately remain OPEN |
+
+### Reconfirmed source-location gaps
+
+| Source | Latest disposition | Next action |
+|---|---|---|
+| 024-H Architecture, Deployment & Operations | No completed page found in targeted current Project Home/workspace search; intended scope allocated by 024-R | Confirm planned, drafted elsewhere or commission under controlled numbering; do not fabricate source |
+| 025 Commercial Service Catalogue / Fees / Billing / Producer Net Proceeds | No dedicated page found; `docs/commerce/service-catalogue-and-fee-model.md` is a requirements holding area | Confirm planned/missing/renumbered and appoint commercial owner; legal/tax and sponsor review before approval |
+| 026 wireframes | No approved wireframe pack found; future/conditional in 024-R | Keep 024-E as screen-requirements authority; do not create duplicate design authority |
+| Developer Guide v0.1 (17 Nov 2026) | Canonical Notion/Library source not recovered in targeted search | Recover exact source/version before final architecture comparison or TSBBF scoring |
+
+024-R explicitly states that no new 024-I is justified at this point. Its P0 correction record identifies 024 v0.1d and 024-A v0.1b updates, while wider P1/P2 requirements remain allocated to 024-A–024-H. Draft specification text and repository crosswalks do not constitute implementation or acceptance.
+
+### Coverage interpretation
+
+The substantive requirements reviewed in this pass now have explicit repository homes and source links. The remaining gap is not a reason to invent more folders or create duplicate specifications: it is to recover/confirm the missing source records, complete the architecture/commercial decisions, and then continue controlled source-to-repository reconciliation. The Notion searches were targeted, not proof of an exhaustive workspace inventory; no claim of 100% Notion coverage is made.

@@ -37,3 +37,14 @@ These are gaps in the evidence reconciliation snapshot, not proof that a source 
 The Phygital Developer Guide v0.1 (dated 17 November 2026) is referenced in the project discussion and in the existing engineering standards note, but its canonical Notion page or Library file was not recovered in the current targeted Notion and Library searches. Its candidate Next.js/Vercel + Supabase/PostgreSQL/Auth/RLS/private-storage description is retained only as a provisional reference from the earlier project record. Do not treat it as a verified canonical source until the actual document/version is recovered and reconciled against Technical Development Manual v3.0.
 
 **Action:** recover the exact document or canonical Notion page; verify version/date and status; compare architecture, deployment, data, identity, storage, workers, security and migration recommendations; then update ADR-0001/0002. Do not commission a duplicate Developer Guide or select a stack by inference.
+
+
+## Second-pass revalidation — 20 November 2026
+
+Targeted searches were rerun for 024-H, 025 and 026 against the current Phygital Project Home/workspace. Results reconfirmed the existing gap dispositions:
+- 024-H was not returned as a completed page; 024-R allocates architecture/deployment/operations scope to it.
+- 025 was not returned as a dedicated page; 024-R references it, and current commerce documents remain requirements/design holding areas.
+- 026 was not returned as an approved wireframe pack; 024-E remains the screen-requirements authority.
+- Developer Guide v0.1 was not recovered from the current Project Home or Library search. Its candidate stack description remains provisional until the exact source is recovered.
+
+No 024-I is justified by 024-R. Do not create replacement deliverables or assign new numbers merely to make the register appear complete.
