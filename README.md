@@ -82,3 +82,13 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [Sponsor decisions D-01–D-07](docs/governance/sponsor-decisions-D01-D07.md) — approved with conditions; constraints, not live authorization.
 
 - [Documentation index](docs/README.md)
+
+- [Digital scope coverage matrix](docs/governance/digital-scope-coverage-matrix.md) — end-to-end coverage of the digital product requirements and supporting sources.
+- [Functional capability map](docs/product/functional-capability-map.md) — 024 product capabilities mapped to bounded contexts, surfaces, integrations and tests.
+- [Screen-state catalogue](docs/product/screen-state-catalogue.md) and [024-E acceptance crosswalk](docs/quality/024e-screen-acceptance-crosswalk.md).
+- [Digital product passport and public projections](docs/product/digital-product-passport-and-public-projections.md).
+- [Notifications and communications](docs/product/notifications-and-communications.md).
+- [Design system and component catalogue](docs/product/design-system-and-component-catalogue.md).
+- [Accessibility, localization and low-bandwidth requirements](docs/product/accessibility-localisation-and-low-bandwidth.md).
+- [Partner and provider readiness](docs/operations/partner-and-provider-readiness.md).
+- [Unresolved source deliverables](docs/governance/unresolved-source-deliverables.md) — missing 024-H/025 references and required confirmation.

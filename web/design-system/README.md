@@ -1,0 +1,3 @@
+# Web design system workspace
+
+The component and interaction contract is defined in `docs/product/design-system-and-component-catalogue.md`. Framework-neutral design tokens and raw CSS are preferred until a frontend architecture decision is approved. Every component needs accessibility, responsive, localization, error, loading, empty, held, offline and permission states as applicable. Components never confer authority.

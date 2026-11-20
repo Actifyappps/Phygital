@@ -148,3 +148,46 @@ The repository uses bounded contexts rather than a one-folder-per-document schem
 - Current archive index: `5d66808b…`. Earlier Concept Paper, Manual v2, earlier Development Manual and B2B Export Hub Manual v1 are historical sources only. They must not silently override Concept Paper v1.1 and Development Manual v3.0.
 - The live Phase 0 Evidence Register database remains in Notion. GitHub contains evidence schemas, test artifacts and sanitized records only; it does not replace the live register or close evidence items.
 - The 48 page links in the current Project Home were enumerated. This register maps the current 001–024-G programme sequence, supporting records, archive pages and technical artifacts; the separate 024-R audit and current 024 specifications are cross-referenced. The register should be re-run when the Project Home document register changes.
+
+
+## 9. Second-pass digital scope reconciliation (20 November 2026)
+
+The current Project Home (44c6808b…) was refetched. Its linked source set was reviewed across the strategic baseline, 001–023 validation/operating/technical records, 024 product blueprint, 024-A–G and 024-R, the Evidence Register protocol/database and archive index. Targeted searches were also run for 024-H, 025, passport/QR, notifications, accessibility/localization, low-bandwidth, and external integrations.
+
+### Additional durable digital homes
+
+| Requirement area | Source authority / evidence | Repository home |
+|---|---|---|
+| Six distinct UI surfaces and navigation | 024, 024-E | `web/surfaces/`, `docs/product/surface-and-navigation-map.md` |
+| Screen states, interaction patterns and component inventory | 024-E | `docs/product/screen-state-catalogue.md`, `docs/product/design-system-and-component-catalogue.md`, `web/design-system/` |
+| Responsive, accessibility, localization, language, low-bandwidth, assisted/shared-device experience | 024-E, 019, 021–023 | `docs/product/accessibility-localisation-and-low-bandwidth.md`, `tests/accessibility/`, surface-level test suites |
+| Notifications and communications | 024, 024-D, 024-E | `packages/domain/notifications/`, `web/features/notifications/`, `docs/product/notifications-and-communications.md`, `integrations/` |
+| Digital product passport, QR and public disclosure | Concept Paper v1.1, Manual v3.0, 024, 024-E, 024-F | `docs/product/digital-product-passport-and-public-projections.md`, `packages/domain/public-projections/`, `web/features/product-passport/`, `docs/decisions/ADR-0007-public-projections-and-qr.md` |
+| Facility, partner and provider readiness | 010, 011, 013, 024, 024-B/C/D/E | `docs/operations/partner-and-provider-readiness.md`, `packages/domain/partner-readiness/`, `web/features/partner-readiness/` |
+| Product capability to implementation/test ownership | 024, 024-A–G, 024-R | `docs/product/functional-capability-map.md`, `docs/quality/024e-screen-acceptance-crosswalk.md` |
+| Architecture/deployment/operations specification gap | 024-R F-03/F-07/F-11 and allocation to 024-H; AADDG/TSBBF | `docs/architecture/024h-architecture-operations-gap.md`, `docs/governance/unresolved-source-deliverables.md` |
+
+### Explicitly not a new subsystem
+
+- Product passport is a read-only, permission-filtered projection over authoritative product, batch, evidence, document, compliance and shipment records. It must not become a second source of truth or imply certification.
+- Reporting/analytics remains under the existing measurement context; dashboards and exports are controlled projections, not a new mutable domain.
+- Provider/facility readiness is a time-bounded assessment and scope record; it does not create an appointment, procurement award, contract or authority.
+- Notification delivery is not evidence that a person read, accepted or acted on a notice.
+- UI roles, navigation and buttons never replace server-side permission enforcement.
+- The six UI surfaces are navigation/security boundaries, not six separate applications or deployments.
+
+### Missing or unconfirmed source deliverables
+
+- 024-R allocates architecture, deployment and operations work to 024-H, but targeted search and the current Project Home did not surface a completed 024-H page. The repository records the gap; it does not fabricate a 024-H source or mark the work complete.
+- 024-R references Deliverable 025 for commercial service catalogue/fees/billing/net proceeds. Targeted search did not locate a dedicated 025 page. The current commerce design docs preserve the requirement without implying approval.
+- 026 wireframes are future/conditional; no wireframe pack was identified. 024-E remains the screen-requirements authority.
+- Developer Guide v0.1 is mentioned in programme work but was not found as a canonical source in the current Project Home or targeted search. Its exact source location/version requires confirmation.
+- A separate Phase 0 Work Map is a draft for sponsor review, not a new governing source. The provider qualification item surfaced as an Evidence Register row, not a standalone specification.
+
+### Archive and duplicate handling
+
+The current archive index says Concept Paper v1.1 and Technical Development Manual v3.0 govern; earlier concept/manual drafts remain historical. The second Project Home and reconstructed 011 copy are retained as superseded/history. Repository structure is derived from the current sources and their dependencies, not old archive-only features.
+
+### Coverage status discipline
+
+This mapping establishes that a requirement has a repository home. It does not mean the requirement is designed in detail, implemented, tested, independently reviewed or accepted. Each transition remains separately evidenced under `docs/governance/requirements-traceability.md` and the Notion Evidence Register.

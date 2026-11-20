@@ -72,3 +72,13 @@
 - 024-H is not established as completed in the scan; 024-I is explicitly not justified at this point; 026 wireframes remain future/conditional.
 - Duplicate 011 pages and older Project Home/manual records require canonical verification before any Notion mutation. Archived material remains historical.
 - Actify AADDG and TSBBF are governing engineering documents identified by the programme; verify their current versions and exact source links before implementation.
+
+| Phygital — Phase 0 Work Map (draft for sponsor review) | https://app.notion.com/p/41b6808bcd9e8177867bc2a742d83e5e | Related planning view; not a governing specification or approval; integrate workstreams into delivery/evidence governance |
+| Provider qualification — Evidence Register record | https://app.notion.com/p/4136808bcd9e81aa9012cef85ef0c622 | A record within the Phase 0 Evidence Register database, not a separate specification; maps to provider-readiness and integrations |
+| 018 parent — Migration 001 Schema Inventory, ERD & Design Conformance Review | https://app.notion.com/p/4136808bcd9e816b8cfaf33b338d5118 | Source review for 22-table schema; static review, no schema approval |
+| 018-A Sponsor Decision Pack D-01–D-07 | https://app.notion.com/p/4136808bcd9e814981ffecf66f2d86ef | Approved with conditions; source of legal/operational/financial boundaries |
+| 024-H Architecture, Deployment & Operations specification | Not located in current Project Home or targeted Notion search | 024-R allocates this scope, but no completed 024-H page located; tracked as unresolved, not represented as an existing source |
+| Deliverable 025 Commercial Service Catalogue / Fees / Billing / Producer Net Proceeds | Not located in current Project Home or targeted Notion search | 024-R references it; current repository commerce docs are holding design requirements, not evidence that 025 exists or is approved |
+| 026 Wireframes | Not located; 024-R describes as future/conditional | No approved wireframes identified; 024-E remains screen-requirements authority |
+| Developer Guide v0.1 (17 November 2026) | Not located as canonical page in current Project Home or targeted search | Mentioned in project work but source location/version unresolved; do not silently promote it to governing authority |
+| Archive index — current | https://app.notion.com/p/5d66808bcd9e82cc8ac38123258c0bcc | Historical versions retained for provenance; Concept Paper v1.1 and Manual v3.0 govern |

@@ -1,0 +1,3 @@
+# Public projections and product-passport domain boundary
+
+Owns versioned, allow-listed, read-only projections assembled from authoritative domain records for public/QR and permitted buyer views. It does not own product, batch, evidence, compliance, shipment or authority facts. Projection generation must support revocation, cache invalidation, privacy filtering and source lineage. QR is not authentication or a bearer grant to private records.
