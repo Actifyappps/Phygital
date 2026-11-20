@@ -10,6 +10,7 @@
 - ADR-0008 Physical-digital event integrity — OPEN.
 
 Supporting records:
+- ADR-0001 and ADR-0002 remain OPEN; WP-03 candidate evidence is underway and WP-04 modular-monolith topology is proposed only, pending authorised review.
 - WP-03 candidate evidence register: consolidated component candidates, evidence states and blockers; no candidate scored or shortlisted.
 - TC-12/TC-13/TC-24 recovery, offline and portability evidence snapshot (20 November 2026); no recovery or offline pattern selected.
 - TC-09/TC-10 hosting, deployment and CI candidate evidence snapshot (20 November 2026); no candidates scored or shortlisted.

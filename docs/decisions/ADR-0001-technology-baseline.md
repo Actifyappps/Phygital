@@ -45,6 +45,15 @@ Evaluate frontend, application/API framework, database, identity, object storage
 - hosting commercial terms and bandwidth/media economics;
 - integration boundaries, webhook trust, worker/edge topology and vendor failure behaviour.
 
+## Evidence progress (20 November 2026)
+
+- [WP-03 candidate evidence register](wp03-candidate-evidence-register.md) consolidates 37 component candidates/patterns and links the initial public-source evidence snapshots. No candidate is READY FOR SCORING; no numeric score or shortlist exists.
+- [Actify technology standards source verification](actify-technology-standards-source-verification.md) confirms the recovered TSBBF v1.0 and AADDG v1.0 sources. The canonical Developer Guide v0.1 remains unrecovered and Candidate A remains provisional/unscorable.
+- [WP-04 application topology assessment](../architecture/wp04-application-topology-assessment.md) proposes a modular-monolith-first logical direction for authorised review only. ADR-0002 remains OPEN; no framework or provider is selected.
+- The workload/TCO register continues to mark unvalidated pilot volumes, operating capacity, RPO/RTO, data retention and costs UNKNOWN.
+
+These records show progress in evidence preparation; they do not close ADR-0001 or authorize a synthetic spike, provisioning, migration or production implementation.
+
 ## Dependencies and open questions
 
 - Reconcile the exact Developer Guide v0.1 source before scoring it against Manual v3.0.
