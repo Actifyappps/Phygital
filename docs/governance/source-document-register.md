@@ -215,3 +215,8 @@ Notion 024-E v0.1 (19 November 2026) was compared with the repository: all 36 sc
 ## 024-F detailed threat/control/test catalogue — 20 November 2026
 
 Notion 024-F v0.1 (19 November 2026) contains 20 threat/abuse records (TH-01–TH-20), 20 security control requirements (SEC-001–SEC-020), 24 minimum security tests (ST-01–ST-24), and Stage A–D security gates. The full source tables, including threat impacts/control directions/priorities, control requirements/accountable roles, and test scenarios/expected results, are preserved in `docs/security/024f-control-requirement-catalogue.md`. The existing `docs/security/024f-control-and-test-crosswalk.md` remains the implementation/verification crosswalk. Requirements only; no controls implemented, tests run, privacy assessment, penetration test or certification claimed.
+
+
+## 024-G product acceptance catalogue correction — 20 November 2026
+
+The current Notion 024-G v0.1 source contains **36** product acceptance cases, QAT-001–QAT-036. The earlier repository crosswalk/README referred to QAT-001–QAT-028 and was incomplete. The full 36 scenarios and minimum expected results are now preserved in `docs/quality/024g-product-acceptance-catalogue.md`; the crosswalk and README range are corrected to QAT-001–QAT-036. 024-F ST-01–ST-24 remain a separate security-specific catalogue. No test execution, independent acceptance or release is claimed.

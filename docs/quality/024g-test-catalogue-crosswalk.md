@@ -123,9 +123,13 @@ Recommended order: establish traceability; reconcile 024-A–F and 024-R; approv
 
 Current status: 024-G is a draft strategy. It does not prove test execution or authorize migration. EVI-21 remains OPEN; Closure Accepted = NO. Migration 001 remains HOLD; Migration 002 NOT AUTHORISED; live operations remain prohibited pending separate gates.
 
-## 11. Repository acceptance
+## 11. Detailed product acceptance catalogue
+
+The complete source scenarios and minimum expected results for QAT-001–QAT-036 are preserved in `docs/quality/024g-product-acceptance-catalogue.md`. The crosswalk below remains the strategy, coverage and gate summary. The 36 cases are requirements only; no execution or acceptance is claimed.
+
+## 12. Repository acceptance
 
 - [x] L0–L8 verification levels and product test domains represented.
-- [x] QAT-001–028, G0–G4 and defect severity/closure rules mapped.
+- [x] QAT-001–036, G0–G4 and defect severity/closure rules mapped.
 - [x] Scope separation from 014 and 021–023/EVI-21 preserved.
 - [ ] No test execution, independent acceptance, release or pilot authorization is claimed.

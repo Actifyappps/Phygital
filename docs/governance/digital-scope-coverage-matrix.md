@@ -309,3 +309,15 @@ The source remains draft conceptual/logical design. No physical database, SQL ex
 | Security assurance stages | Stage A–D | Detailed catalogue and crosswalk | Gate requirements represented; no gate passed by this documentation |
 
 024-F remains draft. No security certification, penetration test, privacy impact assessment or production authorization is claimed.
+
+
+## 024-G product acceptance catalogue reconciliation — 20 November 2026
+
+| Source element | Notion source position | Repository home | Status |
+|---|---|---|---|
+| Product acceptance catalogue | 36 cases QAT-001–QAT-036 | `docs/quality/024g-product-acceptance-catalogue.md` | Full scenarios and expected results represented; not executed |
+| Verification levels | L0–L8 | `docs/quality/024g-test-catalogue-crosswalk.md` | Represented; not test results |
+| Acceptance gates | G0–G4 | Same crosswalk | Represented; no gate passed by documentation |
+| Security test separation | 024-F ST-01–ST-24 | 024-F detailed catalogue and 024-G crosswalk | Separate IDs and closure evidence preserved |
+
+The previous QAT-001–QAT-028 reference was stale and is corrected. EVI-21 remains OPEN; Migration 001 HOLD; Migration 002 NOT AUTHORISED.
