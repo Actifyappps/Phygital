@@ -29,3 +29,23 @@ Brand/tokens; frontend framework/rendering; language set and translation review;
 
 ## Execution evidence
 For each case record requirement ID, screen/build version, device/browser, viewport, locale, network condition, user/authority fixture, steps, observed result, accessibility method, logs/screenshots, defect, retest and reviewer disposition. Automated scans alone do not establish accessibility acceptance.
+
+
+## UI-OD-01–UI-OD-12 — explicit open decision register
+
+| ID | Decision/evidence needed | Owner/reviewer | Interim control |
+|---|---|---|---|
+| UI-OD-01 | Final brand, visual identity, design tokens and content voice | Sponsor/product | Use neutral accessible placeholder design |
+| UI-OD-02 | Final frontend framework and rendering strategy | Technical lead / TSBBF | Framework-neutral specification |
+| UI-OD-03 | Final language set and translation review process | Sponsor/operations | Avoid hard-coded text; no unreviewed legal translations |
+| UI-OD-04 | Target devices, minimum browser versions and field-device capability | Operations/technical | Responsive web baseline; no device dependency |
+| UI-OD-05 | Formal accessibility conformance and user testing | Accessibility lead/reviewer | WCAG 2.2 AA design target |
+| UI-OD-06 | Notification providers, channels, consent and service levels | Sponsor/legal/operations | In-app record; no channel assumption |
+| UI-OD-07 | Offline command allow-list and device security | Operations/security | High-risk actions online-only |
+| UI-OD-08 | Public disclosure and confidentiality policy | Sponsor/legal/data protection | Allow-list public projection |
+| UI-OD-09 | Assisted capture, shared-device and participant-protection SOP | Operations/legal/data protection | Minimize data; no credential sharing |
+| UI-OD-10 | Approved terminology for commodity/destination-specific legal claims | Export/legal specialists | No generic compliance claims |
+| UI-OD-11 | Screen analytics, consent and retention | Product/data-protection | No unnecessary behavioural tracking |
+| UI-OD-12 | Commercial fee, payer and producer-net-proceeds presentation | Sponsor/finance/legal | No fee collection or unapproved fee display |
+
+All 12 decisions remain OPEN. The interim controls are constraints, not approvals or final design decisions.

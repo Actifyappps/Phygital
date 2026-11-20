@@ -12,3 +12,6 @@
 - [Accessibility, localization and low-bandwidth requirements](accessibility-localisation-and-low-bandwidth.md)
 - [Notifications and communications](notifications-and-communications.md)
 - [Digital product passport and public projections](digital-product-passport-and-public-projections.md)
+
+
+- [024-E screen and interaction source verification](../quality/024e-screen-catalogue-verification.md) — exact screen-ID/name comparison, six journeys, 18 acceptance criteria and UI-OD-01–12 disposition.

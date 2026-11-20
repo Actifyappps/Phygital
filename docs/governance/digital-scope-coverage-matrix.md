@@ -284,3 +284,16 @@ The source remains draft conceptual/logical design. No physical database, SQL ex
 | Contract acceptance checklist | 024-D §12 | API, security, quality and evidence homes | Design requirements; test execution/approval outstanding |
 
 024-D remains a draft logical contract specification. It does not select REST/GraphQL/RPC, framework, event transport, provider or deployment; no API implementation or live integration is implied.
+
+
+## 024-E screen and interaction verification — 20 November 2026
+
+| Source element | Notion source position | Repository home | Coverage result |
+|---|---|---|---|
+| 36 named screens across six surfaces | 024-E §5.1–5.6 | `docs/product/024e-screen-inventory.md` | Exact 36/36 ID and name match |
+| Six user journeys J-01–J-06 | 024-E §7 | `docs/product/024e-journey-crosswalk.md` | All six journey IDs represented |
+| 18 screen-level acceptance criteria | 024-E §13 | `docs/quality/024e-screen-acceptance-crosswalk.md` | 18 corresponding test requirements; not executed |
+| UI-OD-01–UI-OD-12 | 024-E §15 | Acceptance crosswalk and verification record | All 12 listed; remain OPEN |
+| Responsive/accessibility/localization/low-bandwidth and assisted-device requirements | 024-E §8–10 | Product requirements, screen-state/design-system homes | Requirements represented; no user or accessibility testing claimed |
+
+024-E remains draft. No screen, wireframe, frontend implementation or production UI is claimed.
