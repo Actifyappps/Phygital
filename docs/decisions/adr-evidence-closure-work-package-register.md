@@ -97,6 +97,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 progress — first component pack completed (20 November 2026):** [WP-03 component evidence pack 01 — data, identity, authorisation and private files](../architecture/wp03-component-evidence-pack-01-data-identity-authorisation-storage.md) defines source-derived requirements, candidate classes, evidence questions and minimum synthetic acceptance tests for TC-03–TC-06. This is an assessment specification only: all four components remain INCOMPLETE — NOT SCORABLE; no provider has been evaluated or selected. Remaining P0 components are scheduled in subsequent packs.
 
+**WP-03 progress — second component pack completed (20 November 2026):** [WP-03 component evidence pack 02 — frontend, application runtime and workers](../architecture/wp03-component-evidence-pack-02-frontend-runtime-workers.md) defines source-derived requirements, candidate classes, evidence questions and minimum synthetic acceptance tests for TC-01, TC-02 and TC-07. All three remain INCOMPLETE — NOT SCORABLE; no candidate has been evaluated or selected.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:

@@ -15,6 +15,7 @@ Supporting records:
 - Workload, operating and TCO assumptions: technology-workload-and-tco-assumptions-register.md (values remain UNKNOWN until evidenced).
 - TSBBF component assessment workbook: blank; no candidate scored.
 - WP-03 component evidence pack 01: TC-03 database, TC-04 identity, TC-05 authorisation and TC-06 private object storage; evidence requirements only, no candidate scored.
+- WP-03 component evidence pack 02: TC-01 frontend, TC-02 application runtime and TC-07 workers; evidence requirements only, no candidate scored.
 - ADR-0001/0002 closure and synthetic vertical-slice readiness: decision-readiness assessment.
 - Evidence sequencing and decision gates: adr-evidence-closure-work-package-register.md.
 
