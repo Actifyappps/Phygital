@@ -16,3 +16,16 @@
 - Do not create duplicate source documents merely to fill a missing number.
 - A repository design note may preserve requirements already stated in located sources, but must identify its actual authority and status.
 - Update this register only after fetching and verifying the canonical source.
+
+
+## Additional genuine gaps identified in the 18 November evidence reconciliation
+
+| Item | What is known | Repository disposition | Next governance action |
+|---|---|---|---|
+| EVI-13 — Full financial model / unit economics | 003, 009, 011, 018-A and 019 contain commercial assumptions and role/funds-flow analysis, but the evidence reconciliation identifies no validated cost per batch/order, contribution, working capital, producer net proceeds, payer willingness or funding commitment. | Existing commerce/service-fee material is a requirements holding area, not a completed financial model. | Recover the paused Financial Model if it exists; otherwise scope a controlled model with assumptions, scenarios, cost owners, payer tests and review. |
+| EVI-17 — Formal data-protection and security assessment | Security/privacy requirements appear across 004, 011, 014, 018, 019 and 023; a formal data map and assessment are not evidenced in the reconciliation snapshot. | Existing security/privacy specifications remain design inputs, not a completed legal/privacy assessment. | Prepare data inventory/flow, controller/processor roles, purposes/lawful basis, notices, processor terms, retention/deletion, incident handling and ODPC applicability assessment for qualified review. |
+| EVI-15 — Approved operational SOP pack | 011 is a proposed operating blueprint; 019/020 describe lean pilot design. Neither is an approved SOP pack. | Keep operational design in docs/operations; do not label the blueprint as an SOP. | Draft only the minimum procedures required after actual site, commodity, provider and role validation; assign approving authority. |
+| EVI-19 — KPI dictionary and thresholds | Monitoring concepts and test observations exist, but formulas, baselines, thresholds, sources, owners and frequency are not complete. | docs/measurement is the design home; current metrics docs are not evidence of an approved KPI baseline. | Define metrics only after route/commodity and pilot scope evidence; mark provisional thresholds and calibration method. |
+| Product Blueprint extensions, UI/UX pack and Go-to-Market strategy | The reconciliation note identifies these as future product/commercial work, not existing Evidence Register deliverables. | Do not create them as evidence closures or silently expand the current Phase 0 critical path. | Commission separately only when the product owner sets scope and priority. |
+
+These are gaps in the evidence reconciliation snapshot, not proof that a source document cannot exist elsewhere. Search/recover a canonical source before commissioning a duplicate.
