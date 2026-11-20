@@ -37,7 +37,7 @@ A Notion document number is not automatically a repository folder, package, serv
 | 006 Phase 0 Evidence Register & Workstream Assignment | Evidence control integration | `evidence/`, `docs/governance/`, `docs/operations/`; Notion remains the master live evidence register. |
 | 007 Buyer & Producer Validation Instruments | Discovery templates and synthetic test scenarios | `docs/product/`, `docs/operations/checklists/`, `fixtures/`; actual interview records remain controlled evidence, not source code. |
 | 008 Commodity & Destination Screening Framework | Dedicated rule-governance section | `docs/compliance/commodity-destination-rule-governance.md`; rule lifecycle, source authority, versioning and hard-stop handling. |
-| 009 Legal & Commercial Role Map and Funds-Flow | Integrate into authority and commerce | `docs/domain/`, `docs/commerce/`, `docs/data/`; reconcile older role proposals to 018-A D-01–D-07. |
+| 009 Legal & Commercial Role Map and Funds-Flow | Dedicated role/funds-flow boundary crosswalk integrated with authority and commerce | `docs/commerce/role-and-funds-flow-boundaries.md`, `docs/domain/`, `docs/data/`; reconcile earlier proposals to 018-A D-01–D-07. Distinguish legal seller, exporter, marketplace coordinator, clearing agent, carrier, independent verifier and licensed payment provider. |
 | 010 Hub & Facility Readiness Assessment | Dedicated operations/facility capability | `docs/operations/`; hub capability, permission, safety, service boundary, staffing and cost; no assumed appointment or custody. |
 | 011 Pilot Operating Model & End-to-End Service Blueprint (current Project Home link: dfe6808b…) | Dedicated operating model + workflow mapping | `docs/operations/`, `docs/product/`, `docs/domain/`; digital workflows remain subordinate to the physical operating model and authority. The reconstructed 4136808b… copy is retained as history, not a parallel authority. |
 | 012 Phase 0 Execution & Evidence Acquisition Plan | Governance/evidence index and workstream planning | `docs/governance/`, `evidence/`; do not convert indicative days into delivery commitments. |
@@ -230,3 +230,17 @@ The manual's endpoint names are proposals; 024-D remains the technology-neutral 
 The 17 November draft Work Map is indexed at `docs/operations/phase-0-work-map-and-dependencies.md`. Its governance, external evidence, technical, legal/data-protection and checkpoint tracks are mapped into existing repository homes. It is a planning aid, not a kickoff, appointment, schedule or approval. The five external unlocks (buyer specification, qualified producer/cooperative, seller/exporter authority, facility readiness and written commodity/destination pathway) remain evidence dependencies, not features the software can manufacture.
 
 The Work Map's historical statement that D-01–D-07 were selections awaiting approval is superseded by the 018-A record of approval with conditions on 17 November 2026. Its proposed Migration 001 execution / Migration 002 drafting tasks do not supersede current controls: Migration 001 HOLD; Migration 002 not authorised.
+
+
+## 10. Phase 0 operating-source cross-check — 008, 009, 011, 013, 019 and 020
+
+A focused source fetch confirmed that the following requirements already have repository homes and should be extended in place rather than duplicated:
+
+- **008 Commodity & Destination Screening:** product-form × destination × buyer-specific screening, E1–E4 evidence classes, twelve hard-stop gates, weighted comparison that cannot override a hard stop, source/version lifecycle and commodity-specific investigation → `docs/compliance/commodity-route-screening-model.md` and `commodity-destination-rule-governance.md`.
+- **009 Legal & Commercial Role Map/Funds-Flow:** candidate operating models, separate legal seller/exporter capacities, platform coordinator boundary, direct buyer-to-seller payment, separate platform service-fee invoice, contracts, responsibility matrix and privacy assessment → `docs/commerce/role-and-funds-flow-boundaries.md` plus existing commerce and authority controls.
+- **011 Pilot Operating Model:** twelve service stages (0–11), physical/digital handoffs, state gates, cross-cutting identity, inventory, evidence, payment, documents and exception controls → `docs/operations/011-service-blueprint-crosswalk.md`.
+- **013 Validation Pack:** controlled buyer, producer/cooperative, hub/facility and provider discovery; authority checks, consent, confidentiality, evidence classification and register linkage → `docs/operations/checklists/counterparty-validation.md` and `partner-and-provider-readiness.md`.
+- **019 Minimum Documentation:** capture once/reuse many; assisted producer workflow; conditional exporter documentation; three maturity levels; minimum documentation without minimum control → `docs/operations/minimum-documentation-and-route-selection.md`.
+- **020 Route Selection:** complete route, not isolated commodity or site; Route A/Route B/Level 1-only outcome; missing evidence is HOLD/not assessable; progression Level 1 → 2 → 3 → same route-selection crosswalk.
+
+These records are proposed working designs/instruments, not legal clearance, appointments, approved SOPs, route selection or live-pilot authority. The 008 candidate list (tea, honey, avocado) remains a shortlist for investigation only; no product/destination route is selected.

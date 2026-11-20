@@ -91,3 +91,8 @@
 
 
 | Phase 0 Evidence-to-Deliverable Reconciliation — Working Control Note | https://app.notion.com/p/41c6808bcd9e81ca9616e80cb359b70d | Crosswalk of all 24 Evidence Register items to source deliverables, existing coverage, genuine design gaps and required proof; snapshot dated 18 Nov 2026; does not change Notion statuses |
+
+
+## Focused operational source review — 20 November 2026
+
+The current Project Home-linked versions of 008, 009, 011 and the working records 013, 019 and 020 were fetched and reconciled against the existing repository homes. Detailed digital/operating dispositions are in `docs/governance/notion-to-repository-map.md`; the 009 legal-role and funds-flow boundary has a dedicated crosswalk at `docs/commerce/role-and-funds-flow-boundaries.md`. These source documents remain working frameworks/instruments, not legal advice, approval, appointment, approved SOP or route selection.
