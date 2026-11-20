@@ -16,6 +16,7 @@ Supporting records:
 - TSBBF component assessment workbook: blank; no candidate scored.
 - WP-03 component evidence pack 01: TC-03 database, TC-04 identity, TC-05 authorisation and TC-06 private object storage; evidence requirements only, no candidate scored.
 - WP-03 component evidence pack 02: TC-01 frontend, TC-02 application runtime and TC-07 workers; evidence requirements only, no candidate scored.
+- WP-03 component evidence pack 03: TC-09 hosting/deployment, TC-10 CI/build, TC-12 backup/restore, TC-13 offline/sync and TC-24 portability/exit; evidence requirements only, no candidate scored.
 - ADR-0001/0002 closure and synthetic vertical-slice readiness: decision-readiness assessment.
 - Evidence sequencing and decision gates: adr-evidence-closure-work-package-register.md.
 

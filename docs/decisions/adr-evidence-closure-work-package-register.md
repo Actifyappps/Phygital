@@ -99,6 +99,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 progress — second component pack completed (20 November 2026):** [WP-03 component evidence pack 02 — frontend, application runtime and workers](../architecture/wp03-component-evidence-pack-02-frontend-runtime-workers.md) defines source-derived requirements, candidate classes, evidence questions and minimum synthetic acceptance tests for TC-01, TC-02 and TC-07. All three remain INCOMPLETE — NOT SCORABLE; no candidate has been evaluated or selected.
 
+**WP-03 progress — third component pack completed (20 November 2026):** [WP-03 component evidence pack 03 — hosting, CI, recovery, offline and portability](../architecture/wp03-component-evidence-pack-03-hosting-ci-recovery-offline-portability.md) defines evidence requirements and minimum synthetic acceptance tests for TC-09, TC-10, TC-12, TC-13 and TC-24. All remain INCOMPLETE — NOT SCORABLE. Packs 01–03 now cover the P0 evidence briefs except TC-08 (P1; not a P0 spike prerequisite).
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:

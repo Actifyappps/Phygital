@@ -65,3 +65,16 @@ Privacy/minimisation/retention; Kenya and destination-market legal/commercial re
 8. Obtain authorised decisions and record conditions in ADRs.
 
 Blockchain, connected devices, escrow, FX, payment initiation/payout, customs automation, regulatory clearance automation, carrier booking, AI forecasts, automated SMS advisories and multi-country scaling remain phase-gated and unselected.
+
+
+## WP-03 evidence-pack traceability
+
+These source-derived packs define evidence requirements only; they do not record provider assessments, scores, tests or selections.
+
+| Pack | Components | Disposition |
+|---|---|---|
+| [WP-03 pack 01 — data, identity, authorisation and private files](wp03-component-evidence-pack-01-data-identity-authorisation-storage.md) | TC-03, TC-04, TC-05, TC-06 | INCOMPLETE — NOT SCORABLE |
+| [WP-03 pack 02 — frontend, application runtime and workers](wp03-component-evidence-pack-02-frontend-runtime-workers.md) | TC-01, TC-02, TC-07 | INCOMPLETE — NOT SCORABLE |
+| [WP-03 pack 03 — hosting, CI, recovery, offline and portability](wp03-component-evidence-pack-03-hosting-ci-recovery-offline-portability.md) | TC-09, TC-10, TC-12, TC-13, TC-24 | INCOMPLETE — NOT SCORABLE |
+
+TC-08 and P1/P2 components remain in the wider WP-03 sequence. The canonical Developer Guide v0.1 source gap remains open.
