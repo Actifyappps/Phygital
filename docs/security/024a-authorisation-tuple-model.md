@@ -19,10 +19,12 @@ Every authorization decision evaluates the complete context, not a role label al
 10. Required evidence and independent approval status.
 11. Separation-of-duties/conflict checks.
 12. Programme phase, pilot maturity level and environment.
+13. Purpose of access/sharing and recipient context where personal or confidential information is involved.
+14. Data classification and permitted disclosure level.
 
 ## Canonical decision tuple
 
-`(subject, organisation, membership, role, action, resource_type, resource_id, scope, capacity, mandate, evidence_state, effective_time, phase, environment)`
+`(subject, organisation, membership, role, action, resource_type, resource_id, scope, capacity, mandate, evidence_state, effective_time, phase, environment, purpose, data_classification)`
 
 The policy result is **allow**, **deny** or **hold/review**, with a reason code and audit reference. Missing, ambiguous, expired, conflicting or unverified authority defaults to deny/hold. Authentication is not authorization; UI visibility is not enforcement.
 
@@ -72,3 +74,26 @@ These IDs are repository-local test identifiers, not source IDs from Notion.
 - Re-evaluate current authority at transaction acceptance and high-risk state transitions.
 - Service identities use narrow non-interactive credentials, rotation and revocation.
 - Do not turn this tuple into an unreviewed universal role engine; validate with legal, security and operational reviewers.
+
+## Role families represented in 024-A
+
+These are logical role families, not confirmed appointments or grants: public visitor; buyer user; producer/member user; cooperative operator; seller representative; exporter representative; hub service operator; quality/laboratory provider user; logistics/clearing provider user; payment-provider integration/user; marketplace operations officer; platform security administrator; independent reviewer/auditor; county/institutional oversight viewer; and service identity.
+
+A person may hold more than one role only after explicit grants and conflict assessment. A role family alone never supplies a mandate, legal capacity, resource scope or data-sharing purpose.
+
+## Seller/exporter capacity-specific test catalogue
+
+The following repository-local IDs preserve the ten additional synthetic test requirements in 024-A Supplement F4. They are not source IDs from Notion.
+
+| Test ID | Scenario | Expected result |
+|---|---|---|
+| CAP-TEST-001 | Seller mandate alone attempts exporter-only action | Deny |
+| CAP-TEST-002 | Exporter mandate alone attempts quotation issuance, seller contract acceptance or commercial invoicing | Deny |
+| CAP-TEST-003 | One organisation holds both capacities but only one valid authority record | Only the separately approved capacity is usable |
+| CAP-TEST-004 | Seller authority expires/revokes while exporter authority remains valid | Seller actions denied; exporter authority is not silently altered |
+| CAP-TEST-005 | Exporter authority expires/revokes while seller authority remains valid | Export actions denied; seller authority is not silently altered |
+| CAP-TEST-006 | Authority scope covers one commodity/destination but request uses another | Deny/hold |
+| CAP-TEST-007 | Capacity evidence is missing, disputed or insufficient | Hold; no fallback party |
+| CAP-TEST-008 | Seller/exporter representative attempts self-approval | Deny; independent reviewer required |
+| CAP-TEST-009 | Seller/exporter capacity attempts to create hub custody, release or dispatch authority | Deny |
+| CAP-TEST-010 | Platform operator attempts to substitute itself as seller/exporter | Deny under D-01/D-02 |

@@ -4,6 +4,26 @@
 **Coverage basis:** Current Project Home and linked source set, targeted Notion searches, 024 product blueprint and 024-A–G, 024-R, Concept Paper v1.1, Technical Development Manual v3.0, Phase 0 operating/technical sources.  
 **Purpose:** A single navigation and completeness control showing where every material digital capability belongs in this repository. This is a coverage map, not implementation evidence.
 
+## 0. Specification coverage inventory
+
+The current 024 source set contains the following traceability units, each represented by a dedicated repository map or test home:
+
+| Source artefact | Count / range | Repository control |
+|---|---:|---|
+| 024-C logical information model | 10 IA domains; 65 entities (ENT-001–ENT-065) | `docs/domain/024c-entity-to-context-crosswalk.md` |
+| 024-B workflows | 18 workflows (WF-01–WF-18) | `docs/product/workflow-to-context-crosswalk.md` |
+| 024-B business rules | BR-001–BR-034 | `docs/product/workflow-to-context-crosswalk.md` |
+| 024-D API open decisions | 12 (API-OD-01–12) | `docs/api/024d-contract-domain-map.md` |
+| 024-E screen inventory | 36 screens across six surfaces | `docs/product/024e-screen-inventory.md` |
+| 024-E user journeys | 6 (J-01–J-06) | `docs/product/024e-journey-crosswalk.md` |
+| 024-E screen acceptance | 18 criteria | `docs/quality/024e-screen-acceptance-crosswalk.md` |
+| 024-F security controls | 20 (SEC-001–SEC-020) | `docs/security/024f-control-and-test-crosswalk.md` |
+| 024-F security tests | 24 (ST-01–ST-24) | `docs/security/024f-control-and-test-crosswalk.md` |
+| 024-G product acceptance | 36 (QAT-001–QAT-036) | `docs/quality/024g-test-catalogue-crosswalk.md` |
+| 024-A permission tests | 15 base tests plus 10 seller/exporter supplement tests | `docs/security/024a-authorisation-tuple-model.md` |
+
+Counts reflect the fetched specification content and repository crosswalks; they do not mean the tests have been executed or accepted.
+
 ## 1. Product and experience
 
 | Capability | Governing source | Repository home | Surface / verification |
