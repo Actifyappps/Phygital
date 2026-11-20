@@ -156,6 +156,8 @@ Entry conditions:
 
 Retain commit SHA, exact commands, versions, configurations, raw results, defects, retests, cost observations and independent review. Another reviewer must reproduce the build/tests and challenge the relevant authority, concurrency, private-file, QR, callback, offline, observability, recovery and portability evidence. A demo or local assertion is not acceptance.
 
+**WP-05 readiness assessment (20 November 2026):** [Synthetic technology spike readiness assessment](wp05-spike-readiness-assessment.md) finds WP-05 NOT READY — NOT AUTHORIZED. Source authority, comparable candidate evidence, Phase 0 workload, legal/privacy, environment/budget, named owners/reviewers and explicit authorization remain incomplete. The existing spike plan is a test specification only; no spike has been run.
+
 ### WP-06 — Governance decision and implementation handoff
 
 The decision package must include completed scorecards, evidence links, alternatives/rejections, workload and TCO assumptions, critical-risk disposition, spike report, independent review, selected topology/runtime inventory, operating ownership, conditions, review trigger and exit plan.
