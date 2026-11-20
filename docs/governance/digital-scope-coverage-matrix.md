@@ -416,3 +416,15 @@ See `docs/quality/024b-024c-cross-spec-integrity-review.md`. This reconciliation
 | Open API decisions | 12 | API-OD-01–12 remain open |
 
 See `docs/quality/024d-source-contract-completeness-verification.md`. This verifies source representation, not executable API contracts, deployed event transport, provider integration, test execution or production authorization.
+
+
+## 024-D contract-to-domain/test linkage — 20 November 2026
+
+| Contract layer | Repository representation | Status |
+|---|---|---|
+| Logical operation inventory | `docs/api/024d-logical-operation-catalogue.md` | 65/65 source operation names represented |
+| Workflow/data ownership | `docs/api/024d-contract-to-workflow-data-test-crosswalk.md` | All 11 contract groups mapped to 024-B WF, 024-C ENT/REL and QAT coverage |
+| Event vocabulary | `docs/api/024d-domain-event-catalogue.md` | 77/77 candidate event names represented |
+| Contract test strategy | 024-G and 024-F quality/security catalogues | Requirements represented; not executed |
+
+The crosswalk is logical and group-level; it does not invent source operation IDs or approve endpoint schemas.

@@ -311,3 +311,8 @@ The connected workflow/data review is recorded in `docs/quality/024b-024c-cross-
 ## 024-D contract and event source verification — 20 November 2026
 
 The detailed 024-D logical operation inventory is preserved in `docs/api/024d-logical-operation-catalogue.md`; the candidate event vocabulary is in `docs/api/024d-domain-event-catalogue.md`. Source verification confirms 65/65 operation names and 77/77 event names, with 12 open API decisions and no provider selection. See `docs/quality/024d-source-contract-completeness-verification.md`. These are logical contracts only; endpoint schemas, transport, provider adapters and execution remain gated.
+
+
+## 024-D contract-to-domain and test linkage — 20 November 2026
+
+Use `docs/api/024d-contract-to-workflow-data-test-crosswalk.md` to connect 024-D logical contract groups with WF-01–WF-18, ENT-001–ENT-065, REL-001–REL-034 and relevant QAT cases. It supplements the 65-operation source catalogue and 77-event catalogue; it does not select API style, transport, providers or implementation architecture.

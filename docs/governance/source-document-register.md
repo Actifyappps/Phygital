@@ -265,3 +265,8 @@ Notion 024-B v0.1 and 024-C v0.1 were reconciled as a connected workflow-to-logi
 ## 024-D API and integration contract source verification — 20 November 2026
 
 Notion 024-D v0.1 was compared with the repository logical operation and event catalogues. The 65 operation names across IA-01–IA-09 and IA-10 match by section; the offline constraints are separately represented. All 77 candidate event names match with no missing or extra names. The eight integration families, 17 contract-test families and API-OD-01–12 are represented. See `docs/quality/024d-source-contract-completeness-verification.md`. This confirms source-content representation only; no endpoint protocol, schema, provider, architecture or implementation is approved.
+
+
+## 024-D contract-to-workflow/data/test traceability — 20 November 2026
+
+The 024-D logical contract groups are now connected to 024-B workflows, 024-C entities/relationships and relevant 024-G QAT coverage in `docs/api/024d-contract-to-workflow-data-test-crosswalk.md`. The mapping is group-level because the source does not assign stable operation IDs. It does not invent endpoint contracts or close API-OD decisions.
