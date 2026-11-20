@@ -109,6 +109,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 candidate evidence progress — TC-06 (20 November 2026):** [TC-06 private object and document storage — initial provider evidence snapshot](storage-candidate-evidence-snapshot-2026-11-20.md) records public-source evidence for Supabase Storage, Cloudflare R2 and Amazon S3. All remain EVIDENCE STARTED — NOT SCORABLE. Notable constraints include Supabase object blobs requiring separate backup, Cloudflare APAC location hints not guaranteeing residency and no S3 Object Lock support, and Amazon S3's configurable versioning/Object Lock with added complexity and cost. No storage provider is shortlisted or approved.
 
+**WP-03 candidate evidence progress — TC-01, TC-02 and TC-07 (20 November 2026):** [Initial frontend, runtime and worker evidence snapshot](frontend-runtime-worker-candidate-evidence-snapshot-2026-11-20.md) records current public-source facts for Next.js, React+Vite, NestJS, Express 5, PostgreSQL outbox workers, Supabase Queues, Cloudflare Queues and Render workers/Workflows. All remain EVIDENCE STARTED — NOT SCORABLE. The canonical Developer Guide gap remains open; NestJS 12's Node compatibility table requires resolution; Supabase Queues is currently labelled Public Alpha; and queue delivery semantics remain subject to idempotent handling.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:

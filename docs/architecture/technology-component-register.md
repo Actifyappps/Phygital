@@ -67,6 +67,10 @@ Privacy/minimisation/retention; Kenya and destination-market legal/commercial re
 Blockchain, connected devices, escrow, FX, payment initiation/payout, customs automation, regulatory clearance automation, carrier booking, AI forecasts, automated SMS advisories and multi-country scaling remain phase-gated and unselected.
 
 
+## TC-01 / TC-02 / TC-07 provider and runtime evidence
+
+- [Frontend, runtime and worker candidate evidence snapshot — 20 November 2026](../decisions/frontend-runtime-worker-candidate-evidence-snapshot-2026-11-20.md): public-source evidence for Next.js, React+Vite, NestJS, Express 5 and four worker/queue patterns; all remain unscored and unshortlisted.
+
 ## TC-06 private storage evidence
 
 - [Private object storage candidate evidence snapshot — 20 November 2026](../decisions/storage-candidate-evidence-snapshot-2026-11-20.md): public-source evidence for Supabase Storage, Cloudflare R2 and Amazon S3; all remain unscored and unshortlisted.
