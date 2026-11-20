@@ -275,3 +275,10 @@ The design remains unapproved for implementation. Candidate additions (units/con
 ## Explicit source-register correction — 015–018-B
 
 The detailed source entries for 015, 016, 017 and 018-B are in `docs/governance/source-document-register.md`; their consolidated technical reconciliation is `docs/data/015-018b-technical-design-reconciliation.md`. Keep 016 D-01–D-12 distinct from sponsor D-01–D-07 in 018-A. 018-B's 22-table/230-column figures describe the source SQL only. No migration execution or acceptance is implied.
+
+
+## Engineering governance and build-standard integration — 20 November 2026
+
+`docs/delivery/engineering-governance-and-build-standard-crosswalk.md` consolidates TSBBF v1.0 and AADDG v1.0 against Concept Paper v1.1, Technical Development Manual v3.0, the referenced Developer Guide v0.1 and open ADRs. Existing detailed standards remain in `docs/delivery/actify-engineering-operating-standards.md`; technology decisions remain in `docs/architecture/technology-decision-status.md`, ADR-0001 and ADR-0002. The crosswalk records authority hierarchy, candidate architecture conflicts, component scoring, AADDG Level 1 obligations, sponsor boundaries and required evidence. It does not create a new architecture or technology selection.
+
+The Developer Guide v0.1 source remains unresolved; do not treat its candidate stack description as canonical until the exact artifact is recovered. Keep `web/` versus `src/` open. No framework-specific implementation, production provisioning, migration or deployment is authorised by this integration.

@@ -195,3 +195,16 @@ The quality/security sources are distinct from the database harness 014 and Leve
 ## 015–018-B technical source coverage correction
 
 The source-to-repository reconciliation is `docs/data/015-018b-technical-design-reconciliation.md`. It corrects 015's preliminary 20-table count to 22 tables / 230 declared columns, based on 016's explicit correction and 018-B's source inventory. 016 D-01–D-12 are technical design IDs and are not 018-A sponsor decisions D-01–D-07. Static review is not PostgreSQL execution. Migration 001 HOLD; Migration 002 NOT AUTHORISED.
+
+
+## Engineering governance and technology-selection coverage — 20 November 2026
+
+| Source | Repository home | Coverage status | Remaining gate |
+|---|---|---|---|
+| TSBBF v1.0 | `docs/delivery/actify-engineering-operating-standards.md`; `docs/architecture/technology-decision-status.md`; ADR-0001; engineering crosswalk | Framework, weighted criteria, critical-risk blockers, component-level assessment and exit/TCO evidence represented | Candidate scorecards and authorised decision not evidenced |
+| AADDG v1.0 | `docs/delivery/actify-engineering-operating-standards.md`; ADR-0002; security/quality/delivery controls; engineering crosswalk | Lifecycle, source-of-truth, reproducibility, secrets, workers, Level 1 physical-digital/offline/provider/financial/recovery obligations represented as requirements | Runtime controls, environment provisioning, build/test/release evidence not established |
+| Technical Development Manual v3.0 | `docs/architecture/technical-development-manual-v3-crosswalk.md`; engineering crosswalk | Modular-monolith-first logical candidate and functional/data/integration/offline/financial requirements mapped | Framework, database provider and deployment topology remain unselected |
+| Developer Guide v0.1 (17 Nov 2026) | Technology status; ADR-0001; engineering crosswalk | Provisional competing architecture description recorded | Canonical source not recovered; exact content/version and scorecard evidence remain open |
+| ADR-0001 / ADR-0002 | `docs/decisions/ADR-0001-technology-baseline.md`; `docs/decisions/ADR-0002-application-topology.md` | Decision questions, constraints and closure evidence represented | Both OPEN; no stack or topology selected |
+
+Repository folders remain technology-neutral. `web/` versus `src/` is unresolved. No framework/provider selection, production environment, migration execution or deployment is claimed. Migration 001 remains HOLD; Migration 002 NOT AUTHORISED; EVI-21 remains OPEN.

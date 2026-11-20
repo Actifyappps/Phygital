@@ -165,3 +165,8 @@ AADDG establishes source-of-truth and lifecycle controls; TSBBF governs selectio
 | 018-B — Migration 001 Column-Level Data Dictionary & Source Inventory | `docs/data/migration-001-source-provenance.md` and `docs/data/015-018b-technical-design-reconciliation.md`; 22 source tables / 230 declared columns, not runtime catalogue. |
 
 Migration 001 remains HOLD; CV-12 UNVERIFIED; Migration 002 NOT AUTHORISED.
+
+
+## Engineering governance reconciliation — 20 November 2026
+
+The Actify-to-Phygital application is consolidated in `docs/delivery/engineering-governance-and-build-standard-crosswalk.md`. TSBBF v1.0 remains the component-level technology/build-vs-buy framework; AADDG v1.0 remains the engineering lifecycle and Level 1 operating standard. Their Actify Library source identifiers are recorded above. The Developer Guide v0.1 (17 November 2026) canonical artifact remains unrecovered in targeted Notion/Library search; its Next.js/Vercel + Supabase candidate description is provisional pending source verification. ADR-0001 and ADR-0002 remain OPEN. No technology selection, environment provisioning, migration execution or production authorisation is implied.
