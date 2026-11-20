@@ -67,6 +67,10 @@ Privacy/minimisation/retention; Kenya and destination-market legal/commercial re
 Blockchain, connected devices, escrow, FX, payment initiation/payout, customs automation, regulatory clearance automation, carrier booking, AI forecasts, automated SMS advisories and multi-country scaling remain phase-gated and unselected.
 
 
+## TC-04 provider evidence
+
+- [Identity candidate evidence snapshot — 20 November 2026](../decisions/identity-candidate-evidence-snapshot-2026-11-20.md): public-source evidence for Supabase Auth, Clerk, Auth0 and Keycloak; all candidates remain unscored and unshortlisted.
+
 ## TC-03 provider evidence
 
 - [Database candidate evidence snapshot — 20 November 2026](../decisions/database-candidate-evidence-snapshot-2026-11-20.md): public-source evidence for Supabase, Neon and Render Postgres; all candidates remain unscored and unshortlisted.

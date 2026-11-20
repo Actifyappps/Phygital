@@ -103,6 +103,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 candidate evidence progress (20 November 2026):** [TC-03 relational database — initial provider evidence snapshot](database-candidate-evidence-snapshot-2026-11-20.md) captures official public-source facts for Supabase Postgres, Neon Postgres and Render Postgres. It records current pricing/region/backup/security observations and candidate-specific unknowns. All three remain EVIDENCE STARTED — NOT SCORABLE; no shortlist or ranking has been made. Provider-specific legal/DPA, workload/TCO, restore and synthetic-test evidence remains outstanding.
 
+**WP-03 candidate evidence progress — TC-04 (20 November 2026):** [TC-04 identity and authentication — initial provider evidence snapshot](identity-candidate-evidence-snapshot-2026-11-20.md) records official public-source facts for Supabase Auth, Clerk, Auth0 and Keycloak. All remain EVIDENCE STARTED — NOT SCORABLE; no identity provider has been shortlisted or selected. Data residency, DPA, scenario pricing, identity export, session-revocation and operational evidence remain outstanding.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:
