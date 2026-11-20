@@ -21,3 +21,10 @@
 
 ## Open defects and stop conditions
 DEF-L1-001 (negative controls could previously report PASS without executing the invalid action) and DEF-L1-002 (prototype v0.1 coverage was 8 workflow steps/6 controls versus 022's 16/12) remain OPEN pending controlled browser retest and independent review. Preserve original results and retest evidence; do not silently amend a failed/blocked result.
+
+
+## 18–20 November 2026 — v0.4 candidate and current execution boundary
+
+Deliverable 023 and EVI-21 record a separate v0.4 candidate (41,134 bytes; SHA-256 `c9799a7b1acdb1a3f646e1423deeca285b7016d58aab19f16f6da37d891ba1ef`). The v0.4 logic harness passed 12/12 negative assertions, including N-01 through the actual UI runner, and a positive simulated path (80.000 kg allocated; 15.000 kg remainder). This remains Node.js mocked-DOM logic evidence only.
+
+Two Chromium 144 headless launch attempts failed to produce rendered DOM output. No browser test, 16-step operator rehearsal, browser execution of the 12 negative tests, screenshots/exports or independent review is claimed. The v0.4 candidate is for controlled desktop-browser execution only. The operator must verify the exact digest, preserve raw evidence and complete all steps; a separate independent reviewer must inspect the evidence. EVI-21 remains OPEN; Closure Accepted remains NO; DEF-L1-001 and DEF-L1-002 remain OPEN. See `docs/quality/level1-rehearsal-crosswalk.md` and the Notion EVI-21 pack.

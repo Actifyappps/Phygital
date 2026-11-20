@@ -1,6 +1,6 @@
 # Phygital Notion-to-repository disposition map
 
-**Review date:** 19 November 2026  
+**Review date:** 20 November 2026  
 **Repository:** Actifyappps/Phygital  
 **Purpose:** Decide which Notion programme records require a durable repository home, where that home belongs, and which records should remain source/evidence references rather than being copied wholesale.
 
@@ -211,3 +211,22 @@ Duplicate archive pages and older Project Home/011 copies are indexed as histori
 
 
 | Phase 0 Evidence-to-Deliverable Reconciliation — Working Control Note | Governance/evidence crosswalk; not a new numbered deliverable or status register | `docs/governance/evidence-to-deliverable-reconciliation.md`; preserve 24-item coverage, gap classes, evidence dependencies and execution gates; Notion Evidence Register remains operational master |
+
+
+## 8. Technical Development Manual v3.0 — detailed digital scope integration
+
+The fetched canonical Manual v3.0 is mapped in `docs/architecture/technical-development-manual-v3-crosswalk.md`. Its scope is integrated into existing domain homes rather than copied as a parallel numbered subsystem:
+
+- modular-monolith-first logical shape, web surfaces, API, domain modules, relational transaction store, private files, background work and replaceable provider adapters → `docs/architecture/`, `web/`, `packages/domain/`, `integrations/`, `workers/`;
+- identity/organisations/memberships; catalogue/listings; hub intake/batches/measurement/quality; inventory/reservations/movements; buyer enquiry/quotation/order; documents/compliance/fulfilment; payment status/reconciliation; cases/disputes; notifications/reporting/audit → corresponding domain packages and surface feature homes;
+- stable identifiers, decimal quantities/money, explicit units/currency, append-only movement/audit records, concurrency-safe allocation, immutable accepted-quotation snapshots, idempotency and server-side authorization → `docs/data/`, `docs/security/`, `docs/api/`, `tests/`;
+- offline capture, device provenance/calibration, synthetic-data isolation, QR public-safe projection and blockchain deferral → existing offline, measurement, evidence, public-projection and phase-gate controls;
+- payment references/status/reconciliation only at baseline; no platform-held funds, custom escrow wallet or automatic release on webhook/QR scan.
+
+The manual's endpoint names are proposals; 024-D remains the technology-neutral API contract authority. Its candidate stack and migration references do not override TSBBF/ADR decisions or current migration holds.
+
+## 9. Phase 0 Work Map integration
+
+The 17 November draft Work Map is indexed at `docs/operations/phase-0-work-map-and-dependencies.md`. Its governance, external evidence, technical, legal/data-protection and checkpoint tracks are mapped into existing repository homes. It is a planning aid, not a kickoff, appointment, schedule or approval. The five external unlocks (buyer specification, qualified producer/cooperative, seller/exporter authority, facility readiness and written commodity/destination pathway) remain evidence dependencies, not features the software can manufacture.
+
+The Work Map's historical statement that D-01–D-07 were selections awaiting approval is superseded by the 018-A record of approval with conditions on 17 November 2026. Its proposed Migration 001 execution / Migration 002 drafting tasks do not supersede current controls: Migration 001 HOLD; Migration 002 not authorised.
