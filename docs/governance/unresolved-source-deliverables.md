@@ -29,3 +29,11 @@
 | Product Blueprint extensions, UI/UX pack and Go-to-Market strategy | The reconciliation note identifies these as future product/commercial work, not existing Evidence Register deliverables. | Do not create them as evidence closures or silently expand the current Phase 0 critical path. | Commission separately only when the product owner sets scope and priority. |
 
 These are gaps in the evidence reconciliation snapshot, not proof that a source document cannot exist elsewhere. Search/recover a canonical source before commissioning a duplicate.
+
+
+
+## Source retrieval gap — Developer Guide v0.1
+
+The Phygital Developer Guide v0.1 (dated 17 November 2026) is referenced in the project discussion and in the existing engineering standards note, but its canonical Notion page or Library file was not recovered in the current targeted Notion and Library searches. Its candidate Next.js/Vercel + Supabase/PostgreSQL/Auth/RLS/private-storage description is retained only as a provisional reference from the earlier project record. Do not treat it as a verified canonical source until the actual document/version is recovered and reconciled against Technical Development Manual v3.0.
+
+**Action:** recover the exact document or canonical Notion page; verify version/date and status; compare architecture, deployment, data, identity, storage, workers, security and migration recommendations; then update ADR-0001/0002. Do not commission a duplicate Developer Guide or select a stack by inference.

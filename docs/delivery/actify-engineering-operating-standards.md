@@ -85,3 +85,25 @@ Required evidence includes data export/import and exit route; free-tier quotas a
 ## Current Phygital technology-selection status
 
 No TSBBF scorecard or approved technology decision is represented by the folder structure. The Technical Development Manual v3.0 and the referenced Developer Guide describe different candidate architectures. The Developer Guide's canonical source location remains unresolved in the current source register. Until its source is recovered and the candidate architectures are reconciled through TSBBF and approved ADRs, do not choose a framework, ORM, backend, hosting provider or deployment topology by inference.
+
+
+## AADDG Level 1 operating requirements — explicit Phygital application
+
+### Hosting, bandwidth and external service economics
+Before selecting a frontend host, worker host, backend, object store or external API, confirm commercial terms permit the intended marketplace/business activity. Estimate media, document, QR, video and buyer-traffic bandwidth using realistic workload assumptions. Compare the operational and financial consequences of candidate hosting arrangements; no vendor is selected by this standard.
+
+### One governed application across multiple runtimes
+The Phygital repository remains the authoritative code home. Where web surfaces, admin tools, background workers, PDF/QR generation, webhook consumers or physical/edge gateways require separate runtime services, govern their source, configuration, tests, deployment and rollback from this repository unless a deliberate ADR justifies a different boundary. A worker host and frontend host must not become disconnected codebases.
+
+### Required Level 1 controls
+- Physical identifiers: non-sequential, unguessable or cryptographically protected QR/NFC tokens; never predictable sequential public identifiers.
+- Physical scan events: append-only, timestamped and attributable; corrections are new linked events.
+- Offline capture: local queue, actor/device binding, idempotency and server-side conflict/revocation checks.
+- Private trade documents: backend private storage, authorization-checked access and short-lived scoped links.
+- Financial history: append-only events for obligations, fees, refunds and reversals; no silent balance/total overwrite.
+- Provider events: cryptographic authenticity verification, provider-scoped event identity, replay protection and idempotent processing.
+- Pricing: trusted backend calculation/validation; browser-supplied price, discount, tax or fee is never authoritative.
+- AI-assisted changes: no dashboard-only schema/RLS/function drift; exact source committed, service-role secrets excluded from client code, lockfiles updated, synthetic data isolated.
+- Operations: structured logs/correlation IDs, dead-letter and safe retry for failed jobs, verified backups and documented restore/rollback procedures.
+
+These controls are requirements for future implementation and testing. They do not authorise custody, platform-held funds, escrow, offline allocation, live payments or shipment under current sponsor boundaries.

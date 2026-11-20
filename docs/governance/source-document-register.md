@@ -132,3 +132,15 @@ Do not confuse the 016 technical design D-01–D-12 with 018-A sponsor D-01–D-
 | 018-B — Migration 001 Column-Level Data Dictionary & Source Inventory | https://app.notion.com/p/4136808bcd9e81c0bb95d27a8a034bd3 | Source-derived 22-table / 230-column inventory; not a live PostgreSQL catalogue or target schema. See `docs/data/migration-001-source-provenance.md`. |
 
 Do not confuse 016 technical D-01–D-12 with 018-A sponsor D-01–D-07. Sponsor D-01–D-07 are approved with conditions; that does not approve Migration 002 or close its technical/evidence gates.
+
+
+
+## Technology and engineering source status — 20 November 2026
+
+| Source | Source record | Repository treatment |
+|---|---|---|
+| AADDG v1.0 — GitHub → Supabase → Vercel Operating Standard, including Level 1 extensions | Actify Library record `libfile_0ac4413eec74819185ffbb384ab85a3a` | Applied in `docs/delivery/actify-engineering-operating-standards.md`, ADR-0002 and `docs/security/`; operating standard, not a mandatory vendor selection. |
+| TSBBF v1.0 — Technology Selection & Build-vs-Buy Framework, ratified 31 October 2026 | Actify Library record `libfile_c1f71b07c484819181b906a75b43db1a` | Applied in `docs/delivery/actify-engineering-operating-standards.md` and ADR-0001; component-level scorecard and critical-risk blockers preserved. |
+| Phygital Developer Guide v0.1, dated 17 November 2026 | Referenced in project materials; canonical Notion page/Library file not recovered in targeted search | Candidate architecture noted in `docs/architecture/technology-decision-status.md` and ADR-0001 as provisional. Revalidate the exact source before scoring or treating its architecture as canonical. |
+
+AADDG establishes source-of-truth and lifecycle controls; TSBBF governs selection. Neither resolves the competing candidate architecture descriptions without a project-specific, evidenced decision.
