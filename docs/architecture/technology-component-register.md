@@ -110,3 +110,7 @@ These source-derived packs define evidence requirements only; they do not record
 | [WP-03 pack 03 — hosting, CI, recovery, offline and portability](wp03-component-evidence-pack-03-hosting-ci-recovery-offline-portability.md) | TC-09, TC-10, TC-12, TC-13, TC-24 | INCOMPLETE — NOT SCORABLE |
 
 TC-08 and P1/P2 components remain in the wider WP-03 sequence. The canonical Developer Guide v0.1 source gap remains open.
+
+## P1 platform-quality evidence
+
+- [P1 platform-quality evidence pack — queues, observability, malware inspection and developer tooling](wp03-p1-platform-quality-evidence-pack-01.md): initial evidence for TC-08, TC-11, TC-22 and TC-23; no provider or tool selected.

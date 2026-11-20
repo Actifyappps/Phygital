@@ -117,6 +117,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 consolidated status (20 November 2026):** [WP-03 candidate evidence register](wp03-candidate-evidence-register.md) consolidates the initial candidate set across the P0 components, with source snapshot links, explicit evidence states and cross-cutting blockers. Public-source research has started across database, identity, authorisation, storage, frontend, runtime, workers, hosting, CI, recovery, offline and portability. No candidate is READY FOR SCORING; no score, shortlist or selection is recorded. The main blockers are the unrecovered Developer Guide v0.1, unvalidated Phase 0 workload/TCO, incomplete DPA/subprocessor/region evidence, unproven restore/exit and unexecuted candidate tests.
 
+**P1 platform-quality evidence progress (20 November 2026):** [P1 platform-quality evidence pack — queues, observability, malware inspection and developer tooling](../architecture/wp03-p1-platform-quality-evidence-pack-01.md) establishes initial evidence for TC-08, TC-11, TC-22 and TC-23. These components remain EVIDENCE STARTED — NOT SCORABLE. It distinguishes OpenTelemetry from a telemetry backend, self-hosted operations from managed Grafana Cloud, ClamAV from S3-specific GuardDuty scanning, and GitHub-native plan entitlements from open-source CI scanners.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:
