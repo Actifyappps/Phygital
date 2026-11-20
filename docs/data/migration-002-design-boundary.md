@@ -68,3 +68,31 @@ Authentication and membership resolution; action-specific authorisation; provide
 8. Review residual risk; no unresolved P0 defect; only then recommend technical acceptance.
 
 Technical acceptance does not authorise live trade. Separate sponsor, legal, regulatory, partner, facility, commercial and pilot readiness gates remain necessary.
+
+
+## Reconciliation of Deliverables 016–018-C (source review: 20 November 2026)
+
+The subsequent design set refines, but does not authorise, implementation:
+
+- **016 — Migration 002 Design Decision Record:** proposed technical design decisions D-01–D-12 are a local technical question series. They are not sponsor decisions D-01–D-07 in 018-A. Sponsor D-01–D-07 were approved with conditions; the technical design and condition evidence remain open.
+- **017 — Migration 002 Detailed Technical Design:** candidate table/service design only. It is not production SQL, an approved physical schema, implementation, PostgreSQL execution or acceptance. It remains subject to exact source inspection, technical review, condition checks and separate implementation approval.
+- **018-B — Migration 001 Column Dictionary:** source-derived inventory of 22 tables and 230 declared columns. It is not a live PostgreSQL catalogue export.
+- **018-C — Conditional Target ERD:** logical source-to-target mapping for all 22 source tables, candidate target entities and conditional relationships. It is not a final physical ERD or SQL specification. Its implementation gates G1–G8 separate source mapping and conditional design from sponsor-condition evidence, physical ERD, migration planning, SQL, controlled validation and technical acceptance.
+
+### Corrected source table count
+
+Deliverable 015 states that Migration 001 contains 20 tables. Deliverable 016 explicitly corrects that count: the source SQL contains **22 CREATE TABLE definitions**. Deliverable 018-B independently inventories all 22 tables and 230 columns. Use 22 as the reconciled source count; retain the 015 statement only as a superseded counting error, not as a second schema version.
+
+### Conditional design principles carried forward
+
+- Preserve Migration 001 unchanged as the historical candidate baseline; any future remediation is forward-only and versioned.
+- Only explicitly accepted, eligible, non-held batches may be allocated. Recorded, under-review, on-hold, rejected and closed batches are not allocatable.
+- Treat the append-only inventory movement ledger as the proposed authoritative stock history; any balance is a transactionally maintained projection reconciled to that ledger. Corrections use linked compensating movements, not silent edits.
+- Preserve seller, exporter, producer, hub operator, custodian, marketplace operator and payment provider as distinct capacities/parties unless evidence and legal arrangements expressly establish otherwise.
+- Preserve accepted quotation-line lineage and immutable accepted commercial terms on order items.
+- Record hub mandates with exact permitted service/custody scope, validity and evidence. A hub record does not itself grant custody.
+- Tenant isolation requires trusted service authorisation and appropriately designed database controls; client-supplied tenant context is not trusted.
+- Payment and shipment events require provider/source identity, authenticity verification where applicable, idempotency, provenance and reconciliation.
+- Do not backfill inferred mandates, listing-batch links, unit conversions or physical movements. Ambiguous historical data goes to a controlled remediation queue.
+
+**Current disposition remains unchanged:** Migration 001 HOLD; CV-12 UNVERIFIED; Migration 002 NOT AUTHORISED. No SQL drafting, database execution or production deployment is authorised by this cross-source reconciliation.

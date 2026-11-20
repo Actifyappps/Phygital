@@ -11,3 +11,8 @@ The original Migration 001 SQL and companion files are preserved under `supabase
 The migration review records that static inspection was completed but live PostgreSQL execution was not. The candidate is therefore not proven to apply, rollback, preserve constraints under concurrency or satisfy the product's authority model.
 
 **Disposition:** Migration 001 HOLD. Migration 002 not authorised. This repository copy preserves provenance and enables controlled review; it does not change either status.
+
+
+## Table-count reconciliation
+
+Deliverable 015's static review text reports 20 tables. Deliverable 016 corrects that count to **22 CREATE TABLE definitions**, and Deliverable 018-B provides a source-derived column inventory of all 22 tables and 230 declared columns. The reconciled source count for repository planning is 22. This correction does not imply PostgreSQL execution or runtime catalogue verification; Migration 001 remains HOLD.
