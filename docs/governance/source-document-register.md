@@ -275,3 +275,8 @@ The 024-D logical contract groups are now connected to 024-B workflows, 024-C en
 ## 024-H delivery/operations source-gap and coverage assessment — 20 November 2026
 
 The current targeted Notion search did not locate a completed canonical 024-H page. Repository coverage and actual provisioned/unprovisioned status are reconciled in docs/quality/024h-delivery-operations-coverage-assessment.md. This is a derived coverage assessment and proposed commissioning outline, not a substitute 024-H or approval. Programme-owner disposition remains required. Deliverable 025 remains a separate commercial dependency.
+
+
+## Deliverable 025 commercial service/fee source gap — 20 November 2026
+
+A targeted Notion search did not locate a dedicated canonical 025 page. The repository's existing service-catalogue/fee design home is supported by a commissioning brief at docs/commerce/025-commercial-service-fee-source-gap-and-commissioning-brief.md. It preserves the separation between goods-sale proceeds, producer net proceeds, platform service fees and external payment status. This is not an approved 025 specification, fee schedule, tax opinion or implementation authorization; programme-owner disposition remains required.

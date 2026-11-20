@@ -18,3 +18,5 @@ Canonical test and acceptance authority: 024-G, supplemented by 014 and the Leve
 - 024d-contract-to-workflow-data-test-crosswalk.md — logical API group to workflow/entity/relationship/QAT traceability; no endpoint, provider or implementation decision.
 
 - 024h-delivery-operations-coverage-assessment.md — cross-source map of 024-H intended scope to delivery/operations homes, actual runtime status, open decisions and a proposed commissioning outline; not the missing 024-H specification.
+
+- 025 commercial service/fee source gap and commissioning brief — links 024-R F-05 and 024-B/C/D requirements to the separate commercial deliverable; not an approved 025 or fee schedule.

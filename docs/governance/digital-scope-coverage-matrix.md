@@ -443,3 +443,16 @@ The crosswalk is logical and group-level; it does not invent source operation ID
 | 025 commercial model | docs/commerce/service-catalogue-and-fee-model.md | Separate unresolved commercial dependency; no fee engine |
 
 See docs/quality/024h-delivery-operations-coverage-assessment.md. No service-level, RTO/RPO, production, provider or operational acceptance decision is inferred.
+
+
+## 025 commercial service/fee source gap — 20 November 2026
+
+| Coverage element | Repository home | Current status |
+|---|---|---|
+| Service catalogue and fee design | docs/commerce/service-catalogue-and-fee-model.md | Logical design requirements; no approved service or price list |
+| Commercial validation | docs/commerce/commercial-model-validation.md | Evidence requirements; no viability finding or approved fee schedule |
+| Funds-flow and legal capacities | docs/commerce/role-and-funds-flow-boundaries.md | D-01/D-07 boundaries preserved; no live funds handling |
+| 025 source gap | docs/commerce/025-commercial-service-fee-source-gap-and-commissioning-brief.md | Commissioning aid only; dedicated canonical Notion page not located |
+| Digital model | 024-C ENT-065 / REL-034; 024-D API-OD-09; WF-11 | Fee schedule activation is gated; no fee engine or payable obligation |
+
+No fee, payer, tax treatment, commission, provider share, producer deduction or payout is approved by these records.

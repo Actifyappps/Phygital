@@ -321,3 +321,8 @@ Use `docs/api/024d-contract-to-workflow-data-test-crosswalk.md` to connect 024-D
 ## 024-H delivery/operations coverage and source gap — 20 November 2026
 
 The 024-H source gap remains open. The cross-source coverage assessment docs/quality/024h-delivery-operations-coverage-assessment.md maps 024-C/G and 024-R requirements to delivery, operations, security and measurement homes, distinguishes written controls from actual runtime evidence, and proposes a commissioning outline if governance confirms 024-H. It is not a replacement 024-H. Keep 025 as a separate commercial design dependency.
+
+
+## Deliverable 025 commercial model source gap — 20 November 2026
+
+Keep 025 as a distinct commercial deliverable, not part of 024-H operations. Existing commercial design homes are supplemented by docs/commerce/025-commercial-service-fee-source-gap-and-commissioning-brief.md, which consolidates required service catalogue, payer, charging event, fee, producer gross-to-net, tax, refund, provider-share, unit-economics and digital acceptance decisions. It is a commissioning aid only; the canonical 025 source and sponsor/legal/tax decisions remain unresolved.
