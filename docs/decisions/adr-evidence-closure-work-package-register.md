@@ -113,6 +113,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 candidate evidence progress — TC-09 and TC-10 (20 November 2026):** [Hosting, deployment and CI evidence snapshot](hosting-ci-candidate-evidence-snapshot-2026-11-20.md) records public-source facts for Vercel, Cloudflare Pages/Workers, Render and GitHub Actions. All remain EVIDENCE STARTED — NOT SCORABLE. Vercel Hobby is non-commercial; Cloudflare and Vercel function/runtime constraints and regional placement need workload tests; GitHub Actions entitlements depend on the repository owner's plan.
 
+**WP-03 candidate evidence progress — TC-12, TC-13 and TC-24 (20 November 2026):** [Recovery, offline and portability evidence snapshot](recovery-offline-portability-evidence-snapshot-2026-11-20.md) reconciles current provider backup windows, PostgreSQL export/restore semantics and browser persistence limits. It confirms that Supabase database backups exclude Storage object blobs, Neon history/restore is branch-scoped, Render PITR windows depend on workspace plan, browser storage is best-effort by default, and Background Sync is not available in Safari/Firefox. All patterns remain unscored; no RPO/RTO or offline implementation is approved.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:

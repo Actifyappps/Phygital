@@ -67,6 +67,10 @@ Privacy/minimisation/retention; Kenya and destination-market legal/commercial re
 Blockchain, connected devices, escrow, FX, payment initiation/payout, customs automation, regulatory clearance automation, carrier booking, AI forecasts, automated SMS advisories and multi-country scaling remain phase-gated and unselected.
 
 
+## TC-12 / TC-13 / TC-24 recovery, offline and portability evidence
+
+- [Recovery, offline and portability evidence snapshot — 20 November 2026](../decisions/recovery-offline-portability-evidence-snapshot-2026-11-20.md): cross-component backup/restore, browser offline and export/exit evidence; no pattern selected.
+
 ## TC-09 / TC-10 hosting and CI evidence
 
 - [Hosting, deployment and CI candidate evidence snapshot — 20 November 2026](../decisions/hosting-ci-candidate-evidence-snapshot-2026-11-20.md): public-source evidence for Vercel, Cloudflare Pages/Workers, Render and GitHub Actions; no candidate scored.
