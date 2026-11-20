@@ -24,7 +24,7 @@ Candidate A/B/C are hypotheses only. Candidate A must not be scored until its ca
 
 ### WP-00 — Source integrity and authority
 
-1. Recover the canonical Phygital Developer Guide v0.1 dated 17 November 2026, including complete content and stable source location.
+1. Recover the canonical Phygital Developer Guide v0.1 dated 17 November 2026, including complete content and stable source location. Targeted Notion searches for “Phygital Developer Guide”, “Developer Guide v0.1 17 November” and the stated Next.js/Supabase/Vercel candidate wording returned no canonical guide page. The current Project Home history does mention a cross-document review of the Developer Guide, but the retrieved page does not expose a direct canonical guide link. This confirms a source-recovery gap, not that the guide never existed.
 2. Reconcile it clause-by-clause with Concept Paper v1.1 (strategic authority) and Technical Development Manual v3.0 (supporting implementation plan).
 3. Verify the current AADDG v1.0 and TSBBF v1.0 source versions.
 4. Confirm the AADDG web/ versus src/ convention against the repository; do not let folder layout determine framework choice.
