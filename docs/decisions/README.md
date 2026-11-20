@@ -10,6 +10,7 @@
 - ADR-0008 Physical-digital event integrity — OPEN.
 
 Supporting records:
+- TC-03 database candidate evidence snapshot (20 November 2026): Supabase, Neon and Render public-source comparison; not scored or shortlisted.
 - Actify standards source verification: TSBBF v1.0 and AADDG v1.0 recovered/verified; Developer Guide v0.1 remains a source-recovery gap. See actify-technology-standards-source-verification.md.
 - Component inventory: technology component register.
 - Technology requirements: technology-decision-requirements-baseline.md.

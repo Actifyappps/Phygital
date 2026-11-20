@@ -101,6 +101,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 progress — third component pack completed (20 November 2026):** [WP-03 component evidence pack 03 — hosting, CI, recovery, offline and portability](../architecture/wp03-component-evidence-pack-03-hosting-ci-recovery-offline-portability.md) defines evidence requirements and minimum synthetic acceptance tests for TC-09, TC-10, TC-12, TC-13 and TC-24. All remain INCOMPLETE — NOT SCORABLE. Packs 01–03 now cover the P0 evidence briefs except TC-08 (P1; not a P0 spike prerequisite).
 
+**WP-03 candidate evidence progress (20 November 2026):** [TC-03 relational database — initial provider evidence snapshot](database-candidate-evidence-snapshot-2026-11-20.md) captures official public-source facts for Supabase Postgres, Neon Postgres and Render Postgres. It records current pricing/region/backup/security observations and candidate-specific unknowns. All three remain EVIDENCE STARTED — NOT SCORABLE; no shortlist or ranking has been made. Provider-specific legal/DPA, workload/TCO, restore and synthetic-test evidence remains outstanding.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:
