@@ -111,6 +111,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 candidate evidence progress — TC-01, TC-02 and TC-07 (20 November 2026):** [Initial frontend, runtime and worker evidence snapshot](frontend-runtime-worker-candidate-evidence-snapshot-2026-11-20.md) records current public-source facts for Next.js, React+Vite, NestJS, Express 5, PostgreSQL outbox workers, Supabase Queues, Cloudflare Queues and Render workers/Workflows. All remain EVIDENCE STARTED — NOT SCORABLE. The canonical Developer Guide gap remains open; NestJS 12's Node compatibility table requires resolution; Supabase Queues is currently labelled Public Alpha; and queue delivery semantics remain subject to idempotent handling.
 
+**WP-03 candidate evidence progress — TC-09 and TC-10 (20 November 2026):** [Hosting, deployment and CI evidence snapshot](hosting-ci-candidate-evidence-snapshot-2026-11-20.md) records public-source facts for Vercel, Cloudflare Pages/Workers, Render and GitHub Actions. All remain EVIDENCE STARTED — NOT SCORABLE. Vercel Hobby is non-commercial; Cloudflare and Vercel function/runtime constraints and regional placement need workload tests; GitHub Actions entitlements depend on the repository owner's plan.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:

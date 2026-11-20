@@ -67,6 +67,10 @@ Privacy/minimisation/retention; Kenya and destination-market legal/commercial re
 Blockchain, connected devices, escrow, FX, payment initiation/payout, customs automation, regulatory clearance automation, carrier booking, AI forecasts, automated SMS advisories and multi-country scaling remain phase-gated and unselected.
 
 
+## TC-09 / TC-10 hosting and CI evidence
+
+- [Hosting, deployment and CI candidate evidence snapshot — 20 November 2026](../decisions/hosting-ci-candidate-evidence-snapshot-2026-11-20.md): public-source evidence for Vercel, Cloudflare Pages/Workers, Render and GitHub Actions; no candidate scored.
+
 ## TC-01 / TC-02 / TC-07 provider and runtime evidence
 
 - [Frontend, runtime and worker candidate evidence snapshot — 20 November 2026](../decisions/frontend-runtime-worker-candidate-evidence-snapshot-2026-11-20.md): public-source evidence for Next.js, React+Vite, NestJS, Express 5 and four worker/queue patterns; all remain unscored and unshortlisted.
