@@ -220,3 +220,8 @@ Notion 024-F v0.1 (19 November 2026) contains 20 threat/abuse records (TH-01–T
 ## 024-G product acceptance catalogue correction — 20 November 2026
 
 The current Notion 024-G v0.1 source contains **36** product acceptance cases, QAT-001–QAT-036. The earlier repository crosswalk/README referred to QAT-001–QAT-028 and was incomplete. The full 36 scenarios and minimum expected results are now preserved in `docs/quality/024g-product-acceptance-catalogue.md`; the crosswalk and README range are corrected to QAT-001–QAT-036. 024-F ST-01–ST-24 remain a separate security-specific catalogue. No test execution, independent acceptance or release is claimed.
+
+
+## 024-H delivery/operations specification status — 20 November 2026
+
+024-C v0.1 and 024-G v0.1 both identify a downstream 024-H companion for delivery, deployment, environments, configuration, operations, support, observability, recovery and readiness. Targeted Notion search did not locate a completed 024-H page. Repository disposition: `docs/architecture/024h-architecture-operations-gap.md` plus existing delivery/operations standards and runbook homes. This is a recorded source gap, not evidence that no draft exists elsewhere. Confirm programme status before commissioning or replacing 024-H. No topology, vendor, SLA, RTO/RPO or production environment is approved by the gap record.

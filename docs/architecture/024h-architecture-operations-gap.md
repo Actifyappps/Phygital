@@ -36,3 +36,16 @@ The Actify governing standards have now been read and applied:
 The following 024-H decisions remain open: selected stack and providers; topology and runtime count; hosting commercial/bandwidth economics; environment and secrets model; worker/queue ownership; support/incident ownership; backup/restore objectives; operational service levels; supplier exit/continuity. Do not invent SLA/RTO/RPO targets or select vendors without workload and cost evidence.
 
 No completed 024-H page, approved stack, production deployment, service-level target or operational readiness acceptance is claimed.
+
+
+## 024-C / 024-G downstream dependency confirmation — 20 November 2026
+
+The current Notion 024-C v0.1 and 024-G v0.1 sources both identify a 024-H companion in the downstream specification sequence:
+- 024-C describes 024-H as the delivery, operations and observability specification covering support ownership, deployment stages, monitoring, backup/restore, incident runbooks and operational metrics.
+- 024-G describes 024-H as the release, deployment, environment, configuration and operational-readiness control model, subordinate to AADDG, TSBBF and the existing programme authority.
+
+A further targeted search of the current Phygital Project Home/connected Notion workspace for 024-H and its delivery/operations/observability scope did not locate a completed 024-H page. The absence is recorded as **not located in the current targeted search**, not proof that no draft exists elsewhere.
+
+Repository coverage exists across the environment/promotion model, release gates, release/rollback checklist, observability, operations ownership, runbook placeholders, AADDG/TSBBF operating crosswalk and architecture ADRs. These distributed homes do not constitute an approved 024-H source specification.
+
+**Disposition:** retain this gap record; do not silently create a replacement 024-H or treat existing repository notes as its approval. Confirm whether 024-H is planned, stored elsewhere or should be commissioned. Until then, keep all vendor, topology, service-level, RTO/RPO, support-hours and production decisions open unless separately approved by their proper authority.

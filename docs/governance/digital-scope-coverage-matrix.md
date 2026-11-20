@@ -321,3 +321,13 @@ The source remains draft conceptual/logical design. No physical database, SQL ex
 | Security test separation | 024-F ST-01–ST-24 | 024-F detailed catalogue and 024-G crosswalk | Separate IDs and closure evidence preserved |
 
 The previous QAT-001–QAT-028 reference was stale and is corrected. EVI-21 remains OPEN; Migration 001 HOLD; Migration 002 NOT AUTHORISED.
+
+
+## 024-H delivery/operations source gap — 20 November 2026
+
+| Source | Intended 024-H scope | Repository representation | Status |
+|---|---|---|---|
+| 024-C v0.1 | Delivery/operations, support ownership, deployment stages, monitoring, backup/restore, incident runbooks, operational metrics | 024-H gap record; docs/delivery; docs/operations | Source page not located in targeted search |
+| 024-G v0.1 | Release/deployment, environment/configuration, operational readiness, subordinate to AADDG/TSBBF | 024-H gap record; release gates; environment/promotion model; observability | Source page not located in targeted search |
+
+Do not treat distributed repository notes as a completed/approved 024-H. Programme owner confirmation is required. No vendor, topology, SLA, RTO/RPO, environment or production-readiness decision is inferred.
