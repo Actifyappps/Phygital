@@ -32,6 +32,10 @@ The source-linked requirements for topology and component comparison are consoli
 
 No microservice decomposition, deployment platform, worker host or backend topology is approved. Preserve the modular-monolith-first logical direction as a candidate for TSBBF/ADR review; do not create service boundaries merely to match repository folders.
 
+## WP-04 topology assessment
+
+The source-derived assessment is maintained in [WP-04 — Application topology assessment and conditional target shape](../architecture/wp04-application-topology-assessment.md). It compares integrated full-stack, modular monolith and microservices; records the Manual v3.0/AADDG/Concept Paper basis; and proposes Option B (modular monolith, one authoritative PostgreSQL source, private object storage, replaceable adapters and database-backed jobs) as the logical direction for authorised review. This is **NOT APPROVED**; the ADR remains OPEN. No framework, provider, hosting platform or worker is selected. A separate worker process is conditional on evidence.
+
 ## Closure evidence
 
 Architecture diagram and data flows; component inventory; TSBBF assessments; workload/bandwidth/TCO assumptions; environment and secrets model; backup/restore and rollback plan; worker/event failure design; security/privacy review; named operational owner; approved ADR decision.

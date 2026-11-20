@@ -133,6 +133,8 @@ Produce:
 
 Compare modular monolith, separately deployed workers and any alternative against the same workload and operating requirements. Do not create microservices merely because folders are separate. ADR-0002 remains OPEN if evidence or ownership is insufficient.
 
+**WP-04 progress (20 November 2026):** [WP-04 — Application topology assessment and conditional target shape](../architecture/wp04-application-topology-assessment.md) compares three logical patterns and proposes a modular-monolith-first topology for authorised review, grounded in the Manual v3.0, Concept Paper v1.1, AADDG v1.0, TSBBF v1.0 and current source constraints. ADR-0002 remains OPEN and the proposal is NOT APPROVED. It selects no framework/provider and requires workload, legal/privacy, component and operational evidence before closure.
+
 ### WP-05 — Synthetic comparison spike
 
 Use the existing SPIKE-01–SPIKE-18 plan; do not create a parallel test catalogue.
