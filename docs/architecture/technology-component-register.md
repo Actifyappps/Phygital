@@ -114,3 +114,7 @@ TC-08 and P1/P2 components remain in the wider WP-03 sequence. The canonical Dev
 ## P1 platform-quality evidence
 
 - [P1 platform-quality evidence pack — queues, observability, malware inspection and developer tooling](wp03-p1-platform-quality-evidence-pack-01.md): initial evidence for TC-08, TC-11, TC-22 and TC-23; no provider or tool selected.
+
+## P1 business-capability evidence
+
+- [P1 business-capability evidence pack — QR, notifications, payment status, laboratory evidence and analytics](wp03-p1-business-capability-evidence-pack-01.md): initial evidence for TC-14, TC-15, TC-16, TC-18 and TC-20; no provider or partner selected.

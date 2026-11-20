@@ -119,6 +119,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **P1 platform-quality evidence progress (20 November 2026):** [P1 platform-quality evidence pack — queues, observability, malware inspection and developer tooling](../architecture/wp03-p1-platform-quality-evidence-pack-01.md) establishes initial evidence for TC-08, TC-11, TC-22 and TC-23. These components remain EVIDENCE STARTED — NOT SCORABLE. It distinguishes OpenTelemetry from a telemetry backend, self-hosted operations from managed Grafana Cloud, ClamAV from S3-specific GuardDuty scanning, and GitHub-native plan entitlements from open-source CI scanners.
 
+**P1 business-capability evidence progress (20 November 2026):** [P1 business-capability evidence pack — QR, notifications, payment status, laboratory evidence and analytics](../architecture/wp03-p1-business-capability-evidence-pack-01.md) records source constraints and initial public evidence for TC-14, TC-15, TC-16, TC-18 and TC-20. It preserves the 018-A no-platform-funds boundary, CBK's 10 August 2026 PSP directory as a discovery source only, KENAS ISO/IEC 17025 scope verification, SMS delivery-status distinctions and tenant-safe descriptive analytics. All remain unscored; no live partner or provider is selected.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:

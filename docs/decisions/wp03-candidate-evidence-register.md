@@ -56,7 +56,23 @@
 | TC-24 Portability | Versioned domain-level export package | Same | EVIDENCE STARTED — NOT SCORABLE | Schema/version manifest, implementation cost, import/export acceptance |
 | TC-24 Portability | Provider-native APIs/bulk exports | Same | EVIDENCE STARTED — NOT SCORABLE | Completeness, quotas, format, fees, deleted data and independent import |
 
-## 3. Consolidated blockers to scoring
+## 3. P1 business-capability candidates
+
+| Component | Candidate / pattern | Evidence snapshot | Status | Main outstanding evidence |
+|---|---|---|---|---|
+| TC-14 QR/public projection | Standard QR encoder + opaque token resolver | [P1 business-capability pack](../architecture/wp03-p1-business-capability-evidence-pack-01.md) | EVIDENCE STARTED — NOT SCORABLE | Token lifecycle, cache revocation, projection allow-list, physical anti-cloning limitations |
+| TC-14 QR/public projection | Blockchain-backed public record | Same | DEFERRED | No demonstrated benefit over controlled resolver; separate privacy/correction/governance gate |
+| TC-15 Notifications | Africa's Talking SMS | Same | EVIDENCE STARTED — NOT SCORABLE | Current quote, sender ID approval, DLR reliability, DPA, coverage and volume |
+| TC-15 Notifications | Twilio SMS | Same | EVIDENCE STARTED — NOT SCORABLE | Local sender route/price, carrier fees, DPA, coverage and volume |
+| TC-15 Notifications | Amazon SES email | Same | EVIDENCE STARTED — NOT SCORABLE | Domain reputation, region, DPA, bounce/complaint and deliverability tests |
+| TC-16 Payment status | CBK-authorized PSP/bank adapter; directory candidates include Safaricom, Cellulant, Pesapal, Direct Pay, Paystack and dLocal | Same | EVIDENCE STARTED — NOT SCORABLE | Exact licence scope, seller account, cross-border settlement, FX, direct buyer-to-seller contract and webhooks |
+| TC-18 Lab/inspection | KENAS-scope-verified laboratory with controlled manual intake | Same | EVIDENCE STARTED — NOT SCORABLE | Specific lab, commodity/method scope, validity, sample chain and report verification |
+| TC-18 Lab/inspection | Provider portal/API integration | Same | EVIDENCE STARTED — NOT SCORABLE | Provider identity, API/data contract, authentication, corrections and revocation |
+| TC-20 Analytics | Governed SQL views and controlled exports | Same | EVIDENCE STARTED — NOT SCORABLE | Metric owners/definitions, data quality, access and privacy review |
+| TC-20 Analytics | Apache Superset | Same | EVIDENCE STARTED — NOT SCORABLE | Hosting/operator, tenant isolation, read-only DB and support burden |
+| TC-20 Analytics | Metabase Open Source / Cloud / Pro | Same | EVIDENCE STARTED — NOT SCORABLE | AGPL/embedding licence, multi-tenant security, SSO/audit tier and TCO |
+
+## 4. Consolidated blockers to scoring
 
 These apply across multiple components and prevent honest weighted scoring:
 
