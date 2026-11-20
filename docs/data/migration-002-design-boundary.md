@@ -101,3 +101,8 @@ Deliverable 015 states that Migration 001 contains 20 tables. Deliverable 016 ex
 ## 018 parent schema-review metrics
 
 The later 018 source-based static review reports 22 tables, 52 inline foreign-key references, 43 CHECK expressions, 4 table-level UNIQUE constraints, 18 explicit indexes and 3 trigger functions with 3 triggers. These are source-file inventory counts, not PostgreSQL runtime catalogue results. The 22-table / 230-column inventory is the reconciled source description. No SQL execution, concurrency test, API test or security test is claimed.
+
+
+## 018 parent schema-review metrics
+
+The later 018 source-based static review reports 22 tables, 52 inline foreign-key references, 43 CHECK expressions, 4 table-level UNIQUE constraints, 18 explicit indexes and 3 trigger functions with 3 triggers. These are source-file inventory counts, not PostgreSQL runtime catalogue results. The 22-table / 230-column inventory is the reconciled source description. No SQL execution, concurrency test, API test or security test is claimed.
