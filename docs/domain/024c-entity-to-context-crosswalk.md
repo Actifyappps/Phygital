@@ -97,3 +97,10 @@
 - ENT-059/060 offline device and sync receipt require a dedicated trust/synchronisation lifecycle; they do not permit local role selectors to act as authentication.
 - ENT-064 gate assessment keeps software delivery stage separate from pilot maturity level.
 - Where a logical entity is cross-cutting, its authoritative state owner remains singular; other contexts hold references or projections only.
+
+
+## 024-C source comparison — 20 November 2026
+
+A direct source comparison against Notion 024-C v0.1 confirms exact agreement for the 65 logical entity identifiers (ENT-001–ENT-065) and their logical names: 65/65 matched, no missing IDs, no extra IDs and no name mismatches. All ten information domains IA-01–IA-10 are represented. The verification scope and limitations are recorded in `docs/quality/024c-entity-catalogue-verification.md`.
+
+This is a catalogue-level comparison only. It does not validate every attribute, relationship cardinality, 018-C source-to-target mapping, physical schema, SQL, security policy or migration. 024-C remains draft conceptual/logical design.

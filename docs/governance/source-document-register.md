@@ -195,3 +195,8 @@ Repository disposition: `docs/quality/024r-correction-implementation-record.md`.
 Notion 024-B v0.1 (dated 19 November 2026) contains 18 workflows (WF-01–WF-18), 34 cross-cutting business rules (BR-001–BR-034), state/evidence conventions, independent software/pilot maturity axes, a domain state inventory, invariants/stop conditions, a traceability/acceptance matrix and six screen/service surfaces. Repository disposition: `docs/product/workflow-to-context-crosswalk.md`. All workflow IDs and business-rule IDs are mapped there to logical domain owners and verification notes. This is requirements representation, not implementation or test execution.
 
 024-B identifies 024-C v0.1 as its conceptual/logical data-model companion: ten information domains and 65 conceptual entities, reconciled with 018-C. No physical schema or migration authorization follows from that source.
+
+
+## 024-C entity catalogue source verification — 20 November 2026
+
+Notion 024-C v0.1 (19 November 2026) was compared with `docs/domain/024c-entity-to-context-crosswalk.md`: all 65 identifiers ENT-001–ENT-065 and all 65 logical entity names matched exactly; no missing or extra IDs; ten information domains IA-01–IA-10 represented. Verification record: `docs/quality/024c-entity-catalogue-verification.md`. This does not verify every attribute/cardinality, 018-C mapping, physical schema, SQL, RLS or migration and is not sponsor/legal approval or acceptance.

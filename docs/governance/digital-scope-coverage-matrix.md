@@ -258,3 +258,15 @@ The source correction record does not approve the 024 specifications for product
 | Logical data-model dependency | 024-C v0.1: ten information domains, 65 conceptual entities | `docs/domain/024c-entity-to-context-crosswalk.md`; data homes | Conceptual/logical only; reconcile with 018-C; no migration authorization |
 
 The 024-B source remains a draft. Its next specified companion is 024-C, not an implementation migration. Migration 001 HOLD; Migration 002 NOT AUTHORISED; EVI-21 OPEN.
+
+
+## 024-C conceptual entity catalogue verification — 20 November 2026
+
+| Check | Result | Repository home | Limitation |
+|---|---|---|---|
+| Ten information domains IA-01–IA-10 | All represented | `docs/domain/024c-entity-to-context-crosswalk.md` | Logical ownership only |
+| 65 entity identifiers ENT-001–ENT-065 | 65/65 exact match against Notion | Same crosswalk; `docs/quality/024c-entity-catalogue-verification.md` | Does not validate attributes/cardinalities |
+| 65 logical entity names | 65/65 exact match | Same crosswalk and verification record | Does not validate full semantics or source-to-target lineage |
+| Physical schema/migration | Not authorized by 024-C | `docs/data/`; held migration area | Migration 001 HOLD; Migration 002 NOT AUTHORISED |
+
+The source remains draft conceptual/logical design. No physical database, SQL execution or acceptance is implied.
