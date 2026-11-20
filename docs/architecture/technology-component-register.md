@@ -44,11 +44,11 @@ P0 means needed to decide a credible synthetic spike; P1 means required for comp
 
 ## Candidate architecture hypotheses
 
-- **A — managed full-stack:** Next.js + Supabase/PostgreSQL/Auth/Storage + Vercel, as provisionally described in Developer Guide v0.1. Canonical guide must be recovered before exact assumptions are treated as verified.
+- **A — managed full-stack:** Next.js + Supabase/PostgreSQL/Auth/Storage + Vercel, as provisionally described in Developer Guide v0.1. Canonical guide must be recovered before exact assumptions are treated as verified. AADDG v1.0 additionally names Cloudflare Pages as an example frontend-host alternative and Render/queues as illustrative worker options; these are candidate examples only, not selections.
 - **B — modular API application:** React or other web client + NestJS/Express + managed PostgreSQL + private object storage + governed workers/deployment, reflecting the Technical Development Manual v3.0 candidate.
 - **C — component-level hybrid:** independently select frontend, API, identity, database, storage, workers and hosting where evidence justifies the added complexity.
 
-These are comparison hypotheses, not recommendations. Score components separately; a bundle may perform differently across components.
+These are comparison hypotheses, not recommendations. Score components separately; a bundle may perform differently across components. The recovered TSBBF v1.0 and AADDG v1.0 source versions and their verified project implications are recorded in [Actify technology standards — source verification record](../decisions/actify-technology-standards-source-verification.md).
 
 ## Cross-cutting constraints
 

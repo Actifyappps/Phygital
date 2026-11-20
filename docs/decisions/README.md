@@ -10,6 +10,7 @@
 - ADR-0008 Physical-digital event integrity — OPEN.
 
 Supporting records:
+- Actify standards source verification: TSBBF v1.0 and AADDG v1.0 recovered/verified; Developer Guide v0.1 remains a source-recovery gap. See actify-technology-standards-source-verification.md.
 - Component inventory: technology component register.
 - Technology requirements: technology-decision-requirements-baseline.md.
 - Workload, operating and TCO assumptions: technology-workload-and-tco-assumptions-register.md (values remain UNKNOWN until evidenced).
