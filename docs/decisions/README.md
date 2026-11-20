@@ -10,6 +10,7 @@
 - ADR-0008 Physical-digital event integrity — OPEN.
 
 Supporting records:
+- TC-05 authorization candidate evidence snapshot (20 November 2026): application policy + PostgreSQL RLS, OpenFGA and OPA; not scored or shortlisted.
 - TC-04 identity candidate evidence snapshot (20 November 2026): Supabase Auth, Clerk, Auth0 and Keycloak; not scored or shortlisted.
 - TC-03 database candidate evidence snapshot (20 November 2026): Supabase, Neon and Render public-source comparison; not scored or shortlisted.
 - Actify standards source verification: TSBBF v1.0 and AADDG v1.0 recovered/verified; Developer Guide v0.1 remains a source-recovery gap. See actify-technology-standards-source-verification.md.

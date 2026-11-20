@@ -105,6 +105,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 candidate evidence progress — TC-04 (20 November 2026):** [TC-04 identity and authentication — initial provider evidence snapshot](identity-candidate-evidence-snapshot-2026-11-20.md) records official public-source facts for Supabase Auth, Clerk, Auth0 and Keycloak. All remain EVIDENCE STARTED — NOT SCORABLE; no identity provider has been shortlisted or selected. Data residency, DPA, scenario pricing, identity export, session-revocation and operational evidence remain outstanding.
 
+**WP-03 candidate evidence progress — TC-05 (20 November 2026):** [TC-05 authorisation and policy enforcement — initial evidence snapshot](authorization-candidate-evidence-snapshot-2026-11-20.md) records public-source evidence for application policy + PostgreSQL RLS, OpenFGA and OPA. All remain EVIDENCE STARTED — NOT SCORABLE. The canonical Phygital authority tuple remains the governing source; no policy engine or permission grant is approved.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:
