@@ -137,3 +137,17 @@ undefined
 | 018-B source data dictionary | `docs/data/migration-001-source-provenance.md`; `docs/data/015-018b-technical-design-reconciliation.md` | 22 source tables, 230 declared columns and static source metrics | Runtime catalogue export, approved target schema or executed migration |
 
 Migration 001 remains HOLD; CV-12 remains UNVERIFIED; Migration 002 remains NOT AUTHORISED. The source dictionary and target design remain separate artefacts.
+
+
+## 7. 024-F / 024-G security and quality source completeness
+
+The existing `docs/security/024f-control-and-test-crosswalk.md` preserves all 20 SEC controls and 24 ST security tests. `docs/quality/024g-test-catalogue-crosswalk.md` preserves all 36 QAT product-acceptance scenarios. These IDs remain distinct; overlapping QAT/ST scenarios require explicit cross-reference and evidence, not renumbering.
+
+The supporting operational controls have now been expanded in:
+- `docs/security/privacy-and-records-controls.md` — classification, purpose/minimisation, identity/session, mandate and tenant authorization, evidence/file integrity, API/provider controls, offline/device security, marketplace trust, monitoring and backup/recovery.
+- `docs/security/threat-model.md` — TH-01–TH-20 initial threat register and risk-treatment fields.
+- `docs/operations/incident-response.md` — incident triage, containment, evidence preservation, notification assessment, recovery and reopening template.
+- `docs/quality/test-and-evidence-operating-model.md` — traceability chain, L0–L8 test levels, environment/data controls, defect closure and G0–G4 acceptance gates.
+- `docs/delivery/release-gates.md` — release decision record and current project holds.
+
+024-F and 024-G remain draft specifications. These repository expansions are requirements and operating templates, not implemented controls, completed DPIA, penetration test, security certification, test execution, release acceptance or production authorization.
