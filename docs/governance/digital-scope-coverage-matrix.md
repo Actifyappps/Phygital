@@ -96,3 +96,21 @@ See `docs/architecture/phase-gated-capabilities.md` for the governing staged cap
 - 026 wireframes remain future/conditional; 024-E is the current screen-requirements source.
 - Developer Guide v0.1 source location/version was not located in the current Project Home/targeted search; reconcile before treating it as canonical.
 - The product blueprint and 024-A–G remain draft specifications. This matrix is repository coverage, not implementation completion.
+
+
+## 8. Phase 0 evidence coverage and closure boundary
+
+The 24 active Phase 0 evidence items EVI-01–EVI-24 are mapped individually in [evidence-to-deliverable reconciliation](evidence-to-deliverable-reconciliation.md). That map separates design coverage from real-world evidence, technical execution, independent review and formal decisions.
+
+The 18 November 2026 source snapshot reported all 24 rows with Closure Accepted = NO and no Evidence Reference; EVI-12 was UNVERIFIED, EVI-20 IN PROGRESS and the remaining 22 OPEN. Treat those as historical snapshot values only. The live Notion Evidence Register remains the operational master and must be checked before any status claim or closure.
+
+Material digital/operational gaps identified in that reconciliation include:
+- PostgreSQL execution and full Migration 001 acceptance evidence (EVI-12).
+- Full unit economics and payer willingness evidence (EVI-13).
+- Formal data-protection/security assessment (EVI-17).
+- Complete KPI dictionary and defensible thresholds (EVI-19).
+- Executed Level 1 rehearsal and independent review (EVI-21).
+- Approved SOP pack, distinct from the proposed 011 operating blueprint (EVI-15).
+- Formal dependency baseline, stop-loss decision and Phase 0 GO/HOLD/NO-GO checkpoint (EVI-18, EVI-23, EVI-24).
+
+A repository home, design document, test specification, prototype or logic harness is not closure evidence by itself. Preserve the distinctions between planned, prepared, executed, passed, reviewed, accepted and authorised.
