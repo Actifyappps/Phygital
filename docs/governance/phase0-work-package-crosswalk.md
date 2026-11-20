@@ -54,3 +54,17 @@ Do not edit Migration 001 in place, promote candidate SQL to the active migratio
 - [012 Phase 0 Execution & Evidence Acquisition Plan](https://app.notion.com/p/4136808bcd9e81e8ae9cee40b3df1d96)
 - [014 Technical Test Harness & End-to-End Simulation](https://app.notion.com/p/4136808bcd9e81e0bb13f2ea26004dd1)
 - [015 Technical Readiness & Migration 001 Remediation](https://app.notion.com/p/4136808bcd9e81cd98aae29ae9fc79b1)
+
+
+## Deliverable 013 — validation instrument mapping
+
+The 013 pack provides evidence-gathering instruments for WP-1 through WP-5. It does not claim that interviews, site visits or third-party confirmations have occurred.
+
+| Instrument | Evidence focus | Repository destination | Key discipline |
+|---|---|---|---|
+| A — Buyer discovery and qualification | Identity/authority, purchasing activity, written specification, volumes/frequency, quality/traceability expectations, buying process and payment terms | `docs/product/`, `packages/domain/buyer-requirements/`, `evidence/partner-validation/` | A lead or expression of interest is not a qualified buyer; a high score cannot replace a written usable specification. |
+| B — Producer/cooperative supply validation | Legal identity and representative authority, active producer base, seasonal/current supply, commitments, quality, governance/consent and supply calculation | `packages/domain/organisations/`, `supply/`, `inventory/`, `evidence/partner-validation/` | Do not convert estimated production into available inventory; subtract existing commitments, producer retention, quality losses and competing channels. |
+| C — Hub/facility readiness | Ownership/access, permissions, digital infrastructure, safety, physical suitability, staff, equipment, custody, cost and liability | `docs/operations/facility-capability-register.md`, `packages/domain/hub-services/`, `evidence/partner-validation/` | Any unresolved legal access, safety, security, custody or mandatory-permission issue is HOLD regardless of score. |
+| D — Service provider qualification | Identity, licences/accreditation, exact service scope, staff/equipment, capacity, pricing, insurance, security and contract readiness | `docs/operations/partner-and-provider-readiness.md`, `integrations/`, `evidence/partner-validation/` | Marketing statements and directory listings are not proof of current licence, capacity, availability or suitability. |
+
+Each instrument record must retain evidence references, source/date, reviewer and limitations, and link to the relevant Notion Evidence Register item. Negative findings and non-participation are retained, not omitted. The Notion Evidence Register remains the operational master for status and closure.

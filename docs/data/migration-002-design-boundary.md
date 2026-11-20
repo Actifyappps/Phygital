@@ -96,3 +96,8 @@ Deliverable 015 states that Migration 001 contains 20 tables. Deliverable 016 ex
 - Do not backfill inferred mandates, listing-batch links, unit conversions or physical movements. Ambiguous historical data goes to a controlled remediation queue.
 
 **Current disposition remains unchanged:** Migration 001 HOLD; CV-12 UNVERIFIED; Migration 002 NOT AUTHORISED. No SQL drafting, database execution or production deployment is authorised by this cross-source reconciliation.
+
+
+## 018 parent schema-review metrics
+
+The later 018 source-based static review reports 22 tables, 52 inline foreign-key references, 43 CHECK expressions, 4 table-level UNIQUE constraints, 18 explicit indexes and 3 trigger functions with 3 triggers. These are source-file inventory counts, not PostgreSQL runtime catalogue results. The 22-table / 230-column inventory is the reconciled source description. No SQL execution, concurrency test, API test or security test is claimed.
