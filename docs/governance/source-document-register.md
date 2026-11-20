@@ -88,3 +88,6 @@
 | ARCHIVE — Earlier Development Manual (duplicate historical copy) | https://app.notion.com/p/4136808bcd9e81baa112d92c79c20c33 | Duplicate archive copy; historical only |
 | ARCHIVE — Phygital B2B Export Hub Implementation Manual v1 (duplicate historical copy) | https://app.notion.com/p/4136808bcd9e81a5967becc386032697 | Duplicate archive copy; historical only |
 | Archive index (older duplicate) | https://app.notion.com/p/4136808bcd9e81dea3e6ee7065c6994d | Superseded index under the older Project Home; current archive index is 5d66808b… |
+
+
+| Phase 0 Evidence-to-Deliverable Reconciliation — Working Control Note | https://app.notion.com/p/41c6808bcd9e81ca9616e80cb359b70d | Crosswalk of all 24 Evidence Register items to source deliverables, existing coverage, genuine design gaps and required proof; snapshot dated 18 Nov 2026; does not change Notion statuses |

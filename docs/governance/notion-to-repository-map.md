@@ -208,3 +208,6 @@ The archived earlier concept and implementation manuals were inspected for poten
 Older manuals also contain stack, endpoint and schema proposals that are superseded or remain unselected. They are not copied into active packages or treated as architecture decisions. Reuse of any archived detail requires explicit comparison against Concept Paper v1.1, Technical Development Manual v3.0, 018-A and 024.
 
 Duplicate archive pages and older Project Home/011 copies are indexed as historical aliases. They do not create parallel authorities or additional modules.
+
+
+| Phase 0 Evidence-to-Deliverable Reconciliation — Working Control Note | Governance/evidence crosswalk; not a new numbered deliverable or status register | `docs/governance/evidence-to-deliverable-reconciliation.md`; preserve 24-item coverage, gap classes, evidence dependencies and execution gates; Notion Evidence Register remains operational master |

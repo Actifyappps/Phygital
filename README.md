@@ -96,3 +96,7 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [Four technology pillars and phase gates](docs/architecture/phase-gated-capabilities.md).
 - [Demand mapping and market intelligence](docs/measurement/demand-mapping-and-market-intelligence.md).
 - [024-E screen inventory](docs/product/024e-screen-inventory.md) and [024-A authorisation tuple model](docs/security/024a-authorisation-tuple-model.md).
+
+- [Phase 0 evidence-to-deliverable reconciliation](docs/governance/evidence-to-deliverable-reconciliation.md) — 24 evidence items, existing coverage, genuine design gaps and proof still required; snapshot, not status authority.
+- [Phase 0 work-package crosswalk](docs/governance/phase0-work-package-crosswalk.md) — WP-0–WP-9 mapped to repository homes.
+- [011 service-blueprint crosswalk](docs/operations/011-service-blueprint-crosswalk.md) — 12 operating stages mapped to digital domains, controls and gates.
