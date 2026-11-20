@@ -82,3 +82,9 @@
 | 026 Wireframes | Not located; 024-R describes as future/conditional | No approved wireframes identified; 024-E remains screen-requirements authority |
 | Developer Guide v0.1 (17 November 2026) | Not located as canonical page in current Project Home or targeted search | Mentioned in project work but source location/version unresolved; do not silently promote it to governing authority |
 | Archive index — current | https://app.notion.com/p/5d66808bcd9e82cc8ac38123258c0bcc | Historical versions retained for provenance; Concept Paper v1.1 and Manual v3.0 govern |
+
+| ARCHIVE — Earlier Concept Paper Draft (duplicate historical copy) | https://app.notion.com/p/4136808bcd9e814594fff844ba4b7d9e | Duplicate archive copy; historical only; v1.1 governs |
+| ARCHIVE — Development Manual v2 (duplicate historical copy) | https://app.notion.com/p/4136808bcd9e81eb8892c84c7c614245 | Duplicate archive copy; historical only; v3.0 governs |
+| ARCHIVE — Earlier Development Manual (duplicate historical copy) | https://app.notion.com/p/4136808bcd9e81baa112d92c79c20c33 | Duplicate archive copy; historical only |
+| ARCHIVE — Phygital B2B Export Hub Implementation Manual v1 (duplicate historical copy) | https://app.notion.com/p/4136808bcd9e81a5967becc386032697 | Duplicate archive copy; historical only |
+| Archive index (older duplicate) | https://app.notion.com/p/4136808bcd9e81dea3e6ee7065c6994d | Superseded index under the older Project Home; current archive index is 5d66808b… |

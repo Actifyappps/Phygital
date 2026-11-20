@@ -191,3 +191,20 @@ The current archive index says Concept Paper v1.1 and Technical Development Manu
 ### Coverage status discipline
 
 This mapping establishes that a requirement has a repository home. It does not mean the requirement is designed in detail, implemented, tested, independently reviewed or accepted. Each transition remains separately evidenced under `docs/governance/requirements-traceability.md` and the Notion Evidence Register.
+
+
+## 10. Historical archive feature review
+
+The archived earlier concept and implementation manuals were inspected for potentially reusable digital capabilities. The following ideas remain relevant only where retained by the current Concept Paper v1.1 and its phase gates:
+
+- Digital product passport and QR-linked batch view → current read-only projection design; no certification or private-data bypass.
+- Connected scales/moisture meters and sensor ingestion → later capability after device accuracy, calibration, operational fit and provider evidence.
+- Blockchain anchoring and smart contracts → deferred; only after measurable benefit, legal/security review and separate architecture decision.
+- Escrow, FX conversion and automated payouts → deferred; no platform-held funds or escrow under current D-07.
+- Provider webhooks and payment status → candidate adapter pattern only; provider contract, authenticity, idempotency, reconciliation and authorization required.
+- Demand mapping, AI forecasting and SMS advisories → descriptive reporting first; forecasts/advisories only after sufficient lawful data and separate validation.
+- Multi-county/national rollout → future scale decision, not a current product or deployment assumption.
+
+Older manuals also contain stack, endpoint and schema proposals that are superseded or remain unselected. They are not copied into active packages or treated as architecture decisions. Reuse of any archived detail requires explicit comparison against Concept Paper v1.1, Technical Development Manual v3.0, 018-A and 024.
+
+Duplicate archive pages and older Project Home/011 copies are indexed as historical aliases. They do not create parallel authorities or additional modules.
