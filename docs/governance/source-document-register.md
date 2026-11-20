@@ -210,3 +210,8 @@ Notion 024-D v0.1 (19 November 2026) contains 65 logical operations across IA-01
 ## 024-E screen and interaction source verification — 20 November 2026
 
 Notion 024-E v0.1 (19 November 2026) was compared with the repository: all 36 screen IDs and names match exactly across six surfaces; all six journey IDs J-01–J-06 are represented; all 18 screen-level acceptance criteria have corresponding numbered requirements; and UI-OD-01–UI-OD-12 are recorded as open design decisions with interim controls. Verification record: `docs/quality/024e-screen-catalogue-verification.md`. No wireframes, frontend screens, user testing, accessibility conformance or deployment are claimed.
+
+
+## 024-F detailed threat/control/test catalogue — 20 November 2026
+
+Notion 024-F v0.1 (19 November 2026) contains 20 threat/abuse records (TH-01–TH-20), 20 security control requirements (SEC-001–SEC-020), 24 minimum security tests (ST-01–ST-24), and Stage A–D security gates. The full source tables, including threat impacts/control directions/priorities, control requirements/accountable roles, and test scenarios/expected results, are preserved in `docs/security/024f-control-requirement-catalogue.md`. The existing `docs/security/024f-control-and-test-crosswalk.md` remains the implementation/verification crosswalk. Requirements only; no controls implemented, tests run, privacy assessment, penetration test or certification claimed.

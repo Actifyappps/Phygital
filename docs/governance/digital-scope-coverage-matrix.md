@@ -297,3 +297,15 @@ The source remains draft conceptual/logical design. No physical database, SQL ex
 | Responsive/accessibility/localization/low-bandwidth and assisted-device requirements | 024-E §8–10 | Product requirements, screen-state/design-system homes | Requirements represented; no user or accessibility testing claimed |
 
 024-E remains draft. No screen, wireframe, frontend implementation or production UI is claimed.
+
+
+## 024-F source catalogue completeness — 20 November 2026
+
+| Source catalogue | Notion count/range | Repository home | Status |
+|---|---|---|---|
+| Threat and abuse register | 20 (TH-01–TH-20) | `docs/security/024f-control-requirement-catalogue.md` | Full source table represented; risk ratings/acceptance remain open |
+| Security control requirements | 20 (SEC-001–SEC-020) | Same detailed catalogue; `024f-control-and-test-crosswalk.md` | Full source table represented; no implementation/acceptance claimed |
+| Minimum security tests | 24 (ST-01–ST-24) | Same detailed catalogue; security test homes | Full scenarios and expected results represented; not executed |
+| Security assurance stages | Stage A–D | Detailed catalogue and crosswalk | Gate requirements represented; no gate passed by this documentation |
+
+024-F remains draft. No security certification, penetration test, privacy impact assessment or production authorization is claimed.

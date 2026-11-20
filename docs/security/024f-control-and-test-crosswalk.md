@@ -133,3 +133,8 @@ Current status: draft specification; controls not represented as implemented or 
 - [x] Stage gates and current restrictions preserved.
 - [ ] No penetration test, privacy assessment, certification or control implementation is claimed.
 - [ ] Threat model, residual-risk acceptance and real-data/production gates remain open.
+
+
+## Detailed source catalogue
+
+The complete 024-F threat register (TH-01–TH-20), security control requirements (SEC-001–SEC-020) and minimum security tests (ST-01–ST-24), including source descriptions, priorities, accountable roles and expected outcomes, are preserved in `docs/security/024f-control-requirement-catalogue.md`. This crosswalk remains the summary/implementation map; the detailed catalogue is the source-level index. None of the listed controls/tests is thereby implemented or executed.
