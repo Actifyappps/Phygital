@@ -144,3 +144,24 @@ Do not confuse 016 technical D-01–D-12 with 018-A sponsor D-01–D-07. Sponsor
 | Phygital Developer Guide v0.1, dated 17 November 2026 | Referenced in project materials; canonical Notion page/Library file not recovered in targeted search | Candidate architecture noted in `docs/architecture/technology-decision-status.md` and ADR-0001 as provisional. Revalidate the exact source before scoring or treating its architecture as canonical. |
 
 AADDG establishes source-of-truth and lifecycle controls; TSBBF governs selection. Neither resolves the competing candidate architecture descriptions without a project-specific, evidenced decision.
+
+
+## 024-F and 024-G — security and quality specifications (19–20 November 2026)
+
+| Source | Canonical Notion page | Repository disposition |
+|---|---|---|
+| 024-F — Security, Privacy, Threat & Abuse-Control Specification v0.1 | https://app.notion.com/p/41d6808bcd9e817d8d16d37bc31c063e | `docs/security/024f-control-and-test-crosswalk.md`; existing security/privacy/access-control/threat-model homes; SEC-001–020 and ST-01–24 retained as source identifiers. Draft requirements only; no control implementation, PIA or penetration test claimed. |
+| 024-G — Test Strategy, Quality Engineering & Acceptance Evidence Specification v0.1 | https://app.notion.com/p/41d6808bcd9e81c78dfdfa7919489c30 | `docs/quality/024g-test-catalogue-crosswalk.md`; existing quality/test/evidence homes; L0–L8, QAT-001–028 and G0–G4 mapped. Draft strategy only; no test execution or acceptance claimed. |
+
+024-G coordinates but does not replace 014, 021–023 or EVI-21. All existing migration and live-operation holds remain.
+
+## 015–018-B — technical review and migration design lineage
+
+| Source | Repository disposition |
+|---|---|
+| 015 — Technical Readiness Review & Migration 001 Remediation Package | `docs/data/015-018b-technical-design-reconciliation.md`; static review only, R-01–R-12. |
+| 016 — Migration 002 Design Decision Record & Remediation Specification | `docs/data/015-018b-technical-design-reconciliation.md` and `docs/data/migration-002-design-boundary.md`; D-01–D-12 and M2-01–M2-24 are technical IDs, not sponsor decisions. |
+| 017 — Migration 002 Detailed Technical Design | `docs/data/015-018b-technical-design-reconciliation.md`; TD-01–TD-10 and conditional logical design, not implementation authority. |
+| 018-B — Migration 001 Column-Level Data Dictionary & Source Inventory | `docs/data/migration-001-source-provenance.md` and `docs/data/015-018b-technical-design-reconciliation.md`; 22 source tables / 230 declared columns, not runtime catalogue. |
+
+Migration 001 remains HOLD; CV-12 UNVERIFIED; Migration 002 NOT AUTHORISED.

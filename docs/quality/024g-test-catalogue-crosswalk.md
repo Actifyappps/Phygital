@@ -1,60 +1,131 @@
-# 024-G product acceptance catalogue crosswalk
+# 024-G — test strategy, quality engineering and acceptance crosswalk
 
-**Source:** 024-G v0.1 — Test Strategy, Quality Engineering & Acceptance Evidence Specification.  
-**Status:** Draft for review; cases below are test requirements, not execution results.
+**Source:** [024-G — Test Strategy, Quality Engineering & Acceptance Evidence Specification v0.1](https://app.notion.com/p/41d6808bcd9e81c78dfdfa7919489c30)  
+**Source date:** 19 November 2026  
+**Status:** Draft for sponsor, product, technical, operational, security, privacy, legal and independent assurance review; not implementation, release or production authorization.  
+**Review:** 20 November 2026
 
-## Product acceptance scenarios QAT-001–QAT-036
+## 1. Purpose and verification chain
 
-| Test | Scenario | Required result |
+024-G defines how digital product requirements are verified before a capability, workflow, build, release or operational stage is described as accepted. Its governing chain is:
+
+**Governing source/decision → requirement → design element → implementation item → test case → execution record → defect/retest → review → acceptance decision.**
+
+It is a test strategy, not test execution evidence, technology selection, migration authorization, certification or release approval.
+
+## 2. Scope separation from existing test artefacts
+
+- **014** remains the technical/database harness: migration, PostgreSQL, schema/constraint, inventory, tenant, audit/event and technical E2E simulation.
+- **021** remains the bounded Level 1 digital readiness rehearsal.
+- **022** remains the synthetic test-data pack and operator workbook.
+- **023** remains the local prototype and operator handover.
+- **EVI-21** remains the controlled run and independent-review record.
+- **024-G** coordinates product-wide quality engineering and acceptance across all domains; it does not replace the above.
+
+A paper walkthrough is not a software test. A mocked-DOM logic harness is not a browser test. A browser test is not production acceptance. Evidence cannot be relabelled as proof of another verification layer.
+
+## 3. Requirement traceability discipline
+
+Each requirement needs stable ID, governing source/section, priority/risk, atomic expected behaviour, design/implementation reference, test case IDs, level, fixture/version, objective expected result, actual result only after execution, evidence reference/checksum, defect/retest links and reviewer/acceptance authority/date/scope.
+
+Rules:
+- A test case existing is not acceptance.
+- A planned test is not an executed test.
+- Untested, blocked, not applicable and deferred are distinct.
+- Maintain forward and reverse traceability.
+- Requirement changes require impact analysis across design, code, tests, fixtures, evidence and accepted releases.
+- Unmapped implementation behaviour is a scope-control issue.
+
+## 4. Test levels L0–L8
+
+| Level | Purpose | Typical evidence |
 |---|---|---|
-| QAT-001 | User A requests Organisation B record by direct identifier | Denied without protected-data disclosure; attributable security event |
-| QAT-002 | User changes organisation context in request payload | Server validates authoritative membership and scope; unauthorized action denied |
-| QAT-003 | Seller-only identity attempts exporter-only action | Denied; separate exporter mandate/qualification required |
-| QAT-004 | Expired or revoked authority attempts action | Denied at execution time |
-| QAT-005 | User attempts to approve own authority or evidence | Prevented or routed to authorized independent reviewer |
-| QAT-006 | E1, E2, E3 and E4 evidence are displayed | Canonical Framework 008 meanings are used; acquisition method remains separate |
-| QAT-007 | Evidence is expired, contradictory or outside its stated scope | Relevant gate holds or requests review; no positive status inferred |
-| QAT-008 | Batch has overlapping listings or allocations | Available quantity is derived consistently; no duplicate backing |
-| QAT-009 | Concurrent allocations exceed eligible quantity | Atomic control prevents over-allocation; balances remain reconcilable |
-| QAT-010 | Reservation is created without physical movement | UI, API and audit records do not claim dispatch, custody or movement |
-| QAT-011 | A movement is recorded with invalid unit or negative quantity | Rejected; no ledger corruption |
-| QAT-012 | Listing is based on held, withdrawn or ineligible batch | Publication blocked or withdrawn according to authority and workflow |
-| QAT-013 | Public listing/QR projection is queried for private fields | Only allow-listed public fields returned |
-| QAT-014 | Two quotations are accepted for one order where rule prohibits it | Second acceptance rejected; first accepted commercial snapshot preserved |
-| QAT-015 | Order is created from an unaccepted or expired quotation | Rejected; no orphan or unauthorized order |
-| QAT-016 | Order item is changed after acceptance | Change requires controlled amendment; original accepted terms remain auditable |
-| QAT-017 | Buyer uploads payment screenshot or browser redirect | Not accepted as authoritative payment confirmation |
-| QAT-018 | Duplicate or forged provider event is received | Idempotent/replay controls prevent false or duplicate state change |
-| QAT-019 | Payment amount, currency, payer, payee or reference mismatch occurs | Exception/pending state; no inferred settlement |
-| QAT-020 | Offline action syncs after user/device revocation | Rejected or quarantined; no authoritative state change |
-| QAT-021 | Same offline command is replayed after timeout | No duplicate effect; deterministic reconciliation outcome |
-| QAT-022 | Offline data conflicts with current server state | Conflict surfaced; no unsafe last-write-wins |
-| QAT-023 | Recall affects split/merged batches, listings and orders | Complete trace-back/trace-forward set is produced and auditable |
-| QAT-024 | Withdrawn batch is republished or reallocated without release | Denied |
-| QAT-025 | User requests member data beyond delegated disclosure scope | Denied; minimum disclosure and audit record |
-| QAT-026 | Privileged administrator accesses restricted record | Purpose-bound, attributable, logged and reviewable |
-| QAT-027 | User appeals a restriction imposed by same decision-maker | Independent appeal route available |
-| QAT-028 | Malformed or prohibited file is uploaded | Rejected/quarantined; never executed or publicly served |
-| QAT-029 | Critical workflow is completed using keyboard and assistive technology | No critical action inaccessible; focus and status remain understandable |
-| QAT-030 | User operates in supported low-connectivity/offline condition | Pending/synced/conflict states are explicit; no false completion |
-| QAT-031 | Provider or dependent service times out | Safe retry/backoff and pending/exception state; no duplicate side effect |
-| QAT-032 | Backup is restored after simulated loss/corruption | Critical records, lineage and audit integrity verified before reopening |
-| QAT-033 | Application logs are inspected | No passwords, tokens, unnecessary personal data or sensitive file contents |
-| QAT-034 | Test/staging environment attempts to access production secrets/data | Boundary denies access |
-| QAT-035 | Product delivery stage and pilot maturity level are presented together | Separate axes; neither is inferred from the other |
-| QAT-036 | A test fails or is blocked at a prerequisite layer | Dependent tests do not receive a false pass; gate status reflects dependency |
+| L0 Static/specification review | Ambiguity, contradictions, missing constraints | Review record and disposition |
+| L1 Unit | Isolated calculations, validators, state guards | Automated results/build identity |
+| L2 Component | Bounded UI/service/storage/domain component | Component output/screens/logs |
+| L3 API/contract | Request/response, schema, authorization, idempotency, events | Contract report/schema version |
+| L4 Integration | Connected components and provider simulators | Logs, traces, reconciliation |
+| L5 System/E2E | Cross-surface workflows and state integrity | Run report, correlation IDs, records |
+| L6 Non-functional | Security, privacy, accessibility, performance, resilience, recovery | Specialist reports and measurements |
+| L7 User/operational acceptance | Intended users can perform the task | Observed task results and authorized acceptance |
+| L8 Independent assurance | Independent re-performance/sample and evidence challenge | Independent report and findings |
 
-## Relationship to other test authorities
-- 024-G is the product-wide quality and acceptance authority.
-- 024-F ST-01–ST-24 are the security-specific minimum tests; retain separate IDs and evidence.
-- 014 defines technical test-harness and end-to-end simulation requirements.
-- 021 defines the Level 1 rehearsal plan and acceptance criteria.
-- 022 provides synthetic test records and execution worksheets.
-- 023 provides the local prototype and operator handover.
-- EVI-21 is the controlled run and independent review pack; it remains OPEN / Closure Accepted NO.
+These are verification levels, not software delivery stages or pilot maturity levels. Automation is appropriate for deterministic regression, contracts, access matrices, concurrency and build pipelines; manual methods remain necessary for usability, accessibility, field practicality and independent evidence inspection. Tool selection follows TSBBF/AADDG, not an assumption embedded in 024-G.
 
-## Evidence status vocabulary
-Specification, test design, test execution, result, independent review, acceptance and programme evidence closure are distinct. A written case is not a passed test. A locally passing logic harness is not a browser rehearsal. A browser rehearsal is not independent review. None of these alone authorises live trade or shipment.
+## 5. Environments and data
 
-## Minimum execution record
-Requirement/test ID; source version; build/artifact identity and checksum; environment and configuration; synthetic-data version; operator and reviewer roles; start/end time; exact steps and observed outputs; logs/screenshots or result artifacts; defects and severity; retest; limitations; reviewer disposition; acceptance authority and decision.
+Distinct controlled environments are required as architecture is selected: local development, disposable automated test, integration/staging with simulators, bounded operational rehearsal and production (not currently authorized). Test environments must not use production as a convenience.
+
+Synthetic data is the baseline. Every fixture must identify source/version, synthetic status, expected state and permitted use. Evidence class is not test outcome. Preserve runner/configuration, build identity, output, failures and raw evidence.
+
+Stop if environment identity is uncertain, production credentials/endpoints appear, real data is present without approval, evidence is being overwritten or a critical boundary is bypassed.
+
+## 6. Product domains and minimum coverage
+
+Coverage domains include identity/organisation, role/authority, producer intake/consent, product/evidence, batch/inventory, listing/publication, buyer enquiry/matching, quotation/order, reservation/movement, payment status, shipment/documents, offline, recall/withdrawal, trust/abuse/appeals, privacy/records, accessibility/localization, reliability/recovery.
+
+Each domain requires both positive and negative/boundary cases. In particular:
+- cross-tenant and forged context;
+- seller/exporter capacity separation and expired mandates;
+- evidence class/provenance, expiry and scope;
+- duplicate supply, unit/quantity mismatch, over-allocation and race;
+- held/withdrawn listing and public-field leakage;
+- one accepted quotation, immutable order terms and lineage;
+- reservation distinct from physical movement;
+- payment screenshot/redirect and forged/replayed webhook rejection;
+- shipment authority and mock-dossier lineage;
+- offline revocation/replay/conflict handling;
+- recall trace-back/forward;
+- privacy, member-data disclosure and safe exports;
+- accessible critical warnings and error recovery;
+- partial commit, duplicate event, backup/restore and fail-safe behaviour.
+
+## 7. QAT catalogue and relation to 024-F
+
+024-G defines QAT-001–QAT-028. Preserve these identifiers and link them to SEC/ST tests from 024-F where overlapping; do not collapse the product acceptance and security test catalogues into one ambiguous set.
+
+| QAT range | Coverage |
+|---|---|
+| QAT-001–005 | Tenant isolation, authority, expiry, self-approval |
+| QAT-006–007 | Evidence class, expiry, contradiction and scope |
+| QAT-008–012 | Batch/listing backing, allocation, movement, eligibility |
+| QAT-013 | Public/QR projection privacy |
+| QAT-014–016 | Quote acceptance, order creation and immutable terms |
+| QAT-017–019 | Payment proof, provider event and amount/party/reference mismatch |
+| QAT-020–022 | Offline revocation, replay and conflict |
+| QAT-023–024 | Recall/withdrawal traceability and re-publication control |
+| QAT-025–028 | Member privacy, privileged access, independent appeal and malicious files |
+
+Each case must be expanded before execution with fixture, setup, action, expected result, actual result and evidence reference.
+
+## 8. Defect severity and closure
+
+- **Critical:** unauthorized funds/stock effect, cross-tenant or sensitive-data exposure, false payment/dispatch/verification, material audit bypass, safety/legal boundary bypass. Stop affected work; no routine waiver.
+- **High:** P0 failure, workflow corruption, authority bypass, data loss, over-allocation, broken lineage or unsafe recovery. Blocks acceptance.
+- **Medium:** material bounded defect with safe workaround and no mandatory-control bypass; requires documented disposition.
+- **Low:** cosmetic/low impact; track and disclose where relevant.
+
+Defect record must link requirement/test, build/environment/fixture, reproducible steps, actual/expected result, impact/severity, evidence, containment, root cause, remediation commit/build, reviewer, retest/regression and residual risk. Preserve original failed evidence. Critical/High require independent review or documented equivalent assurance.
+
+## 9. Acceptance gates G0–G4
+
+- **G0 Specification readiness:** stable/testable requirements, material conflicts resolved or blocked, traceability, synthetic fixtures, stop conditions, test/review roles and evidence store. Passing G0 means test programme is specified, not software works.
+- **G1 Component/contract readiness:** relevant unit/component/API results, authorization/validation, build/config identity and no unresolved Critical/High issue in scope.
+- **G2 Integrated workflow readiness:** E2E positive/negative/exception/recovery, data/event lineage, concurrency/idempotency/replay, security/privacy and accessibility/usability evidence.
+- **G3 Operational acceptance readiness:** observed role-based operations, SOPs, training/support, incident/continuity, partner and field readiness, cost/ownership and independent review.
+- **G4 Production/pilot authorization:** separate sponsor decision, legal/regulatory/contractual approvals, security/privacy and operational gates, accepted residual risk, bounded scope and stop-loss. Passing earlier gates does not authorize live operations.
+
+Every gate record must state scope, build, environment, requirements, coverage, limitations, defects, evidence, reviewers and decision authority.
+
+## 10. Sequencing and current status
+
+Recommended order: establish traceability; reconcile 024-A–F and 024-R; approve synthetic fixtures/environment/evidence retention; establish unit/component/contract foundations; add authorization, tenant, evidence, batch and audit tests; add marketplace transaction flows; add offline/provider/concurrency/privacy/accessibility/resilience; coordinate 014 migration tests only after separate authorization; execute 021–023/EVI-21 with exact build identity; obtain independent review before expansion.
+
+Current status: 024-G is a draft strategy. It does not prove test execution or authorize migration. EVI-21 remains OPEN; Closure Accepted = NO. Migration 001 remains HOLD; Migration 002 NOT AUTHORISED; live operations remain prohibited pending separate gates.
+
+## 11. Repository acceptance
+
+- [x] L0–L8 verification levels and product test domains represented.
+- [x] QAT-001–028, G0–G4 and defect severity/closure rules mapped.
+- [x] Scope separation from 014 and 021–023/EVI-21 preserved.
+- [ ] No test execution, independent acceptance, release or pilot authorization is claimed.

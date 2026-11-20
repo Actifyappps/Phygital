@@ -1,70 +1,135 @@
-# 024-F security controls and test crosswalk
+# 024-F — security, privacy, threat and abuse-control crosswalk
 
-**Source:** 024-F v0.1 — Security, Privacy, Threat & Abuse-Control Specification.  
-**Status:** Draft for specialist review; controls are requirements, not evidence of implementation or certification.
+**Source:** [024-F — Security, Privacy, Threat & Abuse-Control Specification v0.1](https://app.notion.com/p/41d6808bcd9e817d8d16d37bc31c063e)  
+**Source date:** 19 November 2026  
+**Status:** Draft for sponsor, technical, operational, legal, data-protection and independent assurance review. Not a production security policy or implementation authorization.  
+**Review:** 20 November 2026
 
-## Control requirements SEC-001–SEC-020
+## 1. Purpose and authority
 
-| Control | Requirement | Priority | Responsible review role |
-|---|---|---|---|
-| SEC-001 | Approved system context, asset inventory, trust-boundary and data-flow diagrams exist and are reviewed | P0 | Product/security architect |
-| SEC-002 | Data inventory, classification, purpose, retention and sharing schedule approved for the intended data | P0 before real data | Data protection lead / legal reviewer |
-| SEC-003 | Authentication, recovery, MFA and session design documented and tested | P0 | Identity/security lead |
-| SEC-004 | Permission tuples and default-deny rules from 024-A are enforced server-side; positive and negative tests pass | P0 | Application/security lead |
-| SEC-005 | Cross-tenant, object-level, file, export, search and background-job isolation tests pass | P0 | Application/database security lead |
-| SEC-006 | Seller/exporter authority is independently checked; no-fallback and expiry/revocation tests pass | P0 | Commercial authority reviewer / product lead |
-| SEC-007 | Privileged access, break-glass, machine identities and separation of duties are approved and auditable | P0 | Security/operations lead |
-| SEC-008 | Public projections and QR endpoints expose only approved fields; restricted data remains access-controlled | P0 | Product/data lead |
-| SEC-009 | Evidence provenance, E1–E4 class transitions, document integrity and audit history are tested | P0 | Evidence assurance lead |
-| SEC-010 | Upload quarantine, file validation, malware scanning and secure download controls are tested | P0 before file exchange | Application/security lead |
-| SEC-011 | API validation, rate limiting, idempotency, replay, concurrency and safe errors are tested | P0 | API/security lead |
-| SEC-012 | Webhook/provider authenticity, secret rotation and reconciliation tests pass before any integration is enabled | P0 before integration | Integration/security lead |
-| SEC-013 | Offline action allow-list, device protection, revocation and sync-conflict controls are approved and tested before real offline data | P1 | Field operations/security lead |
-| SEC-014 | Abuse reporting, human review, appeal, participant protection and recall controls are operationally assigned | P1 before public/live use | Trust & safety/operations lead |
-| SEC-015 | Secure SDLC, repository, dependency, build and deployment controls align with AADDG and selected stack | P0 before production | Engineering lead |
-| SEC-016 | Monitoring, alerting, incident response and escalation runbooks are approved and exercised | P1 before production | Security/operations lead |
-| SEC-017 | Backup, restoration, integrity validation and continuity exercises are evidenced | P1 before production | Platform operations lead |
-| SEC-018 | Independent security testing and remediation/retest evidence accepted at the required risk level | P0 before production | Independent assurance reviewer |
-| SEC-019 | Privacy risk assessment and any required impact assessment/contractual review are completed | P0 before real personal data | Data protection/legal reviewer |
-| SEC-020 | Residual risks, exceptions, owners, expiry and authorized acceptance are recorded; no mandatory gate is silently waived | P0 | Programme sponsor / risk owner |
+024-F translates the 024 digital product and companion specifications into a security/privacy control baseline. It is a requirements specification, not a penetration-test report, privacy impact assessment, legal opinion, security certification, approved production policy or authorization to process real participant data.
 
-## Security test catalogue ST-01–ST-24
+Authority hierarchy:
+1. Concept Paper v1.1 (strategic baseline).
+2. 018-A sponsor decisions D-01–D-07 (approved with conditions).
+3. 024 product blueprint and 024-A–E companion requirements.
+4. AADDG v1.0 engineering/repository/deployment standard and TSBBF v1.0 technology-selection standard.
+5. 024-F security/privacy requirements, to be traced into design, implementation, operation and assurance.
+6. Applicable law, regulator direction, contracts and competent professional advice where stricter.
 
-| Test | Scenario | Required result |
+## 2. Non-negotiable boundaries
+
+Security must preserve the sponsor constraints:
+- Platform coordinator is not default seller, exporter, custodian, payee or funds holder.
+- Seller and exporter authority are separate, scoped, effective-dated and revocable; no automatic fallback.
+- Hub service-only baseline; a hub record does not imply custody, title, stock held, release or dispatch.
+- Batch identity, compatibility and double-count prevention are mandatory.
+- One accepted quotation per pilot order; order items retain accepted quote-line and commercial snapshot lineage.
+- Allocation is reservation only, not movement, dispatch or title transfer.
+- Buyer pays seller directly through a validated provider/bank route; platform records instructions/status/references/verified events/reconciliation and does not hold funds or provide escrow.
+- Synthetic data remains the baseline until real-data security/privacy gates are approved.
+- No live trade, custody, platform-held funds, escrow, live payment integration or shipment is authorized by 024-F.
+
+## 3. Trust boundaries and data protection
+
+The specification applies to public marketplace, buyer, producer/supplier, hub operations, programme administration and reviewer/assurance surfaces, plus APIs, databases, object storage, identity, notifications, analytics, logs, backups, repositories, deployment pipelines, integrations and field/offline devices.
+
+Treat as distinct trust boundaries:
+- public/unauthenticated visitors;
+- authenticated external users and the platform;
+- each organisation/tenant and other organisations;
+- organisation membership versus delegated authority/capacity;
+- privileged staff/support and ordinary users;
+- client/device and trusted server;
+- platform and external provider/API/webhook;
+- online server and offline local queue;
+- public QR projection and restricted source records;
+- development, test, staging, rehearsal and production environments.
+
+Information classes include public, internal operational, confidential commercial, personal/member-linked, sensitive identity/authority, financial-reference and security-restricted records. Apply data minimisation, purpose limitation, least privilege, controlled sharing, retention/deletion schedules, secure export, correction and access logging. Member data must not be disclosed merely because a cooperative representative has an account; representation authority and disclosure authority are separate.
+
+A privacy/data-protection impact assessment, legal applicability analysis, data-sharing/processing agreements and retention schedule remain external review requirements where applicable; this crosswalk does not assert completion.
+
+## 4. Identity, authority and access
+
+Authentication is not authority. Every material action must be checked server-side against a machine-testable tuple: actor, organisation, role, capacity, mandate, resource scope, action, purpose, workflow state and effective time. Use default-deny access; validate organisation context server-side; recheck mandate expiry/revocation at action time; enforce tenant and object-level isolation in APIs, files, search, exports, jobs and background workers.
+
+Privileged access requires named accounts, least privilege, separation of duties, auditable support access, controlled break-glass and periodic review. MFA, secure recovery, session expiry/revocation and anomaly/rate controls are required according to risk. Self-approval of authority/evidence must be blocked or routed to independent review.
+
+## 5. Evidence, documents, QR and transaction integrity
+
+Evidence class and provenance must remain distinct. Record source, issuer, scope, method, date, reviewer and limitations. E1–E4 semantics remain those of Framework 008; acquisition method is not an evidence class. Preserve review history and quarantine expired, contradictory, altered or out-of-scope material.
+
+File controls: allow-list formats, validate actual file signatures, size limits, malware scanning/quarantine, safe preview, private storage, short-lived scoped download links, access logging and controlled retention. QR/public endpoints expose only explicitly allow-listed public projections; never leak member identity, private batch location, commercial terms or internal notes.
+
+APIs require schema validation, authorization, safe errors, rate limits, idempotency, replay protection and concurrency controls. Provider webhooks must be authenticated using provider-specific verification, timestamp/nonce or equivalent replay protection, secret rotation and reconciliation. A screenshot, redirect or client-side claim is not payment evidence. Offline actions must be allow-listed, minimal, encrypted, attributable, expiry-bound, idempotent and re-authorized on sync; revoked/stale actions are rejected or quarantined, and conflicts must not use unsafe last-write-wins.
+
+## 6. Threat register coverage
+
+024-F identifies 20 initial threat families. These are initial model inputs, not an exhaustive assessment or final residual-risk rating.
+
+| Threat IDs | Threat family | Repository control homes |
 |---|---|---|
-| ST-01 | User from Organisation A requests Organisation B record by direct ID | Denied without revealing protected details; security event recorded |
-| ST-02 | User changes organisation context in a request payload | Server derives/validates context; unauthorized cross-tenant action denied |
-| ST-03 | Seller-only representative attempts exporter-only action | Denied; distinct capacity evidence required |
-| ST-04 | Expired/revoked mandate attempts a previously permitted action | Denied at execution time |
-| ST-05 | User attempts to approve own authority or evidence | Denied or routed to independent reviewer |
-| ST-06 | Public listing/QR endpoint is probed for member, batch-location or commercial fields | Only allow-listed public projection returned |
-| ST-07 | User uploads renamed executable, malformed file or archive bomb | Rejected or quarantined; never executed or publicly served |
-| ST-08 | Signed file link is reused after expiry or by unauthorized context | Access denied |
-| ST-09 | Duplicate idempotency key with identical request | Single authoritative effect; deterministic response |
-| ST-10 | Duplicate idempotency key with conflicting request | Rejected and logged |
-| ST-11 | Concurrent allocation requests exceed eligible quantity | Server prevents over-allocation atomically |
-| ST-12 | Replayed or forged provider webhook | Rejected; no payment state change |
-| ST-13 | Buyer submits payment screenshot or browser redirect as proof | Not treated as authoritative confirmation |
-| ST-14 | Offline action syncs after user/device revocation or action expiry | Rejected/quarantined; no authoritative state change |
-| ST-15 | Device resubmits same queued action after timeout | Idempotent handling; no duplicate effect |
-| ST-16 | Offline quantity/evidence conflicts with current server record | Conflict surfaced for review; no last-write-wins |
-| ST-17 | Privileged administrator accesses restricted record | Purpose-bound, attributable, logged and reviewable |
-| ST-18 | Appeal is submitted against a restriction by the original decision-maker | Independent reviewer path required |
-| ST-19 | Recall/withdrawal is applied to a batch supporting multiple listings/orders | Trace-back/trace-forward scope is complete and auditable |
-| ST-20 | Backup is restored after simulated loss/corruption | Integrity and critical state verified; gaps recorded before reopening |
-| ST-21 | Secret is committed to source or exposed in client bundle | Automated control detects and blocks/reports; secret rotated if exposed |
-| ST-22 | User enumerates IDs or scrapes public/API endpoints at abnormal rate | Rate limit/abuse control activates without exposing protected data |
-| ST-23 | Logs are inspected for passwords, tokens, unnecessary personal data or file contents | No prohibited sensitive values present |
-| ST-24 | Staging/test environment attempts to access production data or secrets | Denied by environment and identity boundary |
+| TH-01 | Credential theft, phishing, account takeover | `docs/security/`, identity tests |
+| TH-02 | Cross-tenant/object-level access | `docs/security/024a-authorisation-tuple-model.md`, `tests/security/` |
+| TH-03 | Forged/expired seller-exporter mandate | `docs/commerce/`, `docs/security/`, authorization tests |
+| TH-04 | Unauthorized member-data disclosure | `docs/security/privacy-by-design.md`, privacy assessments |
+| TH-05 | Fabricated/altered evidence | `docs/product-integrity/`, `docs/security/` |
+| TH-06 | Listing manipulation/duplicate supply | `docs/marketplace-trust/`, `docs/data/` |
+| TH-07 | Quantity/measurement manipulation | `docs/domain/`, `docs/operations/`, `tests/` |
+| TH-08 | Allocation race/replay | `docs/data/`, `docs/quality/014-technical-test-harness-crosswalk.md` |
+| TH-09 | False hub custody/release/dispatch | `docs/operations/physical-digital-service-boundaries.md` |
+| TH-10 | Quote/price/order tampering | `docs/commerce/`, `docs/domain/` |
+| TH-11 | Payment spoofing/forged webhook | `docs/integrations/`, `docs/commerce/` |
+| TH-12 | Shipment/export-status spoofing | `docs/integrations/`, `docs/compliance/` |
+| TH-13 | Lost device/offline queue replay | `docs/architecture/offline-and-sync-architecture.md` |
+| TH-14 | Malicious upload/malware | `docs/security/`, `docs/integrations/` |
+| TH-15 | Insider privilege misuse/support impersonation | `docs/security/`, `docs/governance/` |
+| TH-16 | Abuse-report/appeal manipulation | `docs/marketplace-trust/` |
+| TH-17 | Scraping/enumeration/spam/DoS | `docs/security/`, API controls |
+| TH-18 | Dependency/build/secret/deployment compromise | `docs/delivery/actify-engineering-operating-standards.md` |
+| TH-19 | Backup compromise/restore failure | `docs/delivery/`, operational runbooks |
+| TH-20 | Cross-environment/test-data contamination | `docs/delivery/`, `docs/quality/` |
 
-## Implementation homes
-- System context, asset inventory and trust boundaries: `docs/architecture/`, `docs/security/`.
-- Privacy purpose, information classes, retention and sharing: `docs/security/privacy-and-records-controls.md`, `packages/domain/privacy/`.
-- Authentication, mandate, least privilege and tenant isolation: `packages/domain/identity/`, `packages/domain/organisations/`, `packages/domain/authority/`, `tests/security/`.
-- Evidence, file integrity, public QR projection: `packages/domain/evidence/`, `packages/domain/documents/`, `docs/decisions/ADR-0007-public-projections-and-qr.md`.
-- API, webhook, payment and provider security: `docs/api/`, `integrations/`, `packages/domain/payment-status/`.
-- Offline/device controls: `packages/domain/offline-sync/`, `docs/decisions/ADR-0006-offline-and-synchronisation.md`.
-- Abuse, appeals, recalls and participant protection: `packages/domain/marketplace-trust/`, `packages/domain/product-integrity/`, `packages/domain/cases/`.
-- Secure SDLC, monitoring, backup and recovery: `docs/delivery/`, `docs/operations/`, `infra/`.
+## 7. Marketplace trust and participant protection
 
-ST-01–ST-24 are security-specific tests. They must remain separately identifiable even where a QAT case covers similar end-to-end behaviour. A product-level QAT pass does not automatically close an ST case.
+The product must support reporting fake identities, forged authority/evidence, misleading product/origin/quantity claims, duplicate/withdrawn listings, manipulated measurements, coercion, bribery, retaliation, payment/shipment spoofing and safeguard bypass.
+
+Case handling requires a unique reference, severity, owner role, timestamps, evidence references, need-to-know access, preserved audit history, proportionate temporary restriction with scope/reason/authority/duration/review date, human review for material restrictions, reasoned outcome, appeal/correction route and anti-retaliation protections. An allegation or open case must not be published as a finding of fraud or non-compliance.
+
+Recall/withdrawal must preserve affected batch/listing/order scope, trace-back/trace-forward, notification recipients, actions and closure evidence. An ordinary listing administrator cannot silently remove a safety hold.
+
+## 8. Security controls and minimum test coverage
+
+024-F defines SEC-001–SEC-020 covering system context/data flows, data inventory/privacy, identity/session, server-side authorization, tenant isolation, seller/exporter mandate, privileged access, public projections, evidence provenance, upload security, API controls, provider verification, offline security, abuse/appeal/recall, secure SDLC, monitoring/incident response, backup/restore, independent testing, privacy assessment and risk/exception acceptance.
+
+Its ST-01–ST-24 catalogue includes:
+- cross-tenant direct-ID and forged-context denial;
+- seller/exporter separation, expired mandate and self-approval;
+- QR/public projection privacy;
+- malicious upload and expired file link;
+- idempotency, conflicting key, allocation concurrency;
+- forged/replayed provider webhook and screenshot/redirect;
+- offline revoked device, duplicate sync and conflict;
+- privileged access, independent appeal and recall lineage;
+- backup restoration, secret leakage, enumeration/rate controls;
+- sensitive log leakage and environment isolation.
+
+These test IDs must be retained and mapped to 024-G and executable tests; do not silently renumber or duplicate them.
+
+## 9. Stage gates and current disposition
+
+- **Stage A — Discovery/synthetic design:** threat modelling, data mapping, control design, vendor review and synthetic security test planning are permitted.
+- **Stage B — Before real participant data/field use:** approved purpose/data map, privacy review, identity/tenant/file/device controls, incident process and relevant P0/P1 acceptance evidence required.
+- **Stage C — Before production exposure:** selected architecture, secure SDLC, independent security testing, remediation/retest, monitoring, backup/restore, runbooks, access review and residual-risk acceptance required.
+- **Stage D — Before live commercial/export workflow:** all applicable commercial, legal, exporter, facility, product, custody, payment, logistics, privacy, security and operational gates independently pass.
+
+Current status: draft specification; controls not represented as implemented or accepted; stack/providers unselected; synthetic data baseline; Migration 001 HOLD; Migration 002 NOT AUTHORISED; EVI-21 OPEN; no live trade/custody/funds/escrow/payment/shipment authority.
+
+## 10. Repository acceptance
+
+- [x] Security/privacy requirement families, 20 threats, SEC-001–020 and ST-01–24 mapped.
+- [x] Abuse reporting, human review, appeal, recall and offline controls represented.
+- [x] Stage gates and current restrictions preserved.
+- [ ] No penetration test, privacy assessment, certification or control implementation is claimed.
+- [ ] Threat model, residual-risk acceptance and real-data/production gates remain open.

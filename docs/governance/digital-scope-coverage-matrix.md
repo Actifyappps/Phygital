@@ -181,3 +181,17 @@ The supporting operational controls have now been expanded in:
 ### Coverage interpretation
 
 The substantive requirements reviewed in this pass now have explicit repository homes and source links. The remaining gap is not a reason to invent more folders or create duplicate specifications: it is to recover/confirm the missing source records, complete the architecture/commercial decisions, and then continue controlled source-to-repository reconciliation. The Notion searches were targeted, not proof of an exhaustive workspace inventory; no claim of 100% Notion coverage is made.
+
+
+## 024-F and 024-G security/quality coverage
+
+| Source | Repository home | Coverage / disposition |
+|---|---|---|
+| 024-F | `docs/security/024f-control-and-test-crosswalk.md`; existing `docs/security/`, `docs/marketplace-trust/`, `docs/integrations/` | 20 threat families; SEC-001–020; ST-01–24; privacy, identity, authority, tenant, evidence, file, API, provider, offline, abuse/appeal/recall, incident and recovery controls. Draft requirements only; no implementation/assessment claimed. |
+| 024-G | `docs/quality/024g-test-catalogue-crosswalk.md`; existing `docs/quality/`, `tests/`, `evidence/` | L0–L8; QAT-001–028; G0–G4; traceability, test environment, defect closure and independent assurance. Draft strategy only; no execution/acceptance claimed. |
+
+The quality/security sources are distinct from the database harness 014 and Level 1 rehearsal 021–023/EVI-21. No evidence status is closed by repository documentation.
+
+## 015–018-B technical source coverage correction
+
+The source-to-repository reconciliation is `docs/data/015-018b-technical-design-reconciliation.md`. It corrects 015's preliminary 20-table count to 22 tables / 230 declared columns, based on 016's explicit correction and 018-B's source inventory. 016 D-01–D-12 are technical design IDs and are not 018-A sponsor decisions D-01–D-07. Static review is not PostgreSQL execution. Migration 001 HOLD; Migration 002 NOT AUTHORISED.

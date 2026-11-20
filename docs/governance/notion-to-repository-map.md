@@ -265,3 +265,13 @@ These are source-to-repository integrations, not evidence of facility readiness,
 The technical sequence 015–018-B is mapped in `docs/data/015-018b-technical-design-reconciliation.md`. Use `docs/data/migration-001-source-provenance.md` for immutable source hashes and the corrected 22-table/230-column source inventory; use `docs/data/migration-002-design-boundary.md` for R-01–R-12, M2-01–M2-24 and the conditional design boundaries.
 
 The design remains unapproved for implementation. Candidate additions (units/conversions, hub mandates, ledger/reconciliation, allocation lineage, immutable commercial snapshots, provider-event idempotency, RLS/audit protections) must be justified against exact source schema and chosen service architecture. Application authorisation, provider signature verification, legal authority, operational procedures and external evidence cannot be delegated to SQL alone.
+
+
+## 024-F / 024-G security and quality integration
+
+- **024-F:** `docs/security/024f-control-and-test-crosswalk.md` maps the 20 initial threat families, SEC-001–SEC-020, ST-01–ST-24, privacy lifecycle, identity/mandate, tenant isolation, evidence/file/QR, API/webhook/offline, abuse/appeal/recall and Stage A–D gates. Existing security docs remain detailed topic homes. The source is a draft specification, not an implemented control baseline or independent assessment.
+- **024-G:** `docs/quality/024g-test-catalogue-crosswalk.md` maps traceability, L0–L8 verification levels, product test domains, QAT-001–QAT-028, defect severity/closure and G0–G4 acceptance gates. It coordinates with, but does not replace, 014 database/technical harness, 021–023 Level 1 artefacts or EVI-21.
+
+## Explicit source-register correction — 015–018-B
+
+The detailed source entries for 015, 016, 017 and 018-B are in `docs/governance/source-document-register.md`; their consolidated technical reconciliation is `docs/data/015-018b-technical-design-reconciliation.md`. Keep 016 D-01–D-12 distinct from sponsor D-01–D-07 in 018-A. 018-B's 22-table/230-column figures describe the source SQL only. No migration execution or acceptance is implied.
