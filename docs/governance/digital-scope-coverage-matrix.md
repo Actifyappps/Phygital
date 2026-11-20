@@ -372,3 +372,16 @@ See `docs/quality/018c-source-completeness-verification.md`. Counts indicate sou
 | Five operational identity questions | Repository/backend/deployment/production URL/worker-edge | `docs/delivery/application-operational-identity-register.md` | Repository identified; other service identities explicitly unprovisioned |
 
 The standalone Developer Guide v0.1 source remains unrecovered; its candidate architecture is provisional. ADR-0001/0002 remain OPEN.
+
+
+## Current Project Home source-register check — 20 November 2026
+
+| Scope | Result |
+|---|---|
+| Current Project Home linked pages | 48, excluding the Project Home itself and Evidence Register database |
+| Evidence Register database | One linked database reference |
+| Current linked page/database IDs absent from source register | Zero |
+| Additional source-register entries | Nine historical/superseded/archive references retained intentionally |
+| Known canonical-source gaps | Developer Guide v0.1, full 024-H page, Deliverable 025 dedicated page; each is recorded as not located, not assumed nonexistent |
+
+See `docs/quality/notion-home-to-repository-register-check.md`. This does not claim a complete scan of all Notion workspace pages or attachments.

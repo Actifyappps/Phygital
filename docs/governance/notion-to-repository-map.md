@@ -296,3 +296,8 @@ These are planning artefacts, not technology selection or implementation approva
 ## End-to-end digital product realization — 20 November 2026
 
 The current 024 product specification series is represented as one connected product rather than separate document-numbered subsystems. The consolidated implementation/traceability view is docs/product/end-to-end-product-realization-map.md. It connects 024 v0.1d and 024-A–G to the six product surfaces, lifecycle stages, ten information domains, bounded-context ownership, command/authority/data/event/UI/test/evidence chain and pilot-first engineering increments. Detailed source-specific maps remain authoritative for their own requirement IDs. This is a navigation and realization crosswalk only; it does not implement features, approve architecture, close 024-R findings or authorize live operations.
+
+
+## Current Project Home completeness verification
+
+The current Project Home's 48 linked document pages and Evidence Register database are all represented in the source register. The repository disposition map records the current document families and findings. The verification and explicit source gaps are recorded in `docs/quality/notion-home-to-repository-register-check.md`. This is a linked-home reconciliation, not an exhaustive crawl of every workspace page, attachment or discussion.

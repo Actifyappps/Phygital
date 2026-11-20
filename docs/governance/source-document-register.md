@@ -250,3 +250,8 @@ A second source check counted the complete Notion sections and verified their pr
 ## Actify engineering standards verification — 20 November 2026
 
 TSBBF v1.0 and AADDG v1.0 (including Level 1 extensions) are preserved in the Actify Library and applied through `docs/delivery/actify-engineering-operating-standards.md` and `docs/delivery/engineering-governance-and-build-standard-crosswalk.md`. Clause-level conformance and actual repository-state checks are recorded in `docs/quality/aaddg-tsbbf-source-verification.md`; the five operational identity answers are in `docs/delivery/application-operational-identity-register.md`. TSBBF scorecards remain blank; no candidate is selected. The standalone Developer Guide v0.1 canonical artifact remains unrecovered in targeted Notion/Library search and its candidate stack description remains provisional.
+
+
+## Current Project Home link completeness check — 20 November 2026
+
+A fresh fetch of the current Project Home found 48 linked document pages plus the Evidence Register database (excluding the Project Home itself). All linked page/database IDs are present in this source register. Nine additional superseded/archive/history references are retained in the register but are not current Project Home links. See `docs/quality/notion-home-to-repository-register-check.md` for counts, repository disposition coverage, known source gaps and scope limits.
