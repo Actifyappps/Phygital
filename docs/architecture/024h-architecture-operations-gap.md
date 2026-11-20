@@ -49,3 +49,8 @@ A further targeted search of the current Phygital Project Home/connected Notion 
 Repository coverage exists across the environment/promotion model, release gates, release/rollback checklist, observability, operations ownership, runbook placeholders, AADDG/TSBBF operating crosswalk and architecture ADRs. These distributed homes do not constitute an approved 024-H source specification.
 
 **Disposition:** retain this gap record; do not silently create a replacement 024-H or treat existing repository notes as its approval. Confirm whether 024-H is planned, stored elsewhere or should be commissioned. Until then, keep all vendor, topology, service-level, RTO/RPO, support-hours and production decisions open unless separately approved by their proper authority.
+
+
+## Consolidated delivery/operations coverage assessment — 20 November 2026
+
+The distributed repository homes and their actual unprovisioned/runtime status are mapped in docs/quality/024h-delivery-operations-coverage-assessment.md. It also separates the 024-H operational specification from the 025 commercial service/fee model and provides a proposed commissioning outline only. This assessment is not the missing 024-H source or an approved replacement.

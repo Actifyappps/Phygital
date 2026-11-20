@@ -270,3 +270,8 @@ Notion 024-D v0.1 was compared with the repository logical operation and event c
 ## 024-D contract-to-workflow/data/test traceability — 20 November 2026
 
 The 024-D logical contract groups are now connected to 024-B workflows, 024-C entities/relationships and relevant 024-G QAT coverage in `docs/api/024d-contract-to-workflow-data-test-crosswalk.md`. The mapping is group-level because the source does not assign stable operation IDs. It does not invent endpoint contracts or close API-OD decisions.
+
+
+## 024-H delivery/operations source-gap and coverage assessment — 20 November 2026
+
+The current targeted Notion search did not locate a completed canonical 024-H page. Repository coverage and actual provisioned/unprovisioned status are reconciled in docs/quality/024h-delivery-operations-coverage-assessment.md. This is a derived coverage assessment and proposed commissioning outline, not a substitute 024-H or approval. Programme-owner disposition remains required. Deliverable 025 remains a separate commercial dependency.

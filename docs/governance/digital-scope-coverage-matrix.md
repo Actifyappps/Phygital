@@ -428,3 +428,18 @@ See `docs/quality/024d-source-contract-completeness-verification.md`. This verif
 | Contract test strategy | 024-G and 024-F quality/security catalogues | Requirements represented; not executed |
 
 The crosswalk is logical and group-level; it does not invent source operation IDs or approve endpoint schemas.
+
+
+## 024-H delivery, operations and observability coverage — 20 November 2026
+
+| Scope | Repository home | Current status |
+|---|---|---|
+| Environment/release/rollback | docs/delivery/environment-and-promotion-model.md; release gates/checklists | Requirements represented; no pipeline or deployment runtime |
+| Backup/restore | docs/delivery/backup-restore.md | No backup capability or restore rehearsal claimed; RTO/RPO open |
+| Monitoring/observability | docs/delivery/observability.md; infra/monitoring/ | Design placeholders; no running telemetry/alerts |
+| Incident/support/runbooks | docs/operations/; docs/delivery/runbooks/ | Templates and design only; no named support/on-call appointments |
+| Operational metrics | docs/measurement/; 024-C ENT-062/063 | Metric requirements represented; baselines/targets/owners open |
+| Canonical 024-H source | Not located in targeted Notion search | Programme-owner disposition required; assessment is not a replacement |
+| 025 commercial model | docs/commerce/service-catalogue-and-fee-model.md | Separate unresolved commercial dependency; no fee engine |
+
+See docs/quality/024h-delivery-operations-coverage-assessment.md. No service-level, RTO/RPO, production, provider or operational acceptance decision is inferred.

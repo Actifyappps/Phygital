@@ -16,3 +16,5 @@ Canonical test and acceptance authority: 024-G, supplemented by 014 and the Leve
 - 024d-source-contract-completeness-verification.md — source comparison of 65 logical operations, 77 candidate events, eight integration families, 17 contract-test families and API-OD-01–12; no implementation or test execution claim.
 
 - 024d-contract-to-workflow-data-test-crosswalk.md — logical API group to workflow/entity/relationship/QAT traceability; no endpoint, provider or implementation decision.
+
+- 024h-delivery-operations-coverage-assessment.md — cross-source map of 024-H intended scope to delivery/operations homes, actual runtime status, open decisions and a proposed commissioning outline; not the missing 024-H specification.

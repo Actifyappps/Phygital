@@ -316,3 +316,8 @@ The detailed 024-D logical operation inventory is preserved in `docs/api/024d-lo
 ## 024-D contract-to-domain and test linkage — 20 November 2026
 
 Use `docs/api/024d-contract-to-workflow-data-test-crosswalk.md` to connect 024-D logical contract groups with WF-01–WF-18, ENT-001–ENT-065, REL-001–REL-034 and relevant QAT cases. It supplements the 65-operation source catalogue and 77-event catalogue; it does not select API style, transport, providers or implementation architecture.
+
+
+## 024-H delivery/operations coverage and source gap — 20 November 2026
+
+The 024-H source gap remains open. The cross-source coverage assessment docs/quality/024h-delivery-operations-coverage-assessment.md maps 024-C/G and 024-R requirements to delivery, operations, security and measurement homes, distinguishes written controls from actual runtime evidence, and proposes a commissioning outline if governance confirms 024-H. It is not a replacement 024-H. Keep 025 as a separate commercial design dependency.
