@@ -84,3 +84,12 @@ Software delivery stages 0–4 and pilot maturity levels 1–3 must remain separ
 - Offline actions are allow-listed and revalidated; high-risk actions require online validation.
 - Corrections preserve original events and history.
 - Synthetic data is never presented as real trade or partner evidence.
+
+
+## Source verification update — 20 November 2026
+
+The current Notion source is **024-B v0.1**, dated 19 November 2026 and marked draft for sponsor, product, technical, operational, legal, data-protection and assurance review. Its source catalogue contains WF-01–WF-18 and BR-001–BR-034. This repository crosswalk maps all 18 workflows to logical domain owners and all 34 business rules to an implementation/verification note and primary owner.
+
+The source also includes state/evidence conventions, separate software-stage and pilot-level axes, a domain state inventory, cross-workflow invariants, a traceability/acceptance matrix and six screen/service surfaces. This crosswalk does not reproduce every state transition or prove any feature exists. The exact states, transition guards, actors and evidence remain governed by the Notion 024-B source until the detailed design is approved.
+
+**Next specification dependency:** 024-C v0.1 is the logical data-model companion (ten information domains, 65 conceptual entities), subordinate to 024/024-B and reconciled with 018-C. It is not a physical schema or migration authorization. Migration 001 remains HOLD; Migration 002 remains NOT AUTHORISED.

@@ -244,3 +244,17 @@ The consolidated map is not a substitute for detailed source crosswalks, test ca
 | F-03–F-12 | Allocated by 024-R across 024-B–H | Existing product, commerce, trust, compliance, offline, data, operations and measurement homes | Detailed source specification, verification and approval remain open |
 
 The source correction record does not approve the 024 specifications for production. Deliverable 025 remains not located in the targeted workspace search and requires programme-owner confirmation. EVI-21 remains OPEN; Migration 001 HOLD; Migration 002 NOT AUTHORISED.
+
+
+## 024-B workflow source verification — 20 November 2026
+
+| Source content | Notion source position | Repository home | Status |
+|---|---|---|---|
+| WF-01–WF-18 | 18 named end-to-end workflows in 024-B v0.1 | `docs/product/workflow-to-context-crosswalk.md` | All workflow IDs mapped to domain owners |
+| BR-001–BR-034 | 34 cross-cutting business rules | `docs/product/workflow-to-context-crosswalk.md` | All rule IDs mapped to primary owners and verification notes |
+| State/evidence conventions and separate maturity axes | 024-B sections 2 and 5 | `docs/product/workflow-state-index.md`; `docs/product/maturity-axes-and-gates.md` | Cross-referenced; exact state transitions remain source-governed |
+| Traceability and acceptance matrix | 024-B section 7 | Workflow crosswalk and quality/security test homes | Represented at crosswalk level; execution evidence outstanding |
+| Six service/screen surfaces | 024-B section 8 | `docs/product/024e-screen-inventory.md`; end-to-end product realization map | Mapped; no production UI implied |
+| Logical data-model dependency | 024-C v0.1: ten information domains, 65 conceptual entities | `docs/domain/024c-entity-to-context-crosswalk.md`; data homes | Conceptual/logical only; reconcile with 018-C; no migration authorization |
+
+The 024-B source remains a draft. Its next specified companion is 024-C, not an implementation migration. Migration 001 HOLD; Migration 002 NOT AUTHORISED; EVI-21 OPEN.

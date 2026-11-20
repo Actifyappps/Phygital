@@ -75,3 +75,22 @@ No new 024-I is justified by 024-R; its conclusion is to use the existing 024-A�
 - **Accepted:** authorised reviewers have accepted the evidence and gate.
 
 The first three statuses must never be presented as the last three.
+
+## 7. Subsequent specification progress — 024-B v0.1
+
+The 024-R correction record identified 024-B as the next controlled specification action. A later Notion source fetch confirms that **024-B v0.1 — End-to-End Workflow, State & Business Rules Catalogue** was created on 19 November 2026. The catalogue is a draft for sponsor, product, technical, operational, legal, data-protection and assurance review; it is not a production build authorization.
+
+The 024-B source contains:
+- 18 named workflows, WF-01 through WF-18;
+- 34 cross-cutting business rules, BR-001 through BR-034;
+- state/evidence conventions, including separation of E1–E4 evidence class from acquisition type;
+- two independent maturity axes (software stages 0–4 and pilot levels 1–3);
+- domain state inventory, cross-workflow invariants and stop conditions;
+- a traceability and acceptance matrix;
+- six service/screen surfaces and explicit dependencies/prohibitions.
+
+The existing repository crosswalk `docs/product/workflow-to-context-crosswalk.md` maps all 18 workflows and all 34 business rules to domain owners and implementation/verification notes. It remains a logical crosswalk, not a claim that the corresponding state machines or code exist.
+
+**Updated next controlled specification:** 024-B identifies 024-C — Information Architecture, Domain Data Dictionary & Entity Relationship Specification v0.1 as the logical data-model companion, with ten information domains and 65 conceptual entities. 024-C remains conceptual/logical only and must reconcile with 018-C. It is not a physical schema or migration authorization.
+
+Accordingly, the earlier “prepare 024-B” instruction in the 024-R correction record is now historically satisfied at the draft-specification level. The remaining gate is review/reconciliation of 024-B and preparation/review of 024-C, not technical implementation. The 024-R correction record itself remains unchanged as the audit source; this repository record tracks subsequent progress.

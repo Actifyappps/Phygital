@@ -188,3 +188,10 @@ These artefacts do not close ADR-0001/0002 or dependent ADRs. Developer Guide v0
 The 19 November correction record appended to 024-R confirms that 024 v0.1d corrected E1–E4 evidence-class definitions against Framework 008 §4.1 and separated evidence class from acquisition-method/type classification; it also allocated additional audit requirements across 024-A–H. 024-A v0.1b added separate seller/exporter capacity controls, separate authority-record requirements and ten synthetic permission tests. Project Home was updated to reflect those corrections and the next controlled design step. Sponsor/legal review, machine-testable permission tuples, Deliverable 025 status, 024-B onward, evidence closure, implementation and test execution remain outstanding.
 
 Repository disposition: `docs/quality/024r-correction-implementation-record.md`. These are source-specification corrections, not implementation, test results, acceptance or production authorization. 024-R's next controlled step is preparation of 024-B as a specification, not technical implementation or migration execution.
+
+
+## 024-B source verification — 20 November 2026
+
+Notion 024-B v0.1 (dated 19 November 2026) contains 18 workflows (WF-01–WF-18), 34 cross-cutting business rules (BR-001–BR-034), state/evidence conventions, independent software/pilot maturity axes, a domain state inventory, invariants/stop conditions, a traceability/acceptance matrix and six screen/service surfaces. Repository disposition: `docs/product/workflow-to-context-crosswalk.md`. All workflow IDs and business-rule IDs are mapped there to logical domain owners and verification notes. This is requirements representation, not implementation or test execution.
+
+024-B identifies 024-C v0.1 as its conceptual/logical data-model companion: ten information domains and 65 conceptual entities, reconciled with 018-C. No physical schema or migration authorization follows from that source.
