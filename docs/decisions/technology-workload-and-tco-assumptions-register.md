@@ -19,6 +19,18 @@ For each field, record:
 
 Do not use a temporary synthetic-spike assumption as a forecast of real pilot demand. Keep personal, buyer, producer, financial and commercially sensitive source data out of the public repository; store only approved aggregate/minimised evidence here.
 
+## Source-derived planning facts (not measured workload)
+
+The Phase 0 source documents provide useful scope boundaries, but they do not supply validated numeric technology loads:
+
+- Deliverable 003 (9 November 2026) describes a pilot of **one commodity, one hub and a limited group of producers and buyers**. Kericho is proposed, not confirmed; orthodox/purple tea, specialised honey and avocados are candidates, not a selected commodity. The hub, producer group, cooperative, exporter/logistics partner, inspection/laboratory partner, licensed payment partner and pilot buyers remain to be confirmed. Staffing, equipment, connectivity, storage, training, maintenance, support funding, numeric pilot targets and unit economics remain unresolved. See [Deliverable 003](https://app.notion.com/p/5846808bcd9e820a9b760191453e2542).
+- Deliverable 010 (9 November 2026) sets **digital coordination site** as the first-pilot baseline. No hub/TTI is appointed; written permission, actual connectivity/bandwidth, equipment, staffing and operating costs require site-specific evidence. Physical custody, storage, grading, packing, testing and certification are not implied. See [Deliverable 010](https://app.notion.com/p/88c6808bcd9e82f7a96401215970f467).
+- Deliverable 011 repeats the one-commodity/one-hub/limited-participant planning scope and requires human review and named accountability for high-impact decisions. It does not establish actual user or transaction counts. See [Deliverable 011](https://app.notion.com/p/4136808bcd9e8129ba16efca2640ef2b).
+- Deliverable 013 supplies instruments for validating buyer volume/frequency, written specifications, producer monthly/seasonal volumes, existing commitments, net available supply, site connectivity, staffing and costs. These are questions and evidence requirements, not completed participant findings. See [Deliverable 013](https://app.notion.com/p/4136808bcd9e81f092c7d480961f3fa4).
+- Deliverable 020 explicitly records **NO ROUTE SELECTED**. Producer group, aggregation point, batch, buyer, seller/exporter, destination, quality pathway, logistics and payment pathway remain unconfirmed. It states that Level 1 can be prepared without further external evidence; a physical route requires further validation. See [Deliverable 020](https://app.notion.com/p/4136808bcd9e81e291ddd6b90f91f3d1).
+
+**Implication for this register:** the pilot shape and baseline site-function boundary can be used as planning constraints. They must not be converted into numeric load estimates. All user counts, concurrency, records/month, file volumes, bandwidth, retention, operating hours, costs and TCO remain UNKNOWN until Phase 0 evidence is acquired.
+
 ## 2. Demand and workload inputs
 
 | ID | Input | Unit / period | Low | Expected | High | Source / date / confidence |

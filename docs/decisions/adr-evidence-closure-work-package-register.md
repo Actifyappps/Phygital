@@ -55,6 +55,10 @@ Use the current source IDs and preserve the distinctions below:
 ### WP-02 — Workload, operating and cost assumptions
 
 Use [technology-workload-and-tco-assumptions-register.md](technology-workload-and-tco-assumptions-register.md). It deliberately leaves all unvalidated figures UNKNOWN and defines the evidence needed for:
+
+**Source-derived planning constraints already available:** Deliverable 003 defines one commodity, one hub and a limited participant group as the intended pilot shape, but does not validate numeric volumes, budget or unit economics. Deliverable 010 sets a digital-coordination-site baseline; no facility, permission, staffing or connectivity capacity is confirmed. Deliverable 013 contains validation instruments, not completed buyer/producer measurements. Deliverable 020 records no selected route and says Level 1 is the only route that can be prepared without further external evidence. The linked evidence and exact implications are recorded in the technology workload/TCO assumptions register. Do not infer numeric loads from these planning statements.
+
+
 - pilot users, organisations, concurrency and role mix;
 - listings, batches, measurements, file sizes, document retention and audit volume;
 - enquiries, quotations, orders, provider callbacks and background jobs;
