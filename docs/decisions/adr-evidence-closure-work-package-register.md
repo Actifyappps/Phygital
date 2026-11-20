@@ -107,6 +107,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 candidate evidence progress — TC-05 (20 November 2026):** [TC-05 authorisation and policy enforcement — initial evidence snapshot](authorization-candidate-evidence-snapshot-2026-11-20.md) records public-source evidence for application policy + PostgreSQL RLS, OpenFGA and OPA. All remain EVIDENCE STARTED — NOT SCORABLE. The canonical Phygital authority tuple remains the governing source; no policy engine or permission grant is approved.
 
+**WP-03 candidate evidence progress — TC-06 (20 November 2026):** [TC-06 private object and document storage — initial provider evidence snapshot](storage-candidate-evidence-snapshot-2026-11-20.md) records public-source evidence for Supabase Storage, Cloudflare R2 and Amazon S3. All remain EVIDENCE STARTED — NOT SCORABLE. Notable constraints include Supabase object blobs requiring separate backup, Cloudflare APAC location hints not guaranteeing residency and no S3 Object Lock support, and Amazon S3's configurable versioning/Object Lock with added complexity and cost. No storage provider is shortlisted or approved.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:

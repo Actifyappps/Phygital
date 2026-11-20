@@ -10,6 +10,7 @@
 - ADR-0008 Physical-digital event integrity — OPEN.
 
 Supporting records:
+- TC-06 private object storage candidate evidence snapshot (20 November 2026): Supabase Storage, Cloudflare R2 and Amazon S3; not scored or shortlisted.
 - TC-05 authorization candidate evidence snapshot (20 November 2026): application policy + PostgreSQL RLS, OpenFGA and OPA; not scored or shortlisted.
 - TC-04 identity candidate evidence snapshot (20 November 2026): Supabase Auth, Clerk, Auth0 and Keycloak; not scored or shortlisted.
 - TC-03 database candidate evidence snapshot (20 November 2026): Supabase, Neon and Render public-source comparison; not scored or shortlisted.
