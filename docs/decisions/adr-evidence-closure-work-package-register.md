@@ -54,7 +54,7 @@ Use the current source IDs and preserve the distinctions below:
 
 ### WP-02 — Workload, operating and cost assumptions
 
-Record known values or mark UNKNOWN for:
+Use [technology-workload-and-tco-assumptions-register.md](technology-workload-and-tco-assumptions-register.md). It deliberately leaves all unvalidated figures UNKNOWN and defines the evidence needed for:
 - pilot users, organisations, concurrency and role mix;
 - listings, batches, measurements, file sizes, document retention and audit volume;
 - enquiries, quotations, orders, provider callbacks and background jobs;
