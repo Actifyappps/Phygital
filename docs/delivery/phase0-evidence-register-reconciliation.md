@@ -34,7 +34,7 @@ The data source returned 24 active rows and no further page cursor. This is a po
 
 ### 3.1 Schema and purpose
 
-The data source has 20 properties:
+The data source has 19 configurable properties:
 
 | Property | Current purpose in the operating model |
 |---|---|
@@ -56,8 +56,7 @@ The data source has 20 properties:
 | Evidence Date | Date of evidence |
 | Last Reviewed | Date last reviewed |
 | Notes / Finding | Findings, qualifications, limitations and follow-up |
-| CV Finding (text) | The CV/E traceability key |
-| CV Finding (as field) | Included above; no additional identity should be inferred |
+| CV Finding | Maps the row to CV-01–CV-20 or E-021–E-024 |
 
 The live schema also contains system metadata such as page URL and creation time; these are not user-maintained evidence fields.
 
