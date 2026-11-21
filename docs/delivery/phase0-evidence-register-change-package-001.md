@@ -159,6 +159,6 @@ ECR-12 remains NOT AUTHORIZED until separate explicit spike authorization. ADR-0
 
 ## 10. Implementation progress — EVI-25
 
-A targeted source-recovery assessment was completed across Notion, the connected Library and the current Phygital repository on 21 November 2026. The complete Developer Guide v0.1 was not located. The current Concept Paper v1.1 and Technical Development Manual v3.0 hierarchy remains controlling. EVI-25 is IN PROGRESS and linked to the assessment record. The source remains UNVERIFIED / NOT LOCATED pending custodian confirmation or formal disposition. This does not close EVI-25 or authorize technology scoring from an excerpt.
+A targeted source-recovery assessment was completed across Notion, the connected Library and the current Phygital repository on 21 November 2026. The complete Developer Guide v0.1 was not located. The current Concept Paper v1.1 and Technical Development Manual v3.0 hierarchy remains controlling. EVI-25 is IN PROGRESS and linked to the assessment record. The source remains UNVERIFIED / NOT LOCATED pending custodian confirmation or formal disposition. Prior project context records the draft title/version/date, but the complete original content is not recovered and no stack is attributed. This does not close EVI-25 or authorize technology scoring from partial references.
 
 [Notion source-recovery assessment](https://app.notion.com/p/41f6808bcd9e8130846cf2d7c22b16c0).

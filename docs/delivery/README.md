@@ -14,8 +14,8 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 
 - phase0-evidence-register-reconciliation.md reconciles the live Notion master register, its operating protocol, Deliverable 013 and the evidence-return template; preserves all existing records and defines the requirement/gate versus evidence-item relationship.
 
-- `wp03-ecr-to-phase0-register-crosswalk.md` maps ECR-01–ECR-14 to the 29 active Notion Evidence Register rows, including approved additions E-025–E-029; it distinguishes direct and distributed coverage and preserves separate decision gates.
+- `wp03-ecr-to-phase0-register-crosswalk.md` maps ECR-01–ECR-14 to the 29 active Notion Evidence Register rows, including approved additions EVI-25–EVI-29; it distinguishes direct and distributed coverage and preserves separate decision gates.
 
-- `phase0-evidence-register-change-package-001.md` (v0.3) records sponsor approval and verified application of five non-duplicate Evidence Register additions (E-025–E-029), with evidence requirements, closure tests, dependencies, Decision Impact mapping, identifier-governance safeguards and ADR sequencing; APPROVED AND APPLIED.
+- `phase0-evidence-register-change-package-001.md` (v0.4) records sponsor approval and verified application of five non-duplicate Evidence Register additions (EVI-25–EVI-29), with evidence requirements, closure tests, dependencies, Decision Impact mapping, identifier-governance safeguards and ADR sequencing; APPROVED AND APPLIED.
 
 - `evi-25-developer-guide-source-recovery-assessment-001.md` records the 21 November 2026 targeted Notion, Library and repository source search; Developer Guide v0.1 remains unverified/not located and EVI-25 is IN PROGRESS.

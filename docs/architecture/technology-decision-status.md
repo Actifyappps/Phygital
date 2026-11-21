@@ -14,7 +14,7 @@
 | Source | Candidate description | Status |
 |---|---|---|
 | Technical Development Manual v3.0 | Modular-monolith-first logical design with API/application service (NestJS/Express candidates), managed PostgreSQL, private file storage, background workers and replaceable provider adapters | Logical proposal; no final framework/provider selection |
-| Developer Guide v0.1 (17 Nov 2026) | Next.js/Vercel with Supabase/PostgreSQL/Auth/RLS/private storage as candidate build path | Referenced in project materials, but canonical source file/page was not recovered in the current targeted Notion/Library search; revalidate exact version and details before scoring |
+| Developer Guide v0.1 (draft; 17 Nov 2026; prepared for Actify Inc.) | No verified stack attribution; the complete guide has not been recovered | **UNVERIFIED / NOT LOCATED:** prior project context records the draft title/version/date, but complete original content and underlying file/page were not recovered in targeted Notion, Library, repository or prior-conversation retrieval. Prototype v0.1/v0.2 are separate test artefacts. EVI-25 is IN PROGRESS; do not score from partial references. See `docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md`. |
 | AADDG v1.0 | GitHub → selected backend → selected deployment; Supabase/Vercel are examples/defaults, not compulsory vendor selections; Level 1 adds workers and physical/edge bridges | Operating standard, not a stack selection |
 
 Do not silently resolve these differences. The repository's `web/`, `packages/`, `workers/` and `supabase/candidates/` paths are logical organization, not proof that Next.js, NestJS, Supabase, Vercel, an ORM or a hosting topology has been selected. The `web/` versus `src/` convention remains open.
@@ -58,6 +58,6 @@ See `../delivery/application-operational-identity-register.md` for the current v
 
 ## EVI-25 source recovery — 21 November 2026
 
-A targeted search of the current Project Home hierarchy, Notion workspace, connected Library and recursive repository tree did not locate the complete Developer Guide v0.1. Concept Paper v1.1 remains the strategic authority; Technical Development Manual v3.0 remains the supporting technical plan. The prior excerpt is a source-recovery lead only, not a verified specification. EVI-25 is IN PROGRESS pending the complete source or a formal custodian-backed unavailability/supersession disposition. Do not score technologies from the excerpt.
+A targeted search of the current Project Home hierarchy, Notion workspace, connected Library and recursive repository tree did not locate the complete Developer Guide v0.1. Concept Paper v1.1 remains the strategic authority; Technical Development Manual v3.0 remains the supporting technical plan. Partial prior references are source-recovery leads only, not a verified specification. EVI-25 is IN PROGRESS pending the complete source or a formal custodian-backed unavailability/supersession disposition. Do not score technologies from the excerpt.
 
 See [`docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md`](../delivery/evi-25-developer-guide-source-recovery-assessment-001.md) and [Notion assessment](https://app.notion.com/p/41f6808bcd9e8130846cf2d7c22b16c0).

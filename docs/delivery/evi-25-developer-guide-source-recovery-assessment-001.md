@@ -15,7 +15,7 @@ The current hierarchy is clear:
 3. **Phase 0 validation/evidence documents** — test assumptions and constrain delivery.
 4. **Technical artefacts** — candidates until reviewed and approved under the applicable controls.
 
-Developer Guide v0.1 remains **UNVERIFIED / NOT LOCATED**. The remembered excerpt is a source-recovery lead only, not an authoritative specification or valid technology-scoring basis.
+Developer Guide v0.1 remains **UNVERIFIED / NOT LOCATED**. Partial prior references are source-recovery leads only, not an authoritative specification or valid technology-scoring basis.
 
 ## 2. Search and inspection performed
 
@@ -43,11 +43,11 @@ This is a targeted search of accessible sources, not proof that no copy exists i
 
 ## 4. Excerpt and conflict handling
 
-Prior project review notes identify a 17 November excerpt describing Next.js/Vercel with Supabase/PostgreSQL/Auth/RLS/private storage as a candidate path. The complete source, title page, author/custodian, version history, approval status and complete text are not available in the inspected source set.
+Prior project context records a draft titled “Phygital Export Marketplace: Developer Guide”, Version 0.1, dated 17 November 2026 and prepared for Actify Inc. However, the complete original content and underlying file/page have not been recovered from the accessible source set or prior-conversation retrieval. No specific technology stack or implementation provision can presently be attributed to that guide with confidence.
 
-The excerpt may guide source recovery only. It must not be scored as a complete candidate specification or treated as superseding Manual v3.0, TSBBF, AADDG, the 024 specifications or sponsor decisions.
+Historical references to prototype v0.1/v0.2 are separate test artefacts and must not be confused with Developer Guide v0.1. Partial prior text or references may guide source recovery only; they must not be scored as a complete candidate specification or treated as superseding Manual v3.0, TSBBF, AADDG, the 024 specifications or sponsor decisions.
 
-There is not yet a proven substantive conflict between two complete documents. The observed difference is a more specific candidate stack in the excerpt versus the multiple framework/provider candidates and modular-monolith logical approach in Manual v3.0. This is currently a source-completeness/provenance gap, not grounds to select either stack.
+There is not yet a proven substantive conflict between two complete documents. The current finding is a source-completeness/provenance gap, not grounds to select a stack.
 
 ## 5. Authority determination
 
