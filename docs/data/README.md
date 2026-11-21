@@ -7,3 +7,5 @@ Canonical logical model: 024-C. Canonical workflow invariants: 024-B. This works
 - [018-C source completeness verification](../quality/018c-source-completeness-verification.md) — source-section count check and alignment against 018-A/B, 017 and 024-C.
 
 - [024-B / 024-C workflow-to-logical-model integrity review](../quality/024b-024c-cross-spec-integrity-review.md) — connects all 18 workflows to the 65 logical entities, 34 relationships, 36 invariants, unresolved decisions and verification gates; design-only.
+
+- [EVI-29 recovery, retention and restore readiness](../operations/evi-29-recovery-retention-restore-readiness-assessment-001.md) — maps data classes, retention and recovery evidence without inventing periods or RTO/RPO values.

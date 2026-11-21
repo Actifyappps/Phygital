@@ -19,3 +19,6 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - `phase0-evidence-register-change-package-001.md` (v0.4) records sponsor approval and verified application of five non-duplicate Evidence Register additions (EVI-25–EVI-29), with evidence requirements, closure tests, dependencies, Decision Impact mapping, identifier-governance safeguards and ADR sequencing; APPROVED AND APPLIED.
 
 - `evi-25-developer-guide-source-recovery-assessment-001.md` records the 21 November 2026 targeted Notion, Library and repository source search; Developer Guide v0.1 remains unverified/not located and EVI-25 is IN PROGRESS.
+
+- `backup-restore.md` records the design-only recovery control baseline; no backup capability, RTO/RPO, retention period or restore result is claimed.
+- `../operations/evi-29-recovery-retention-restore-readiness-assessment-001.md` records the EVI-29 evidence gap, approved-objective requirements and synthetic witnessed-restore protocol.

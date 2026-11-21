@@ -19,3 +19,8 @@ Do not invent statutory retention periods. Establish a schedule only after Kenya
 
 ## Test data
 Use synthetic data by default. Do not copy real personal, buyer, producer, financial or identity data into fixtures, screenshots, logs, issue reports or public repository history. Any exceptional use of authorised sample data requires documented scope, minimisation, access and deletion controls.
+
+
+## EVI-29 operationalization — 21 November 2026
+
+The classification and retention principles above are now mapped to the EVI-29 recovery/retention readiness assessment at `../operations/evi-29-recovery-retention-restore-readiness-assessment-001.md`. This does not create retention periods or recovery objectives. Those require qualified legal/data-protection review and an authorized business-impact decision. No backup capability or restore result is claimed.

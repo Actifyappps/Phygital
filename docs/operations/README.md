@@ -8,3 +8,5 @@ This area defines the future operating controls for field/hub service, exception
 - [Facility capability register](facility-capability-register.md) — site models, hard gates and candidate status.
 - [Partner and provider readiness](partner-and-provider-readiness.md) — scope, qualification and appointment boundaries.
 - [Phase 0 work-package crosswalk](../governance/phase0-work-package-crosswalk.md) — WP-0–WP-9 repository/evidence mapping.
+
+- [EVI-29 recovery, retention and restore readiness assessment](evi-29-recovery-retention-restore-readiness-assessment-001.md) — design and evidence gap only; no backup capability or recovery objective is approved.
