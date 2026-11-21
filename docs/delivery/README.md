@@ -4,33 +4,25 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - `application-operational-identity-register.md` — AADDG five-question register for the actual source repository, backend, deployment, production URL and worker/edge runtime; current unprovisioned state is explicit.
 - `../quality/aaddg-tsbbf-source-verification.md` — clause-level source conformance and verified repository-state check for TSBBF/AADDG.
 
-- wp03-evidence-closure-request-register.md translates WP-03 scoring blockers into 14 evidence requests, expected artefacts, role owners and closure tests.
+- `wp03-evidence-closure-request-register.md` translates WP-03 scoring blockers into 14 evidence requests, expected artefacts, role owners and closure tests.
+- `ecr-01-developer-guide-source-custodian-recovery-brief.md` is a request-ready, unsent source-custodian brief for ECR-01; it defines acceptable recovery/disposition outcomes, provenance and integrity capture, reconciliation and closure tests.
+- `ecr-02-phase0-workload-validation-protocol.md` operationalises ECR-02 across actor, transaction, file, connectivity and operating inputs; numeric values remain UNKNOWN until evidence is returned and reviewed.
 
-- wp05-spike-readiness-assessment.md records the WP-05 gate assessment; no synthetic technology spike is authorized or executed.
-
-- wp03-phase0-evidence-reconciliation.md maps Phase 0 Deliverables 003, 008, 009, 010, 011, 013, 019 and 020 against ECR-01–ECR-14; design instruments are distinguished from completed field evidence.
-
-- phase0-evidence-return-and-validation-record-template.md provides a controlled return format for completed Deliverable 013 evidence, site connectivity measurements and actor/provider findings; it is a blank template, not an approved external survey or consent form.
-
-- phase0-evidence-register-reconciliation.md reconciles the live Notion master register, its operating protocol, Deliverable 013 and the evidence-return template; preserves all existing records and defines the requirement/gate versus evidence-item relationship.
-
+- `wp05-spike-readiness-assessment.md` records the WP-05 gate assessment; no synthetic technology spike is authorized or executed.
+- `wp03-phase0-evidence-reconciliation.md` maps Phase 0 Deliverables 003, 008, 009, 010, 011, 013, 019 and 020 against ECR-01–ECR-14; design instruments are distinguished from completed field evidence.
+- `phase0-evidence-return-and-validation-record-template.md` provides a controlled return format for completed Deliverable 013 evidence, site connectivity measurements and actor/provider findings; it is a blank template, not an approved external survey or consent form.
+- `phase0-evidence-register-reconciliation.md` reconciles the live Notion master register, its operating protocol, Deliverable 013 and the evidence-return template; preserves all existing records and defines the requirement/gate versus evidence-item relationship.
 - `wp03-ecr-to-phase0-register-crosswalk.md` maps ECR-01–ECR-14 to the 29 active Notion Evidence Register rows, including approved additions EVI-25–EVI-29; it distinguishes direct and distributed coverage and preserves separate decision gates.
-
 - `phase0-evidence-register-change-package-001.md` (v0.4) records sponsor approval and verified application of five non-duplicate Evidence Register additions (EVI-25–EVI-29), with evidence requirements, closure tests, dependencies, Decision Impact mapping, identifier-governance safeguards and ADR sequencing; APPROVED AND APPLIED.
-
 - `evi-25-developer-guide-source-recovery-assessment-001.md` records the 21 November 2026 targeted Notion, Library and repository source search; Developer Guide v0.1 remains unverified/not located and EVI-25 is IN PROGRESS.
-
 - `backup-restore.md` records the design-only recovery control baseline; no backup capability, RTO/RPO, retention period or restore result is claimed.
 - `../operations/evi-29-recovery-retention-restore-readiness-assessment-001.md` records the EVI-29 evidence gap, approved-objective requirements and synthetic witnessed-restore protocol.
-
 - `evi-26-wp05-synthetic-spike-authorization-readiness-001.md` records EVI-26 prerequisites and the explicit decision fields required before WP-05; NOT READY — NOT AUTHORIZED, no spike executed.
-
 - `../decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md` maps EVI-28/ADR-0001 prerequisites; no candidate is ready for scoring and no technology baseline is selected.
-
 
 ## Current evidence and decision status — 21 November 2026
 
-The live register state is mirrored in wp03-ecr-to-phase0-register-crosswalk.md: EVI-25, EVI-26, EVI-27, EVI-28 and EVI-29 are all IN PROGRESS; Closure Accepted = NO; CV Finding blank. Their initial OPEN state at creation remains in the controlled change package as historical evidence.
+The live register state is mirrored in `wp03-ecr-to-phase0-register-crosswalk.md`: EVI-25, EVI-26, EVI-27, EVI-28 and EVI-29 are all IN PROGRESS; Closure Accepted = NO; CV Finding blank. Their initial OPEN state at creation remains in the controlled change package as historical evidence.
 
 - EVI-25 source authority remains unresolved; do not use partial guide references for technology scoring.
 - EVI-26 WP-05 remains NOT READY — NOT AUTHORIZED; no spike has run.
