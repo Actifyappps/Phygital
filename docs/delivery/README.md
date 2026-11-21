@@ -7,6 +7,7 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - `wp03-evidence-closure-request-register.md` translates WP-03 scoring blockers into 14 evidence requests, expected artefacts, role owners and closure tests.
 - `ecr-01-developer-guide-source-custodian-recovery-brief.md` is a request-ready, unsent source-custodian brief for ECR-01; it defines acceptable recovery/disposition outcomes, provenance and integrity capture, reconciliation and closure tests.
 - `ecr-02-phase0-workload-validation-protocol.md` operationalises ECR-02 across actor, transaction, file, connectivity and operating inputs; numeric values remain UNKNOWN until evidence is returned and reviewed.
+- `ecr-02-source-linked-workload-evidence-matrix.md` maps every W/D/C/O input to Phase 0 collection sources, PEM-EV return method, existing CV/EVI linkages, current evidence state and decision-use restrictions; desk-based crosswalk only, not field validation.
 
 - `wp05-spike-readiness-assessment.md` records the WP-05 gate assessment; no synthetic technology spike is authorized or executed.
 - `wp03-phase0-evidence-reconciliation.md` maps Phase 0 Deliverables 003, 008, 009, 010, 011, 013, 019 and 020 against ECR-01–ECR-14; design instruments are distinguished from completed field evidence.

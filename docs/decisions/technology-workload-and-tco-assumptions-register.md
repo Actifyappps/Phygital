@@ -42,6 +42,12 @@ The Phase 0 source review confirms planning constraints but supplies no validate
 
 Therefore W-01 through W-08, D-01 through D-08, C-01 through C-08, O-01 through O-10 and all TCO values remain UNKNOWN unless separately evidenced. The full mapping is in [WP-03 Phase 0 evidence reconciliation](../delivery/wp03-phase0-evidence-reconciliation.md). Do not convert the planning shape into user, concurrency, transaction, storage or bandwidth estimates.
 
+## Source-linked evidence consolidation control — 21 November 2026
+
+The field-by-field collection and traceability map for W-01–W-12, D-01–D-08, C-01–C-08 and O-01–O-10 is maintained in [ECR-02 Source-linked Phase 0 workload evidence matrix](../delivery/ecr-02-source-linked-workload-evidence-matrix.md).
+
+This is a desk-based crosswalk to Deliverables 003, 010, 011, 013, 019 and 020, the PEM-EV return template and existing CV/EVI register linkages. It contains no completed field returns and populates no numeric value. Keep observed, documentary, declared, sponsor-approved, modelled and synthetic values distinct. Continue to use UNKNOWN until a specific source-backed return is received, reviewed and accepted for the stated use. Synthetic workload is not a real pilot forecast.
+
 ## 2. Demand and workload inputs
 
 | ID | Input | Unit / period | Low | Expected | High | Source / date / confidence |
