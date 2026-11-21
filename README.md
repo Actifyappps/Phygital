@@ -30,12 +30,20 @@ The platform is a multi-organisation B2B trade coordination and evidence system 
 7. This repository — controlled source for implementation artefacts and engineering evidence; it cannot amend higher authority.
 8. Runtime behaviour — established only by reproducible environment evidence.
 
-## Current holds
-- EVI-21 OPEN; Closure Accepted = NO.
-- DEF-L1-001 and DEF-L1-002 OPEN.
+## Current programme and engineering status — 21 November 2026
+
+- Evidence Register: 29 active records; EVI-25–EVI-29 are present and IN PROGRESS; all have Closure Accepted = NO. See docs/delivery/wp03-ecr-to-phase0-register-crosswalk.md.
+- EVI-21 OPEN; Closure Accepted = NO. DEF-L1-001 and DEF-L1-002 OPEN; browser rehearsal and independent acceptance remain outstanding.
+- EVI-25: Developer Guide v0.1 canonical source not recovered; authority remains unverified.
+- EVI-26: WP-05 synthetic technology spike NOT READY — NOT AUTHORIZED; no spike has run.
+- EVI-27: ADR-0002 topology decision OPEN; Option B is a conditional logical candidate only.
+- EVI-28: ADR-0001 technology baseline OPEN; no candidate ready for scoring; no stack selected.
+- EVI-29: recovery/retention readiness IN PROGRESS; no backup capability or RTO/RPO is claimed; no witnessed restore test completed.
 - Migration 001 HOLD; Migration 002 not authorised.
-- Technology baseline remains OPEN pending documented TSBBF assessment and approved ADR.
+- No live trade, custody, platform-held funds, escrow, live payment integration, dispatch or shipment.
 - No named buyer, producer, exporter, hub, regulator, payment provider or logistics provider is assumed committed.
+
+Repository status: governed product/engineering foundation, not an executable marketplace application. Current architecture, implementation and release holds are in docs/governance/project-status.md.
 
 ## Start here
 1. `docs/governance/project-status.md`
@@ -102,6 +110,16 @@ See `docs/governance/repository-map.md` for the complete directory purpose, owne
 - [011 service-blueprint crosswalk](docs/operations/011-service-blueprint-crosswalk.md) — 12 operating stages mapped to digital domains, controls and gates.
 
 
-## Implementation status (20 November 2026)
+## Implementation status (21 November 2026)
 
 The repository is currently a governed product/engineering foundation, not an executable marketplace application. The static tree inventory, including tracked-file counts and the next implementation gates, is recorded in [Repository implementation baseline audit](docs/governance/repository-implementation-baseline.md). Do not mistake documentation, placeholders, the Level 1 HTML prototype or held SQL candidates for production application code or executed acceptance evidence.
+
+
+## Technology and evidence decision index
+
+- [EVI-25 source recovery](docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md)
+- [EVI-26 WP-05 authorization readiness](docs/delivery/evi-26-wp05-synthetic-spike-authorization-readiness-001.md)
+- [EVI-27 topology decision readiness](docs/architecture/evi-27-topology-decision-readiness-assessment-001.md)
+- [EVI-28 technology baseline readiness](docs/decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md)
+- [EVI-29 recovery and retention readiness](docs/operations/evi-29-recovery-retention-restore-readiness-assessment-001.md)
+- [ADR index](docs/decisions/README.md) — ADR-0001/0002 remain OPEN.

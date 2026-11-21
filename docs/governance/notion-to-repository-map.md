@@ -326,3 +326,18 @@ The 024-H source gap remains open. The cross-source coverage assessment docs/qua
 ## Deliverable 025 commercial model source gap — 20 November 2026
 
 Keep 025 as a distinct commercial deliverable, not part of 024-H operations. Existing commercial design homes are supplemented by docs/commerce/025-commercial-service-fee-source-gap-and-commissioning-brief.md, which consolidates required service catalogue, payer, charging event, fee, producer gross-to-net, tax, refund, provider-share, unit-economics and digital acceptance decisions. It is a commissioning aid only; the canonical 025 source and sponsor/legal/tax decisions remain unresolved.
+
+
+## EVI-25–EVI-29 evidence and decision records — 21 November 2026
+
+The five commissioned Evidence Register additions have dedicated repository homes, not code modules:
+
+| Live evidence requirement | Repository disposition | Current boundary |
+|---|---|---|
+| EVI-25 — Developer Guide source authority | docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md | IN PROGRESS; source not recovered; no stack inferred |
+| EVI-26 — synthetic technology spike authorization | docs/delivery/evi-26-wp05-synthetic-spike-authorization-readiness-001.md | IN PROGRESS; WP-05 NOT READY — NOT AUTHORIZED; no spike run |
+| EVI-27 — topology decision | docs/architecture/evi-27-topology-decision-readiness-assessment-001.md | IN PROGRESS; ADR-0002 OPEN; Option B conditional only |
+| EVI-28 — technology baseline decision | docs/decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md | IN PROGRESS; ADR-0001 OPEN; no candidate ready for scoring |
+| EVI-29 — recovery/retention/restore | docs/operations/evi-29-recovery-retention-restore-readiness-assessment-001.md | IN PROGRESS; no backup capability or approved RTO/RPO claimed |
+
+The live register remains in Notion. GitHub mirrors the assessments and read-back status but cannot accept evidence, change register status or authorize execution. These five requirements do not justify new services, packages or deployment infrastructure by themselves.

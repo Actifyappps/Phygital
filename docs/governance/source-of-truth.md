@@ -38,3 +38,18 @@
 A code comment, schema, UI label, README or ADR cannot overrule a governing product or sponsor decision.
 
 - Sponsor decisions D-01–D-07 detail: [approved-with-conditions decision record](sponsor-decisions-D01-D07.md).
+
+
+## Technology decision and evidence register addenda — 21 November 2026
+
+The live Phase 0 Evidence Register remains in Notion; GitHub mirrors the controlled decision and evidence process but does not change live register state.
+
+- EVI-25 — Developer Guide v0.1 source recovery and authority: docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md; source not recovered, authority unverified.
+- EVI-26 — bounded synthetic technology-spike authorization: docs/delivery/evi-26-wp05-synthetic-spike-authorization-readiness-001.md; WP-05 NOT READY — NOT AUTHORIZED; no spike executed.
+- EVI-27 — ADR-0002 topology decision: docs/architecture/evi-27-topology-decision-readiness-assessment-001.md; ADR-0002 OPEN; Option B conditional only.
+- EVI-28 — ADR-0001 technology baseline: docs/decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md; ADR-0001 OPEN; no candidate ready for scoring.
+- EVI-29 — recovery objectives, retention and restore test: docs/operations/evi-29-recovery-retention-restore-readiness-assessment-001.md; no backup capability or recovery objective is claimed.
+
+All five live Evidence Register records were individually read back on 21 November 2026 and showed IN PROGRESS, Closure Accepted = NO, and CV Finding blank. Their initial OPEN states at creation are preserved as historical application evidence in the controlled change package. Current live status is tracked in docs/delivery/wp03-ecr-to-phase0-register-crosswalk.md.
+
+**Decision sequence:** EVI-27 / ADR-0002 topology decision precedes final EVI-28 / ADR-0001 technology baseline approval. EVI-26 / WP-05 requires separate explicit authorization and is not implied by approval of evidence-register changes. EVI-29 recovery/retention controls remain a production/data gate.

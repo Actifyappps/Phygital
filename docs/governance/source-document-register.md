@@ -280,3 +280,16 @@ The current targeted Notion search did not locate a completed canonical 024-H pa
 ## Deliverable 025 commercial service/fee source gap — 20 November 2026
 
 A targeted Notion search did not locate a dedicated canonical 025 page. The repository's existing service-catalogue/fee design home is supported by a commissioning brief at docs/commerce/025-commercial-service-fee-source-gap-and-commissioning-brief.md. It preserves the separation between goods-sale proceeds, producer net proceeds, platform service fees and external payment status. This is not an approved 025 specification, fee schedule, tax opinion or implementation authorization; programme-owner disposition remains required.
+
+
+## EVI-25–EVI-29 technology and operational decision evidence — 21 November 2026
+
+| Evidence item | Live Notion record | Repository mirror | Current status / disposition |
+|---|---|---|---|
+| EVI-25 — Developer Guide v0.1 source authority | https://app.notion.com/p/41f6808bcd9e81879620e81d03462247 | docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md | IN PROGRESS; complete source not recovered; authority unverified |
+| EVI-26 — bounded synthetic technology spike authorization | https://app.notion.com/p/41f6808bcd9e81d79ee9f98ce627dba8 | docs/delivery/evi-26-wp05-synthetic-spike-authorization-readiness-001.md | IN PROGRESS; WP-05 NOT READY — NOT AUTHORIZED; no spike run |
+| EVI-27 — topology decision in ADR-0002 | https://app.notion.com/p/41f6808bcd9e811cae67e55b07c85ab9 | docs/architecture/evi-27-topology-decision-readiness-assessment-001.md | IN PROGRESS; ADR-0002 OPEN; Option B conditional only |
+| EVI-28 — technology baseline decision in ADR-0001 | https://app.notion.com/p/41f6808bcd9e817185d3c1efaada6a46 | docs/decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md | IN PROGRESS; ADR-0001 OPEN; no candidate READY FOR SCORING |
+| EVI-29 — recovery objectives, retention and witnessed restore | https://app.notion.com/p/41f6808bcd9e811babefff6a00a8ccc9 | docs/operations/evi-29-recovery-retention-restore-readiness-assessment-001.md | IN PROGRESS; no backup capability, approved RTO/RPO or witnessed restore result claimed |
+
+The live records were individually read back on 21 November 2026. All five currently show IN PROGRESS, Closure Accepted = NO and CV Finding blank. The change package retains their initial OPEN state at creation; it is a historical application record, not a current status dashboard. See docs/delivery/wp03-ecr-to-phase0-register-crosswalk.md for current status and the ECR relationship.
