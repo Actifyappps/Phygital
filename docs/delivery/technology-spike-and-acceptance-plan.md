@@ -8,7 +8,7 @@
 Define a small, reversible, evidence-producing spike to compare shortlisted components before selecting a stack/topology. It tests critical architecture risks; it does not build the marketplace.
 
 Start only after:
-1. canonical Developer Guide v0.1 is recovered and reconciled;
+1. EVI-25 is closed by recovering and reconciling the complete Developer Guide v0.1, or by an authorized formal unavailability/supersession disposition that records the approved alternative source baseline and resolves precedence;
 2. candidates have sufficient TSBBF evidence to justify testing;
 3. an authorised owner approves scope, budget, environment and reviewers;
 4. synthetic fixtures and security/test plans are approved.
@@ -76,3 +76,8 @@ Prepare updated component scorecards, architecture trade-off report, observed co
 ## 8. Current gates
 
 Developer Guide v0.1 canonical source not recovered; ADR-0001/0002 and ADR-0003–0008 OPEN; Migration 001 HOLD; Migration 002 NOT AUTHORISED; EVI-21 OPEN / Closure Accepted NO. This plan authorises no production backend, deployment, live provider integration or live trade.
+
+
+## EVI-26 authorization readiness update — 21 November 2026
+
+The EVI-26 authorization-readiness brief is maintained at `evi-26-wp05-synthetic-spike-authorization-readiness-001.md`. WP-05 remains NOT READY — NOT AUTHORIZED. No spike has run. Register-change approval and a general commission to implement evidence work do not substitute for the explicit WP-05 decision required by this plan.

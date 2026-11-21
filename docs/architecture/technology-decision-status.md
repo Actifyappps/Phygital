@@ -48,7 +48,7 @@ No vendor account, deployment project, backend, production environment, database
 
 ## Component inventory and TSBBF assessment preparation — 20 November 2026
 
-The technology-neutral component inventory is `docs/architecture/technology-component-register.md`; the blank evidence-led assessment workbook is `docs/decisions/TSBBF-component-assessment-workbook.md`; and the synthetic-data spike plan is `docs/delivery/technology-spike-and-acceptance-plan.md`. These prepare evidence for ADR-0001/0002 and dependent ADRs. No candidate has been scored or selected. Developer Guide v0.1 canonical source remains unrecovered; candidate comparisons remain provisional until recovered. Spikes require separate approval and synthetic-only data.
+The technology-neutral component inventory is `docs/architecture/technology-component-register.md`; the blank evidence-led assessment workbook is `docs/decisions/TSBBF-component-assessment-workbook.md`; and the synthetic-data spike plan is `docs/delivery/technology-spike-and-acceptance-plan.md`. These prepare evidence for ADR-0001/0002 and dependent ADRs. No candidate has been scored or selected. EVI-25 remains IN PROGRESS: the complete Developer Guide v0.1 source is not recovered; candidate comparisons remain provisional until it is recovered and reconciled or formally dispositioned with an approved alternative source baseline. Spikes require separate approval and synthetic-only data.
 
 
 ## AADDG operational identity record
@@ -61,3 +61,8 @@ See `../delivery/application-operational-identity-register.md` for the current v
 A targeted search of the current Project Home hierarchy, Notion workspace, connected Library and recursive repository tree did not locate the complete Developer Guide v0.1. Concept Paper v1.1 remains the strategic authority; Technical Development Manual v3.0 remains the supporting technical plan. Partial prior references are source-recovery leads only, not a verified specification. EVI-25 is IN PROGRESS pending the complete source or a formal custodian-backed unavailability/supersession disposition. Do not score technologies from the excerpt.
 
 See [`docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md`](../delivery/evi-25-developer-guide-source-recovery-assessment-001.md) and [Notion assessment](https://app.notion.com/p/41f6808bcd9e8130846cf2d7c22b16c0).
+
+
+## EVI-26 synthetic spike authorization — 21 November 2026
+
+EVI-26 is IN PROGRESS as an authorization-readiness task. WP-05 remains NOT READY — NOT AUTHORIZED. The current prerequisites and decision fields are recorded in `docs/delivery/evi-26-wp05-synthetic-spike-authorization-readiness-001.md`. No candidate shortlist, isolated environment, budget, named owner/reviewer or explicit authorization is evidenced. No spike has run.

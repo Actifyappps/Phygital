@@ -16,7 +16,7 @@ No provider account, environment, database, worker, CI pipeline, migration, real
 
 | Gate | Required condition | Current evidence | Status |
 |---|---|---|---|
-| G-01 Source authority | Developer Guide v0.1 recovered or formally dispositioned; governing manual/standards versions reconciled | TSBBF v1.0 and AADDG v1.0 recovered/verified; Developer Guide v0.1 not recovered | BLOCKED |
+| G-01 Source authority | EVI-25 closed by recovering/reconciling Developer Guide v0.1 or by authorized formal unavailability/supersession disposition with approved alternative source baseline | TSBBF v1.0 and AADDG v1.0 recovered/verified; EVI-25 IN PROGRESS; full guide source not recovered and no formal disposition recorded | BLOCKED |
 | G-02 Comparable requirements | TDR-01–18 and component requirements frozen for the exact comparison | Technology requirements baseline and component packs exist; no candidate-specific requirements coverage sign-off | PARTIAL |
 | G-03 Candidate readiness | At least two credible candidates per compared component have sufficient technical, security, legal, commercial and portability evidence | Public-source facts recorded; DPAs, subprocessor/region terms, operational limits, restore/exit and cost evidence incomplete | BLOCKED |
 | G-04 Workload | Phase 0 users, organisations, concurrency, transactions, file sizes, connectivity, retention and operating assumptions validated | Most quantities remain UNKNOWN; Phase 0 instruments are not completed findings | BLOCKED |
@@ -85,3 +85,8 @@ Approval must be explicit and limited to the stated scope. It does not authorize
 The next work is to close the evidence requests, not to run the spike. ECR-01 (Developer Guide source recovery/disposition), ECR-02/03 (workload/site evidence), ECR-04/05 (privacy/provider terms), ECR-06/07/08 (operations/TCO/recovery) and ECR-09/10 (payment/lab partners) are the principal blockers.
 
 **WP-05 remains NOT READY — NOT AUTHORIZED. No spike has been run.**
+
+
+## EVI-26 authorization record update — 21 November 2026
+
+EVI-26 is IN PROGRESS as an authorization-readiness task. The WP-05 gate remains NOT READY — NOT AUTHORIZED. The detailed field-by-field decision brief is `docs/delivery/evi-26-wp05-synthetic-spike-authorization-readiness-001.md`. No candidate shortlist, environment, budget, named owner/reviewer or explicit authorization has been evidenced. No spike has been run.

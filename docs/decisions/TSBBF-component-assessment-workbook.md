@@ -157,4 +157,4 @@ Do not compare unrelated components as though interchangeable. Bundle comparison
 
 Completed assessments inform ADR-0001 technology baseline, ADR-0002 application topology and dependent ADR-0003–0008 (identity, storage, integrations, offline, QR and physical-digital integrity). Record selected scope, rejected alternatives, conditions, evidence, accountable implementation/operating owners, review trigger and exit plan.
 
-All scores remain intentionally blank. Developer Guide v0.1 canonical source remains to be recovered. Migration 001 HOLD; Migration 002 NOT AUTHORISED; EVI-21 OPEN. This workbook authorises no production provisioning, migration, live integration or live trade.
+All scores remain intentionally blank. EVI-25 source recovery/disposition remains open; do not score guide-derived assumptions until the complete source is recovered and reconciled or an authorized formal disposition approves an alternative evidence basis. Migration 001 HOLD; Migration 002 NOT AUTHORISED; EVI-21 OPEN. This workbook authorises no production provisioning, migration, live integration or live trade.

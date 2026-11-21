@@ -22,3 +22,5 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 
 - `backup-restore.md` records the design-only recovery control baseline; no backup capability, RTO/RPO, retention period or restore result is claimed.
 - `../operations/evi-29-recovery-retention-restore-readiness-assessment-001.md` records the EVI-29 evidence gap, approved-objective requirements and synthetic witnessed-restore protocol.
+
+- `evi-26-wp05-synthetic-spike-authorization-readiness-001.md` records EVI-26 prerequisites and the explicit decision fields required before WP-05; NOT READY — NOT AUTHORIZED, no spike executed.
