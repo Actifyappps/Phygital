@@ -13,3 +13,5 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - phase0-evidence-return-and-validation-record-template.md provides a controlled return format for completed Deliverable 013 evidence, site connectivity measurements and actor/provider findings; it is a blank template, not an approved external survey or consent form.
 
 - phase0-evidence-register-reconciliation.md reconciles the live Notion master register, its operating protocol, Deliverable 013 and the evidence-return template; preserves all existing records and defines the requirement/gate versus evidence-item relationship.
+
+- `wp03-ecr-to-phase0-register-crosswalk.md` maps ECR-01–ECR-14 to the 24 active Notion Evidence Register rows, identifies direct and distributed coverage, and records genuine traceability gaps without mutating Notion.
