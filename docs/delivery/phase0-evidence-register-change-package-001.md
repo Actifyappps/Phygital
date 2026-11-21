@@ -1,7 +1,7 @@
 # Controlled Notion Change Package — Evidence Register Additions
 
 **Package ID:** PEM-ER-CP-001  
-**Version:** 0.1  
+**Version:** 0.2  
 **Prepared:** 21 November 2026  
 **Status:** PROPOSED — NOT APPLIED  
 **Decision:** PENDING; no approval inferred.
@@ -10,19 +10,19 @@
 
 This package proposes five genuinely distinct evidence requirements for the existing Phygital Phase 0 — Evidence Register. It follows the read-only crosswalk in `wp03-ecr-to-phase0-register-crosswalk.md` and the Evidence Register — Operating Protocol.
 
-The existing 24 records remain unchanged. No new database rows, Evidence IDs, CV Finding codes, assignments, statuses or schema properties have been created. If approved, use the existing database only; allow its auto-generated Evidence ID mechanism to assign IDs and allocate CV Finding keys only after a uniqueness check.
+The existing 24 records remain unchanged. No new database rows, Evidence IDs, CV Finding codes, assignments, statuses or schema properties have been created. If approved, use the existing database only and allow its auto-generated Evidence ID mechanism to assign stable IDs. Leave CV Finding blank initially. Do not invent or allocate new CV Finding keys on uniqueness alone; any extension of the existing CV-01–CV-20 / E-021–E-024 convention requires an explicit governance decision. Until then, retain traceability through ECR identifiers and relevant Evidence IDs in the existing Dependency field.
 
 ## 2. Proposed additions at a glance
 
-| Ref | Proposed Evidence Item | ECR | Priority | Workstream | Initial status |
-|---|---|---|---|---|---|
-| A | Recover and establish authority of canonical Developer Guide v0.1 source | ECR-01 | P1 proposed | WS-08 Technology & Database; document custodian support | OPEN |
-| B | Obtain explicit authorization for a bounded synthetic technology-candidate spike | ECR-12 | P1 proposed | WS-08 Technology & Database; governance decision owner | OPEN or BLOCKED only if justified and supported by database option |
-| C | Assess topology alternatives and record the authorized ADR-0002 decision | ECR-13 | P1 proposed | WS-08 Technology & Database | OPEN |
-| D | Complete evidence-backed technology candidate assessment and record the authorized ADR-0001 baseline decision | ECR-14 | P1 proposed | WS-08 Technology & Database | OPEN |
-| E | Approve service recovery objectives and evidence/data retention controls; execute and independently witness a restore test | ECR-08 | P1 proposed | WS-08 Technology & Database; Operations / Legal / Data Protection | OPEN |
+| Ref | Proposed Evidence Item | ECR | Priority | Workstream | Decision Impact | Initial status |
+|---|---|---|---|---|---|---|
+| A | Recover and establish authority of canonical Developer Guide v0.1 source | ECR-01 | P1 proposed | WS-08 Technology & Database; document custodian support | Phase 0 learning | OPEN |
+| B | Obtain explicit authorization for a bounded synthetic technology-candidate spike | ECR-12 | P1 proposed | WS-08 Technology & Database; governance decision owner | Phase 0 learning | OPEN |
+| C | Assess topology alternatives and record the authorized ADR-0002 decision | ECR-13 | P1 proposed | WS-08 Technology & Database | Production/data gate | OPEN |
+| D | Complete evidence-backed technology candidate assessment and record the authorized ADR-0001 baseline decision | ECR-14 | P1 proposed | WS-08 Technology & Database | Production/data gate | OPEN |
+| E | Approve service recovery objectives and evidence/data retention controls; execute and independently witness a restore test | ECR-08 | P1 proposed | WS-08 Technology & Database; Operations / Legal / Data Protection | Production/data gate | OPEN |
 
-P1 is a proposal, not an approved classification. The authorized programme owner should confirm or amend priorities before insertion.
+Priorities are proposals, not approved classifications. The Operating Protocol defines P1 as a requirement that must close before real participant data, production deployment or live inventory/payment events, as applicable. A is proposed P1 because unresolved source authority undermines the technology evidence baseline; C, D and E are proposed P1 because they directly affect production/data readiness. B is proposed P1 only as a mandatory prerequisite to the separately bounded WP-05 spike; its closure does not itself authorize production activity. These are distinct gates, not claims that all five are live-pilot gates. The authorized programme owner must confirm or amend each priority before insertion.
 
 ## 3. Full proposed record specifications
 
@@ -35,7 +35,7 @@ P1 is a proposal, not an approved classification. The authorized programme owner
 **Owner Role:** Project document custodian / Developer Guide owner, supported by Technical Lead.  
 **Reviewer Role:** Phase 0 Lead or independent document-governance reviewer; technical review for material architecture decisions.  
 **Dependency:** ECR-01 source recovery and identification of document custodian.  
-**Decision Impact:** Source authority; technology requirements and ADR evidence integrity.  
+**Decision Impact:** Phase 0 learning; technology requirements and ADR evidence integrity.  
 **Insufficient evidence:** Search result, partial excerpt, recollection, unverified copy or unsupported assertion of supersession.
 
 ### B. WP-05 synthetic technology-spike authorization
@@ -47,7 +47,7 @@ P1 is a proposal, not an approved classification. The authorized programme owner
 **Owner Role:** Technical Lead / WP-05 lead.  
 **Reviewer Role:** Independent technical reviewer plus security/privacy reviewer; authorization by authorized technology decision owner or sponsor.  
 **Dependency:** ECR-02, ECR-04, ECR-05, ECR-06, ECR-07, ECR-08 and ECR-11 prerequisites, plus source-authority resolution where applicable.  
-**Decision Impact:** WP-05 execution gate; candidate evidence and technology scoring.  
+**Decision Impact:** Phase 0 learning; WP-05 execution gate and candidate evidence. This is an authorization prerequisite for the spike, not the spike result and not a production approval.  
 **Insufficient evidence:** Spike plan, candidate list, fixture, prototype, test script or verbal approval. This record tracks authorization; execution results are separately evidenced. No spike is currently authorized.
 
 ### C. ADR-0002 topology assessment and decision
@@ -58,8 +58,8 @@ P1 is a proposal, not an approved classification. The authorized programme owner
 
 **Owner Role:** Technical Lead / architecture workstream lead.  
 **Reviewer Role:** Independent architecture reviewer, security/privacy reviewer and operations reviewer.  
-**Dependency:** ECR-02 through ECR-08 as applicable; WP-04 assessment; ECR-11 security/test planning.  
-**Decision Impact:** WP-04 closure; ADR-0002; architecture and deployment boundaries.  
+**Dependency:** ECR-02 through ECR-08 as applicable; WP-04 assessment; ECR-11 security/test planning. The topology decision must be recorded before ADR-0001 is finalized; candidate evidence work may proceed in parallel where it does not presuppose an unapproved topology.  
+**Decision Impact:** Production/data gate; WP-04 closure; ADR-0002; architecture and deployment boundaries.  
 **Insufficient evidence:** Preferred architecture in a manual, diagram, score without validated inputs or unsigned ADR draft.
 
 ### D. ADR-0001 technology baseline assessment and decision
@@ -70,8 +70,8 @@ P1 is a proposal, not an approved classification. The authorized programme owner
 
 **Owner Role:** Technical Lead / technology assessment lead.  
 **Reviewer Role:** Independent technical reviewer, Finance/Commercial reviewer and Security/Privacy reviewer.  
-**Dependency:** ECR-01 through ECR-11 as applicable; ECR-13 topology decision where sequencing requires it; TSBBF evidence requirements and authorized scoring process.  
-**Decision Impact:** ADR-0001; WP-06 handoff; technology baseline and procurement decisions.  
+**Dependency:** ECR-01 through ECR-11 as applicable; ADR-0002 topology decision before final baseline selection; TSBBF evidence requirements and authorized scoring process. Candidate evidence collection and preliminary comparison may proceed in parallel, but final selection must be consistent with the approved topology.  
+**Decision Impact:** Production/data gate; ADR-0001; WP-06 handoff; technology baseline and procurement decisions.  
 **Insufficient evidence:** Candidate list, vendor marketing page, unverified pricing, incomplete scorecard, informal preference or unapproved stack proposal.
 
 ### E. Recovery objectives, retention and witnessed restore
@@ -106,24 +106,26 @@ Use only existing properties unless a separate schema change is approved.
 | Priority | P1 proposed, pending confirmation |
 | Workstream | WS-08 Technology & Database; cross-functional roles in owner/reviewer |
 | Decision Impact | As specified per record |
-| Dependency | Explicit ECR and Evidence ID links |
-| Status | OPEN initially; BLOCKED only if allowed and a real blocker is recorded |
+| Dependency | Explicit ECR references and, after insertion, relevant existing Evidence ID references; no new identifier convention |
+| Target Window | Blank until an authorized schedule/dependency plan supplies a defensible window |
+| Notes / Finding | Factual initial note only; state proposed scope and unresolved dependencies without inventing a finding or blocker |
+| Status | OPEN initially; BLOCKED only if the exact live database option exists and a specific blocker is recorded |
 | Closure Accepted | NO |
 | Evidence Reference | Blank until controlled evidence exists |
 | Evidence Class | Blank until evidence is received and acquisition type is known |
 | Evidence Date / Last Reviewed | Blank until actual dates exist |
-| CV Finding | Unassigned until approval and uniqueness check |
+| CV Finding | Blank initially; any new key requires explicit approval of an identifier-convention extension. Uniqueness checking alone is insufficient |
 
-Respect actual database property types/options at insertion. Do not invent select values, pre-populate dates, or conflate evidence strength E1–E4 with Notion Evidence Class acquisition type.
+Respect actual database property types/options at insertion. Leave unspecified properties blank unless the mapping expressly provides a factual initial value. Do not invent select values, populate dates in advance, add unsupported notes, or conflate evidence strength E1–E4 with Notion Evidence Class acquisition type.
 
 ## 6. Application and verification sequence
 
 1. Record sponsor/authorized decision-owner approval, including amendments.
 2. Re-fetch live schema and rows immediately before insertion; verify none of the five has since been created.
 3. Create the five rows in the existing Evidence Register data source only.
-4. Allow auto-generated Evidence IDs; allocate CV Finding keys after uniqueness checks.
+4. Allow auto-generated Evidence IDs. Leave CV Finding blank unless and until the authorized governance process explicitly approves an extension of the existing identifier convention; a uniqueness check alone does not confer authority.
 5. Read back all five rows and verify properties, dependencies and closure tests.
-6. Update the ECR crosswalk with actual IDs/keys; preserve existing identities and history.
+6. Update the ECR crosswalk with actual new Evidence IDs. Populate CV Finding references only if an identifier-convention extension has separately been authorized; otherwise retain ECR-based traceability. Preserve existing row identities and history.
 7. Do not change existing statuses or closure acceptance because these proposals were created.
 
 ## 7. Explicit non-authorizations
