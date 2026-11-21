@@ -26,6 +26,7 @@ Developer Guide v0.1 remains **UNVERIFIED / NOT LOCATED**. Partial prior referen
 | Notion Manual v3.0 | Inspected accessible v3.0 pages | Explicitly a technical planning manual, not production readiness or final stack selection. |
 | Connected Library | Searched title and distinctive stack terms (Next.js, Vercel, Supabase, PostgreSQL, Auth, RLS, private storage) | Manual v3.0 and earlier manual artefacts surfaced; no complete Developer Guide v0.1 identified. |
 | GitHub repository | Inspected recursive `main` tree for Developer Guide, technical manual, architecture and technology artefacts | No file identifiable as the canonical Developer Guide v0.1 was present. |
+| Prior-conversation retrieval | Targeted retrieval for the complete user-provided guide text or original attachment, distinguishing it from prototype v0.1/v0.2 material | No complete user-authored Developer Guide or source attachment was recovered; prior references establish only a draft title/version/date and prototype artefacts. |
 | Existing repository controls | Inspected technology-decision status and ADR readiness records | Both already identify the guide as unrecovered and require verification before technology scoring. |
 
 This is a targeted search of accessible sources, not proof that no copy exists in an external drive, personal device, email or unconnected system.
@@ -41,7 +42,7 @@ This is a targeted search of accessible sources, not proof that no copy exists i
 - ADR-0001 and ADR-0002 remain OPEN.
 - TSBBF v1.0 governs evidence-based selection/build-vs-buy; AADDG v1.0 governs repository and operational controls. Neither selects a Phygital stack.
 
-## 4. Excerpt and conflict handling
+## 4. Prior document reference and conflict handling
 
 Prior project context records a draft titled “Phygital Export Marketplace: Developer Guide”, Version 0.1, dated 17 November 2026 and prepared for Actify Inc. However, the complete original content and underlying file/page have not been recovered from the accessible source set or prior-conversation retrieval. No specific technology stack or implementation provision can presently be attributed to that guide with confidence.
 
@@ -59,7 +60,7 @@ There is not yet a proven substantive conflict between two complete documents. T
 | Completeness/version integrity established? | No. |
 | Safe to treat as authoritative? | No. |
 | Governing sources meanwhile? | Concept Paper v1.1 for strategy; Manual v3.0 for supporting technical planning; current programme controls, TSBBF and AADDG for decision discipline. |
-| Can technologies be scored from excerpt alone? | No. |
+| Can technologies be scored from partial prior references alone? | No. |
 
 **Disposition:** Developer Guide v0.1 = UNVERIFIED / NOT LOCATED. Existing hierarchy remains unchanged.
 
