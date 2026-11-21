@@ -54,6 +54,10 @@ Evaluate frontend, application/API framework, database, identity, object storage
 
 These records show progress in evidence preparation; they do not close ADR-0001 or authorize a synthetic spike, provisioning, migration or production implementation.
 
+## WP-03 P0 component evidence synthesis — 21 November 2026
+
+[WP-03 P0 component evidence assessment 001](../architecture/wp03-p0-component-evidence-assessment-001.md) now consolidates requirements, initial public-source capability evidence, material limitations and closure evidence for TC-02 application runtime, TC-03 database, TC-04 identity, TC-05 authorisation, TC-06 private storage and TC-07 workers. This is a synthesis of existing evidence, not a new provider verification or scorecard. All six remain EVIDENCE STARTED — NOT SCORABLE; workload, legal/privacy, exact provider terms, operations, recovery and independent test evidence remain open. No candidate is scored or selected.
+
 ## Dependencies and open questions
 
 - Reconcile the exact Developer Guide v0.1 source before scoring it against Manual v3.0.
@@ -79,4 +83,4 @@ Until approved, keep API contracts and domain models technology-neutral; keep Mi
 
 ## EVI-28 readiness update — 21 November 2026
 
-EVI-28 is IN PROGRESS as a readiness assessment. The TSBBF method, TDR baseline, candidate register and blank workbook exist, but no candidate is READY FOR SCORING; no numeric score, shortlist or baseline selection exists. EVI-25 source authority, EVI-27 topology, workload/TCO, legal/privacy/provider terms, candidate-specific security/recovery/exit evidence, operating ownership and independent review remain incomplete. ADR-0001 remains OPEN. See [`evi-28-adr-0001-technology-baseline-readiness-assessment-001.md`](evi-28-adr-0001-technology-baseline-readiness-assessment-001.md) and [Notion assessment](https://app.notion.com/p/41f6808bcd9e8130afbbc4a68db571dc).
+EVI-28 is IN PROGRESS as a readiness assessment. The TSBBF method, TDR baseline, candidate register and blank workbook exist, but no candidate is READY FOR SCORING; no numeric score, shortlist or baseline selection exists. EVI-25 source authority, EVI-27 topology, workload/TCO, legal/privacy/provider terms, candidate-specific security/recovery/exit evidence, operating ownership and independent review remain incomplete. ADR-0001 remains OPEN. See [EVI-28 ADR-0001 technology baseline readiness assessment 001](evi-28-adr-0001-technology-baseline-readiness-assessment-001.md) and [Notion assessment](https://app.notion.com/p/41f6808bcd9e8130afbbc4a68db571dc).
