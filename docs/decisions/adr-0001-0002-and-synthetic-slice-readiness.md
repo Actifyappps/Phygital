@@ -145,3 +145,8 @@ If any entry condition is unmet, keep the spike as a plan and continue source/de
 ## EVI-25 source recovery update — 21 November 2026
 
 The targeted source-recovery assessment did not locate the complete canonical Developer Guide v0.1 in Notion, the connected Library, the current repository or prior-conversation retrieval. Prior project context records a draft title/version/date (17 November 2026; prepared for Actify Inc.), but the complete original content is not recovered and no technology stack is attributed to it. Prototype v0.1/v0.2 are separate test artefacts. EVI-25 is IN PROGRESS; the guide remains unverified/not located. ADR-0001 must not use partial references as a candidate specification or score source. Obtain the complete source and verify provenance/authority, or secure a custodian-backed unavailability/supersession disposition before closing this precondition. See [`docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md`](../delivery/evi-25-developer-guide-source-recovery-assessment-001.md).
+
+
+## EVI-27 topology readiness update — 21 November 2026
+
+WP-04 is a substantive preliminary topology comparison, not an approved decision. EVI-27 is IN PROGRESS; ADR-0002 remains OPEN. The required workload, connectivity, operating capacity, candidate-specific security/deployment, recovery, cost, portability/exit and independent-review evidence remains incomplete. The prior Developer Guide v0.1 reference does not establish a technology stack. See [`docs/architecture/evi-27-topology-decision-readiness-assessment-001.md`](../architecture/evi-27-topology-decision-readiness-assessment-001.md).

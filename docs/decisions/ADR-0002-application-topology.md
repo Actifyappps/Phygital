@@ -39,3 +39,8 @@ The source-derived assessment is maintained in [WP-04 — Application topology a
 ## Closure evidence
 
 Architecture diagram and data flows; component inventory; TSBBF assessments; workload/bandwidth/TCO assumptions; environment and secrets model; backup/restore and rollback plan; worker/event failure design; security/privacy review; named operational owner; approved ADR decision.
+
+
+## EVI-27 readiness update — 21 November 2026
+
+The WP-04 assessment compares three topology alternatives and identifies Option B as a conditional logical direction only. EVI-27 is IN PROGRESS; ADR-0002 remains OPEN. Required workload, connectivity, operational, candidate-specific security/deployment, recovery, TCO, portability/exit and independent-review evidence remains incomplete. No topology or provider is selected. See [EVI-27 ADR-0002 Topology Decision Readiness Assessment 001](https://app.notion.com/p/41f6808bcd9e81319485d3572d54e6ff) and `../architecture/evi-27-topology-decision-readiness-assessment-001.md`.

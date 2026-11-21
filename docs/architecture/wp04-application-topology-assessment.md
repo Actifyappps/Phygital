@@ -54,7 +54,7 @@ Canonical references:
 - Object storage backups may be separate from database backups.
 - Function/runtime limits and cache behaviour may be unsuitable for durable work or private multi-tenant pages unless tested.
 - Exit may require replacement of multiple platform-specific APIs at once.
-- The Developer Guide v0.1 canonical source remains unrecovered; its Next.js/Supabase/Vercel bundle is therefore provisional and not scoreable.
+- Prior project context records a draft titled “Phygital Export Marketplace: Developer Guide”, Version 0.1, dated 17 November 2026 and prepared for Actify Inc.; its complete original content is not recovered and no technology stack is attributed to it. Do not treat a Next.js/Supabase/Vercel bundle as guide-derived.
 
 **Disposition:** Credible candidate bundle for comparison, not the selected logical topology.
 
@@ -232,7 +232,7 @@ Before extraction, define service ownership, API/event contracts, data ownership
 ## 7. Open questions and closure conditions
 
 ADR-0002 cannot close until:
-1. Developer Guide v0.1 is recovered or formally dispositioned; its absence does not prevent a logical recommendation but blocks scoring Candidate A as a bundle.
+1. EVI-25 source authority is resolved or formally dispositioned. The missing guide does not prevent candidate-neutral logical comparison; any integrated-platform bundle must be assembled from independently identified components and candidate-specific evidence, not inferred from the guide reference.
 2. Phase 0 validates the pilot participants, transactions, files, connectivity, devices, operating hours, support and cost assumptions.
 3. TC-03–TC-06 candidate evidence establishes a viable database, identity, authorization and private storage combination.
 4. TC-01/02/07 evidence establishes a viable frontend/API/runtime/worker combination and resolves Node/framework compatibility.
@@ -251,3 +251,8 @@ ADR-0002 cannot close until:
 **Not selected:** Next.js, React/Vite, NestJS, Express, Supabase, Neon, Render, Vercel, Cloudflare, AWS, any identity provider, queue or worker vendor.
 
 **No authority created:** This assessment does not authorize production provisioning, migrations, real participant data, live integrations, live trade, custody, platform-held funds, escrow, payment initiation or shipment.
+
+
+## 9. EVI-27 topology decision readiness — 21 November 2026
+
+A focused EVI-27 review confirms that this WP-04 assessment is a substantive, source-derived comparison of integrated full-stack managed platform, modular monolith and distributed microservices. Option B remains a conditional logical direction only; it is not an authorised topology decision. Workload/concurrency, hub connectivity/devices, operating capacity, candidate-specific deployment/security evidence, recovery objectives, TCO, portability/exit and independent review remain outstanding. EVI-27 is IN PROGRESS and ADR-0002 remains OPEN. See [EVI-27 ADR-0002 Topology Decision Readiness Assessment 001](https://app.notion.com/p/41f6808bcd9e81319485d3572d54e6ff).

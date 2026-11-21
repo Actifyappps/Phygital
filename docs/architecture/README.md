@@ -11,3 +11,4 @@ Technology-neutral design only until TSBBF and the approved ADRs resolve framewo
 - 024h-architecture-operations-gap.md records the 024-H source gap and distributed repository coverage; it is not a substitute 024-H specification.
 \n- wp03-p1-platform-quality-evidence-pack-01.md covers initial P1 evidence for queue/event delivery, observability, malware inspection and developer tooling; all remain unscored.\n
 - wp03-p1-business-capability-evidence-pack-01.md covers QR/public projections, notifications, payment-status boundaries, lab/inspection evidence and descriptive analytics; all remain unscored.
+- evi-27-topology-decision-readiness-assessment-001.md audits WP-04 against the EVI-27 closure test; Option B remains conditional only and ADR-0002 remains OPEN.
