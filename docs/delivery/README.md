@@ -7,3 +7,5 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - wp03-evidence-closure-request-register.md translates WP-03 scoring blockers into 14 evidence requests, expected artefacts, role owners and closure tests.
 
 - wp05-spike-readiness-assessment.md records the WP-05 gate assessment; no synthetic technology spike is authorized or executed.
+
+- wp03-phase0-evidence-reconciliation.md maps Phase 0 Deliverables 003, 008, 009, 010, 011, 013, 019 and 020 against ECR-01–ECR-14; design instruments are distinguished from completed field evidence.

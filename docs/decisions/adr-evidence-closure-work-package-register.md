@@ -123,6 +123,8 @@ P1 components (queues/events, observability, notifications, payment-status adapt
 
 **WP-03 closure dependencies:** [WP-03 evidence closure request register](wp03-evidence-closure-request-register.md) translates cross-cutting blockers into 14 evidence requests with accountable role types, required artefacts, decision dependencies and current status. Several requests require Phase 0/site/partner/legal input and cannot be resolved by public-source research. WP-03 is NOT CLOSED; no candidate is READY FOR SCORING.
 
+**Phase 0 reconciliation update (21 November 2026):** [WP-03 Phase 0 evidence reconciliation](../delivery/wp03-phase0-evidence-reconciliation.md) maps Deliverables 003, 008, 009, 010, 011, 013, 019 and 020 to ECR-01–ECR-14. It confirms that source instruments and operating designs exist, but no completed buyer/producer/site/provider field findings, numeric workload baseline or complete physical route have been evidenced. ECR statuses and the workload/TCO register have been refined without promoting any request to closed.
+
 ### WP-04 — Resolve topology independently (ADR-0002)
 
 Produce:

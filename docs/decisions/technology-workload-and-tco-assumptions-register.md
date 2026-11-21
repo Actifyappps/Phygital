@@ -31,6 +31,17 @@ The Phase 0 source documents provide useful scope boundaries, but they do not su
 
 **Implication for this register:** the pilot shape and baseline site-function boundary can be used as planning constraints. They must not be converted into numeric load estimates. All user counts, concurrency, records/month, file volumes, bandwidth, retention, operating hours, costs and TCO remain UNKNOWN until Phase 0 evidence is acquired.
 
+## Phase 0 evidence reconciliation update — 21 November 2026
+
+The Phase 0 source review confirms planning constraints but supplies no validated numeric technology workload:
+- 003 and 011 describe one commodity, one hub and a limited group of producers/buyers; the actual participants and counts are not established.
+- 013 asks for buyer demand/frequency, producer monthly/seasonal volumes, existing commitments and net available supply. It is an instrument pack, not a set of completed findings.
+- 010 specifies site permission, physical inspection, equipment inventory, connectivity testing at different times, staffing and operating-cost evidence. No site-specific measurements or budget are recorded as validated.
+- 020 still records no selected route, product/batch, buyer, seller/exporter, destination, quality provider, logistics pathway or payment route.
+- 019 provides a minimum-documentation workflow and Level 1 rehearsal path, but does not supply live demand, operating costs or measured load.
+
+Therefore W-01 through W-08, D-01 through D-08, C-01 through C-08, O-01 through O-10 and all TCO values remain UNKNOWN unless separately evidenced. The full mapping is in [WP-03 Phase 0 evidence reconciliation](../delivery/wp03-phase0-evidence-reconciliation.md). Do not convert the planning shape into user, concurrency, transaction, storage or bandwidth estimates.
+
 ## 2. Demand and workload inputs
 
 | ID | Input | Unit / period | Low | Expected | High | Source / date / confidence |
