@@ -1,7 +1,7 @@
 # Project status and engineering holds
 
 **As of:** 21 November 2026  
-**Latest verified main before this alignment commit:** 5864af25d0d238407bec47e506e8937dd88d2bc2  
+**Baseline main at start of this alignment pass:** 5864af25d0d238407bec47e506e8937dd88d2bc2  
 **Repository verification:** 630 recursive tree entries (453 files; 177 directories); recursive tree complete.  
 **Status:** governed, source-mapped product and engineering foundation; no executable production marketplace application claimed.
 
