@@ -1,0 +1,63 @@
+flowchart LR
+  subgraph CLIENT["Client and device trust zone — untrusted"]
+    P["Producer / cooperative surface"]
+    H["Hub operations surface"]
+    B["Buyer surface"]
+    R["Reviewer / administration surface"]
+    PUB["Public batch projection"]
+    LQ[("Local offline queue<br/>pending records only")]
+  end
+
+  subgraph EDGE["Access boundary"]
+    HTTPS["HTTPS / versioned API boundary"]
+    IDP["Identity provider<br/>not selected"]
+  end
+
+  subgraph APP["Application trust zone — conditional Option B"]
+    APP1["Single modular application<br/>framework and runtime not selected"]
+    AUTHZ["Phygital authorization<br/>memberships, mandates, scopes"]
+    DOM["Domain/application modules"]
+    OUTBOX[("Database-backed job / outbox")]
+    WORKER["Optional worker process<br/>same repository; conditional"]
+    ADAPTER["Replaceable provider adapters"]
+  end
+
+  subgraph DATA["Data trust zone"]
+    DB[("Authoritative relational transaction store<br/>candidate class only")]
+    OBJ[("Private object storage<br/>candidate class only")]
+    PROJ["Allow-listed public projection"]
+  end
+
+  subgraph EXT["External provider boundary — future/contract gated"]
+    PAY["Licensed payment provider<br/>status/reconciliation only"]
+    LOG["Carrier / logistics provider"]
+    LAB["Inspection / laboratory provider"]
+    MSG["Notification provider"]
+  end
+
+  GIT["GitHub authoritative repository<br/>code, migrations, tests, docs"]
+  CI["Build / test / release controls<br/>deployment platform unselected"]
+
+  P --> LQ
+  H --> LQ
+  B --> HTTPS
+  R --> HTTPS
+  LQ --> HTTPS
+  HTTPS --> APP1
+  IDP <--> APP1
+  APP1 --> AUTHZ
+  AUTHZ --> DOM
+  DOM <--> DB
+  DOM --> OBJ
+  DOM --> OUTBOX
+  OUTBOX --> WORKER
+  WORKER --> DOM
+  DOM --> ADAPTER
+  ADAPTER -. gated .-> PAY
+  ADAPTER -. gated .-> LOG
+  ADAPTER -. gated .-> LAB
+  ADAPTER -. gated .-> MSG
+  DB --> PROJ
+  PROJ --> PUB
+  GIT --> CI
+  CI -. release only after approvals .-> APP1

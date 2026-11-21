@@ -44,3 +44,8 @@ Architecture diagram and data flows; component inventory; TSBBF assessments; wor
 ## EVI-27 readiness update — 21 November 2026
 
 The WP-04 assessment compares three topology alternatives and identifies Option B as a conditional logical direction only. EVI-27 is IN PROGRESS; ADR-0002 remains OPEN. Required workload, connectivity, operational, candidate-specific security/deployment, recovery, TCO, portability/exit and independent-review evidence remains incomplete. No topology or provider is selected. See [EVI-27 ADR-0002 Topology Decision Readiness Assessment 001](https://app.notion.com/p/41f6808bcd9e81319485d3572d54e6ff) and `../architecture/evi-27-topology-decision-readiness-assessment-001.md`.
+
+
+## Conditional topology and trust-boundary design
+
+A review-only logical boundary diagram is maintained in [conditional-pilot-topology-and-trust-boundaries.md](../architecture/conditional-pilot-topology-and-trust-boundaries.md) with source at `../architecture/diagrams/conditional-pilot-topology-option-b-review-only.mmd`. It depicts Option B as a conditional logical candidate only; no framework, provider, worker, database service or deployment topology is selected. EVI-27 remains IN PROGRESS and ADR-0002 remains OPEN.

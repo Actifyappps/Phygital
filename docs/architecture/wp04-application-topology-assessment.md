@@ -256,3 +256,8 @@ ADR-0002 cannot close until:
 ## 9. EVI-27 topology decision readiness — 21 November 2026
 
 A focused EVI-27 review confirms that this WP-04 assessment is a substantive, source-derived comparison of integrated full-stack managed platform, modular monolith and distributed microservices. Option B remains a conditional logical direction only; it is not an authorised topology decision. Workload/concurrency, hub connectivity/devices, operating capacity, candidate-specific deployment/security evidence, recovery objectives, TCO, portability/exit and independent review remain outstanding. EVI-27 is IN PROGRESS and ADR-0002 remains OPEN. See [EVI-27 ADR-0002 Topology Decision Readiness Assessment 001](https://app.notion.com/p/41f6808bcd9e81319485d3572d54e6ff).
+
+
+## Conditional logical topology diagram — review only
+
+The companion [conditional pilot topology and trust-boundary design](conditional-pilot-topology-and-trust-boundaries.md) and source diagram `diagrams/conditional-pilot-topology-option-b-review-only.mmd` make the client, access, application, data and external-provider boundaries explicit. They are review artefacts, not an approved topology. EVI-27 remains IN PROGRESS; ADR-0002 remains OPEN.

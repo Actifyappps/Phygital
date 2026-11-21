@@ -90,3 +90,8 @@ EVI-25 source authority is a dependency for any guide-dependent comparison, but 
 This assessment does not select Option B or any other topology for implementation. It does not approve any framework, provider, hosting platform, identity provider, queue or worker vendor. It does not authorize procurement, provider accounts, infrastructure, migrations, real participant data, production deployment, live integrations, live trade, custody, funds or shipment.
 
 **Current disposition:** EVI-27 IN PROGRESS; ADR-0002 OPEN; Option B conditional only.
+
+
+## 9. Conditional logical topology design artefact
+
+A companion review-only logical topology and trust-boundary design has been prepared in `docs/architecture/conditional-pilot-topology-and-trust-boundaries.md`, with versioned Mermaid source at `docs/architecture/diagrams/conditional-pilot-topology-option-b-review-only.mmd`. It makes client/device, access, application, transaction-data, private-file and external-provider boundaries explicit. It does not select Option B for implementation or close any EVI-27 blocker. The corresponding Notion page is [Conditional Pilot Topology & Trust-Boundary Design 001](https://app.notion.com/p/41f6808bcd9e81789df4cc5c9f65e4d3).
