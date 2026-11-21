@@ -140,3 +140,8 @@ If any entry condition is unmet, keep the spike as a plan and continue source/de
 - docs/quality/024r-correction-implementation-record.md
 - docs/quality/024g-test-catalogue-crosswalk.md
 - docs/architecture/024h-architecture-operations-gap.md
+
+
+## EVI-25 source recovery update — 21 November 2026
+
+The targeted source-recovery assessment did not locate the complete canonical Developer Guide v0.1 in Notion, the connected Library or the current repository. EVI-25 is IN PROGRESS; the guide remains unverified/not located. ADR-0001 must not use the remembered excerpt as a candidate specification or score source. Obtain the complete source and verify provenance/authority, or secure a custodian-backed unavailability/supersession disposition before closing this precondition. See [`docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md`](../delivery/evi-25-developer-guide-source-recovery-assessment-001.md).

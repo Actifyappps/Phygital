@@ -1,7 +1,7 @@
 # Controlled Notion Change Package — Evidence Register Additions
 
 **Package ID:** PEM-ER-CP-001  
-**Version:** 0.3  
+**Version:** 0.4  
 **Prepared:** 21 November 2026  
 **Status:** APPROVED AND APPLIED — 21 November 2026  
 **Decision:** Sponsor approved and commissioned all five additions, including implementation where necessary.
@@ -10,19 +10,19 @@
 
 This package records the approved application of five distinct evidence requirements to the existing Phygital Phase 0 — Evidence Register. It follows the ECR-to-register crosswalk and the Evidence Register — Operating Protocol.
 
-The original 24 records remain unchanged. Five new rows were created in the existing database, which now contains 29 active records. Evidence IDs E-025 through E-029 were generated automatically. No schema properties, assignments or existing-row statuses were changed. CV Finding remains blank on every new row; any extension of the existing CV-01–CV-20 / E-021–E-024 convention still requires a separate explicit governance decision. ECR references and the actual Evidence IDs are retained for traceability.
+The original 24 records remain unchanged. Five new rows were created in the existing database, which now contains 29 active records. Evidence IDs EVI-25 through EVI-29 were generated automatically. No schema properties, assignments or existing-row statuses were changed. CV Finding remains blank on every new row; any extension of the existing CV-01–CV-20 / EVI-21–EVI-24 convention still requires a separate explicit governance decision. ECR references and the actual Evidence IDs are retained for traceability.
 
 ## 2. Proposed additions at a glance
 
 | Ref | Proposed Evidence Item | ECR | Priority | Workstream | Decision Impact | Initial status |
 |---|---|---|---|---|---|---|
-| A | Establish authority of canonical Developer Guide v0.1 source | ECR-01 → E-025 | P1 approved | WS-08 Technology & Database | Phase 0 learning | OPEN |
-| B | Authorize a bounded synthetic technology-candidate spike | ECR-12 → E-026 | P1 approved | WS-08 Technology & Database | Phase 0 learning | OPEN; execution not authorized |
-| C | Record the authorised topology decision in ADR-0002 | ECR-13 → E-027 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
-| D | Approve the evidence-backed technology baseline in ADR-0001 | ECR-14 → E-028 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
-| E | Approve recovery objectives and retention controls; execute a witnessed restore test | ECR-08 → E-029 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
+| A | Establish authority of canonical Developer Guide v0.1 source | ECR-01 → EVI-25 | P1 approved | WS-08 Technology & Database | Phase 0 learning | OPEN |
+| B | Authorize a bounded synthetic technology-candidate spike | ECR-12 → EVI-26 | P1 approved | WS-08 Technology & Database | Phase 0 learning | OPEN; execution not authorized |
+| C | Record the authorised topology decision in ADR-0002 | ECR-13 → EVI-27 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
+| D | Approve the evidence-backed technology baseline in ADR-0001 | ECR-14 → EVI-28 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
+| E | Approve recovery objectives and retention controls; execute a witnessed restore test | ECR-08 → EVI-29 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
 
-All five P1 classifications were approved as specified. P1 denotes a requirement that must close before real participant data, production deployment or live inventory/payment events, as applicable. E-026 is a prerequisite to the separately bounded WP-05 spike only; creating or closing the register requirement does not itself authorize execution. These are distinct gates, not five live-pilot gates.
+All five P1 classifications were approved as specified. P1 denotes a requirement that must close before real participant data, production deployment or live inventory/payment events, as applicable. EVI-26 is a prerequisite to the separately bounded WP-05 spike only; creating or closing the register requirement does not itself authorize execution. These are distinct gates, not five live-pilot gates.
 
 ## 3. Full proposed record specifications
 
@@ -88,7 +88,7 @@ All five P1 classifications were approved as specified. P1 denotes a requirement
 
 ## 4. Existing-record boundary
 
-These proposals do not replace or duplicate E-022 (controlled evidence repository and decision log), E-021 (Level 1 simulated transaction rehearsal), E-024 (formal Phase 0 checkpoint), CV-05 (site readiness), CV-10 (audit integrity), CV-12 (Migration 001 and PostgreSQL tests), CV-13 (cost/revenue model), CV-14 (provider qualification), CV-17 (privacy/security obligations), CV-18 (dependency-based programme plan) or CV-20 (phase-gated capabilities).
+These proposals do not replace or duplicate EVI-22 (controlled evidence repository and decision log), EVI-21 (Level 1 simulated transaction rehearsal), EVI-24 (formal Phase 0 checkpoint), CV-05 (site readiness), CV-10 (audit integrity), CV-12 (Migration 001 and PostgreSQL tests), CV-13 (cost/revenue model), CV-14 (provider qualification), CV-17 (privacy/security obligations), CV-18 (dependency-based programme plan) or CV-20 (phase-gated capabilities).
 
 Cross-reference those records; do not repurpose them as proxies for the new closure tests. Capture each evidence item once and link it to all relevant ECRs and Evidence IDs.
 
@@ -123,7 +123,7 @@ Respect actual database property types/options at insertion. Leave unspecified p
 1. Sponsor approval received in the project conversation on 21 November 2026; all five additions and implementation where necessary were commissioned.
 2. The live schema and all active rows were re-fetched immediately before insertion; no duplicate requirements were found.
 3. Five rows were created in the existing Evidence Register data source. No schema changes or changes to the original 24 rows were made.
-4. The database assigned IDs automatically: E-025, E-026, E-027, E-028 and E-029. No manual IDs were supplied. CV Finding was left blank on every new record.
+4. The database assigned IDs automatically: EVI-25, EVI-26, EVI-27, EVI-28 and EVI-29. No manual IDs were supplied. CV Finding was left blank on every new record.
 5. All five records were queried back and verified: titles, IDs, P1 priority, Decision Impact, WS-08 workstream, OPEN status, Closure Accepted = NO, dependencies, evidence requirements, closure tests and intentionally blank fields.
 6. The ECR-to-register crosswalk is updated with the actual Evidence IDs in this applied package revision.
 7. No existing row status or closure acceptance was changed.
@@ -139,9 +139,26 @@ ECR-12 remains NOT AUTHORIZED until separate explicit spike authorization. ADR-0
 **Decision:** APPROVED — apply all five additions and commission implementation where necessary.  
 **Approval source:** Explicit sponsor instruction in the project conversation, 21 November 2026.  
 **Approved proposal:** Version 0.2, with its control refinements preserved.  
-**Applied record:** Version 0.3, 21 November 2026.  
+**Applied record:** Version 0.3, 21 November 2026; progress update v0.4, 21 November 2026.  
 **Conditions:** CV Finding remains blank; no person appointments; WP-05, production, procurement, live data and live operations remain subject to their separate gates.
 
 **Sources:** WP-03 ECR-to-Phase 0 Register Crosswalk; WP-03 Evidence Closure Request Register; Phase 0 Evidence Register; Evidence Register — Operating Protocol; Phase 0 evidence-return template.
 
 **Change-control rule:** This v0.3 package records the approved five-row addition and its read-back verification. It does not close any evidence requirement or authorize a separately gated activity.
+
+
+## 9. Applied record index
+
+| ECR linkage | Evidence ID | Register record | Notion record |
+|---|---|---|---|
+| ECR-01 | EVI-25 | Establish authority of canonical Developer Guide v0.1 source | [Open EVI-25](https://app.notion.com/p/41f6808bcd9e81879620e81d03462247) |
+| ECR-12 | EVI-26 | Authorize a bounded synthetic technology-candidate spike | [Open EVI-26](https://app.notion.com/p/41f6808bcd9e81d79ee9f98ce627dba8) |
+| ECR-13 | EVI-27 | Record the authorised topology decision in ADR-0002 | [Open EVI-27](https://app.notion.com/p/41f6808bcd9e811cae67e55b07c85ab9) |
+| ECR-14 | EVI-28 | Approve the evidence-backed technology baseline in ADR-0001 | [Open EVI-28](https://app.notion.com/p/41f6808bcd9e817185d3c1efaada6a46) |
+| ECR-08 | EVI-29 | Approve recovery objectives and retention controls; execute a witnessed restore test | [Open EVI-29](https://app.notion.com/p/41f6808bcd9e811babefff6a00a8ccc9) |
+
+## 10. Implementation progress — EVI-25
+
+A targeted source-recovery assessment was completed across Notion, the connected Library and the current Phygital repository on 21 November 2026. The complete Developer Guide v0.1 was not located. The current Concept Paper v1.1 and Technical Development Manual v3.0 hierarchy remains controlling. EVI-25 is IN PROGRESS and linked to the assessment record. The source remains UNVERIFIED / NOT LOCATED pending custodian confirmation or formal disposition. This does not close EVI-25 or authorize technology scoring from an excerpt.
+
+[Notion source-recovery assessment](https://app.notion.com/p/41f6808bcd9e8130846cf2d7c22b16c0).

@@ -54,3 +54,10 @@ The technology-neutral component inventory is `docs/architecture/technology-comp
 ## AADDG operational identity record
 
 See `../delivery/application-operational-identity-register.md` for the current verified answers to the five operational identity questions. It confirms that the repository exists but backend, deployment, production URL and worker/edge runtime remain unprovisioned. ADR-0001/0002 remain OPEN.
+
+
+## EVI-25 source recovery — 21 November 2026
+
+A targeted search of the current Project Home hierarchy, Notion workspace, connected Library and recursive repository tree did not locate the complete Developer Guide v0.1. Concept Paper v1.1 remains the strategic authority; Technical Development Manual v3.0 remains the supporting technical plan. The prior excerpt is a source-recovery lead only, not a verified specification. EVI-25 is IN PROGRESS pending the complete source or a formal custodian-backed unavailability/supersession disposition. Do not score technologies from the excerpt.
+
+See [`docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md`](../delivery/evi-25-developer-guide-source-recovery-assessment-001.md) and [Notion assessment](https://app.notion.com/p/41f6808bcd9e8130846cf2d7c22b16c0).

@@ -17,3 +17,5 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - `wp03-ecr-to-phase0-register-crosswalk.md` maps ECR-01–ECR-14 to the 29 active Notion Evidence Register rows, including approved additions E-025–E-029; it distinguishes direct and distributed coverage and preserves separate decision gates.
 
 - `phase0-evidence-register-change-package-001.md` (v0.3) records sponsor approval and verified application of five non-duplicate Evidence Register additions (E-025–E-029), with evidence requirements, closure tests, dependencies, Decision Impact mapping, identifier-governance safeguards and ADR sequencing; APPROVED AND APPLIED.
+
+- `evi-25-developer-guide-source-recovery-assessment-001.md` records the 21 November 2026 targeted Notion, Library and repository source search; Developer Guide v0.1 remains unverified/not located and EVI-25 is IN PROGRESS.
