@@ -9,3 +9,5 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - wp05-spike-readiness-assessment.md records the WP-05 gate assessment; no synthetic technology spike is authorized or executed.
 
 - wp03-phase0-evidence-reconciliation.md maps Phase 0 Deliverables 003, 008, 009, 010, 011, 013, 019 and 020 against ECR-01–ECR-14; design instruments are distinguished from completed field evidence.
+
+- phase0-evidence-return-and-validation-record-template.md provides a controlled return format for completed Deliverable 013 evidence, site connectivity measurements and actor/provider findings; it is a blank template, not an approved external survey or consent form.
