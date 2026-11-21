@@ -11,3 +11,5 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - wp03-phase0-evidence-reconciliation.md maps Phase 0 Deliverables 003, 008, 009, 010, 011, 013, 019 and 020 against ECR-01–ECR-14; design instruments are distinguished from completed field evidence.
 
 - phase0-evidence-return-and-validation-record-template.md provides a controlled return format for completed Deliverable 013 evidence, site connectivity measurements and actor/provider findings; it is a blank template, not an approved external survey or consent form.
+
+- phase0-evidence-register-reconciliation.md reconciles the live Notion master register, its operating protocol, Deliverable 013 and the evidence-return template; preserves all existing records and defines the requirement/gate versus evidence-item relationship.
