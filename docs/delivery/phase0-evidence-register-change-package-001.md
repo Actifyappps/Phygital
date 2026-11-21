@@ -1,28 +1,28 @@
 # Controlled Notion Change Package — Evidence Register Additions
 
 **Package ID:** PEM-ER-CP-001  
-**Version:** 0.2  
+**Version:** 0.3  
 **Prepared:** 21 November 2026  
-**Status:** PROPOSED — NOT APPLIED  
-**Decision:** PENDING; no approval inferred.
+**Status:** APPROVED AND APPLIED — 21 November 2026  
+**Decision:** Sponsor approved and commissioned all five additions, including implementation where necessary.
 
 ## 1. Purpose and change boundary
 
-This package proposes five genuinely distinct evidence requirements for the existing Phygital Phase 0 — Evidence Register. It follows the read-only crosswalk in `wp03-ecr-to-phase0-register-crosswalk.md` and the Evidence Register — Operating Protocol.
+This package records the approved application of five distinct evidence requirements to the existing Phygital Phase 0 — Evidence Register. It follows the ECR-to-register crosswalk and the Evidence Register — Operating Protocol.
 
-The existing 24 records remain unchanged. No new database rows, Evidence IDs, CV Finding codes, assignments, statuses or schema properties have been created. If approved, use the existing database only and allow its auto-generated Evidence ID mechanism to assign stable IDs. Leave CV Finding blank initially. Do not invent or allocate new CV Finding keys on uniqueness alone; any extension of the existing CV-01–CV-20 / E-021–E-024 convention requires an explicit governance decision. Until then, retain traceability through ECR identifiers and relevant Evidence IDs in the existing Dependency field.
+The original 24 records remain unchanged. Five new rows were created in the existing database, which now contains 29 active records. Evidence IDs E-025 through E-029 were generated automatically. No schema properties, assignments or existing-row statuses were changed. CV Finding remains blank on every new row; any extension of the existing CV-01–CV-20 / E-021–E-024 convention still requires a separate explicit governance decision. ECR references and the actual Evidence IDs are retained for traceability.
 
 ## 2. Proposed additions at a glance
 
 | Ref | Proposed Evidence Item | ECR | Priority | Workstream | Decision Impact | Initial status |
 |---|---|---|---|---|---|---|
-| A | Recover and establish authority of canonical Developer Guide v0.1 source | ECR-01 | P1 proposed | WS-08 Technology & Database; document custodian support | Phase 0 learning | OPEN |
-| B | Obtain explicit authorization for a bounded synthetic technology-candidate spike | ECR-12 | P1 proposed | WS-08 Technology & Database; governance decision owner | Phase 0 learning | OPEN |
-| C | Assess topology alternatives and record the authorized ADR-0002 decision | ECR-13 | P1 proposed | WS-08 Technology & Database | Production/data gate | OPEN |
-| D | Complete evidence-backed technology candidate assessment and record the authorized ADR-0001 baseline decision | ECR-14 | P1 proposed | WS-08 Technology & Database | Production/data gate | OPEN |
-| E | Approve service recovery objectives and evidence/data retention controls; execute and independently witness a restore test | ECR-08 | P1 proposed | WS-08 Technology & Database; Operations / Legal / Data Protection | Production/data gate | OPEN |
+| A | Establish authority of canonical Developer Guide v0.1 source | ECR-01 → E-025 | P1 approved | WS-08 Technology & Database | Phase 0 learning | OPEN |
+| B | Authorize a bounded synthetic technology-candidate spike | ECR-12 → E-026 | P1 approved | WS-08 Technology & Database | Phase 0 learning | OPEN; execution not authorized |
+| C | Record the authorised topology decision in ADR-0002 | ECR-13 → E-027 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
+| D | Approve the evidence-backed technology baseline in ADR-0001 | ECR-14 → E-028 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
+| E | Approve recovery objectives and retention controls; execute a witnessed restore test | ECR-08 → E-029 | P1 approved | WS-08 Technology & Database | Production/data gate | OPEN |
 
-Priorities are proposals, not approved classifications. The Operating Protocol defines P1 as a requirement that must close before real participant data, production deployment or live inventory/payment events, as applicable. A is proposed P1 because unresolved source authority undermines the technology evidence baseline; C, D and E are proposed P1 because they directly affect production/data readiness. B is proposed P1 only as a mandatory prerequisite to the separately bounded WP-05 spike; its closure does not itself authorize production activity. These are distinct gates, not claims that all five are live-pilot gates. The authorized programme owner must confirm or amend each priority before insertion.
+All five P1 classifications were approved as specified. P1 denotes a requirement that must close before real participant data, production deployment or live inventory/payment events, as applicable. E-026 is a prerequisite to the separately bounded WP-05 spike only; creating or closing the register requirement does not itself authorize execution. These are distinct gates, not five live-pilot gates.
 
 ## 3. Full proposed record specifications
 
@@ -118,15 +118,15 @@ Use only existing properties unless a separate schema change is approved.
 
 Respect actual database property types/options at insertion. Leave unspecified properties blank unless the mapping expressly provides a factual initial value. Do not invent select values, populate dates in advance, add unsupported notes, or conflate evidence strength E1–E4 with Notion Evidence Class acquisition type.
 
-## 6. Application and verification sequence
+## 6. Application and verification record
 
-1. Record sponsor/authorized decision-owner approval, including amendments.
-2. Re-fetch live schema and rows immediately before insertion; verify none of the five has since been created.
-3. Create the five rows in the existing Evidence Register data source only.
-4. Allow auto-generated Evidence IDs. Leave CV Finding blank unless and until the authorized governance process explicitly approves an extension of the existing identifier convention; a uniqueness check alone does not confer authority.
-5. Read back all five rows and verify properties, dependencies and closure tests.
-6. Update the ECR crosswalk with actual new Evidence IDs. Populate CV Finding references only if an identifier-convention extension has separately been authorized; otherwise retain ECR-based traceability. Preserve existing row identities and history.
-7. Do not change existing statuses or closure acceptance because these proposals were created.
+1. Sponsor approval received in the project conversation on 21 November 2026; all five additions and implementation where necessary were commissioned.
+2. The live schema and all active rows were re-fetched immediately before insertion; no duplicate requirements were found.
+3. Five rows were created in the existing Evidence Register data source. No schema changes or changes to the original 24 rows were made.
+4. The database assigned IDs automatically: E-025, E-026, E-027, E-028 and E-029. No manual IDs were supplied. CV Finding was left blank on every new record.
+5. All five records were queried back and verified: titles, IDs, P1 priority, Decision Impact, WS-08 workstream, OPEN status, Closure Accepted = NO, dependencies, evidence requirements, closure tests and intentionally blank fields.
+6. The ECR-to-register crosswalk is updated with the actual Evidence IDs in this applied package revision.
+7. No existing row status or closure acceptance was changed.
 
 ## 7. Explicit non-authorizations
 
@@ -136,12 +136,12 @@ ECR-12 remains NOT AUTHORIZED until separate explicit spike authorization. ADR-0
 
 ## 8. Approval record
 
-**Decision:** PENDING — no approval inferred.  
-**Authorized decision-maker:** To be confirmed under programme governance.  
-**Decision date / approved version:** To be recorded when decided.  
-**Conditions / amendments:** To be recorded.  
-**Decision evidence reference:** To be linked after approval.
+**Decision:** APPROVED — apply all five additions and commission implementation where necessary.  
+**Approval source:** Explicit sponsor instruction in the project conversation, 21 November 2026.  
+**Approved proposal:** Version 0.2, with its control refinements preserved.  
+**Applied record:** Version 0.3, 21 November 2026.  
+**Conditions:** CV Finding remains blank; no person appointments; WP-05, production, procurement, live data and live operations remain subject to their separate gates.
 
 **Sources:** WP-03 ECR-to-Phase 0 Register Crosswalk; WP-03 Evidence Closure Request Register; Phase 0 Evidence Register; Evidence Register — Operating Protocol; Phase 0 evidence-return template.
 
-**Change-control rule:** This package is a proposal. No database row, schema, status, assignment or decision has been changed by its preparation.
+**Change-control rule:** This v0.3 package records the approved five-row addition and its read-back verification. It does not close any evidence requirement or authorize a separately gated activity.

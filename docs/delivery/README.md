@@ -14,6 +14,6 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 
 - phase0-evidence-register-reconciliation.md reconciles the live Notion master register, its operating protocol, Deliverable 013 and the evidence-return template; preserves all existing records and defines the requirement/gate versus evidence-item relationship.
 
-- `wp03-ecr-to-phase0-register-crosswalk.md` maps ECR-01–ECR-14 to the 24 active Notion Evidence Register rows, identifies direct and distributed coverage, and records genuine traceability gaps without mutating Notion.
+- `wp03-ecr-to-phase0-register-crosswalk.md` maps ECR-01–ECR-14 to the 29 active Notion Evidence Register rows, including approved additions E-025–E-029; it distinguishes direct and distributed coverage and preserves separate decision gates.
 
-- `phase0-evidence-register-change-package-001.md` (v0.2) defines five proposed, non-duplicate Evidence Register additions with exact evidence requirements, closure tests, roles, dependencies, Decision Impact mapping, identifier-governance safeguards, ADR sequencing, complete property handling and approval controls; PROPOSED — NOT APPLIED.
+- `phase0-evidence-register-change-package-001.md` (v0.3) records sponsor approval and verified application of five non-duplicate Evidence Register additions (E-025–E-029), with evidence requirements, closure tests, dependencies, Decision Impact mapping, identifier-governance safeguards and ADR sequencing; APPROVED AND APPLIED.
