@@ -24,3 +24,5 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - `../operations/evi-29-recovery-retention-restore-readiness-assessment-001.md` records the EVI-29 evidence gap, approved-objective requirements and synthetic witnessed-restore protocol.
 
 - `evi-26-wp05-synthetic-spike-authorization-readiness-001.md` records EVI-26 prerequisites and the explicit decision fields required before WP-05; NOT READY — NOT AUTHORIZED, no spike executed.
+
+- `../decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md` maps EVI-28/ADR-0001 prerequisites; no candidate is ready for scoring and no technology baseline is selected.

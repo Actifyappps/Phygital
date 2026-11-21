@@ -66,3 +66,8 @@ See [`docs/delivery/evi-25-developer-guide-source-recovery-assessment-001.md`](.
 ## EVI-26 synthetic spike authorization — 21 November 2026
 
 EVI-26 is IN PROGRESS as an authorization-readiness task. WP-05 remains NOT READY — NOT AUTHORIZED. The current prerequisites and decision fields are recorded in `docs/delivery/evi-26-wp05-synthetic-spike-authorization-readiness-001.md`. No candidate shortlist, isolated environment, budget, named owner/reviewer or explicit authorization is evidenced. No spike has run.
+
+
+## EVI-28 technology baseline readiness — 21 November 2026
+
+EVI-28 is IN PROGRESS as a readiness assessment. No component candidate is READY FOR SCORING; no numeric TSBBF score, shortlist or technology selection exists. ADR-0001 remains OPEN pending EVI-25 source authority, EVI-27 topology decision, comparable workload/TCO, legal/privacy/provider evidence, candidate-specific security/recovery/portability, operations ownership and independent review. See [`docs/decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md`](../decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md) and [Notion assessment](https://app.notion.com/p/41f6808bcd9e8130afbbc4a68db571dc).

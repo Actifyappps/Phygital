@@ -75,3 +75,8 @@ Until approved, keep API contracts and domain models technology-neutral; keep Mi
 4. TCO, data portability, backup/restore and exit paths are evidenced.
 5. Architecture and operating model are independently reviewed.
 6. Authorised decision owner records selection, scope, conditions and review trigger.
+
+
+## EVI-28 readiness update — 21 November 2026
+
+EVI-28 is IN PROGRESS as a readiness assessment. The TSBBF method, TDR baseline, candidate register and blank workbook exist, but no candidate is READY FOR SCORING; no numeric score, shortlist or baseline selection exists. EVI-25 source authority, EVI-27 topology, workload/TCO, legal/privacy/provider terms, candidate-specific security/recovery/exit evidence, operating ownership and independent review remain incomplete. ADR-0001 remains OPEN. See [`evi-28-adr-0001-technology-baseline-readiness-assessment-001.md`](evi-28-adr-0001-technology-baseline-readiness-assessment-001.md) and [Notion assessment](https://app.notion.com/p/41f6808bcd9e8130afbbc4a68db571dc).

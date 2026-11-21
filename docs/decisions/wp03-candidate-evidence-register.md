@@ -112,3 +112,8 @@ A candidate may move from READY FOR SCORING to **SCORED** only after every criti
 - Developer Guide v0.1 recovery/disposition remains OPEN.
 - Phase 0 workload/TCO values remain UNKNOWN.
 - Production provisioning, migrations, real participant data, live integrations and live trade remain unauthorized.
+
+
+## EVI-28 decision readiness — 21 November 2026
+
+The candidate register remains an evidence index, not a shortlist. No candidate is READY FOR SCORING, no numeric TSBBF score has been entered, and no candidate is shortlisted or selected. EVI-28 is IN PROGRESS as a readiness assessment; ADR-0001 remains OPEN. The current closure blockers are mapped in [`evi-28-adr-0001-technology-baseline-readiness-assessment-001.md`](evi-28-adr-0001-technology-baseline-readiness-assessment-001.md).
