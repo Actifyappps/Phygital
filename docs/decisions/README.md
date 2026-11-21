@@ -1,7 +1,7 @@
 # ADR register
 
-- ADR-0001 Technology baseline — OPEN. Assessment preparation: TSBBF component assessment workbook, technology decision requirements baseline and workload/TCO assumptions register.
-- ADR-0002 Application topology — OPEN. Candidate spike plan: synthetic-data technology spike and acceptance plan; closure sequence: ADR evidence-closure work-package register.
+- ADR-0001 Technology baseline — **OPEN**. EVI-28 readiness assessment: no candidate READY FOR SCORING, no numeric score, shortlist or baseline selection. Final approval depends on the authorized ADR-0002 topology decision and complete TSBBF evidence.
+- ADR-0002 Application topology — **OPEN**. EVI-27 readiness assessment: Option B is a conditional logical candidate only; no topology or deployment architecture selected. WP-05 spike is separately gated by EVI-26 and is NOT AUTHORIZED.
 - ADR-0003 Identity and authorisation — OPEN.
 - ADR-0004 Data and file storage — OPEN.
 - ADR-0005 Integrations and event delivery — OPEN.
@@ -12,7 +12,7 @@
 Supporting records:
 - P1 business-capability evidence pack (TC-14, TC-15, TC-16, TC-18, TC-20); no live provider or partner selected.
 - P1 platform-quality evidence pack (TC-08, TC-11, TC-22, TC-23); initial public-source evidence only, no selection or score.
-- ADR-0001 and ADR-0002 remain OPEN; WP-03 candidate evidence is underway and WP-04 modular-monolith topology is proposed only, pending authorised review.
+- ADR-0001 and ADR-0002 remain OPEN. EVI-27 and EVI-28 are IN PROGRESS readiness assessments, not decisions; Option B remains conditional only.
 - WP-03 candidate evidence register: consolidated component candidates, evidence states and blockers; no candidate scored or shortlisted.
 - TC-12/TC-13/TC-24 recovery, offline and portability evidence snapshot (20 November 2026); no recovery or offline pattern selected.
 - TC-09/TC-10 hosting, deployment and CI candidate evidence snapshot (20 November 2026); no candidates scored or shortlisted.
@@ -33,3 +33,14 @@ Supporting records:
 - Evidence sequencing and decision gates: adr-evidence-closure-work-package-register.md.
 
 All supporting records are preparation aids. They do not select a stack, authorise a spike, provision an environment, execute a migration or permit live operations.
+
+
+## EVI-25–EVI-29 current decision evidence — 21 November 2026
+
+- [EVI-25 source recovery and authority assessment](../delivery/evi-25-developer-guide-source-recovery-assessment-001.md) — IN PROGRESS; canonical Developer Guide v0.1 not recovered.
+- [EVI-26 WP-05 spike authorization readiness](../delivery/evi-26-wp05-synthetic-spike-authorization-readiness-001.md) — IN PROGRESS; NOT READY — NOT AUTHORIZED; no spike run.
+- [EVI-27 ADR-0002 topology readiness](../architecture/evi-27-topology-decision-readiness-assessment-001.md) — IN PROGRESS; Option B conditional only.
+- [EVI-28 ADR-0001 technology baseline readiness](evi-28-adr-0001-technology-baseline-readiness-assessment-001.md) — IN PROGRESS; no candidate ready for scoring.
+- [EVI-29 recovery/retention/restore readiness](../operations/evi-29-recovery-retention-restore-readiness-assessment-001.md) — IN PROGRESS; no backup capability or approved RTO/RPO claimed.
+
+**Sequence and controls:** ADR-0002 must be decided before final ADR-0001 approval. EVI-26 does not authorize execution merely because the readiness brief exists. EVI-29 requires approved objectives and a witnessed restore test. No provider, technology, procurement or production deployment is selected or authorized.

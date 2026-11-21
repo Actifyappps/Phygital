@@ -14,7 +14,7 @@ ECR-01–ECR-14 and the Notion Evidence Register are related but deliberately no
 
 A one-to-one mapping would be misleading. Several ECRs legitimately support multiple programme requirements; conversely, some ECRs have no sufficiently direct Notion row. These are real traceability gaps, not reasons to create duplicate records.
 
-**Current control state:** 29 active Notion rows (24 original + 5 approved additions). EVI-25 (ECR-01), EVI-26 (ECR-12), EVI-27 (ECR-13), EVI-28 (ECR-14), EVI-29 (ECR-08). EVI-25 is IN PROGRESS; EVI-26–EVI-29 are OPEN. All five have Closure Accepted = NO and CV Finding blank. ECR-12 remains NOT AUTHORIZED; ADR-0002 and ADR-0001 remain OPEN. No technology candidate is ready for scoring, and no live pilot is authorized.
+**Current control state:** 29 active Notion rows (24 original + 5 approved additions). EVI-25 (ECR-01), EVI-26 (ECR-12), EVI-27 (ECR-13), EVI-28 (ECR-14), EVI-29 (ECR-08). All five records EVI-25–EVI-29 are currently IN PROGRESS (individual Notion read-back, 21 November 2026); all have Closure Accepted = NO and CV Finding blank. Their initial OPEN state at creation is retained in the change package as historical evidence. ECR-12 remains NOT AUTHORIZED; ADR-0002 and ADR-0001 remain OPEN. No technology candidate is ready for scoring, and no live pilot is authorized.
 
 ## 2. Crosswalk method
 
@@ -79,11 +79,11 @@ The five additions were approved and created in the existing Notion Evidence Reg
 
 | ECR | Notion Evidence ID | Applied Evidence Item | Decision Impact | State |
 |---|---:|---|---|---|
-| ECR-01 | **EVI-25** | Establish authority of canonical Developer Guide v0.1 source | Phase 0 learning | OPEN |
-| ECR-12 | **EVI-26** | Authorize a bounded synthetic technology-candidate spike | Phase 0 learning | OPEN; execution NOT AUTHORIZED |
-| ECR-13 | **EVI-27** | Record the authorised topology decision in ADR-0002 | Production/data gate | OPEN |
-| ECR-14 | **EVI-28** | Approve the evidence-backed technology baseline in ADR-0001 | Production/data gate | OPEN |
-| ECR-08 | **EVI-29** | Approve recovery objectives and retention controls; execute a witnessed restore test | Production/data gate | OPEN |
+| ECR-01 | **EVI-25** | Establish authority of canonical Developer Guide v0.1 source | Phase 0 learning | IN PROGRESS; source not recovered |
+| ECR-12 | **EVI-26** | Authorize a bounded synthetic technology-candidate spike | Phase 0 learning | IN PROGRESS; WP-05 NOT READY — NOT AUTHORIZED |
+| ECR-13 | **EVI-27** | Record the authorised topology decision in ADR-0002 | Production/data gate | IN PROGRESS; ADR-0002 OPEN |
+| ECR-14 | **EVI-28** | Approve the evidence-backed technology baseline in ADR-0001 | Production/data gate | IN PROGRESS; ADR-0001 OPEN; no candidate ready for scoring |
+| ECR-08 | **EVI-29** | Approve recovery objectives and retention controls; execute a witnessed restore test | Production/data gate | IN PROGRESS; no approved objectives or witnessed restore |
 
 No CV Finding identifiers were assigned. The existing Dependency field retains ECR references. No original register row, schema property, existing status or closure decision was changed.
 
@@ -147,3 +147,18 @@ This crosswalk records approved Notion register additions and their identifiers.
 ## 9. EVI-25 source-authority progress
 
 The complete Developer Guide v0.1 was not located in the targeted Notion, connected Library or current repository search performed on 21 November 2026. The current Project Home confirms Concept Paper v1.1 as strategic authority and Technical Development Manual v3.0 as the supporting technical plan. Prior project context records the draft title/version/date, but complete original content is not recovered; no technology stack is attributed and partial references are not a scoring source. EVI-25 is IN PROGRESS pending source-custodian confirmation or formal unavailability/supersession disposition. See [the source-recovery assessment](https://app.notion.com/p/41f6808bcd9e8130846cf2d7c22b16c0).
+
+
+## 10. Current live status read-back — 21 November 2026
+
+The five Notion records were individually fetched again after the readiness assessments were added. Each currently shows **IN PROGRESS**, **Closure Accepted = NO**, and **CV Finding blank**. This is a subsequent progress state; the change package correctly preserves OPEN as each record's initial status at creation. No closure was accepted.
+
+| Evidence ID | Current live status | Current finding |
+|---|---|---|
+| EVI-25 | IN PROGRESS | Complete canonical Developer Guide v0.1 source not recovered; authority unverified |
+| EVI-26 | IN PROGRESS | WP-05 NOT READY — NOT AUTHORIZED; no spike run |
+| EVI-27 | IN PROGRESS | ADR-0002 OPEN; Option B conditional only |
+| EVI-28 | IN PROGRESS | ADR-0001 OPEN; no candidate READY FOR SCORING |
+| EVI-29 | IN PROGRESS | No approved recovery objectives or witnessed restore result; no backup capability claimed |
+
+This is a status mirror based on the individual read-back performed on 21 November 2026, not an assertion that GitHub is the live register. Refresh against Notion before any subsequent status transition or closure decision.

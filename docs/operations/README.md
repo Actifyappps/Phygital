@@ -10,3 +10,5 @@ This area defines the future operating controls for field/hub service, exception
 - [Phase 0 work-package crosswalk](../governance/phase0-work-package-crosswalk.md) — WP-0–WP-9 repository/evidence mapping.
 
 - [EVI-29 recovery, retention and restore readiness assessment](evi-29-recovery-retention-restore-readiness-assessment-001.md) — design and evidence gap only; no backup capability or recovery objective is approved.
+
+- EVI-29 is IN PROGRESS; approved RTO/RPO and retention values, a selected backup capability and a witnessed restore result remain outstanding. The readiness assessment is not proof of operational recovery capability.

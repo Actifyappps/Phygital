@@ -26,3 +26,16 @@ Engineering lifecycle, environment, release, backup/restore and rollback control
 - `evi-26-wp05-synthetic-spike-authorization-readiness-001.md` records EVI-26 prerequisites and the explicit decision fields required before WP-05; NOT READY — NOT AUTHORIZED, no spike executed.
 
 - `../decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md` maps EVI-28/ADR-0001 prerequisites; no candidate is ready for scoring and no technology baseline is selected.
+
+
+## Current evidence and decision status — 21 November 2026
+
+The live register state is mirrored in wp03-ecr-to-phase0-register-crosswalk.md: EVI-25, EVI-26, EVI-27, EVI-28 and EVI-29 are all IN PROGRESS; Closure Accepted = NO; CV Finding blank. Their initial OPEN state at creation remains in the controlled change package as historical evidence.
+
+- EVI-25 source authority remains unresolved; do not use partial guide references for technology scoring.
+- EVI-26 WP-05 remains NOT READY — NOT AUTHORIZED; no spike has run.
+- EVI-27 ADR-0002 remains OPEN; Option B is conditional only.
+- EVI-28 ADR-0001 remains OPEN; no candidate is READY FOR SCORING.
+- EVI-29 has no approved recovery objectives or witnessed restore result; no backup capability is claimed.
+
+ADR-0002 topology decision precedes final ADR-0001 technology baseline approval. These assessments do not authorize provider procurement, provisioning, migrations, real data, production deployment or live operations.

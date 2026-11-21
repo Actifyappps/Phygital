@@ -13,3 +13,6 @@ Technology-neutral design only until TSBBF and the approved ADRs resolve framewo
 - wp03-p1-business-capability-evidence-pack-01.md covers QR/public projections, notifications, payment-status boundaries, lab/inspection evidence and descriptive analytics; all remain unscored.
 - evi-27-topology-decision-readiness-assessment-001.md audits WP-04 against the EVI-27 closure test; Option B remains conditional only and ADR-0002 remains OPEN.
 - conditional-pilot-topology-and-trust-boundaries.md defines the review-only Option B logical boundary map; no framework, provider or deployment topology is selected.
+
+- evi-27-topology-decision-readiness-assessment-001.md — EVI-27 IN PROGRESS; ADR-0002 OPEN; Option B is conditional only.
+- ../decisions/evi-28-adr-0001-technology-baseline-readiness-assessment-001.md — EVI-28 IN PROGRESS; no candidate is ready for scoring.

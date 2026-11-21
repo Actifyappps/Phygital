@@ -1,6 +1,7 @@
 # ADR-0002 — Application topology
 
 **Status: OPEN — logical topology not selected for implementation.**  
+**Review date:** 21 November 2026.  
 **Governing standards:** TSBBF v1.0 and AADDG v1.0.  
 **Related:** ADR-0001 technology baseline; Technical Development Manual v3.0; 024-D API contracts.
 

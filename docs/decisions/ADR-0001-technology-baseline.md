@@ -3,7 +3,7 @@
 **Status: OPEN — no technology stack selected.**  
 **Decision owner:** authorised programme/product governance (not appointed by this ADR).  
 **Governing framework:** Actify TSBBF v1.0; AADDG v1.0; Concept Paper v1.1.  
-**Review date:** 20 November 2026.
+**Review date:** 21 November 2026.
 
 ## Context
 
